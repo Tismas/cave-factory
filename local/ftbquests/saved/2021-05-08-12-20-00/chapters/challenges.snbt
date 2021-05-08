@@ -1,0 +1,9 @@
+{
+	id: "47E8D662EA1C9A5B",
+	group: "",
+	order_index: 3,
+	filename: "challenges",
+	title: "Challenges",
+	default_quest_shape: "",
+	quests: []
+}

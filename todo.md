@@ -27,11 +27,12 @@ Util:
 
 ## Progression
 
-- breaking stone gives random ores,
+- breaking stone gives random ores and wood
 - breaking stone under water gives random seeds, saplings and other green stuff
 - automate all of the parts (steel from 5 iron plates)
 - blood magic unlocks end dimension (portal frame)
 - end dimension unlocks twilight forest (dragon egg)
+- research points for unlocking stuff like crusher
 
 # Challenges
 

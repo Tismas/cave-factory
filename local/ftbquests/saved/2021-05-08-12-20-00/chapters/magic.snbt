@@ -1,0 +1,9 @@
+{
+	id: "009B29948DDFF001",
+	group: "",
+	order_index: 2,
+	filename: "magic",
+	title: "Magic",
+	default_quest_shape: "",
+	quests: []
+}

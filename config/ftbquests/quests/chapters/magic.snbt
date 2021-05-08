@@ -1,0 +1,18 @@
+{
+	id: "009B29948DDFF001",
+	group: "",
+	order_index: 2,
+	filename: "magic",
+	title: "Magic",
+	default_quest_shape: "",
+	quests: [{
+		x: -3.0d,
+		y: 0.5d,
+		id: "7ACD0DB5851EC154",
+		tasks: [{
+			id: "27B0E067307CCE69",
+			type: "item",
+			item: "bloodmagic:altar"
+		}]
+	}]
+}

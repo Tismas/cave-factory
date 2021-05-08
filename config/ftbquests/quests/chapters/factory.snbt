@@ -1,0 +1,30 @@
+{
+	id: "0F5F32B947699E88",
+	group: "",
+	order_index: 1,
+	filename: "factory",
+	title: "Factory",
+	default_quest_shape: "",
+	quests: [
+		{
+			x: -8.5d,
+			y: 0.5d,
+			id: "06DA841D4D964885",
+			tasks: [{
+				id: "6A6DF1252F3C2F6E",
+				type: "item",
+				item: "immersiveengineering:blastbrick_reinforced"
+			}]
+		},
+		{
+			x: -6.5d,
+			y: 0.5d,
+			id: "085A799AA6CADF06",
+			tasks: [{
+				id: "4608878518675EE0",
+				type: "item",
+				item: "immersiveengineering:ingot_steel"
+			}]
+		}
+	]
+}
