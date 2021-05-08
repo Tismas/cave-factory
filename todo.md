@@ -13,6 +13,7 @@ Tech:
 - immersive engineering
 - engineers decor
 - thermal series
+- create
 
 Util:
 
@@ -20,6 +21,8 @@ Util:
 - ae2/refined storage
 - storage drawers
 - simple storage network
+- building gadgets
+- ender chests/tanks
 - ux stuff like mouse tweaks
 
 ## Progression
