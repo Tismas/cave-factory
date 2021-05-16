@@ -64,6 +64,7 @@
 		{
 			x: -8.5d,
 			y: -2.0d,
+			subtitle: "Serenade of the nether required 10k LP to activate and 500 LP for every bucket",
 			dependencies: ["4FBAB657D89F2EE2"],
 			id: "6CC0325BEFA21C3A",
 			tasks: [{
@@ -75,6 +76,7 @@
 		{
 			x: -8.5d,
 			y: 0.0d,
+			subtitle: "Ritual of full spring required 500 LP in your blood network and 25LP for each bucket of water",
 			dependencies: ["4FBAB657D89F2EE2"],
 			id: "74CCA4AF36E587A6",
 			tasks: [{
@@ -84,12 +86,9 @@
 			}]
 		},
 		{
-			x: -7.5d,
+			x: -6.0d,
 			y: -1.0d,
-			dependencies: [
-				"6CC0325BEFA21C3A",
-				"74CCA4AF36E587A6"
-			],
+			dependencies: ["251FE836D9C631D1"],
 			id: "623E8C8662EDBF44",
 			tasks: [{
 				id: "1C25B0B53392072F",
@@ -517,13 +516,23 @@
 		{
 			x: -11.0d,
 			y: -1.0d,
+			subtitle: "You cant get glowstone dust by crushing torches",
 			dependencies: ["65D9548ADD45ED8E"],
 			id: "634357134F3F4DB0",
-			tasks: [{
-				id: "63D768C489367320",
-				type: "item",
-				item: "bloodmagic:blankrune"
-			}]
+			tasks: [
+				{
+					id: "63D768C489367320",
+					type: "item",
+					item: "bloodmagic:blankrune",
+					count: 20L
+				},
+				{
+					id: "62F3B44999C8E8B1",
+					type: "item",
+					item: "minecraft:glowstone",
+					count: 4L
+				}
+			]
 		},
 		{
 			x: -9.5d,
@@ -547,7 +556,26 @@
 					type: "item",
 					item: "bloodmagic:activationcrystalweak"
 				}
-			]
+			],
+			rewards: [{
+				id: "1226DBA065F24967",
+				type: "item",
+				item: "bloodmagic:ritualdiviner"
+			}]
+		},
+		{
+			x: -7.5d,
+			y: -1.0d,
+			dependencies: [
+				"6CC0325BEFA21C3A",
+				"74CCA4AF36E587A6"
+			],
+			id: "251FE836D9C631D1",
+			tasks: [{
+				id: "4AA929A26A5BA1CB",
+				type: "dimension",
+				dimension: "minecraft:nether"
+			}]
 		}
 	]
 }

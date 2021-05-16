@@ -32,19 +32,25 @@ function spawnFromPool(world, itemPool, count, x, y, z) {
   });
 
   Object.keys(items).forEach((item) => {
+    console.log(item);
     const entity = world.createEntity("item");
-    entity.item = item;
+    entity.item = Item.of(item);
     entity.item.setCount(items[item]);
     entity.setPosition(x, y, z);
     entity.spawn();
   });
 }
 
-const seedsPool = Item.list.filter(
-  (item) =>
-    item.tags.toArray().filter((tag) => tag.toString() == "forge:seeds")
-      .length > 0
-);
+const seedsPool = Item.list
+  .filter(
+    (item) =>
+      item.tags.toArray().filter((tag) => tag.toString() == "forge:seeds")
+        .length > 0
+  )
+  .toArray()
+  .map((item) => item.toString())
+  .map((item) => item.slice(1, item.length() - 1))
+  .concat(["minecraft:sugar_cane"]);
 const logsPool = [
   "minecraft:oak_log",
   "minecraft:spruce_log",
@@ -55,7 +61,7 @@ const logsPool = [
 ];
 const exchangeMap = {
   "minecraft:cobblestone": { pool: logsPool, delay: 5 * 20 },
-  "minecraft:dirt": { pool: seedsPool, delay: 15 * 20 },
+  "minecraft:dirt": { pool: seedsPool, delay: 5 * 20 },
 };
 onEvent("entity.spawned", (event) => {
   const { entity } = event;

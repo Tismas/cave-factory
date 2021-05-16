@@ -32,6 +32,10 @@ onEvent("recipes", (event) => {
   event.shaped("8x create:mechanical_crafter", ["SSS", "S S", "SSS"], {
     S: "minecraft:crafting_table",
   });
+  event.recipes.create.crushing(
+    [Item.of("minecraft:glowstone_dust").withChance(0.5)],
+    "minecraft:torch"
+  );
 
   toolsToRemove.forEach((tool) => {
     toolTypesToRemove.forEach((toolType) => {
@@ -42,8 +46,27 @@ onEvent("recipes", (event) => {
 
   const { altar, array, soulforge, arc, alchemytable } =
     event.recipes.bloodmagic;
+  event.shaped("4x bloodmagic:ritualstone", ["BRB", "ROR", "BRB"], {
+    B: "bloodmagic:blankslate",
+    R: "bloodmagic:reinforcedslate",
+    O: [
+      "bloodmagic:apprenticebloodorb",
+      "bloodmagic:magicianbloodorb",
+      "bloodmagic:masterbloodorb",
+    ],
+  });
+  event.shaped("bloodmagic:masterritualstone", ["BRB", "ROR", "BRB"], {
+    B: "bloodmagic:blankslate",
+    R: "bloodmagic:ritualstone",
+    O: ["bloodmagic:magicianbloodorb", "bloodmagic:masterbloodorb"],
+  });
   altar("minecraft:dirt", "minecraft:granite")
     .altarSyphon(10)
+    .drainRate(10)
+    .consumptionRate(10);
+  altar("bloodmagic:activationcrystalweak", "tconstruct:melter")
+    .upgradeLevel(2)
+    .altarSyphon(10000)
     .drainRate(10)
     .consumptionRate(10);
 });
