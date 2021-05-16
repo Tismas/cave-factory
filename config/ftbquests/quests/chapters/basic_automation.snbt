@@ -8,8 +8,10 @@
 	quests: [
 		{
 			title: "Getting basic resources",
-			x: -14.0d,
+			x: -15.5d,
 			y: -1.0d,
+			subtitle: "By mining stone you have a chance of also getting random ores.",
+			dependencies: ["0F1A826EBBBCF62A"],
 			id: "18B0E187B3B0B0DD",
 			tasks: [
 				{
@@ -46,13 +48,23 @@
 					id: "06030350077BEF4C",
 					type: "item",
 					item: "minecraft:emerald_ore"
+				},
+				{
+					id: "526AFD959CDFE927",
+					type: "item",
+					item: "thermal:copper_ore"
+				},
+				{
+					id: "3D59E7D398D16F49",
+					type: "item",
+					item: "thermal:tin_ore"
 				}
 			]
 		},
 		{
-			x: -12.0d,
-			y: -2.5d,
-			dependencies: ["18B0E187B3B0B0DD"],
+			x: -8.5d,
+			y: -2.0d,
+			dependencies: ["4FBAB657D89F2EE2"],
 			id: "6CC0325BEFA21C3A",
 			tasks: [{
 				id: "7CEA97A30C63691F",
@@ -61,9 +73,9 @@
 			}]
 		},
 		{
-			x: -12.0d,
-			y: 0.5d,
-			dependencies: ["18B0E187B3B0B0DD"],
+			x: -8.5d,
+			y: 0.0d,
+			dependencies: ["4FBAB657D89F2EE2"],
 			id: "74CCA4AF36E587A6",
 			tasks: [{
 				id: "3CF5961C21F0BAD0",
@@ -72,7 +84,7 @@
 			}]
 		},
 		{
-			x: -10.0d,
+			x: -7.5d,
 			y: -1.0d,
 			dependencies: [
 				"6CC0325BEFA21C3A",
@@ -84,6 +96,458 @@
 				type: "item",
 				item: "engineersdecor:small_block_breaker"
 			}]
+		},
+		{
+			title: "Dig out pebbles",
+			x: -21.5d,
+			y: -1.0d,
+			subtitle: "Right click on stone with an empty hand to get some pebbles",
+			id: "32C7C71A34A9B34E",
+			tasks: [{
+				id: "5591C649D7CB491F",
+				type: "item",
+				item: "botania:pebble",
+				count: 4L
+			}]
+		},
+		{
+			title: "First cobblestone",
+			x: -20.0d,
+			y: -1.0d,
+			subtitle: "Combine 4 pebbles to create 1 cobblestone",
+			dependencies: ["32C7C71A34A9B34E"],
+			id: "761DBA619422B898",
+			tasks: [{
+				id: "59B36C3E79318A2F",
+				type: "item",
+				item: "minecraft:cobblestone"
+			}]
+		},
+		{
+			title: "Let's start with stone pickaxe parts",
+			x: -17.0d,
+			y: -2.5d,
+			subtitle: "Create them using blank patterns and cobblestone in part builder",
+			dependencies: ["7DB43AAD78BFDCCA"],
+			id: "3D8D4CDE1F8C5A57",
+			tasks: [
+				{
+					id: "24CAF006BCF93BA0",
+					type: "item",
+					item: {
+						id: "tconstruct:pickaxe_head",
+						Count: 1b,
+						tag: {
+							Material: "tconstruct:stone"
+						}
+					}
+				},
+				{
+					id: "15B696BD8D0D3ACE",
+					type: "item",
+					item: {
+						id: "tconstruct:tool_binding",
+						Count: 1b,
+						tag: {
+							Material: "tconstruct:stone"
+						}
+					}
+				},
+				{
+					id: "2594EFA699C53B47",
+					type: "item",
+					item: {
+						id: "tconstruct:tool_handle",
+						Count: 1b,
+						tag: {
+							Material: "tconstruct:stone"
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Mining time!",
+			x: -17.0d,
+			y: -1.0d,
+			subtitle: "Combine tool parts in the tinker station to create a pickaxe. You can also repair it there by inserting your tool and material its made out of (cobblestone). Later on you can also exchange some parts to upgrade your pickaxe.",
+			dependencies: ["3D8D4CDE1F8C5A57"],
+			id: "0F1A826EBBBCF62A",
+			tasks: [{
+				id: "394595350CD8D4DC",
+				type: "item",
+				item: {
+					id: "tconstruct:pickaxe",
+					Count: 1b,
+					tag: {
+						tic_stats: {
+							mining_speed: 4.4f,
+							attack: 2.0f,
+							reach: 5.0f,
+							durability: 104,
+							attack_speed: 1.2f,
+							harvest_level: 1
+						},
+						tic_broken: 0b,
+						tic_modifiers: [{
+							name: "tconstruct:stonebound",
+							level: 3s
+						}],
+						tic_materials: [
+							"tconstruct:stone",
+							"tconstruct:stone",
+							"tconstruct:stone"
+						],
+						Damage: 0,
+						tic_persistent_data: {
+							abilities: 1,
+							traits: 0,
+							upgrades: 3
+						}
+					}
+				}
+			}]
+		},
+		{
+			title: "Getting wood is... different here",
+			x: -18.5d,
+			y: -1.0d,
+			subtitle: "Throw cobblestone on the ground and wait around 30 seconds",
+			dependencies: ["761DBA619422B898"],
+			id: "674C4BAB321F86BF",
+			tasks: [{
+				id: "13A89C75D2BDAB00",
+				type: "item",
+				title: "Any #minecraft:logs",
+				tags: ["logs"],
+				item: {
+					id: "itemfilters:tag",
+					Count: 1b,
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+			}]
+		},
+		{
+			title: "Time to get some tools",
+			x: -18.5d,
+			y: -2.5d,
+			subtitle: "Crafting station preserves items when you close crafting grid",
+			dependencies: ["674C4BAB321F86BF"],
+			id: "2F44ED5EC675D3D4",
+			tasks: [
+				{
+					id: "3939CE656A43F99B",
+					type: "item",
+					item: "tconstruct:crafting_station"
+				},
+				{
+					id: "66F8C88712090352",
+					type: "item",
+					item: "tconstruct:pattern",
+					count: 9L
+				}
+			]
+		},
+		{
+			title: "And tinker station will let you combine them",
+			x: -17.0d,
+			y: -4.0d,
+			dependencies: ["47490CCEB8E427E5"],
+			id: "7DB43AAD78BFDCCA",
+			tasks: [{
+				id: "33ADC75735BA09E6",
+				type: "item",
+				item: {
+					id: "tconstruct:tinker_station",
+					Count: 1b,
+					tag: {
+						texture: "minecraft:oak_planks"
+					}
+				}
+			}]
+		},
+		{
+			title: "Part builder will let you create tool parts",
+			x: -18.5d,
+			y: -4.0d,
+			subtitle: "You won't be able to create vanilla tools here",
+			dependencies: ["2F44ED5EC675D3D4"],
+			id: "47490CCEB8E427E5",
+			tasks: [{
+				id: "315242D84A537BB6",
+				type: "item",
+				item: {
+					id: "tconstruct:part_builder",
+					Count: 1b,
+					tag: {
+						texture: "minecraft:oak_planks"
+					}
+				}
+			}]
+		},
+		{
+			title: "Bloody hell",
+			x: -14.0d,
+			y: -1.0d,
+			subtitle: "To get water, dirt or lava in this world we will need some kind of magic... You can get blood into the altar by either stabbing yourself with sacrificial knife or killing monsters near altar with dagger of sacrifice",
+			dependencies: ["18B0E187B3B0B0DD"],
+			id: "5F97DEFC2F171248",
+			tasks: [{
+				id: "6906807BA731DDB2",
+				type: "item",
+				item: "bloodmagic:altar"
+			}],
+			rewards: [
+				{
+					id: "236781BB041B154E",
+					type: "item",
+					item: "bloodmagic:daggerofsacrifice"
+				},
+				{
+					id: "66AE2437ECD9A745",
+					type: "item",
+					item: {
+						id: "simplemagnets:basicmagnet",
+						Count: 1b,
+						tag: {}
+					}
+				},
+				{
+					id: "6B16A310E676EB1A",
+					type: "item",
+					item: {
+						id: "patchouli:guide_book",
+						Count: 1b,
+						tag: {
+							"patchouli:book": "bloodmagic:guide"
+						}
+					}
+				},
+				{
+					id: "30CD9B444B187648",
+					type: "item",
+					item: {
+						id: "bloodmagic:sacrificialdagger",
+						Count: 1b,
+						tag: {}
+					}
+				}
+			]
+		},
+		{
+			title: "Upgrade #1",
+			x: -12.5d,
+			y: -1.0d,
+			subtitle: "We will need to upgrade altar to at least tier III to get water or lava. You can see what this structure looks like in sanguine scientiem.",
+			dependencies: ["5F97DEFC2F171248"],
+			id: "65D9548ADD45ED8E",
+			tasks: [{
+				id: "34EDF495792EB8BD",
+				type: "item",
+				item: "bloodmagic:blankrune",
+				count: 8L
+			}]
+		},
+		{
+			x: -14.0d,
+			y: 0.5d,
+			dependencies: ["5F97DEFC2F171248"],
+			id: "00776BA8447A22E1",
+			tasks: [{
+				id: "4EC4525597ABF65B",
+				type: "item",
+				item: "minecraft:dirt"
+			}]
+		},
+		{
+			title: "What to do with all this junk",
+			x: -15.5d,
+			y: -2.5d,
+			subtitle: "Dunk storage is like backpack with large storage capabilities. Create one to store all this junk you get from mining. You can also upgrade it.",
+			dependencies: ["18B0E187B3B0B0DD"],
+			id: "3163D21E216F5B1C",
+			tasks: [{
+				id: "5C91E300C1A9AC57",
+				type: "item",
+				item: "dankstorage:dank_1"
+			}]
+		},
+		{
+			title: "Road to better tools",
+			x: -15.5d,
+			y: 0.5d,
+			dependencies: ["18B0E187B3B0B0DD"],
+			id: "21CA38AC9AF9EDE2",
+			tasks: [
+				{
+					id: "6D925B4CF0B1D55B",
+					type: "item",
+					item: "tconstruct:seared_cobble"
+				},
+				{
+					id: "502E250594335047",
+					type: "item",
+					item: "tconstruct:seared_stone"
+				}
+			]
+		},
+		{
+			x: -15.5d,
+			y: 2.0d,
+			dependencies: ["21CA38AC9AF9EDE2"],
+			id: "3A44C74978569596",
+			tasks: [{
+				id: "7746EBF5E2D680AA",
+				type: "item",
+				item: "minecraft:stonecutter"
+			}]
+		},
+		{
+			title: "Cut seared stone into bricks",
+			x: -15.5d,
+			y: 3.5d,
+			dependencies: ["3A44C74978569596"],
+			id: "10629E1FB3F75B96",
+			tasks: [{
+				id: "0208D1676D5D95BC",
+				type: "item",
+				item: "tconstruct:seared_brick"
+			}]
+		},
+		{
+			x: -15.5d,
+			y: 5.0d,
+			dependencies: [
+				"10629E1FB3F75B96",
+				"583715F9E4B88636"
+			],
+			id: "1D7CC4CEDB9508F0",
+			tasks: [
+				{
+					id: "2BCCE41DB69559B9",
+					type: "item",
+					item: "tconstruct:seared_heater"
+				},
+				{
+					id: "35514A75E64CDBAA",
+					type: "item",
+					item: "tconstruct:melter"
+				}
+			]
+		},
+		{
+			title: "Time to get something to eat",
+			x: -14.0d,
+			y: 2.0d,
+			subtitle: "Throw dirt on the ground and wait around 15 seconds to get random seed",
+			dependencies: ["00776BA8447A22E1"],
+			id: "3827F00A3A367375",
+			tasks: [{
+				id: "23E8825D9B30B23A",
+				type: "item",
+				title: "Any #forge:seeds",
+				item: {
+					id: "itemfilters:tag",
+					Count: 1b,
+					tag: {
+						value: "forge:seeds"
+					}
+				}
+			}]
+		},
+		{
+			x: -17.0d,
+			y: 0.5d,
+			dependencies: ["18B0E187B3B0B0DD"],
+			id: "0C225D964C049B89",
+			tasks: [{
+				id: "3D6D8DD9176CFA3C",
+				type: "item",
+				item: "create:andesite_alloy"
+			}]
+		},
+		{
+			x: -17.0d,
+			y: 2.0d,
+			dependencies: ["0C225D964C049B89"],
+			id: "151E347A13AE9885",
+			tasks: [
+				{
+					id: "6FE6AC68F95D06CE",
+					type: "item",
+					item: "create:windmill_bearing"
+				},
+				{
+					id: "773F9B7420D0879E",
+					type: "item",
+					item: "create:sail_frame",
+					count: 8L
+				}
+			],
+			rewards: [{
+				id: "0A76709E419BBD50",
+				type: "item",
+				item: "create:wrench"
+			}]
+		},
+		{
+			x: -17.0d,
+			y: 3.5d,
+			dependencies: ["151E347A13AE9885"],
+			id: "32DB779395CF2CB7",
+			tasks: [{
+				id: "3D60C7BE76640AB3",
+				type: "item",
+				item: "create:crushing_wheel"
+			}]
+		},
+		{
+			x: -17.0d,
+			y: 5.0d,
+			dependencies: ["32DB779395CF2CB7"],
+			id: "583715F9E4B88636",
+			tasks: [{
+				id: "0B24FF84D6A7B355",
+				type: "item",
+				item: "minecraft:sand"
+			}]
+		},
+		{
+			x: -11.0d,
+			y: -1.0d,
+			dependencies: ["65D9548ADD45ED8E"],
+			id: "634357134F3F4DB0",
+			tasks: [{
+				id: "63D768C489367320",
+				type: "item",
+				item: "bloodmagic:blankrune"
+			}]
+		},
+		{
+			x: -9.5d,
+			y: -1.0d,
+			dependencies: ["634357134F3F4DB0"],
+			id: "4FBAB657D89F2EE2",
+			tasks: [
+				{
+					id: "352E78B46CCE2357",
+					type: "item",
+					item: "bloodmagic:ritualstone",
+					count: 4L
+				},
+				{
+					id: "0AB5C9027F414D6D",
+					type: "item",
+					item: "bloodmagic:masterritualstone"
+				},
+				{
+					id: "2D81FDC5F39F7122",
+					type: "item",
+					item: "bloodmagic:activationcrystalweak"
+				}
+			]
 		}
 	]
 }

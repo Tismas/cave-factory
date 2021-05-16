@@ -1,18 +1,18 @@
 {
 	id: "009B29948DDFF001",
 	group: "",
-	order_index: 2,
+	order_index: 3,
 	filename: "magic",
-	title: "Magic",
+	title: "Exploration",
 	default_quest_shape: "",
 	quests: [{
-		x: -3.0d,
-		y: 0.5d,
-		id: "7ACD0DB5851EC154",
+		x: -2.5d,
+		y: 1.0d,
+		id: "54E4F67C49D8034A",
 		tasks: [{
-			id: "27B0E067307CCE69",
-			type: "item",
-			item: "bloodmagic:altar"
+			id: "5A3EBB8573A0EB73",
+			type: "dimension",
+			dimension: "twilightforest:twilightforest"
 		}]
 	}]
 }

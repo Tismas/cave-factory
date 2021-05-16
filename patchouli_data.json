@@ -1,0 +1,36 @@
+{
+  "bookGuiScale": 0,
+  "clickedVisualize": false,
+  "bookData": {
+    "bloodmagic:guide": {
+      "viewedEntries": [
+        "bloodmagic:rituals/ritual_list/ritual_harvest",
+        "bloodmagic:rituals/ritual_list/ritual_crystal_harvest",
+        "bloodmagic:rituals/ritual_list/ritual_ellipse",
+        "bloodmagic:rituals/ritual_list/ritual_crystal_split",
+        "bloodmagic:rituals/ritual_list/ritual_armour_evolve",
+        "bloodmagic:rituals/ritual_list/ritual_magnetic",
+        "bloodmagic:rituals/ritual_list/ritual_regeneration",
+        "bloodmagic:rituals/ritual_list/ritual_crushing",
+        "bloodmagic:rituals/ritual_list/ritual_feathered_knife",
+        "bloodmagic:rituals/ritual_list/ritual_water",
+        "bloodmagic:altar/blood_altar"
+      ],
+      "bookmarks": [],
+      "history": [
+        "bloodmagic:altar/blood_altar",
+        "bloodmagic:rituals/ritual_list/ritual_water",
+        "bloodmagic:rituals/ritual_list/ritual_feathered_knife",
+        "bloodmagic:rituals/ritual_list/ritual_crushing",
+        "bloodmagic:rituals/ritual_list/ritual_regeneration",
+        "bloodmagic:rituals/ritual_list/ritual_magnetic",
+        "bloodmagic:rituals/ritual_list/ritual_armour_evolve",
+        "bloodmagic:rituals/ritual_list/ritual_crystal_split",
+        "bloodmagic:rituals/ritual_list/ritual_ellipse",
+        "bloodmagic:rituals/ritual_list/ritual_crystal_harvest",
+        "bloodmagic:rituals/ritual_list/ritual_harvest"
+      ],
+      "completedManualQuests": []
+    }
+  }
+}

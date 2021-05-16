@@ -1,8 +1,8 @@
-[12:06:53] [Render thread/INFO] [JMLogger] JourneyMap log initialized.
-[12:06:53] [Render thread/INFO] [JourneymapClient] initialize ENTER
-[12:06:53] [Render thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
-[12:06:53] [Render thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): splashViewed=null
-[12:06:53] [Render thread/INFO] [?] Version: JourneyMap 1.16.5-5.7.1, built with Forge 1.16.5-36.0.42
+[10:57:06] [Render thread/INFO] [JMLogger] JourneyMap log initialized.
+[10:57:06] [Render thread/INFO] [JourneymapClient] initialize ENTER
+[10:57:07] [Render thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[10:57:07] [Render thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): splashViewed=null
+[10:57:07] [Render thread/INFO] [?] Version: JourneyMap 1.16.5-5.7.1, built with Forge 1.16.5-36.0.42
 Forge: 36.1.16
 Environment: os.name, os.arch, java.version, user.country, user.language=null, game language=en_us, locale=en_us
 Features: 
@@ -19,18 +19,18 @@ FullMapProperties{state=Valid, file=journeymap.fullmap.config, configVersion=5.7
 WaypointProperties{state=Valid, file=journeymap.waypoint.config, configVersion=5.7.1, autoRemoveDeathpointDistance=2, createDeathpoints=true, showName=true, dateFormat=MM-dd-yyyy, autoRemoveDeathpoints=false, maxDistance=0, autoHideLabel=true, teleportCommand=/tp {name} {x} {y} {z}, showStaticBeam=true, fullscreenDoubleClickToCreate=true, minDistance=4, timeFormat=HH:mm:ss, boldLabel=false, textureSmall=true, showDeathpointlabel=true, showDistance=true, showRotatingBeam=true, fontScale=2, showTexture=true, managerEnabled=true, beaconEnabled=true}
 WebMapProperties{state=Valid, file=journeymap.webmap.config, configVersion=5.7.1, zoomLevel=0, showWaypoints=true, showCaves=true, showSelf=true, port=8080, showGrid=true, showEntityNames=true, enabled=false, preferredMapType=day}
 CoreProperties{state=Valid, file=journeymap.core.config, configVersion=5.7.1, verboseColorPalette=false, maxPlayersData=32, mapSurfaceAboveCaves=true, optionsManagerViewed=null, announceMod=true, colorPassive=#bbbbbb, renderOverlayEventTypeName=ALL, mapBlendWater=false, renderDistanceSurfaceMax=7, radarVerticalDistance=16, mapBlendGrass=true, recordCacheStats=false, hideSneakingEntities=true, revealShape=jm.minimap.shape_circle, alwaysMapSurface=false, colorVillager=#88e188, mapPlants=false, colorPet=#0077ff, radarLateralDistance=64, mapBathymetry=false, mapCrops=true, maxMobsData=32, mapPlantShadows=false, alwaysMapCaves=false, checkUpdates=true, browserPoll=2000, mapBlendFoliage=true, mappingEnabled=true, colorPlayer=#ffffff, tileHighDisplayQuality=true, cacheVillagersData=2200, logLevel=INFO, maxVillagersData=32, maxAnimalsData=32, mapTransparency=true, tileRenderType=1, caveIgnoreGlass=true, mapTopography=true, renderDistanceCaveMax=3, mapAntialiasing=true, colorSelf=#0000ff, cachePlayersData=2000, cacheMobsData=3000, cachePlayerData=1000, splashViewed=null, colorHostile=#ff0000, cacheAnimalsData=3100, themeName=OceanMonument, mapCaveLighting=true, renderDelay=2, renderOverlayPreEvent=true, autoMapPoll=2000}
-[12:06:53] [Render thread/INFO] [ClientAPI] [ClientAPI] built with JourneyMap API 1.6-SNAPSHOT
-[12:06:53] [Render thread/INFO] [PluginHelper] Initializing plugins with Client API: journeymap.client.api.impl.ClientAPI
-[12:06:53] [Render thread/INFO] [JourneymapClient] initialize EXIT, elapsed count 0 avg ?ms
-[12:06:54] [Render thread/ERROR] [FileHandler] Couldn't locate icons for Default: C:\Users\adams\Documents\curseforge\minecraft\Instances\Stone%20Factory\mods\journeymap-1.16.5-5.7.1.jar\assets\journeymap\icon\entity
-[12:06:54] [Render thread/INFO] [IconSetFileHandler] Added entity icons from journeymap:icon/entity. Success: false
-[12:06:54] [Render thread/ERROR] [FileHandler] Couldn't locate icons for flat: C:\Users\adams\Documents\curseforge\minecraft\Instances\Stone%20Factory\mods\journeymap-1.16.5-5.7.1.jar\assets\journeymap\theme\flat
-[12:06:54] [Render thread/INFO] [ThemeLoader] Preloaded theme textures: 0
-[12:06:54] [JM-VersionCheck-1/WARN] [VersionCheck$1] No versions found online for 1.16.5
-[12:07:16] [Server thread/INFO] [ForgeConfig] Loading JourneyMap Forge Configs
-[12:07:24] [Render thread/INFO] [ChatLog] 
-[12:07:24] [Render thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
-[12:07:24] [Render thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): splashViewed=null
-[12:07:24] [Render thread/INFO] [WaypointStore] Loaded 0 waypoints from C:\Users\adams\Documents\curseforge\minecraft\Instances\Stone Factory\journeymap\data\sp\New World\waypoints
-[12:07:24] [Render thread/INFO] [JourneymapClient] Mapping started in C:\Users\adams\Documents\curseforge\minecraft\Instances\Stone Factory\journeymap\data\sp\New World\overworld. Memory: 5325MB total, 1548MB free 
-[12:26:21] [Render thread/INFO] [JourneymapClient] Mapping halted in C:\Users\adams\Documents\curseforge\minecraft\Instances\Stone Factory\journeymap\data\mp\offline\minecraft:overworld
+[10:57:07] [Render thread/INFO] [ClientAPI] [ClientAPI] built with JourneyMap API 1.6-SNAPSHOT
+[10:57:07] [Render thread/INFO] [PluginHelper] Initializing plugins with Client API: journeymap.client.api.impl.ClientAPI
+[10:57:07] [Render thread/INFO] [JourneymapClient] initialize EXIT, elapsed count 0 avg ?ms
+[10:57:07] [Render thread/ERROR] [FileHandler] Couldn't locate icons for Default: C:\Users\adams\Documents\curseforge\minecraft\Instances\Stone%20Factory\mods\journeymap-1.16.5-5.7.1.jar\assets\journeymap\icon\entity
+[10:57:07] [Render thread/INFO] [IconSetFileHandler] Added entity icons from journeymap:icon/entity. Success: false
+[10:57:07] [Render thread/ERROR] [FileHandler] Couldn't locate icons for flat: C:\Users\adams\Documents\curseforge\minecraft\Instances\Stone%20Factory\mods\journeymap-1.16.5-5.7.1.jar\assets\journeymap\theme\flat
+[10:57:07] [Render thread/INFO] [ThemeLoader] Preloaded theme textures: 0
+[10:57:07] [JM-VersionCheck-1/WARN] [VersionCheck$1] No versions found online for 1.16.5
+[10:57:35] [Server thread/INFO] [ForgeConfig] Loading JourneyMap Forge Configs
+[10:57:44] [Render thread/INFO] [ChatLog] 
+[10:57:44] [Render thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[10:57:44] [Render thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): splashViewed=null
+[10:57:44] [Render thread/INFO] [WaypointStore] Loaded 0 waypoints from C:\Users\adams\Documents\curseforge\minecraft\Instances\Stone Factory\journeymap\data\sp\New World ~1~\waypoints
+[10:57:44] [Render thread/INFO] [JourneymapClient] Mapping started in C:\Users\adams\Documents\curseforge\minecraft\Instances\Stone Factory\journeymap\data\sp\New World ~1~\overworld. Memory: 5283MB total, 1151MB free 
+[10:58:00] [Render thread/INFO] [JourneymapClient] Mapping halted in C:\Users\adams\Documents\curseforge\minecraft\Instances\Stone Factory\journeymap\data\mp\offline\minecraft:overworld

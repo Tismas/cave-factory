@@ -1,0 +1,9 @@
+{
+	id: "2789AD7E2E55B8AB",
+	group: "",
+	order_index: 1,
+	filename: "mechanical_power",
+	title: "Mechanical power",
+	default_quest_shape: "",
+	quests: []
+}
