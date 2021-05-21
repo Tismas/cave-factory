@@ -30,10 +30,10 @@
 	Oddities = true
 	Tweaks = true
 	Experimental = true
-	Mobs = true
+	Mobs = false
 	Tools = true
 	Management = true
-	World = true
+	World = false
 	Client = true
 
 [automation]

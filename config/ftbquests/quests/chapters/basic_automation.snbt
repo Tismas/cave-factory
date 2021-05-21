@@ -181,17 +181,23 @@
 					tag: {
 						tic_stats: {
 							mining_speed: 4.4f,
-							attack: 2.0f,
+							attack: 1.0f,
 							reach: 5.0f,
 							durability: 104,
 							attack_speed: 1.2f,
 							harvest_level: 1
 						},
 						tic_broken: 0b,
-						tic_modifiers: [{
-							name: "tconstruct:stonebound",
-							level: 3s
-						}],
+						tic_modifiers: [
+							{
+								name: "tconstruct:piercing",
+								level: 2s
+							},
+							{
+								name: "tconstruct:stonebound",
+								level: 3s
+							}
+						],
 						tic_materials: [
 							"tconstruct:stone",
 							"tconstruct:stone",
@@ -454,6 +460,11 @@
 						value: "forge:seeds"
 					}
 				}
+			}],
+			rewards: [{
+				id: "1B149602833C6621",
+				type: "item",
+				item: "bountifulbaubles:apple"
 			}]
 		},
 		{

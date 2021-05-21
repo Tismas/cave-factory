@@ -13,6 +13,7 @@ const toolsToRemove = ["pickaxe", "axe", "shovel", "hoe", "sword"];
 
 onEvent("recipes", (event) => {
   event.shapeless("minecraft:cobblestone", new Array(4).fill("botania:pebble"));
+  event.replaceInput({}, "#forge:tools", "minecraft:iron_block");
 
   event.smelting("minecraft:granite", "create:granite_cobblestone");
   event.smelting("minecraft:diorite", "create:diorite_cobblestone");

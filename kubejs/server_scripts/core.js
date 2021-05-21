@@ -41,16 +41,6 @@ function spawnFromPool(world, itemPool, count, x, y, z) {
   });
 }
 
-const seedsPool = Item.list
-  .filter(
-    (item) =>
-      item.tags.toArray().filter((tag) => tag.toString() == "forge:seeds")
-        .length > 0
-  )
-  .toArray()
-  .map((item) => item.toString())
-  .map((item) => item.slice(1, item.length() - 1))
-  .concat(["minecraft:sugar_cane"]);
 const logsPool = [
   "minecraft:oak_log",
   "minecraft:spruce_log",
@@ -60,30 +50,45 @@ const logsPool = [
   "minecraft:dark_oak_log",
 ];
 const exchangeMap = {
-  "minecraft:cobblestone": { pool: logsPool, delay: 5 * 20 },
-  "minecraft:dirt": { pool: seedsPool, delay: 5 * 20 },
+  "minecraft:cobblestone": { pool: logsPool, delay: 30 * 20 },
+  "minecraft:dirt": { pool: null, delay: 15 * 20 },
 };
 onEvent("entity.spawned", (event) => {
   const { entity } = event;
 
   if (entity.item) {
-    Object.keys(exchangeMap).forEach((key) => {
-      if (entity.item.equals(key)) {
-        const { pool, delay } = exchangeMap[key];
-        event.server.scheduleInTicks(delay, entity, function (_) {
-          if (!entity || !entity.item || !entity.alive) return;
-          spawnFromPool(
-            event.world,
-            pool,
-            entity.item.count,
-            entity.x,
-            entity.y,
-            entity.z
-          );
-          entity.kill();
-        });
+    if (entity.item.id in exchangeMap) {
+      if (!exchangeMap["minecraft:dirt"].pool) {
+        exchangeMap["minecraft:dirt"].pool = Item.list
+          .filter(
+            (item) =>
+              item.tags
+                .toArray()
+                .filter((tag) => tag.toString() == "forge:seeds").length > 0
+          )
+          .toArray()
+          .map((item) => item.toString())
+          .map((item) => item.slice(1, item.length() - 1))
+          .concat(["minecraft:sugar_cane"]);
       }
-    });
+      Object.keys(exchangeMap).forEach((key) => {
+        if (entity.item.equals(key)) {
+          const { pool, delay } = exchangeMap[key];
+          event.server.scheduleInTicks(delay, entity, function (_) {
+            if (!entity || !entity.item || !entity.alive) return;
+            spawnFromPool(
+              event.world,
+              pool,
+              entity.item.count,
+              entity.x,
+              entity.y,
+              entity.z
+            );
+            entity.kill();
+          });
+        }
+      });
+    }
   }
 });
 
@@ -92,13 +97,13 @@ const cobbleDrops = {
   "create:andesite_cobblestone": 40,
   "create:granite_cobblestone": 20,
   "create:diorite_cobblestone": 20,
+  "tconstruct:seared_cobble": 15,
   "create:limestone_cobblestone": 10,
   "create:weathered_limestone_cobblestone": 10,
   "create:dolomite_cobblestone": 10,
   "create:gabbro_cobblestone": 10,
   "create:scoria_cobblestone": 10,
   "create:dark_scoria_cobblestone": 10,
-  "tconstruct:seared_cobble": 4,
 };
 const stoneDrops = {
   "minecraft:air": 25,
