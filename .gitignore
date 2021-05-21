@@ -1,3 +1,6 @@
 saves
 logs
+*.log
 journeymap
+local
+.mixin.out
