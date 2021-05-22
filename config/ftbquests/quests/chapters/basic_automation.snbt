@@ -48,16 +48,6 @@
 					id: "06030350077BEF4C",
 					type: "item",
 					item: "minecraft:emerald_ore"
-				},
-				{
-					id: "526AFD959CDFE927",
-					type: "item",
-					item: "thermal:copper_ore"
-				},
-				{
-					id: "3D59E7D398D16F49",
-					type: "item",
-					item: "thermal:tin_ore"
 				}
 			]
 		},
