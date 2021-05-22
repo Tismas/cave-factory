@@ -50,6 +50,11 @@ minecraft:random_selector
 minecraft:simple_random_selector
 minecraft:random_boolean_selector
 minecraft:decorated
+apotheosis:boss_dungeon
+apotheosis:boss_dungeon_2
+apotheosis:rogue_spawner
+apotheosis:trove
+apotheosis:tome_tower
 twilightforest:big_mushgloom
 twilightforest:canopy_mushroom
 twilightforest:canopy_oak
