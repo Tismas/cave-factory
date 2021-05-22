@@ -19,6 +19,8 @@ shouldReturnPortalBeUsable = true
 progressionRuleDefault = true
 #Disable the uncrafting function of the uncrafting table. Provided as an option when interaction with other mods produces exploitable recipes.
 disableUncrafting = false
+#If true, Keepsake Caskets that are spawned when a player dies will not be accessible by other players. Use this if you dont want people taking from other people's death caskets. NOTE: server operators will still be able to open locked caskets.
+uuid_locking = false
 
 #Settings that are not reversible without consequences.
 ["Dimension Settings"]
@@ -38,12 +40,14 @@ disableUncrafting = false
 	#
 	#For example: "minecraft:iron_ore 0.7 8 1 24" would add a stalactite equal to the default iron ore stalactite.
 	["Dimension Settings"."Custom Hollow Hill Stalactites"]
-		#Blocks generating as stalactites in all hills
+		#Blocks generating as stalactites in medium and large hills
 		mediumHill = []
 		#Blocks generating as stalactites in large hills only
 		largeHill = []
 		#If true, default stalactites and stalactites defined by other mods will not be used.
 		useConfigOnly = false
+		#Blocks generating as stalactites in all hills
+		smallHill = []
 
 	#Weights for various small features
 	["Dimension Settings"."World-Gen Weights"]
