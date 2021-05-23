@@ -15,10 +15,12 @@
         "bloodmagic:rituals/ritual_list/ritual_feathered_knife",
         "bloodmagic:rituals/ritual_list/ritual_water",
         "bloodmagic:altar/blood_altar",
-        "bloodmagic:rituals/ritual_list/ritual_lava"
+        "bloodmagic:rituals/ritual_list/ritual_lava",
+        "bloodmagic:altar/blood_rune/capacity_rune"
       ],
       "bookmarks": [],
       "history": [
+        "bloodmagic:altar/blood_rune/capacity_rune",
         "bloodmagic:rituals/ritual_list/ritual_lava",
         "bloodmagic:rituals/ritual_list/ritual_water",
         "bloodmagic:altar/blood_altar",
