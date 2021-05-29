@@ -767,16 +767,22 @@
 				dimension: "minecraft:the_nether"
 			}],
 			rewards: [{
-				id: "0D92714D60E3A3AB",
+				id: "46215D97AEF63394",
 				type: "item",
-				item: "minecraft:nether_quartz_ore",
-				random_bonus: 7
+				item: {
+					id: "minecraft:golden_helmet",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
 			}]
 		},
 		{
 			title: "Clearing some space",
 			x: -6.5d,
 			y: 0.5d,
+			shape: "diamond",
 			description: ["This is a challenge. Using create make a machine that can dig space in front of it and keep moving forwards"],
 			dependencies: ["251FE836D9C631D1"],
 			id: "1C5C673AA4F24799",
@@ -1141,6 +1147,20 @@
 				id: "02C40AB03D6A146E",
 				type: "item",
 				item: "bloodmagic:weakbloodorb"
+			}],
+			rewards: [{
+				id: "06531F03B0C82BEB",
+				type: "item",
+				item: {
+					id: "minecraft:enchanted_book",
+					Count: 1b,
+					tag: {
+						StoredEnchantments: [{
+							lvl: 1s,
+							id: "minecraft:silk_touch"
+						}]
+					}
+				}
 			}]
 		},
 		{
@@ -1200,6 +1220,7 @@
 		{
 			x: -8.0d,
 			y: -4.0d,
+			description: ["By blowing air through lava you can smelt items very efficiently. It will burn food though - to cook more delicate stuff, blow air through fire."],
 			dependencies: ["6CC0325BEFA21C3A"],
 			id: "6F31CB43D28E66DB",
 			tasks: [{

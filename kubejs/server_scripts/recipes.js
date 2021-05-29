@@ -1,19 +1,7 @@
 // priority: 0
-const toolTypesToRemove = [
-  "wooden",
-  "stone",
-  "golden",
-  "iron",
-  "diamond",
-  "netherite",
-  "appliedenergistics2:certus_quartz",
-  "appliedenergistics2:nether_quartz",
-];
-const toolsToRemove = ["pickaxe", "axe", "shovel", "hoe", "sword"];
 
 onEvent("recipes", (event) => {
   event.shapeless("minecraft:cobblestone", new Array(4).fill("botania:pebble"));
-  event.replaceInput({}, "#forge:tools", "minecraft:iron_block");
 
   event.smelting("minecraft:granite", "create:granite_cobblestone");
   event.smelting("minecraft:diorite", "create:diorite_cobblestone");
@@ -30,23 +18,19 @@ onEvent("recipes", (event) => {
 
   event.stonecutting("4x tconstruct:seared_brick", "tconstruct:seared_stone");
   event.remove({ output: "create:mechanical_crafter" });
-  event.shaped("8x create:mechanical_crafter", ["SSS", "S S", "SSS"], {
+  event.shaped("7x create:mechanical_crafter", ["SSS", " S ", "SSS"], {
     S: "minecraft:crafting_table",
   });
   event.recipes.create.crushing(
-    [Item.of("minecraft:glowstone_dust").withChance(0.5)],
+    Item.of("minecraft:glowstone_dust").withChance(0.5),
     "minecraft:torch"
   );
+  event.recipes.create.mixing(
+    Fluid.of("minecraft:water", 250),
+    "minecraft:cactus"
+  );
 
-  toolsToRemove.forEach((tool) => {
-    toolTypesToRemove.forEach((toolType) => {
-      event.remove({ output: `${toolType}_${tool}` });
-    });
-    event.remove({ output: `immersiveengineering:${tool}_steel` });
-  });
-
-  const { altar, array, soulforge, arc, alchemytable } =
-    event.recipes.bloodmagic;
+  const { altar } = event.recipes.bloodmagic;
   event.shaped("4x bloodmagic:ritualstone", ["BRB", "ROR", "BRB"], {
     B: "bloodmagic:blankslate",
     R: "bloodmagic:reinforcedslate",

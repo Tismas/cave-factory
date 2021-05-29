@@ -92,10 +92,10 @@ onEvent("entity.spawned", (event) => {
 
 const cobbleDrops = {
   "minecraft:cobblestone": 100,
-  "create:andesite_cobblestone": 40,
-  "create:granite_cobblestone": 20,
-  "create:diorite_cobblestone": 20,
-  "tconstruct:seared_cobble": 15,
+  "create:andesite_cobblestone": 50,
+  "create:granite_cobblestone": 50,
+  "create:diorite_cobblestone": 50,
+  "tconstruct:seared_cobble": 30,
   "create:limestone_cobblestone": 10,
   "create:weathered_limestone_cobblestone": 10,
   "create:dolomite_cobblestone": 10,
@@ -104,16 +104,16 @@ const cobbleDrops = {
   "create:dark_scoria_cobblestone": 10,
 };
 const stoneDrops = {
-  "minecraft:air": 25,
-  "minecraft:coal_ore": 15,
-  "minecraft:iron_ore": 10,
-  "minecraft:gold_ore": 10,
-  "create:copper_ore": 10,
-  "create:zinc_ore": 10,
-  "minecraft:lapis_ore": 5,
-  "minecraft:redstone_ore": 5,
-  "minecraft:emerald_ore": 1,
-  "minecraft:diamond_ore": 1,
+  "minecraft:air": 500,
+  "minecraft:coal_ore": 125,
+  "minecraft:redstone_ore": 100,
+  "minecraft:iron_ore": 75,
+  "create:copper_ore": 75,
+  "minecraft:gold_ore": 15,
+  "create:zinc_ore": 15,
+  "minecraft:lapis_ore": 10,
+  "minecraft:emerald_ore": 2,
+  "minecraft:diamond_ore": 2,
 };
 onEvent("block.loot_tables", (event) => {
   event.build("minecraft:stone", (table) => {
