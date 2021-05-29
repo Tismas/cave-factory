@@ -5,3 +5,5 @@ journeymap
 local
 .mixin.out
 crash-reports
+config/changecubes/custom_rewards
+usercache.json

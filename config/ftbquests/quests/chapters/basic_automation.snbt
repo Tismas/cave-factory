@@ -364,7 +364,7 @@
 			x: -14.0d,
 			y: -1.0d,
 			description: ["To get dirt or lava in this world we will need some kind of magic... You can get blood into the altar by either stabbing yourself with sacrificial knife or killing monsters near the altar with a dagger of sacrifice"],
-			dependencies: ["18B0E187B3B0B0DD"],
+			dependencies: ["4DC65609C04853D7"],
 			id: "5F97DEFC2F171248",
 			tasks: [{
 				id: "6906807BA731DDB2",
@@ -1087,7 +1087,7 @@
 				"Some item's will require unconventional methods of crafting.",
 				"Assemble crafters in a pattern shown in JEI and power it with a cog.",
 				"",
-				"Direction of items is defined by the arrows on each crafter. They need to connect in one a final spot where crafter arrow is pointing to an external space - ideally a chest/barrel."
+				"Direction of item movement is defined by the arrows on each crafter. They need to connect in one a final spot where crafter arrow is pointing to an external space - ideally a chest/barrel."
 			],
 			dependencies: ["151E347A13AE9885"],
 			id: "204AE33BC9E509AC",
@@ -1219,6 +1219,18 @@
 				id: "6EFA13470A3DB89E",
 				type: "item",
 				item: "create:encased_fan"
+			}]
+		},
+		{
+			x: -15.5d,
+			y: -1.0d,
+			description: ["Before getting crushing wheels you need to place ores and break them again"],
+			dependencies: ["18B0E187B3B0B0DD"],
+			id: "4DC65609C04853D7",
+			tasks: [{
+				id: "3A32FF89A16EA73F",
+				type: "item",
+				item: "minecraft:coal"
 			}]
 		}
 	]
