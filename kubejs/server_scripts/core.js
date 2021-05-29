@@ -6,8 +6,12 @@ settings.logSkippedRecipes = false;
 settings.logErroringRecipes = true;
 
 onEvent("block.right_click", (event) => {
-  const { block, hand, item, world } = event;
-  if (hand.name() == "MAIN_HAND" && item.toString() == "item.empty") {
+  const { block, hand, item, world, player } = event;
+  if (
+    hand.name() == "MAIN_HAND" &&
+    item.toString() == "item.empty" &&
+    player.isCrouching()
+  ) {
     if (block.equals("minecraft:stone")) {
       const entity = world.createEntity("item");
       entity.item = "botania:pebble";
@@ -60,9 +64,18 @@ const seedsPool = [
   "minecraft:bamboo",
   "minecraft:sweet_berries",
 ];
+const mobDropsPool = [
+  "minecraft:bone",
+  "minecraft:gunpowder",
+  "minecraft:spider_eye",
+  "minecraft:string",
+  "minecraft:ender_pearl",
+  "minecraft:slime_ball",
+];
 const exchangeMap = {
   "minecraft:cobblestone": { pool: logsPool, delay: 30 * 20 },
   "minecraft:dirt": { pool: seedsPool, delay: 15 * 20 },
+  "minecraft:rotten_flesh": { pool: mobDropsPool, delay: 30 * 20 },
 };
 onEvent("entity.spawned", (event) => {
   const { entity } = event;
@@ -95,13 +108,13 @@ const cobbleDrops = {
   "create:andesite_cobblestone": 50,
   "create:granite_cobblestone": 50,
   "create:diorite_cobblestone": 50,
-  "tconstruct:seared_cobble": 30,
-  "create:limestone_cobblestone": 10,
-  "create:weathered_limestone_cobblestone": 10,
-  "create:dolomite_cobblestone": 10,
-  "create:gabbro_cobblestone": 10,
-  "create:scoria_cobblestone": 10,
-  "create:dark_scoria_cobblestone": 10,
+  "tconstruct:seared_cobble": 40,
+  "create:limestone_cobblestone": 20,
+  "create:weathered_limestone_cobblestone": 20,
+  "create:dolomite_cobblestone": 20,
+  "create:gabbro_cobblestone": 20,
+  "create:scoria_cobblestone": 20,
+  "create:dark_scoria_cobblestone": 20,
 };
 const stoneDrops = {
   "minecraft:air": 500,

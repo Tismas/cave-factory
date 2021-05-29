@@ -1107,7 +1107,9 @@
 				"Your mission here is to create undeground factory and automate as many things as you can.",
 				"",
 				"In the overworld you'll find only stone. The ceiling is made from beadrock though.",
-				"Feel free to dig around but you'll not find any strucutres underground."
+				"Feel free to dig around but you'll not find any strucutres underground.",
+				"",
+				"Diamond shaped quests are challenges"
 			],
 			id: "061A729FEE740077",
 			tasks: [{
@@ -1231,6 +1233,102 @@
 				id: "3A32FF89A16EA73F",
 				type: "item",
 				item: "minecraft:coal"
+			}]
+		},
+		{
+			x: -9.5d,
+			y: 2.5d,
+			shape: "diamond",
+			description: [
+				"Challenge #1",
+				"",
+				"Using create make an automatic farm producing kelp, dried kelp, dried kelp blocks and belts"
+			],
+			id: "79C2F58DE6E68D0B",
+			tasks: [{
+				id: "06FEAB4545479434",
+				type: "checkmark",
+				title: "Automatic kelp farm"
+			}]
+		},
+		{
+			x: -6.5d,
+			y: -1.0d,
+			dependencies: ["251FE836D9C631D1"],
+			id: "1C1569085B97A270",
+			tasks: [{
+				id: "4F55C70882178379",
+				type: "item",
+				item: "storagedrawers:controller"
+			}],
+			rewards: [
+				{
+					id: "20780CC9DF58482A",
+					type: "item",
+					item: "storagedrawers:drawer_key"
+				},
+				{
+					id: "702934075EC19CB7",
+					type: "item",
+					item: "storagedrawers:quantify_key"
+				}
+			]
+		},
+		{
+			x: -20.0d,
+			y: -2.5d,
+			description: ["Also by throwing rotten flesh on the ground you'll get random mob drops"],
+			dependencies: ["674C4BAB321F86BF"],
+			id: "1C4AB4D81A397289",
+			tasks: [
+				{
+					id: "0019CE9E7097BBF1",
+					type: "item",
+					item: "minecraft:gunpowder"
+				},
+				{
+					id: "71E76A49FFF245AC",
+					type: "item",
+					item: "minecraft:spider_eye"
+				},
+				{
+					id: "0FBB3F932F069D42",
+					type: "item",
+					item: "minecraft:bone"
+				},
+				{
+					id: "2433179EE3ADA199",
+					type: "item",
+					item: "minecraft:string"
+				},
+				{
+					id: "6ED28BA906E3E823",
+					type: "item",
+					item: "minecraft:ender_pearl"
+				},
+				{
+					id: "5C61343A67A8A983",
+					type: "item",
+					item: "minecraft:slime_ball"
+				}
+			]
+		},
+		{
+			x: -8.5d,
+			y: 2.5d,
+			shape: "diamond",
+			description: [
+				"Challenge #2",
+				"",
+				"Make an automatic ore processing system with crushing, washing and compacting nuggets into ingots and products sorted into correct chests/drawers",
+				"",
+				"Once you have automatic cobble gen, make it fitler ores and send them directly to ore processing system"
+			],
+			id: "34DC872380F17BB2",
+			tasks: [{
+				id: "6785E551E84F0540",
+				type: "checkmark",
+				title: "Ore processing"
 			}]
 		}
 	]
