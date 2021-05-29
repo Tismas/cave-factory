@@ -40,3 +40,13 @@ Util:
 - infinite storage part
 - 100k blood
 - 1k ender pearls (add enderman triggering block to bright utilities)
+
+# changelog 0.1.0
+
+- now you need to sneak to get pebbles to prevent accidental clicking on stone and getting pebbles that way
+- another way to get water - mixing cactus
+- more quests and descriptions, also changed some rewards
+- get random mob drops by throwing rotten flesh on the ground
+- bring back vanilla tools
+- adjusted drops from stone to make it more about digging at the beginning
+- added trapdors to prebuilt zombie spawner to prevent little ones from escaping

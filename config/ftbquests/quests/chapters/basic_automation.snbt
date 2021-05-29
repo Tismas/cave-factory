@@ -94,7 +94,7 @@
 			title: "Dig out pebbles",
 			x: -21.5d,
 			y: -1.0d,
-			description: ["Right click on a stone block with an empty hand to get some pebbles"],
+			description: ["Sneak right click on a stone block with an empty hand to get some pebbles"],
 			dependencies: ["061A729FEE740077"],
 			id: "32C7C71A34A9B34E",
 			tasks: [{
@@ -573,29 +573,11 @@
 			description: ["Throw dirt on the ground and wait around 15 seconds to get a random plants"],
 			dependencies: ["00776BA8447A22E1"],
 			id: "3827F00A3A367375",
-			tasks: [
-				{
-					id: "23E8825D9B30B23A",
-					type: "item",
-					title: "Any #forge:seeds",
-					item: "minecraft:sugar_cane"
-				},
-				{
-					id: "313CBCCC91B4C7F9",
-					type: "item",
-					item: "minecraft:kelp"
-				},
-				{
-					id: "3DC6B348B0CEA7AF",
-					type: "item",
-					item: "minecraft:wheat_seeds"
-				},
-				{
-					id: "010692BD9505A4AB",
-					type: "item",
-					item: "minecraft:cactus"
-				}
-			],
+			tasks: [{
+				id: "313CBCCC91B4C7F9",
+				type: "item",
+				item: "minecraft:kelp"
+			}],
 			rewards: [{
 				id: "082C777ED03C678D",
 				type: "item",
@@ -841,10 +823,10 @@
 		},
 		{
 			title: "Smelting in bulk",
-			x: -14.0d,
-			y: 5.0d,
+			x: -6.5d,
+			y: -4.0d,
 			description: ["Full version of smeltery requires lava to operate"],
-			dependencies: ["1D7CC4CEDB9508F0"],
+			dependencies: ["6CC0325BEFA21C3A"],
 			id: "0D7C514E1C1440B7",
 			tasks: [
 				{
@@ -872,8 +854,8 @@
 		},
 		{
 			title: "Iron pickaxe",
-			x: -14.0d,
-			y: 6.5d,
+			x: -12.5d,
+			y: 5.0d,
 			description: ["You cant exchange parts of your tools in the tinker station without creating whole new tools"],
 			dependencies: ["2C145DA20E4D08BD"],
 			id: "7D8AAF7AF795E177",
@@ -901,8 +883,8 @@
 			}]
 		},
 		{
-			x: -15.5d,
-			y: 6.5d,
+			x: -14.0d,
+			y: 5.0d,
 			description: ["Let's start by upgrading a pickaxe head"],
 			dependencies: ["1D7CC4CEDB9508F0"],
 			id: "2C145DA20E4D08BD",
@@ -1025,20 +1007,15 @@
 			}]
 		},
 		{
-			x: -11.0d,
-			y: 0.5d,
-			description: ["We will need some kind of vessel to cantain it"],
+			x: -9.5d,
+			y: 2.0d,
+			description: ["We will need some kind of vessel to cantain fluids in it"],
 			dependencies: ["5B9C05F62A007ACA"],
 			id: "63441E36C7195AC1",
 			tasks: [{
 				id: "302F408CCC0C1607",
 				type: "item",
 				item: "create:basin"
-			}],
-			rewards: [{
-				id: "6CABEE279BA113E5",
-				type: "item",
-				item: "create:depot"
 			}]
 		},
 		{
@@ -1119,20 +1096,19 @@
 			}]
 		},
 		{
-			x: -12.5d,
-			y: 0.5d,
-			description: ["Cactuses contain a lot of water... I've heard. Maybe we will be able to extract it using a mixer"],
-			dependencies: ["3827F00A3A367375"],
+			x: -11.0d,
+			y: 2.0d,
+			description: [
+				"Remember that you can hold 'W' with a cursor above most items from Create to see how they work",
+				"",
+				"To make it work you'll need to speed things up - mixer won't work with low rotation speed"
+			],
+			dependencies: ["1D6A8A3D6F2E252B"],
 			id: "5B9C05F62A007ACA",
 			tasks: [{
 				id: "3027A36E00004E1A",
 				type: "item",
 				item: "create:mechanical_mixer"
-			}],
-			rewards: [{
-				id: "4C9A96D0DFBF3440",
-				type: "item",
-				item: "create:mechanical_press"
 			}]
 		},
 		{
@@ -1236,8 +1212,8 @@
 			}]
 		},
 		{
-			x: -9.5d,
-			y: 2.5d,
+			x: -10.5d,
+			y: 5.0d,
 			shape: "diamond",
 			description: [
 				"Challenge #1",
@@ -1314,8 +1290,8 @@
 			]
 		},
 		{
-			x: -8.5d,
-			y: 2.5d,
+			x: -9.5d,
+			y: 5.0d,
 			shape: "diamond",
 			description: [
 				"Challenge #2",
@@ -1329,6 +1305,42 @@
 				id: "6785E551E84F0540",
 				type: "checkmark",
 				title: "Ore processing"
+			}]
+		},
+		{
+			x: -12.5d,
+			y: 2.0d,
+			description: ["Cactuses contain a lot of water... I've heard. Maybe we will be able to extract it using a mixer"],
+			dependencies: ["00776BA8447A22E1"],
+			id: "5DAA0D10D64209E5",
+			tasks: [{
+				id: "5F4782E7F623C842",
+				type: "item",
+				item: "minecraft:cactus"
+			}]
+		},
+		{
+			x: -12.5d,
+			y: 0.5d,
+			description: ["To make mixer we will need some iron plates. Mechanical press will make it possible"],
+			dependencies: ["5DAA0D10D64209E5"],
+			id: "768891E581B6597F",
+			tasks: [{
+				id: "5DF24A2F664A33AB",
+				type: "item",
+				item: "create:mechanical_press"
+			}]
+		},
+		{
+			x: -11.0d,
+			y: 0.5d,
+			description: ["Something to make plates on"],
+			dependencies: ["768891E581B6597F"],
+			id: "1D6A8A3D6F2E252B",
+			tasks: [{
+				id: "11B1CEACD8E2AC30",
+				type: "item",
+				item: "create:depot"
 			}]
 		}
 	]
