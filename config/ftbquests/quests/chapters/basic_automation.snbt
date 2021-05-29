@@ -1149,18 +1149,10 @@
 				item: "bloodmagic:weakbloodorb"
 			}],
 			rewards: [{
-				id: "06531F03B0C82BEB",
+				id: "2A99AAD8B25998F0",
 				type: "item",
-				item: {
-					id: "minecraft:enchanted_book",
-					Count: 1b,
-					tag: {
-						StoredEnchantments: [{
-							lvl: 1s,
-							id: "minecraft:silk_touch"
-						}]
-					}
-				}
+				item: "tconstruct:silky_cloth",
+				count: 5
 			}]
 		},
 		{
