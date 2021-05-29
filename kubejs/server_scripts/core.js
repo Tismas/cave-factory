@@ -32,7 +32,6 @@ function spawnFromPool(world, itemPool, count, x, y, z) {
   });
 
   Object.keys(items).forEach((item) => {
-    console.log(item);
     const entity = world.createEntity("item");
     entity.item = Item.of(item);
     entity.item.setCount(items[item]);
@@ -49,28 +48,27 @@ const logsPool = [
   "minecraft:jungle_log",
   "minecraft:dark_oak_log",
 ];
+const seedsPool = [
+  "minecraft:wheat_seeds",
+  "minecraft:carrot",
+  "minecraft:potato",
+  "minecraft:kelp",
+  "minecraft:melon_seeds",
+  "minecraft:pumpkin_seeds",
+  "minecraft:cactus",
+  "minecraft:sugar_cane",
+  "minecraft:bamboo",
+  "minecraft:sweet_berries",
+];
 const exchangeMap = {
   "minecraft:cobblestone": { pool: logsPool, delay: 30 * 20 },
-  "minecraft:dirt": { pool: null, delay: 15 * 20 },
+  "minecraft:dirt": { pool: seedsPool, delay: 15 * 20 },
 };
 onEvent("entity.spawned", (event) => {
   const { entity } = event;
 
   if (entity.item) {
     if (entity.item.id in exchangeMap) {
-      if (!exchangeMap["minecraft:dirt"].pool) {
-        exchangeMap["minecraft:dirt"].pool = Item.list
-          .filter(
-            (item) =>
-              item.tags
-                .toArray()
-                .filter((tag) => tag.toString() == "forge:seeds").length > 0
-          )
-          .toArray()
-          .map((item) => item.toString())
-          .map((item) => item.slice(1, item.length() - 1))
-          .concat(["minecraft:sugar_cane"]);
-      }
       Object.keys(exchangeMap).forEach((key) => {
         if (entity.item.equals(key)) {
           const { pool, delay } = exchangeMap[key];

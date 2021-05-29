@@ -8,89 +8,94 @@
 	quests: [
 		{
 			title: "Getting basic resources",
-			x: -15.5d,
+			x: -17.0d,
 			y: -1.0d,
-			subtitle: "By mining stone you have a chance of also getting random ores.",
+			description: [
+				"Wherever you mine you have the same chance to get random ores.",
+				"So you can make some space for your factory and find some diamonds at the same time!"
+			],
 			dependencies: ["0F1A826EBBBCF62A"],
 			id: "18B0E187B3B0B0DD",
-			tasks: [
-				{
-					id: "093C56729FAD1F81",
-					type: "item",
-					item: "minecraft:gold_ore"
-				},
-				{
-					id: "02B69DBAFF7B0B42",
-					type: "item",
-					item: "minecraft:iron_ore"
-				},
-				{
-					id: "17CA93B0DC253316",
-					type: "item",
-					item: "minecraft:coal_ore"
-				},
-				{
-					id: "66447A4DB0C74F6B",
-					type: "item",
-					item: "minecraft:lapis_ore"
-				},
-				{
-					id: "5EEE6F4AA92ACCF9",
-					type: "item",
-					item: "minecraft:diamond_ore"
-				},
-				{
-					id: "21BD73369271DF48",
-					type: "item",
-					item: "minecraft:redstone_ore"
-				},
-				{
-					id: "06030350077BEF4C",
-					type: "item",
-					item: "minecraft:emerald_ore"
+			tasks: [{
+				id: "093C56729FAD1F81",
+				type: "item",
+				title: "Any #forge:ores",
+				item: {
+					id: "itemfilters:tag",
+					Count: 1b,
+					tag: {
+						value: "forge:ores"
+					}
 				}
-			]
+			}],
+			rewards: [{
+				id: "6907E722C55A3077",
+				type: "item",
+				item: "ironchest:wood_to_iron_chest_upgrade"
+			}]
 		},
 		{
-			x: -8.5d,
-			y: -2.0d,
-			subtitle: "Serenade of the nether required 10k LP to activate and 500 LP for every bucket",
+			x: -8.0d,
+			y: -2.5d,
+			description: ["Serenade of the nether requires 10k LP in your blood network to activate and 500 LP for each new lava source"],
 			dependencies: ["4FBAB657D89F2EE2"],
 			id: "6CC0325BEFA21C3A",
 			tasks: [{
 				id: "7CEA97A30C63691F",
 				type: "item",
 				item: "minecraft:lava_bucket"
+			}],
+			rewards: [{
+				id: "6332A4788A82106F",
+				type: "item",
+				item: "minecraft:obsidian",
+				random_bonus: 11
 			}]
 		},
 		{
-			x: -8.5d,
-			y: 0.0d,
-			subtitle: "Ritual of full spring required 500 LP in your blood network and 25LP for each bucket of water",
-			dependencies: ["4FBAB657D89F2EE2"],
+			x: -9.5d,
+			y: 0.5d,
+			description: ["Once the basin accumulates one bucket of water you can extract it with a bucket"],
+			dependencies: ["63441E36C7195AC1"],
 			id: "74CCA4AF36E587A6",
 			tasks: [{
 				id: "3CF5961C21F0BAD0",
 				type: "item",
 				item: "minecraft:water_bucket"
-			}]
-		},
-		{
-			x: -6.0d,
-			y: -1.0d,
-			dependencies: ["251FE836D9C631D1"],
-			id: "623E8C8662EDBF44",
-			tasks: [{
-				id: "1C25B0B53392072F",
-				type: "item",
-				item: "engineersdecor:small_block_breaker"
-			}]
+			}],
+			rewards: [
+				{
+					id: "4B9CBD8C3CEE7F36",
+					type: "item",
+					item: {
+						id: "endertanks:ender_bucket",
+						Count: 1b,
+						tag: {
+							owner: "all",
+							code: "000"
+						}
+					}
+				},
+				{
+					id: "43F364FD029C71C4",
+					type: "item",
+					item: {
+						id: "endertanks:ender_tank",
+						Count: 1b,
+						tag: {
+							owner: "all",
+							code: "000"
+						}
+					}
+				}
+			]
 		},
 		{
 			title: "Dig out pebbles",
 			x: -21.5d,
 			y: -1.0d,
-			subtitle: "Right click on stone with an empty hand to get some pebbles",
+			description: ["Right click on a stone block with an empty hand to get some pebbles"],
+			dependencies: ["061A729FEE740077"],
 			id: "32C7C71A34A9B34E",
 			tasks: [{
 				id: "5591C649D7CB491F",
@@ -103,21 +108,26 @@
 			title: "First cobblestone",
 			x: -20.0d,
 			y: -1.0d,
-			subtitle: "Combine 4 pebbles to create 1 cobblestone",
+			description: ["Combine 4 pebbles in a crafting grid to create 1 cobblestone"],
 			dependencies: ["32C7C71A34A9B34E"],
 			id: "761DBA619422B898",
 			tasks: [{
 				id: "59B36C3E79318A2F",
 				type: "item",
 				item: "minecraft:cobblestone"
+			}],
+			rewards: [{
+				id: "463A71AD966FA4B2",
+				type: "item",
+				item: "minecraft:furnace"
 			}]
 		},
 		{
 			title: "Let's start with stone pickaxe parts",
-			x: -17.0d,
-			y: -2.5d,
-			subtitle: "Create them using blank patterns and cobblestone in part builder",
-			dependencies: ["7DB43AAD78BFDCCA"],
+			x: -18.5d,
+			y: -5.5d,
+			description: ["Use patterns and cobblestone to create tool parts for a pickaxe."],
+			dependencies: ["47490CCEB8E427E5"],
 			id: "3D8D4CDE1F8C5A57",
 			tasks: [
 				{
@@ -141,26 +151,30 @@
 							Material: "tconstruct:stone"
 						}
 					}
-				},
-				{
-					id: "2594EFA699C53B47",
-					type: "item",
-					item: {
-						id: "tconstruct:tool_handle",
-						Count: 1b,
-						tag: {
-							Material: "tconstruct:stone"
-						}
+				}
+			],
+			rewards: [{
+				id: "516C9133E08F1A49",
+				type: "item",
+				item: {
+					id: "tconstruct:sword_blade",
+					Count: 1b,
+					tag: {
+						Material: "tconstruct:stone"
 					}
 				}
-			]
+			}]
 		},
 		{
 			title: "Mining time!",
 			x: -17.0d,
-			y: -1.0d,
-			subtitle: "Combine tool parts in the tinker station to create a pickaxe. You can also repair it there by inserting your tool and material its made out of (cobblestone). Later on you can also exchange some parts to upgrade your pickaxe.",
-			dependencies: ["3D8D4CDE1F8C5A57"],
+			y: -2.5d,
+			description: [
+				"Combine tool parts in the tinker station to create a pickaxe.",
+				"",
+				"I suggest using the reward to upgrade your pickaxe in the tinker station."
+			],
+			dependencies: ["7DB43AAD78BFDCCA"],
 			id: "0F1A826EBBBCF62A",
 			tasks: [{
 				id: "394595350CD8D4DC",
@@ -201,13 +215,18 @@
 						}
 					}
 				}
+			}],
+			rewards: [{
+				id: "749A319AEE299326",
+				type: "item",
+				item: "minecraft:diamond"
 			}]
 		},
 		{
 			title: "Getting wood is... different here",
 			x: -18.5d,
 			y: -1.0d,
-			subtitle: "Throw cobblestone on the ground and wait around 30 seconds",
+			description: ["To get wood throw cobblestone on the ground and wait around 30 seconds"],
 			dependencies: ["761DBA619422B898"],
 			id: "674C4BAB321F86BF",
 			tasks: [{
@@ -222,33 +241,66 @@
 						value: "minecraft:logs"
 					}
 				}
-			}]
+			}],
+			rewards: [
+				{
+					id: "66B5264ECE67CECB",
+					type: "item",
+					item: "minecraft:oak_planks",
+					count: 16
+				},
+				{
+					id: "1368D2957C51FACE",
+					type: "item",
+					item: "minecraft:stick",
+					count: 16
+				}
+			]
 		},
 		{
 			title: "Time to get some tools",
 			x: -18.5d,
 			y: -2.5d,
-			subtitle: "Crafting station preserves items when you close crafting grid",
+			description: ["Crafting station, in oposite to crafting table, preserves items in it's slots when you close the crafting grid"],
 			dependencies: ["674C4BAB321F86BF"],
 			id: "2F44ED5EC675D3D4",
 			tasks: [
 				{
 					id: "3939CE656A43F99B",
 					type: "item",
-					item: "tconstruct:crafting_station"
+					title: "Any #forge:workbenches",
+					item: {
+						id: "itemfilters:tag",
+						Count: 1b,
+						tag: {
+							value: "forge:workbenches"
+						}
+					}
 				},
 				{
 					id: "66F8C88712090352",
 					type: "item",
-					item: "tconstruct:pattern",
-					count: 9L
+					item: "tconstruct:pattern"
 				}
-			]
+			],
+			rewards: [{
+				id: "03378B5E7A11D165",
+				type: "item",
+				item: "tconstruct:materials_and_you"
+			}]
 		},
 		{
 			title: "And tinker station will let you combine them",
 			x: -17.0d,
 			y: -4.0d,
+			description: [
+				"In the tinker station you can upgrade, repair and create your tools.",
+				"",
+				"On the right side of the UI you can select a tool you want to create",
+				"On right side of the UI you can preview stats of your tool",
+				"",
+				"In the default tab you can upgrade and repair your tools by placing a tool in the right slot and other material in any other slot."
+			],
 			dependencies: ["47490CCEB8E427E5"],
 			id: "7DB43AAD78BFDCCA",
 			tasks: [{
@@ -261,13 +313,27 @@
 						texture: "minecraft:oak_planks"
 					}
 				}
+			}],
+			rewards: [{
+				id: "5D9E38A2B9C50EF4",
+				type: "item",
+				item: {
+					id: "tconstruct:small_axe_head",
+					Count: 1b,
+					tag: {
+						Material: "tconstruct:stone"
+					}
+				}
 			}]
 		},
 		{
 			title: "Part builder will let you create tool parts",
 			x: -18.5d,
 			y: -4.0d,
-			subtitle: "You won't be able to create vanilla tools here",
+			description: [
+				"Tinkers construct allows you to create upgradable tools which are also easy to repair",
+				"To get started you'll need some parts to create your tools with"
+			],
 			dependencies: ["2F44ED5EC675D3D4"],
 			id: "47490CCEB8E427E5",
 			tasks: [{
@@ -280,13 +346,24 @@
 						texture: "minecraft:oak_planks"
 					}
 				}
+			}],
+			rewards: [{
+				id: "13DCA42464EC6941",
+				type: "item",
+				item: {
+					id: "tconstruct:tool_handle",
+					Count: 1b,
+					tag: {
+						Material: "tconstruct:wood"
+					}
+				}
 			}]
 		},
 		{
 			title: "Bloody hell",
 			x: -14.0d,
 			y: -1.0d,
-			subtitle: "To get water, dirt or lava in this world we will need some kind of magic... You can get blood into the altar by either stabbing yourself with sacrificial knife or killing monsters near altar with dagger of sacrifice",
+			description: ["To get dirt or lava in this world we will need some kind of magic... You can get blood into the altar by either stabbing yourself with sacrificial knife or killing monsters near the altar with a dagger of sacrifice"],
 			dependencies: ["18B0E187B3B0B0DD"],
 			id: "5F97DEFC2F171248",
 			tasks: [{
@@ -301,15 +378,6 @@
 					item: "bloodmagic:daggerofsacrifice"
 				},
 				{
-					id: "66AE2437ECD9A745",
-					type: "item",
-					item: {
-						id: "simplemagnets:basicmagnet",
-						Count: 1b,
-						tag: {}
-					}
-				},
-				{
 					id: "6B16A310E676EB1A",
 					type: "item",
 					item: {
@@ -319,60 +387,106 @@
 							"patchouli:book": "bloodmagic:guide"
 						}
 					}
-				},
-				{
-					id: "30CD9B444B187648",
-					type: "item",
-					item: {
-						id: "bloodmagic:sacrificialdagger",
-						Count: 1b,
-						tag: {}
-					}
 				}
 			]
 		},
 		{
-			title: "Upgrade #1",
+			title: "Tier 2",
 			x: -12.5d,
-			y: -1.0d,
-			subtitle: "We will need to upgrade altar to at least tier III to get water or lava. You can see what this structure looks like in sanguine scientiem.",
-			dependencies: ["5F97DEFC2F171248"],
+			y: -2.5d,
+			description: [
+				"You will need to upgrade altar to at least tier III to get some lava.",
+				"",
+				"You can preview what this structure looks like in sanguine scientiem. Use rewards from this quest to upgrade the spawner (right click on it with them in hand)"
+			],
+			dependencies: ["4A88E15C4EE1D69C"],
 			id: "65D9548ADD45ED8E",
 			tasks: [{
 				id: "34EDF495792EB8BD",
 				type: "item",
 				item: "bloodmagic:blankrune",
 				count: 8L
-			}]
+			}],
+			rewards: [
+				{
+					id: "2D8C870BCCD85ADE",
+					type: "item",
+					item: "minecraft:fermented_spider_eye",
+					count: 4
+				},
+				{
+					id: "3663E4D57E5E678B",
+					type: "item",
+					item: "minecraft:ghast_tear",
+					count: 4
+				},
+				{
+					id: "1C4BDC38FD4062B1",
+					type: "item",
+					item: "minecraft:prismarine_crystals",
+					count: 4
+				},
+				{
+					id: "1884BE980C2C6EA5",
+					type: "item",
+					item: "minecraft:clock",
+					count: 4
+				},
+				{
+					id: "390E1AAF02973621",
+					type: "item",
+					item: "minecraft:sugar",
+					count: 4
+				}
+			]
 		},
 		{
 			x: -14.0d,
 			y: 0.5d,
+			description: ["Granite infused with blood in the altar creates dirt... for some reason"],
 			dependencies: ["5F97DEFC2F171248"],
 			id: "00776BA8447A22E1",
 			tasks: [{
 				id: "4EC4525597ABF65B",
 				type: "item",
 				item: "minecraft:dirt"
+			}],
+			rewards: [{
+				id: "673DB013732718F3",
+				type: "item",
+				item: "minecraft:grass_block"
 			}]
 		},
 		{
 			title: "What to do with all this junk",
 			x: -15.5d,
 			y: -2.5d,
-			subtitle: "Dunk storage is like backpack with large storage capabilities. Create one to store all this junk you get from mining. You can also upgrade it.",
+			description: [
+				"Dunk storage is like backpack with large storage capabilities. Create one to store all this junk you get from mining.",
+				"You can also upgrade it to get more slots and more storage capabilities in every slot."
+			],
 			dependencies: ["18B0E187B3B0B0DD"],
 			id: "3163D21E216F5B1C",
 			tasks: [{
 				id: "5C91E300C1A9AC57",
 				type: "item",
 				item: "dankstorage:dank_1"
+			}],
+			rewards: [{
+				id: "207D8727688C3E00",
+				type: "item",
+				item: {
+					id: "simplemagnets:basicmagnet",
+					Count: 1b,
+					tag: {}
+				}
 			}]
 		},
 		{
 			title: "Road to better tools",
 			x: -15.5d,
 			y: 0.5d,
+			description: ["This road will allow you to create better tools"],
 			dependencies: ["18B0E187B3B0B0DD"],
 			id: "21CA38AC9AF9EDE2",
 			tasks: [
@@ -386,7 +500,14 @@
 					type: "item",
 					item: "tconstruct:seared_stone"
 				}
-			]
+			],
+			rewards: [{
+				id: "5EB3AA3BF2F8A445",
+				type: "item",
+				item: "minecraft:stone",
+				count: 3,
+				random_bonus: 61
+			}]
 		},
 		{
 			x: -15.5d,
@@ -397,12 +518,18 @@
 				id: "7746EBF5E2D680AA",
 				type: "item",
 				item: "minecraft:stonecutter"
+			}],
+			rewards: [{
+				id: "1E55638A361CCAC3",
+				type: "item",
+				item: "corail_woodcutter:gray_stained_woodcutter"
 			}]
 		},
 		{
 			title: "Cut seared stone into bricks",
 			x: -15.5d,
 			y: 3.5d,
+			description: ["Main material in creating smeltery components"],
 			dependencies: ["3A44C74978569596"],
 			id: "10629E1FB3F75B96",
 			tasks: [{
@@ -414,6 +541,7 @@
 		{
 			x: -15.5d,
 			y: 5.0d,
+			description: ['This is "demo" version of a smeltery. Place heater below a melter, insert coal into melter and ores/metals into melter to melt them. You can use gold to create casts which will allow you to shape metal how you want.'],
 			dependencies: [
 				"10629E1FB3F75B96",
 				"583715F9E4B88636"
@@ -430,47 +558,82 @@
 					type: "item",
 					item: "tconstruct:melter"
 				}
-			]
+			],
+			rewards: [{
+				id: "614BB8DB7A535FA0",
+				type: "item",
+				item: "create:copper_ore",
+				count: 4
+			}]
 		},
 		{
 			title: "Time to get something to eat",
 			x: -14.0d,
 			y: 2.0d,
-			subtitle: "Throw dirt on the ground and wait around 15 seconds to get random seed",
+			description: ["Throw dirt on the ground and wait around 15 seconds to get a random plants"],
 			dependencies: ["00776BA8447A22E1"],
 			id: "3827F00A3A367375",
-			tasks: [{
-				id: "23E8825D9B30B23A",
-				type: "item",
-				title: "Any #forge:seeds",
-				item: {
-					id: "itemfilters:tag",
-					Count: 1b,
-					tag: {
-						value: "forge:seeds"
-					}
+			tasks: [
+				{
+					id: "23E8825D9B30B23A",
+					type: "item",
+					title: "Any #forge:seeds",
+					item: "minecraft:sugar_cane"
+				},
+				{
+					id: "313CBCCC91B4C7F9",
+					type: "item",
+					item: "minecraft:kelp"
+				},
+				{
+					id: "3DC6B348B0CEA7AF",
+					type: "item",
+					item: "minecraft:wheat_seeds"
+				},
+				{
+					id: "010692BD9505A4AB",
+					type: "item",
+					item: "minecraft:cactus"
 				}
-			}],
+			],
 			rewards: [{
-				id: "1B149602833C6621",
+				id: "082C777ED03C678D",
 				type: "item",
-				item: "bountifulbaubles:apple"
+				item: "darkutils:charm_gluttony"
 			}]
 		},
 		{
 			x: -17.0d,
 			y: 0.5d,
+			description: [
+				"This is the basic material for almost everything in Create.",
+				"You'll need a lot of it.",
+				"",
+				"Wearing googles from the reward you'll be able to see more information about blocks from create that you're looking at."
+			],
 			dependencies: ["18B0E187B3B0B0DD"],
 			id: "0C225D964C049B89",
 			tasks: [{
 				id: "3D6D8DD9176CFA3C",
 				type: "item",
 				item: "create:andesite_alloy"
+			}],
+			rewards: [{
+				id: "078621DEBC2AC41F",
+				type: "item",
+				item: "create:goggles"
 			}]
 		},
 		{
-			x: -17.0d,
-			y: 2.0d,
+			title: "Getting power",
+			x: -18.5d,
+			y: 0.5d,
+			description: [
+				"Probably the easiest way to get some mechanical power is to create a windmill",
+				"Place a windmill bearing and attach sails to the sticky side. The power will be outputed on the opossite side.",
+				"",
+				"Mouse over a windmill bearing item and hold 'W' to see how it works!"
+			],
 			dependencies: ["0C225D964C049B89"],
 			id: "151E347A13AE9885",
 			tasks: [
@@ -493,19 +656,32 @@
 			}]
 		},
 		{
+			title: "Crushing",
 			x: -17.0d,
 			y: 3.5d,
-			dependencies: ["151E347A13AE9885"],
+			description: ["Place crushing wheels one next to another and make them spin towards each other. Then you can throw items on them to get them crushed"],
+			dependencies: [
+				"204AE33BC9E509AC",
+				"0CEC6AB895DCB235"
+			],
 			id: "32DB779395CF2CB7",
 			tasks: [{
 				id: "3D60C7BE76640AB3",
 				type: "item",
-				item: "create:crushing_wheel"
+				item: "create:crushing_wheel",
+				count: 2L
+			}],
+			rewards: [{
+				id: "405C66DBE9F9BB03",
+				type: "item",
+				item: "create:chute",
+				count: 2
 			}]
 		},
 		{
 			x: -17.0d,
 			y: 5.0d,
+			description: ["Made by crushing cobble into gravel, and gravel into sand."],
 			dependencies: ["32DB779395CF2CB7"],
 			id: "583715F9E4B88636",
 			tasks: [{
@@ -515,9 +691,10 @@
 			}]
 		},
 		{
+			title: "Tier 3",
 			x: -11.0d,
-			y: -1.0d,
-			subtitle: "You cant get glowstone dust by crushing torches",
+			y: -2.5d,
+			description: ["Glowstone dust can be obtained by crushing torches."],
 			dependencies: ["65D9548ADD45ED8E"],
 			id: "634357134F3F4DB0",
 			tasks: [
@@ -533,11 +710,22 @@
 					item: "minecraft:glowstone",
 					count: 4L
 				}
-			]
+			],
+			rewards: [{
+				id: "743B46D29372A36D",
+				type: "item",
+				item: "minecraft:gold_block"
+			}]
 		},
 		{
+			title: "First ritual - serenade of the nether",
 			x: -9.5d,
-			y: -1.0d,
+			y: -2.5d,
+			description: [
+				"Shift right click with ritual diviner in hand to select ritual. Then place master ritual stone and right click it with ritual diviner to place correct ritual stones in correct places",
+				"",
+				"Then activate ritual by right clicking master ritual stone with a weak activation cristal."
+			],
 			dependencies: ["634357134F3F4DB0"],
 			id: "4FBAB657D89F2EE2",
 			tasks: [
@@ -565,8 +753,9 @@
 			}]
 		},
 		{
-			x: -7.5d,
+			x: -8.0d,
 			y: -1.0d,
+			description: ["The nether has vanilla terrain generation. "],
 			dependencies: [
 				"6CC0325BEFA21C3A",
 				"74CCA4AF36E587A6"
@@ -575,7 +764,448 @@
 			tasks: [{
 				id: "4AA929A26A5BA1CB",
 				type: "dimension",
-				dimension: "minecraft:nether"
+				dimension: "minecraft:the_nether"
+			}],
+			rewards: [{
+				id: "0D92714D60E3A3AB",
+				type: "item",
+				item: "minecraft:nether_quartz_ore",
+				random_bonus: 7
+			}]
+		},
+		{
+			title: "Clearing some space",
+			x: -6.5d,
+			y: 0.5d,
+			description: ["This is a challenge. Using create make a machine that can dig space in front of it and keep moving forwards"],
+			dependencies: ["251FE836D9C631D1"],
+			id: "1C5C673AA4F24799",
+			tasks: [
+				{
+					id: "51BCB545AC8A469C",
+					type: "item",
+					item: "create:mechanical_drill"
+				},
+				{
+					id: "68A1D458D2584CD2",
+					type: "item",
+					item: "create:cart_assembler"
+				},
+				{
+					id: "2BF8DEB23A3E2ED6",
+					type: "item",
+					item: "create:deployer"
+				},
+				{
+					id: "5C97EF6793889A42",
+					type: "item",
+					item: "minecraft:furnace_minecart"
+				},
+				{
+					id: "2BC366BA32642749",
+					type: "item",
+					item: "create:mechanical_plough"
+				}
+			],
+			rewards: [{
+				id: "402A1C4D7D8B1F0F",
+				type: "item",
+				item: "minecraft:rail",
+				count: 8
+			}]
+		},
+		{
+			x: -14.0d,
+			y: 3.5d,
+			description: ["Used to transfer items or mechanical power, place 2 shafts and connect them with a belt"],
+			dependencies: ["3827F00A3A367375"],
+			id: "0AA5B9697B6E764A",
+			tasks: [{
+				id: "7A915EDEE5F982B4",
+				type: "item",
+				item: "create:belt_connector"
+			}],
+			rewards: [{
+				id: "34375B8218BBB398",
+				type: "item",
+				item: "minecraft:kelp",
+				count: 8,
+				random_bonus: 8
+			}]
+		},
+		{
+			title: "Smelting in bulk",
+			x: -14.0d,
+			y: 5.0d,
+			description: ["Full version of smeltery requires lava to operate"],
+			dependencies: ["1D7CC4CEDB9508F0"],
+			id: "0D7C514E1C1440B7",
+			tasks: [
+				{
+					id: "0A308421BA19DF88",
+					type: "item",
+					item: "tconstruct:smeltery_controller"
+				},
+				{
+					id: "42398BDE6A3AB7AA",
+					type: "item",
+					item: "tconstruct:casting_basin"
+				},
+				{
+					id: "74EDD6A24FDB32E5",
+					type: "item",
+					item: "tconstruct:seared_tank"
+				}
+			],
+			rewards: [{
+				id: "5928993AEA55E855",
+				type: "item",
+				item: "tconstruct:seared_bricks",
+				count: 9
+			}]
+		},
+		{
+			title: "Iron pickaxe",
+			x: -14.0d,
+			y: 6.5d,
+			description: ["You cant exchange parts of your tools in the tinker station without creating whole new tools"],
+			dependencies: ["2C145DA20E4D08BD"],
+			id: "7D8AAF7AF795E177",
+			tasks: [{
+				id: "155C9CB31983DA5B",
+				type: "item",
+				item: {
+					id: "tconstruct:pickaxe_head",
+					Count: 1b,
+					tag: {
+						Material: "tconstruct:iron"
+					}
+				}
+			}],
+			rewards: [{
+				id: "49E06121C01563FD",
+				type: "item",
+				item: {
+					id: "tconstruct:small_axe_head",
+					Count: 1b,
+					tag: {
+						Material: "tconstruct:cobalt"
+					}
+				}
+			}]
+		},
+		{
+			x: -15.5d,
+			y: 6.5d,
+			description: ["Let's start by upgrading a pickaxe head"],
+			dependencies: ["1D7CC4CEDB9508F0"],
+			id: "2C145DA20E4D08BD",
+			tasks: [
+				{
+					id: "3F9B947D923C6EAC",
+					type: "item",
+					item: "tconstruct:casting_table"
+				},
+				{
+					id: "6400788A318B12A8",
+					type: "item",
+					item: "tconstruct:pickaxe_head_cast"
+				}
+			],
+			rewards: [{
+				id: "37A32341CF245904",
+				type: "item",
+				item: "tconstruct:ingot_cast"
+			}]
+		},
+		{
+			title: "Static automatic resource generation",
+			x: -6.5d,
+			y: -2.5d,
+			description: ["Basic cobble gen here can make a lot of recources"],
+			dependencies: ["251FE836D9C631D1"],
+			id: "27234BFE02A16A98",
+			tasks: [{
+				id: "6D3B654ABEFC54EF",
+				type: "item",
+				item: "engineersdecor:small_block_breaker"
+			}],
+			rewards: [{
+				id: "242A6F3EE3791DDF",
+				type: "item",
+				item: "minecraft:hopper"
+			}]
+		},
+		{
+			x: -12.5d,
+			y: 3.5d,
+			description: ["Time to get some food"],
+			dependencies: ["3827F00A3A367375"],
+			id: "6B4E6817CD72EC1C",
+			tasks: [{
+				id: "2CB59EE85AEC3F34",
+				type: "item",
+				item: "minecraft:wheat"
+			}],
+			rewards: [{
+				id: "0EE68EF9E53B6D34",
+				type: "item",
+				item: "pamhc2foodcore:cuttingboarditem"
+			}]
+		},
+		{
+			x: -12.5d,
+			y: -1.0d,
+			description: ["Used to craft some things from blood magic. Requires blood orb to operate and for you to have some blood in your blood network"],
+			dependencies: [
+				"5F97DEFC2F171248",
+				"4A88E15C4EE1D69C"
+			],
+			id: "74A2E1154ABBB80A",
+			tasks: [{
+				id: "1EB26D9E8B0EA7F0",
+				type: "item",
+				item: "bloodmagic:alchemytable"
+			}],
+			rewards: [{
+				id: "23C2CF49BE14FB2B",
+				type: "item",
+				item: "bloodmagic:blankslate",
+				random_bonus: 7
+			}]
+		},
+		{
+			x: -11.0d,
+			y: -1.0d,
+			description: ["Use it on the ground to draw some circles."],
+			dependencies: ["74A2E1154ABBB80A"],
+			id: "2F71A274EC9029DB",
+			tasks: [{
+				id: "692380D6C97D0DCD",
+				type: "item",
+				item: {
+					id: "bloodmagic:arcaneashes",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}],
+			rewards: [{
+				id: "244C7C1B6B37FCF7",
+				type: "item",
+				item: "bloodmagic:divinationsigil"
+			}]
+		},
+		{
+			title: "Infinite water bucket",
+			x: -9.5d,
+			y: -1.0d,
+			description: ["Use blank slate and water reagent on the created circle to make a water sigil which acts like infinite water bucket (as long as you have enough blood in your blood network)"],
+			dependencies: [
+				"2F71A274EC9029DB",
+				"74CCA4AF36E587A6"
+			],
+			id: "0347D0032C540BA8",
+			tasks: [{
+				id: "0B800718196892EA",
+				type: "item",
+				item: "bloodmagic:watersigil"
+			}],
+			rewards: [{
+				id: "44359FDD81AD49C8",
+				type: "item",
+				item: "bloodmagic:bloodlightsigil"
+			}]
+		},
+		{
+			x: -11.0d,
+			y: 0.5d,
+			description: ["We will need some kind of vessel to cantain it"],
+			dependencies: ["5B9C05F62A007ACA"],
+			id: "63441E36C7195AC1",
+			tasks: [{
+				id: "302F408CCC0C1607",
+				type: "item",
+				item: "create:basin"
+			}],
+			rewards: [{
+				id: "6CABEE279BA113E5",
+				type: "item",
+				item: "create:depot"
+			}]
+		},
+		{
+			x: -18.5d,
+			y: 2.0d,
+			description: ["Some machines will require a cog to power them, some others will connect with shafts."],
+			dependencies: ["151E347A13AE9885"],
+			id: "0CEC6AB895DCB235",
+			tasks: [{
+				id: "5EDE9CCC634B3824",
+				type: "item",
+				item: "create:cogwheel"
+			}],
+			rewards: [{
+				id: "6D08BFBE0FFDB8BF",
+				type: "item",
+				item: "create:large_cogwheel",
+				count: 4
+			}]
+		},
+		{
+			x: -20.0d,
+			y: 0.5d,
+			description: [
+				"Can't get power to where you want it? Use these",
+				"",
+				"You can use gearshift to control rotation direction with redstone"
+			],
+			dependencies: ["151E347A13AE9885"],
+			id: "1FF7322CBBBB62B6",
+			tasks: [{
+				id: "5D07B6B989CACBFE",
+				type: "item",
+				item: "create:gearbox"
+			}],
+			rewards: [{
+				id: "62F730B29F7F9CCC",
+				type: "item",
+				item: "create:gearshift"
+			}]
+		},
+		{
+			x: -17.0d,
+			y: 2.0d,
+			description: [
+				"Some item's will require unconventional methods of crafting.",
+				"Assemble crafters in a pattern shown in JEI and power it with a cog.",
+				"",
+				"Direction of items is defined by the arrows on each crafter. They need to connect in one a final spot where crafter arrow is pointing to an external space - ideally a chest/barrel."
+			],
+			dependencies: ["151E347A13AE9885"],
+			id: "204AE33BC9E509AC",
+			tasks: [{
+				id: "7613A5342D0FCADB",
+				type: "item",
+				item: "create:mechanical_crafter",
+				count: 21L
+			}]
+		},
+		{
+			x: -23.0d,
+			y: -1.0d,
+			description: [
+				"Welcome to cave factory!",
+				"",
+				"Your mission here is to create undeground factory and automate as many things as you can.",
+				"",
+				"In the overworld you'll find only stone. The ceiling is made from beadrock though.",
+				"Feel free to dig around but you'll not find any strucutres underground."
+			],
+			id: "061A729FEE740077",
+			tasks: [{
+				id: "7B6BE0DDC4F2E78E",
+				type: "checkmark",
+				title: "Welcome!"
+			}]
+		},
+		{
+			x: -12.5d,
+			y: 0.5d,
+			description: ["Cactuses contain a lot of water... I've heard. Maybe we will be able to extract it using a mixer"],
+			dependencies: ["3827F00A3A367375"],
+			id: "5B9C05F62A007ACA",
+			tasks: [{
+				id: "3027A36E00004E1A",
+				type: "item",
+				item: "create:mechanical_mixer"
+			}],
+			rewards: [{
+				id: "4C9A96D0DFBF3440",
+				type: "item",
+				item: "create:mechanical_press"
+			}]
+		},
+		{
+			x: -14.0d,
+			y: -2.5d,
+			description: [
+				"Used for crafting and to get blood into your blood network by placing it in the altar",
+				"",
+				"Right click to bind it to yourself"
+			],
+			dependencies: ["5F97DEFC2F171248"],
+			id: "4A88E15C4EE1D69C",
+			tasks: [{
+				id: "02C40AB03D6A146E",
+				type: "item",
+				item: "bloodmagic:weakbloodorb"
+			}]
+		},
+		{
+			x: -14.0d,
+			y: -4.0d,
+			description: ["Replace some blank runes with these to make altar work faster"],
+			dependencies: ["4A88E15C4EE1D69C"],
+			id: "0D56BE5320379E4D",
+			tasks: [{
+				id: "05879DB57E6C8B57",
+				type: "item",
+				item: "bloodmagic:speedrune"
+			}],
+			rewards: [{
+				id: "478A16A4D056F25C",
+				type: "item",
+				item: "bloodmagic:blankslate",
+				count: 4
+			}]
+		},
+		{
+			x: -12.5d,
+			y: -4.0d,
+			description: ["Replace some blank runes with these to make sacrifices worth more"],
+			dependencies: ["65D9548ADD45ED8E"],
+			id: "54633CF2CAE91CFC",
+			tasks: [{
+				id: "0DEF4B79FE51FE02",
+				type: "item",
+				item: "bloodmagic:sacrificerune"
+			}],
+			rewards: [{
+				id: "493F5521960FA26E",
+				type: "item",
+				item: "bloodmagic:reinforcedslate",
+				count: 4
+			}]
+		},
+		{
+			x: -11.0d,
+			y: -4.0d,
+			description: ["Replace some blank runes with these to increace altar blood capacity"],
+			dependencies: ["634357134F3F4DB0"],
+			id: "41484B0285186530",
+			tasks: [{
+				id: "4632B64F6CB826B1",
+				type: "item",
+				item: "bloodmagic:altarcapacityrune"
+			}],
+			rewards: [{
+				id: "589B301D109BEE69",
+				type: "item",
+				item: "bloodmagic:infusedslate",
+				count: 4
+			}]
+		},
+		{
+			x: -8.0d,
+			y: -4.0d,
+			dependencies: ["6CC0325BEFA21C3A"],
+			id: "6F31CB43D28E66DB",
+			tasks: [{
+				id: "6EFA13470A3DB89E",
+				type: "item",
+				item: "create:encased_fan"
 			}]
 		}
 	]
