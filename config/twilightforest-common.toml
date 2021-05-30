@@ -30,6 +30,8 @@ uuid_locking = false
 	newPlayersSpawnInTF = false
 	#If true, giant Twilight Oaks will also spawn in void worlds
 	skylightOaks = true
+	#Destination dimension for Twilight Portals and some other logic as well
+	twilightDimensionID = "twilightforest:twilightforest"
 
 	#Defines custom stalactites generated in hollow hills.
 	#Format is "modid:block size maxLength minHeight weight", where the properties are:

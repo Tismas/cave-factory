@@ -67,9 +67,18 @@ displayTooLargePackets = true
 	adaptiveSpeed = true
 	#Enable faster pathfinding, default = true
 	fastPathFinding = true
+	#Enables dynamic entity rendering, stops non-visible entities from beeing rendered but can sometimes cause a slight phasing-in delay. Usually a large boost to fps, default = true. Require restart
+	enableDynamicEntityRendering = true
+	#Enables dynamic update distance, it will reduces entity updates when far away from the player, respecting the entities own update range. default = true. Requires restart
+	enableDynamicEntityUpdates = true
+	#Entity dynamic update distance setting, reduces the entities own update range from players at which entities get slowed down, in chunks(16blocks). The higher you set this, the closer to the player entities will get slower updates. Default = 0
+	#Range: 0 ~ 1000
+	entityUpdateDistanceReduction = 0
+	#List of entities excluded from beeing affected by dynamic entity updates: e.g. format :  ["minecraft:zombie", "minecraft:creeper"]
+	excludedTickDistanceMobs = []
 
 ["Entity AI Settings"]
-	#Sets the tick interval in which non-running AI tasks are rechecked. Vanilla default is 1(starting with 1.13+), this mods suggested default is 4(as it was in 1.12)
+	#Sets the tick interval in which non-running AI tasks are rechecked. Vanilla default is 1(starting with 1.13+), this mods suggested default is 4(as it was in vanilla 1.12)
 	#Range: 1 ~ 500
 	goalselectorrate = 4
 	#Enables a slower updated AI Fox find shelter goal, which causes too much load. default = true

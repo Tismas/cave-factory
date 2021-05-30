@@ -181,6 +181,9 @@
     "chancecubes:random_explosion": true,
     "chancecubes:beacon_arena": true,
     "chancecubes:world_infection": true,
-    "chancecubes:block_thrower": true
+    "chancecubes:block_thrower": true,
+    "chancecubes:potion-works": true,
+    "chancecubes:connect_4": true,
+    "chancecubes:jar_guess": true
   }
 }

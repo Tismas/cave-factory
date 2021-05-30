@@ -157,7 +157,7 @@
 				id: "516C9133E08F1A49",
 				type: "item",
 				item: {
-					id: "tconstruct:sword_blade",
+					id: "tconstruct:small_blade",
 					Count: 1b,
 					tag: {
 						Material: "tconstruct:stone"
@@ -556,7 +556,7 @@
 				{
 					id: "35514A75E64CDBAA",
 					type: "item",
-					item: "tconstruct:melter"
+					item: "tconstruct:seared_melter"
 				}
 			],
 			rewards: [{
@@ -837,12 +837,12 @@
 				{
 					id: "42398BDE6A3AB7AA",
 					type: "item",
-					item: "tconstruct:casting_basin"
+					item: "tconstruct:seared_basin"
 				},
 				{
 					id: "74EDD6A24FDB32E5",
 					type: "item",
-					item: "tconstruct:seared_tank"
+					item: "tconstruct:seared_fuel_tank"
 				}
 			],
 			rewards: [{
@@ -892,7 +892,7 @@
 				{
 					id: "3F9B947D923C6EAC",
 					type: "item",
-					item: "tconstruct:casting_table"
+					item: "tconstruct:seared_table"
 				},
 				{
 					id: "6400788A318B12A8",
@@ -1101,7 +1101,7 @@
 			description: [
 				"Remember that you can hold 'W' with a cursor above most items from Create to see how they work",
 				"",
-				"To make it work you'll need to speed things up - mixer won't work with low rotation speed"
+				"To make it work you'll need to speed things up using large and small cogs - mixer won't work with low rotation speed"
 			],
 			dependencies: ["1D6A8A3D6F2E252B"],
 			id: "5B9C05F62A007ACA",
