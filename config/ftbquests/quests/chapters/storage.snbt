@@ -1,0 +1,18 @@
+{
+	id: "7770694E3E85F0A3",
+	group: "",
+	order_index: 2,
+	filename: "storage",
+	title: "Storage",
+	default_quest_shape: "",
+	quests: [{
+		x: 0.0d,
+		y: 0.0d,
+		id: "11735E87A4616DB2",
+		tasks: [{
+			id: "330C0CA4ACBE6A66",
+			type: "item",
+			item: "storagenetwork:master"
+		}]
+	}]
+}

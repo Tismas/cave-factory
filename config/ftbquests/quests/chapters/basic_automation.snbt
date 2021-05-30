@@ -37,7 +37,10 @@
 		{
 			x: -8.0d,
 			y: -2.5d,
-			description: ["Serenade of the nether requires 10k LP in your blood network to activate and 500 LP for each new lava source"],
+			description: [
+				"Serenade of the nether requires 10k LP in your blood network to activate and 500 LP for each new lava source",
+				"If you won't have enough LP in your blood network for the ritual to work you'll get nausea"
+			],
 			dependencies: ["4FBAB657D89F2EE2"],
 			id: "6CC0325BEFA21C3A",
 			tasks: [{
@@ -749,10 +752,10 @@
 				dimension: "minecraft:the_nether"
 			}],
 			rewards: [{
-				id: "46215D97AEF63394",
+				id: "14E5BA1EE41A40B6",
 				type: "item",
 				item: {
-					id: "minecraft:golden_helmet",
+					id: "minecraft:golden_boots",
 					Count: 1b,
 					tag: {
 						Damage: 0
