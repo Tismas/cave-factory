@@ -49,7 +49,7 @@ onEvent("recipes", (event) => {
     .altarSyphon(10)
     .drainRate(10)
     .consumptionRate(10);
-  altar("bloodmagic:activationcrystalweak", "tconstruct:melter")
+  altar("bloodmagic:activationcrystalweak", "tconstruct:seared_melter")
     .upgradeLevel(2)
     .altarSyphon(10000)
     .drainRate(10)

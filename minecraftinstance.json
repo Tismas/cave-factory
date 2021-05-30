@@ -30,8 +30,8 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-05-30T11:01:24.2370161Z",
-  "playedCount": 88,
+  "lastPlayed": "2021-05-30T17:25:46.1265486Z",
+  "playedCount": 89,
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -48,7 +48,7 @@
   "cachedScans": [],
   "isValid": true,
   "lastPreviousMatchUpdate": "2021-05-30T10:35:09.1217523Z",
-  "lastRefreshAttempt": "2021-05-30T13:01:14.8124668+02:00",
+  "lastRefreshAttempt": "2021-05-30T13:03:11.443027+02:00",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.16.5",
@@ -1861,7 +1861,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 248020,
@@ -2423,7 +2423,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 298187,
@@ -3933,7 +3933,7 @@
       "dateInstalled": "2021-05-08T08:29:02.3378435Z",
       "dateUpdated": "2021-05-08T08:29:02.3448512Z",
       "dateLastUpdateAttempted": "2021-05-08T08:29:02.3448512Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -4575,7 +4575,7 @@
       "dateInstalled": "2021-05-08T09:53:18.506475Z",
       "dateUpdated": "2021-05-30T08:22:28.3203083Z",
       "dateLastUpdateAttempted": "2021-05-30T08:22:28.3203083Z",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -5585,7 +5585,7 @@
       "dateInstalled": "2021-05-16T08:49:08.341055Z",
       "dateUpdated": "2021-05-16T08:49:08.3470636Z",
       "dateLastUpdateAttempted": "2021-05-16T08:49:08.3470636Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -6203,7 +6203,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 288885,
@@ -7777,7 +7777,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 285612,
@@ -9316,72 +9316,6 @@
       "installedTargets": null
     },
     {
-      "addonID": 256717,
-      "gameInstanceID": "15391421-0637-4a10-a924-9e66f45ef1c8",
-      "installedFile": {
-        "id": 3325374,
-        "displayName": "Clumps-6.0.0.24.jar",
-        "fileName": "Clumps-6.0.0.24.jar",
-        "fileDate": "2021-05-26T09:49:10.99Z",
-        "fileLength": 18262,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3325/374/Clumps-6.0.0.24.jar",
-        "isAlternate": false,
-        "alternateFileId": 3325375,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 4289386599,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "com",
-            "fingerprint": 2941140876,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 3623522934,
-            "type": 0,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 581724742,
-        "gameVersion": [
-          "1.16.5",
-          "Forge"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "Clumps-6.0.0.24.jar"
-      },
-      "dateInstalled": "2021-05-18T20:36:33.3531686Z",
-      "dateUpdated": "2021-05-30T08:22:33.3830327Z",
-      "dateLastUpdateAttempted": "2021-05-30T08:22:33.3830327Z",
-      "status": 4,
-      "preferenceAutoInstallUpdates": null,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
       "addonID": 413234,
       "gameInstanceID": "15391421-0637-4a10-a924-9e66f45ef1c8",
       "installedFile": {
@@ -9458,6 +9392,72 @@
       "dateUpdated": "2021-05-18T18:28:43.7012639Z",
       "dateLastUpdateAttempted": "2021-05-18T18:28:43.7012639Z",
       "status": 5,
+      "preferenceAutoInstallUpdates": null,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 256717,
+      "gameInstanceID": "15391421-0637-4a10-a924-9e66f45ef1c8",
+      "installedFile": {
+        "id": 3325374,
+        "displayName": "Clumps-6.0.0.24.jar",
+        "fileName": "Clumps-6.0.0.24.jar",
+        "fileDate": "2021-05-26T09:49:10.99Z",
+        "fileLength": 18262,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3325/374/Clumps-6.0.0.24.jar",
+        "isAlternate": false,
+        "alternateFileId": 3325375,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 4289386599,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 2941140876,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 3623522934,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 581724742,
+        "gameVersion": [
+          "1.16.5",
+          "Forge"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "Clumps-6.0.0.24.jar"
+      },
+      "dateInstalled": "2021-05-18T20:36:33.3531686Z",
+      "dateUpdated": "2021-05-30T08:22:33.3830327Z",
+      "dateLastUpdateAttempted": "2021-05-30T08:22:33.3830327Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
