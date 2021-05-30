@@ -30,8 +30,8 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-05-30T08:29:53.1678702Z",
-  "playedCount": 82,
+  "lastPlayed": "2021-05-30T08:56:34.4116719Z",
+  "playedCount": 83,
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -47,8 +47,8 @@
   "name": "Cave Factory - dev",
   "cachedScans": [],
   "isValid": true,
-  "lastPreviousMatchUpdate": "2021-05-30T08:22:08.6813597Z",
-  "lastRefreshAttempt": "2021-05-30T10:29:33.3294137+02:00",
+  "lastPreviousMatchUpdate": "2021-05-30T08:55:41.5338582Z",
+  "lastRefreshAttempt": "2021-05-30T10:55:42.0178598+02:00",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.16.5",
@@ -6039,6 +6039,86 @@
       "preferenceReleaseType": null,
       "manifestName": null,
       "installedTargets": null
+    },
+    {
+      "addonID": 395272,
+      "gameInstanceID": "15391421-0637-4a10-a924-9e66f45ef1c8",
+      "installedFile": {
+        "id": 3100603,
+        "displayName": "Tiny-Coal-1.16.4-1.0.0.jar",
+        "fileName": "Tiny-Coal-1.16.4-1.0.0.jar",
+        "fileDate": "2020-11-03T02:46:44.97Z",
+        "fileLength": 7352,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3100/603/Tiny-Coal-1.16.4-1.0.0.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 3742240731,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "mod",
+            "fingerprint": 1124237431,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 4181358195,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 2821831418,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 3380797652,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 431585905,
+        "gameVersion": [
+          "1.16.3",
+          "1.16.5",
+          "Forge",
+          "1.16.4"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "Tiny-Coal-1.16.4-1.0.0.jar"
+      },
+      "dateInstalled": "2021-05-30T08:56:08.9150618Z",
+      "dateUpdated": "2021-05-30T08:56:08.9650608Z",
+      "dateLastUpdateAttempted": "2021-05-30T08:56:08.9650608Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": null,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
     },
     {
       "addonID": 288885,

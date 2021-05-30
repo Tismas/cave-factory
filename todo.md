@@ -50,5 +50,6 @@ Util:
 - bring back vanilla tools
 - adjusted drops from stone to make it more about digging at the beginning
 - added trapdors to prebuilt zombie spawner to prevent little ones from escaping
-- added Builders Crafts & Additions
+- added Builders Crafts & Additions and Tiny Coal
 - updated all mods
+- updated forge
