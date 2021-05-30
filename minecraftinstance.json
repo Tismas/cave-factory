@@ -30,8 +30,8 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-05-30T10:45:12.4062404Z",
-  "playedCount": 86,
+  "lastPlayed": "2021-05-30T11:01:24.2370161Z",
+  "playedCount": 88,
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -48,7 +48,7 @@
   "cachedScans": [],
   "isValid": true,
   "lastPreviousMatchUpdate": "2021-05-30T10:35:09.1217523Z",
-  "lastRefreshAttempt": "2021-05-30T12:44:56.3279255+02:00",
+  "lastRefreshAttempt": "2021-05-30T13:01:14.8124668+02:00",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.16.5",
@@ -2411,8 +2411,8 @@
         "isServerPack": false,
         "FileNameOnDisk": "structurize-0.13.174-ALPHA-universal.jar"
       },
-      "dateInstalled": "2021-05-30T08:29:32.7826253Z",
-      "dateUpdated": "2021-05-30T08:29:32.7826253Z",
+      "dateInstalled": "2021-05-30T11:01:14.2650425Z",
+      "dateUpdated": "2021-05-30T11:01:14.2650425Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
       "status": 3,
       "preferenceAutoInstallUpdates": null,
@@ -7693,16 +7693,16 @@
       "addonID": 245506,
       "gameInstanceID": "15391421-0637-4a10-a924-9e66f45ef1c8",
       "installedFile": {
-        "id": 3328161,
-        "displayName": "minecolonies-0.14.188-ALPHA-universal.jar",
-        "fileName": "minecolonies-0.14.188-ALPHA-universal.jar",
-        "fileDate": "2021-05-28T13:43:51.587Z",
-        "fileLength": 36746250,
-        "releaseType": 3,
+        "id": 3330336,
+        "displayName": "minecolonies-0.14.189-BETA-universal.jar",
+        "fileName": "minecolonies-0.14.189-BETA-universal.jar",
+        "fileDate": "2021-05-30T10:05:54.447Z",
+        "fileLength": 36746249,
+        "releaseType": 2,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3328/161/minecolonies-0.14.188-ALPHA-universal.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3330/336/minecolonies-0.14.189-BETA-universal.jar",
         "isAlternate": false,
-        "alternateFileId": 3328162,
+        "alternateFileId": 3330337,
         "dependencies": [
           {
             "id": 0,
@@ -7715,7 +7715,7 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1594343229,
+            "fingerprint": 3498748283,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -7750,7 +7750,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1212088153,
+        "packageFingerprint": 1040247241,
         "gameVersion": [
           "1.16.5"
         ],
@@ -7763,12 +7763,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "minecolonies-0.14.188-ALPHA-universal.jar"
+        "FileNameOnDisk": "minecolonies-0.14.189-BETA-universal.jar"
       },
       "dateInstalled": "2021-05-30T08:26:36.182475Z",
-      "dateUpdated": "2021-05-30T08:26:36.2004748Z",
-      "dateLastUpdateAttempted": "2021-05-30T08:26:36.2004748Z",
-      "status": 3,
+      "dateUpdated": "2021-05-30T11:00:26.7768698Z",
+      "dateLastUpdateAttempted": "2021-05-30T11:00:26.7768698Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
