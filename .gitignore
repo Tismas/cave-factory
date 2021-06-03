@@ -5,6 +5,6 @@ journeymap
 local
 .mixin.out
 crash-reports
-config/changecubes/custom_rewards
+config/chancecubes/custom_rewards/CustomSounds-Resourcepack.zip
 usercache.json
 minecraftinstance.json
