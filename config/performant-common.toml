@@ -129,4 +129,7 @@ displayTooLargePackets = true
 	disconnectTimeout = 60
 	#List of mobs disallowed from spawning: e.g. format :  ["minecraft:zombie", "minecraft:creeper"]
 	forbiddenMobs = []
+	#Set the watchdog timeout for the integrated server in miliseconds, -1 Disables it. 1 second = 1000 miliseconds, default = 180000
+	#Range: -1 ~ 500000
+	singlePlayerWatchDogTimeout = 180000
 
