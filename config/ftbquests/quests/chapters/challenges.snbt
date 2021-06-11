@@ -1,7 +1,7 @@
 {
 	id: "47E8D662EA1C9A5B",
 	group: "",
-	order_index: 4,
+	order_index: 5,
 	filename: "challenges",
 	title: "Challenges",
 	default_quest_shape: "",
@@ -32,19 +32,6 @@
 				title: "Pearls",
 				item: "minecraft:ender_pearl",
 				count: 1000L
-			}]
-		},
-		{
-			title: "All the foods",
-			x: 1.5d,
-			y: 0.0d,
-			shape: "diamond",
-			id: "15CF2D4151565CE8",
-			tasks: [{
-				id: "345F4EEC205FB4E9",
-				type: "item",
-				item: "minecraft:golden_carrot",
-				count: 64L
 			}]
 		}
 	]

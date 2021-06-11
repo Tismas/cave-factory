@@ -119,7 +119,7 @@ const cobbleDrops = {
 const stoneDrops = {
   "minecraft:air": 500,
   "minecraft:coal_ore": 125,
-  "minecraft:redstone_ore": 100,
+  "minecraft:redstone_ore": 50,
   "minecraft:iron_ore": 75,
   "create:copper_ore": 75,
   "minecraft:gold_ore": 15,

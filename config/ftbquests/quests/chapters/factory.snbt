@@ -61,7 +61,10 @@
 			x: -3.0d,
 			y: -0.5d,
 			description: [""],
-			dependencies: ["7479F4E3E8E9D1A1"],
+			dependencies: [
+				"7479F4E3E8E9D1A1",
+				"784D7F01C733B3EE"
+			],
 			id: "7A8C2C713175BB4B",
 			tasks: [{
 				id: "24771DD3F1789EE6",
@@ -80,6 +83,387 @@
 				type: "item",
 				item: "immersiveengineering:creosote_bucket"
 			}]
+		},
+		{
+			x: -3.0d,
+			y: 1.0d,
+			dependencies: ["2761C6EA103A52C2"],
+			id: "784D7F01C733B3EE",
+			tasks: [{
+				id: "0ADC31CE022D9375",
+				type: "item",
+				item: "immersiveengineering:dynamo"
+			}]
+		},
+		{
+			x: -6.0d,
+			y: 1.0d,
+			id: "43FAD98FF33D37EC",
+			tasks: [{
+				id: "69E85AD1B4301658",
+				type: "item",
+				item: {
+					id: "immersiveengineering:wirecutter",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}],
+			rewards: [{
+				id: "3E61873EBA2FE7E9",
+				type: "item",
+				item: "immersiveengineering:manual"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: 1.0d,
+			dependencies: ["43FAD98FF33D37EC"],
+			id: "2761C6EA103A52C2",
+			tasks: [{
+				id: "3C86E17ACDCC8A2A",
+				type: "item",
+				title: "Any #forge:plates/copper",
+				item: {
+					id: "itemfilters:tag",
+					Count: 1b,
+					tag: {
+						value: "forge:plates/copper"
+					}
+				}
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -2.0d,
+			description: [
+				"Trees? Probably for decoration",
+				"",
+				"Throw seeds into creosote oil to get random sapling"
+			],
+			dependencies: ["3BF666A613E1C259"],
+			id: "4B150AADE960C4C4",
+			tasks: [{
+				id: "1CC32C53C353D66C",
+				type: "item",
+				title: "Any #minecraft:saplings",
+				item: {
+					id: "itemfilters:tag",
+					Count: 1b,
+					tag: {
+						value: "minecraft:saplings"
+					}
+				}
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -2.0d,
+			dependencies: [
+				"7A8C2C713175BB4B",
+				"3D2FE88593ADB9C6"
+			],
+			id: "47F93C318A00CA40",
+			tasks: [
+				{
+					id: "0AF6D53B76BCFA30",
+					type: "item",
+					item: "immersiveengineering:steel_scaffolding_standard",
+					count: 2L
+				},
+				{
+					id: "5DBA2D31EB17AAF4",
+					type: "item",
+					item: "minecraft:piston"
+				},
+				{
+					id: "45A70EABDC9E1DCF",
+					type: "item",
+					item: "immersiveengineering:conveyor_basic",
+					count: 2L
+				},
+				{
+					id: "6AD7B7E370AC9521",
+					type: "item",
+					item: "immersiveengineering:rs_engineering"
+				},
+				{
+					id: "0CF2BDD05F51C0ED",
+					type: "item",
+					item: "immersiveengineering:heavy_engineering"
+				}
+			]
+		},
+		{
+			x: -3.0d,
+			y: -3.5d,
+			dependencies: ["2F2FF6DAFDD2046F"],
+			id: "3D2FE88593ADB9C6",
+			tasks: [{
+				id: "57F5CEB9996B805E",
+				type: "item",
+				item: "immersiveengineering:ingot_steel"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -3.5d,
+			id: "2F2FF6DAFDD2046F",
+			tasks: [{
+				id: "6A7EF75AF1B61C75",
+				type: "item",
+				item: "immersiveengineering:blastbrick"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -2.0d,
+			dependencies: ["7479F4E3E8E9D1A1"],
+			id: "7809B3356048B612",
+			tasks: [{
+				id: "6726495B7291DFD1",
+				type: "item",
+				item: "immersiveengineering:workbench"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -0.5d,
+			dependencies: ["7A8C2C713175BB4B"],
+			id: "078CC6C761FC0AAD",
+			tasks: [
+				{
+					id: "300A95407E5A9D18",
+					type: "item",
+					item: "immersiveengineering:blastbrick_reinforced",
+					count: 27L
+				},
+				{
+					id: "39137B936BB82130",
+					type: "item",
+					item: "immersiveengineering:slab_sheetmetal_steel",
+					count: 14L
+				},
+				{
+					id: "612CE09362855B92",
+					type: "item",
+					item: "immersiveengineering:light_engineering",
+					count: 10L
+				},
+				{
+					id: "5B167D9307AE2A45",
+					type: "item",
+					item: "immersiveengineering:sheetmetal_steel",
+					count: 8L
+				},
+				{
+					id: "4B6562FD39C0AF57",
+					type: "item",
+					item: "immersiveengineering:storage_steel",
+					count: 6L
+				},
+				{
+					id: "38AA8936E771021D",
+					type: "item",
+					item: "immersiveengineering:steel_scaffolding_standard",
+					count: 5L
+				},
+				{
+					id: "193C1ECFD86BCCB6",
+					type: "item",
+					item: "immersiveengineering:heavy_engineering",
+					count: 5L
+				},
+				{
+					id: "30AC6A09D6791B2B",
+					type: "item",
+					item: "minecraft:cauldron"
+				},
+				{
+					id: "5D484777900FAC6A",
+					type: "item",
+					item: "immersiveengineering:rs_engineering"
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: -0.5d,
+			dependencies: ["078CC6C761FC0AAD"],
+			id: "223B1D7866FA50A6",
+			tasks: [{
+				id: "5D909A4E04AA3E03",
+				type: "item",
+				item: "minecraft:end_stone"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: -0.5d,
+			dependencies: ["223B1D7866FA50A6"],
+			id: "5B52570D17956977",
+			tasks: [{
+				id: "6CD57CA29A12CAED",
+				type: "item",
+				item: "minecraft:end_portal_frame",
+				count: 12L
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 1.0d,
+			dependencies: ["7A8C2C713175BB4B"],
+			id: "036B4F77A0666431",
+			tasks: [
+				{
+					id: "689FAF790C6DE426",
+					type: "item",
+					item: "immersiveengineering:steel_scaffolding_standard",
+					count: 25L
+				},
+				{
+					id: "750C01F6ECFD5A04",
+					type: "item",
+					item: "immersiveengineering:slab_steel_scaffolding_grate_top",
+					count: 33L
+				},
+				{
+					id: "742B7DBC60AB6DB9",
+					type: "item",
+					item: "immersiveengineering:fluid_pipe",
+					count: 17L
+				},
+				{
+					id: "147CAE792C9B6A1E",
+					type: "item",
+					item: "immersiveengineering:sheetmetal_iron",
+					count: 60L
+				},
+				{
+					id: "625D620070EA95CE",
+					type: "item",
+					item: "immersiveengineering:heavy_engineering",
+					count: 4L
+				},
+				{
+					id: "24BCA09B1D2AD6E3",
+					type: "item",
+					item: "immersiveengineering:rs_engineering"
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: 1.0d,
+			dependencies: ["036B4F77A0666431"],
+			id: "5C00730321CE4422",
+			tasks: [{
+				id: "3E621FE0F57B8FCB",
+				type: "item",
+				item: "immersivepetroleum:bitumen"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 1.0d,
+			dependencies: ["5C00730321CE4422"],
+			id: "2E7CDF10D5A75DB4",
+			tasks: [{
+				id: "5E289DFD5505A230",
+				type: "item",
+				item: "immersivepetroleum:asphalt"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -2.0d,
+			dependencies: ["47F93C318A00CA40"],
+			id: "7526005262F9972F",
+			tasks: [{
+				id: "7D82A33578C94F14",
+				type: "item",
+				item: "immersiveengineering:mold_bullet_casing"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -3.5d,
+			dependencies: ["47F93C318A00CA40"],
+			id: "2A8743EB1158466B",
+			tasks: [{
+				id: "6E1A0D7BDA3E481C",
+				type: "item",
+				item: {
+					ForgeCaps: {
+						Parent: {
+							Size: 21,
+							Items: []
+						}
+					},
+					id: "immersiveengineering:revolver",
+					Count: 1b
+				}
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -2.0d,
+			dependencies: ["7526005262F9972F"],
+			dependency_requirement: "one_completed",
+			id: "790A2EB0AA006A47",
+			tasks: [
+				{
+					id: "0F21325689FBE74C",
+					type: "item",
+					item: "immersiveengineering:casull"
+				},
+				{
+					id: "2ED9EB0BA112C8E3",
+					type: "item",
+					item: "immersiveengineering:armor_piercing"
+				},
+				{
+					id: "26BB7532EDD918B5",
+					type: "item",
+					item: "immersiveengineering:buckshot"
+				},
+				{
+					id: "52262C45F401734A",
+					type: "item",
+					item: "immersiveengineering:he"
+				},
+				{
+					id: "1A43350B9213669B",
+					type: "item",
+					item: "immersiveengineering:silver"
+				},
+				{
+					id: "1BE89DEA6E92885D",
+					type: "item",
+					item: "immersiveengineering:potion"
+				},
+				{
+					id: "2CBF4D89761ADDB9",
+					type: "item",
+					item: "immersiveengineering:flare"
+				},
+				{
+					id: "7EE7E16F933044A9",
+					type: "item",
+					item: "immersiveengineering:firework"
+				},
+				{
+					id: "790FD68C878CCB66",
+					type: "item",
+					item: "immersiveengineering:homing"
+				},
+				{
+					id: "0DAD424E50F05174",
+					type: "item",
+					item: "immersiveengineering:wolfpack"
+				}
+			]
 		}
 	]
 }

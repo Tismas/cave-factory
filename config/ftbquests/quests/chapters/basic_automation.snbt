@@ -1016,7 +1016,7 @@
 		},
 		{
 			x: -8.0d,
-			y: 2.0d,
+			y: 0.5d,
 			description: ["We will need some kind of vessel to cantain fluids in it"],
 			dependencies: ["5B9C05F62A007ACA"],
 			id: "63441E36C7195AC1",
@@ -1104,7 +1104,7 @@
 			}]
 		},
 		{
-			x: -9.5d,
+			x: -8.0d,
 			y: 2.0d,
 			description: [
 				"Remember that you can hold 'W' with a cursor above most items from Create to see how they work",
@@ -1198,7 +1198,11 @@
 		{
 			x: -8.0d,
 			y: -4.0d,
-			description: ["By blowing air through lava you can smelt items very efficiently. It will burn food though - to cook more delicate stuff, blow air through fire."],
+			description: [
+				"By blowing air through lava you can smelt items very efficiently. It will burn food though - to cook more delicate stuff, blow air through fire.",
+				"",
+				"Also it can wash curshed ores when air blows through water. It'll yield more output than furnace"
+			],
 			dependencies: ["6CC0325BEFA21C3A"],
 			id: "6F31CB43D28E66DB",
 			tasks: [{
@@ -1329,7 +1333,7 @@
 		},
 		{
 			x: -11.0d,
-			y: 0.5d,
+			y: 2.0d,
 			description: ["To make mixer we will need some iron plates. Mechanical press will make it possible"],
 			dependencies: ["5DAA0D10D64209E5"],
 			id: "768891E581B6597F",
@@ -1340,7 +1344,7 @@
 			}]
 		},
 		{
-			x: -11.0d,
+			x: -9.5d,
 			y: 2.0d,
 			description: ["Something to make plates on"],
 			dependencies: ["768891E581B6597F"],

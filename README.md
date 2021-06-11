@@ -54,4 +54,11 @@ Util:
 - updated all mods
 - updated forge
 
+# changelog 0.2.0
+
+- lowered redstone chance
+- added some more quests (mainly second chapter which unlocks end dimension)
+-
+- updated all mods
+
 discord: https://discord.gg/pbVVZywj
