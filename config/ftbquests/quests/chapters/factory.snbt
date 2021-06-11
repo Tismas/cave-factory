@@ -5,14 +5,81 @@
 	filename: "factory",
 	title: "Factory",
 	default_quest_shape: "",
-	quests: [{
-		x: -8.5d,
-		y: 0.5d,
-		id: "06DA841D4D964885",
-		tasks: [{
-			id: "6A6DF1252F3C2F6E",
-			type: "item",
-			item: "immersiveengineering:blastbrick_reinforced"
-		}]
-	}]
+	quests: [
+		{
+			x: -4.5d,
+			y: -0.5d,
+			description: ["Treated wood is used in many immersive engineering recipes. I suggest making a stack or few."],
+			dependencies: ["3BF666A613E1C259"],
+			id: "7479F4E3E8E9D1A1",
+			tasks: [{
+				id: "1C87E10CC3E15CC1",
+				type: "item",
+				item: "immersiveengineering:treated_wood_horizontal"
+			}]
+		},
+		{
+			x: -9.0d,
+			y: -0.5d,
+			description: ["You can get clay by crushing gravel or using alchemy table (bucket of water and 2 sand blocks make 2 clay)"],
+			id: "7F8986FDAEB83F16",
+			tasks: [{
+				id: "6EBC0FD2B3BB4A4E",
+				type: "item",
+				item: "immersiveengineering:cokebrick",
+				count: 27L
+			}],
+			rewards: [{
+				id: "49524C78D199A24E",
+				type: "item",
+				item: {
+					id: "immersiveengineering:hammer",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -7.5d,
+			y: -0.5d,
+			description: [
+				"Coke coal is produced from coal in coke oven. It can be used as more efficient fuel.",
+				"",
+				"Creosote oil is byproduct of that process and can be used to make treated planks or as a fuel."
+			],
+			dependencies: ["7F8986FDAEB83F16"],
+			id: "3049E6FB7CD5ECCF",
+			tasks: [{
+				id: "309F641EA96A0694",
+				type: "item",
+				item: "immersiveengineering:coal_coke"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -0.5d,
+			description: [""],
+			dependencies: ["7479F4E3E8E9D1A1"],
+			id: "7A8C2C713175BB4B",
+			tasks: [{
+				id: "24771DD3F1789EE6",
+				type: "item",
+				item: "immersiveengineering:watermill"
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -0.5d,
+			description: ["You can extract creosote oil by placing bucket in the slot with blue dot"],
+			dependencies: ["3049E6FB7CD5ECCF"],
+			id: "3BF666A613E1C259",
+			tasks: [{
+				id: "5A29BBCF6807101E",
+				type: "item",
+				item: "immersiveengineering:creosote_bucket"
+			}]
+		}
+	]
 }

@@ -455,9 +455,9 @@
 				item: "minecraft:dirt"
 			}],
 			rewards: [{
-				id: "673DB013732718F3",
+				id: "69CCC56E109C86A2",
 				type: "item",
-				item: "minecraft:grass_block"
+				item: "minecraft:wheat_seeds"
 			}]
 		},
 		{
@@ -560,6 +560,11 @@
 					id: "35514A75E64CDBAA",
 					type: "item",
 					item: "tconstruct:seared_melter"
+				},
+				{
+					id: "42F71A2F10C28919",
+					type: "item",
+					item: "tconstruct:seared_faucet"
 				}
 			],
 			rewards: [{
@@ -1010,7 +1015,7 @@
 			}]
 		},
 		{
-			x: -9.5d,
+			x: -8.0d,
 			y: 2.0d,
 			description: ["We will need some kind of vessel to cantain fluids in it"],
 			dependencies: ["5B9C05F62A007ACA"],
@@ -1099,7 +1104,7 @@
 			}]
 		},
 		{
-			x: -11.0d,
+			x: -9.5d,
 			y: 2.0d,
 			description: [
 				"Remember that you can hold 'W' with a cursor above most items from Create to see how they work",
@@ -1323,7 +1328,7 @@
 			}]
 		},
 		{
-			x: -12.5d,
+			x: -11.0d,
 			y: 0.5d,
 			description: ["To make mixer we will need some iron plates. Mechanical press will make it possible"],
 			dependencies: ["5DAA0D10D64209E5"],
@@ -1336,7 +1341,7 @@
 		},
 		{
 			x: -11.0d,
-			y: 0.5d,
+			y: 2.0d,
 			description: ["Something to make plates on"],
 			dependencies: ["768891E581B6597F"],
 			id: "1D6A8A3D6F2E252B",
@@ -1344,6 +1349,21 @@
 				id: "11B1CEACD8E2AC30",
 				type: "item",
 				item: "create:depot"
+			}]
+		},
+		{
+			x: -12.5d,
+			y: 0.5d,
+			description: ["Dirt, bonemeal and seed in an alchemy table makes grass"],
+			dependencies: [
+				"00776BA8447A22E1",
+				"74A2E1154ABBB80A"
+			],
+			id: "3AD225D1FE1E9C05",
+			tasks: [{
+				id: "57E3ABB4CD19750C",
+				type: "item",
+				item: "minecraft:grass_block"
 			}]
 		}
 	]
