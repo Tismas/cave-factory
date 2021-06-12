@@ -21,7 +21,7 @@
 		{
 			x: -9.0d,
 			y: -0.5d,
-			description: ["You can get clay by crushing gravel or using alchemy table (bucket of water and 2 sand blocks make 2 clay)"],
+			description: ["Check JEI for the possible ways of getting clay, there are a couple of them"],
 			id: "7F8986FDAEB83F16",
 			tasks: [{
 				id: "6EBC0FD2B3BB4A4E",
@@ -47,7 +47,7 @@
 			description: [
 				"Coke coal is produced from coal in coke oven. It can be used as more efficient fuel.",
 				"",
-				"Creosote oil is byproduct of that process and can be used to make treated planks or as a fuel."
+				"Creosote oil is byproduct of that process and can be used as a fuel or to make treated planks."
 			],
 			dependencies: ["7F8986FDAEB83F16"],
 			id: "3049E6FB7CD5ECCF",
@@ -55,6 +55,11 @@
 				id: "309F641EA96A0694",
 				type: "item",
 				item: "immersiveengineering:coal_coke"
+			}],
+			rewards: [{
+				id: "4DBA24C066674FEA",
+				type: "item",
+				item: "immersivepetroleum:projector"
 			}]
 		},
 		{
@@ -82,6 +87,20 @@
 				id: "5A29BBCF6807101E",
 				type: "item",
 				item: "immersiveengineering:creosote_bucket"
+			}],
+			rewards: [{
+				id: "01133067425A4F22",
+				type: "item",
+				item: {
+					ForgeCaps: {
+						Parent: {
+							Size: 23,
+							Items: []
+						}
+					},
+					id: "immersiveengineering:toolbox",
+					Count: 1b
+				}
 			}]
 		},
 		{
@@ -139,6 +158,7 @@
 			y: -2.0d,
 			description: [
 				"Trees? Probably for decoration",
+				"Although you might find some fruits...",
 				"",
 				"Throw seeds into creosote oil to get random sapling"
 			],
@@ -155,9 +175,15 @@
 						value: "minecraft:saplings"
 					}
 				}
+			}],
+			rewards: [{
+				id: "5410F27976F1172E",
+				type: "item",
+				item: "pamhc2foodcore:juiceritem"
 			}]
 		},
 		{
+			title: "Metal press",
 			x: -3.0d,
 			y: -2.0d,
 			dependencies: [
@@ -207,8 +233,8 @@
 			}]
 		},
 		{
-			x: -4.5d,
-			y: -3.5d,
+			x: -3.0d,
+			y: -5.0d,
 			id: "2F2FF6DAFDD2046F",
 			tasks: [{
 				id: "6A7EF75AF1B61C75",
@@ -228,6 +254,7 @@
 			}]
 		},
 		{
+			title: "Arc Furnace",
 			x: -1.5d,
 			y: -0.5d,
 			dependencies: ["7A8C2C713175BB4B"],
@@ -462,6 +489,35 @@
 					id: "0DAD424E50F05174",
 					type: "item",
 					item: "immersiveengineering:wolfpack"
+				}
+			]
+		},
+		{
+			x: -4.5d,
+			y: -3.5d,
+			id: "6517D25F733AF09B",
+			tasks: [
+				{
+					id: "0758D9DE09729B0D",
+					type: "item",
+					item: {
+						id: "immersiveengineering:blueprint",
+						Count: 1b,
+						tag: {
+							blueprint: "bannerpatterns"
+						}
+					}
+				},
+				{
+					id: "591615A1432C57FF",
+					type: "item",
+					item: {
+						id: "immersiveengineering:blueprint",
+						Count: 1b,
+						tag: {
+							blueprint: "components"
+						}
+					}
 				}
 			]
 		}
