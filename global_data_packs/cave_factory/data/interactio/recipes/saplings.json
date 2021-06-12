@@ -1,0 +1,18 @@
+{
+  "type": "interactio:item_fluid_transform",
+  "inputs": [
+    {
+      "item": "minecraft:wheat_seeds",
+      "count": 1,
+      "return_chance": 0
+    }
+  ],
+  "fluid": {
+    "fluid": "immersiveengineering:creosote_oil"
+  },
+  "output": {
+    "tag": "minecraft:saplings",
+    "count": 1
+  },
+  "consume_fluid": 0
+}

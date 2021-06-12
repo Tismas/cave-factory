@@ -1023,6 +1023,306 @@
 				type: "checkmark",
 				title: "Food factory"
 			}]
+		},
+		{
+			x: -3.0d,
+			y: 3.0d,
+			id: "199135D139B98C55",
+			tasks: [{
+				id: "3F17A8FDB530B4FE",
+				type: "item",
+				item: "pamhc2trees:apple_sapling"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: 3.0d,
+			id: "34716B25A3897FDA",
+			tasks: [{
+				id: "2697DBB5022B2C10",
+				type: "item",
+				item: "pamhc2trees:avocado_sapling"
+			}]
+		},
+		{
+			x: -6.0d,
+			y: 3.0d,
+			id: "076FE9EDCE047DB6",
+			tasks: [{
+				id: "617EDC8625ECB088",
+				type: "item",
+				item: "pamhc2trees:candlenut_sapling"
+			}]
+		},
+		{
+			x: -6.0d,
+			y: 4.5d,
+			id: "298776767C125B7A",
+			tasks: [{
+				id: "57DEA95AF94F09C7",
+				type: "item",
+				item: "pamhc2trees:cherry_sapling"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: 4.5d,
+			id: "53341C66CD9FB78E",
+			tasks: [{
+				id: "3042B0CB0ADA404E",
+				type: "item",
+				item: "pamhc2trees:chestnut_sapling"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 4.5d,
+			id: "50A8ABFEBFAE83DB",
+			tasks: [{
+				id: "2D765E6147791819",
+				type: "item",
+				item: "pamhc2trees:gooseberry_sapling"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 6.0d,
+			id: "2090D31CBCD0C1AA",
+			tasks: [{
+				id: "2FEE67A5D851BE1B",
+				type: "item",
+				item: "pamhc2trees:lemon_sapling"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: 6.0d,
+			id: "7CF201E157FBEBB1",
+			tasks: [{
+				id: "1F178BAD5BC58E05",
+				type: "item",
+				item: "pamhc2trees:nutmeg_sapling"
+			}]
+		},
+		{
+			x: -6.0d,
+			y: 6.0d,
+			id: "4A6EACBE925902B4",
+			tasks: [{
+				id: "2E6A52E0CFDC4330",
+				type: "item",
+				item: "pamhc2trees:orange_sapling"
+			}]
+		},
+		{
+			x: -6.0d,
+			y: 7.5d,
+			id: "19EDEB953CBA6C7E",
+			tasks: [{
+				id: "60DB12BF90BFB2F0",
+				type: "item",
+				item: "pamhc2trees:peach_sapling"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: 7.5d,
+			id: "350CC33A055A246E",
+			tasks: [{
+				id: "7BBB5BB36CB00EE6",
+				type: "item",
+				item: "pamhc2trees:pear_sapling"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 7.5d,
+			id: "40B63E50C52EDDF9",
+			tasks: [{
+				id: "48C8F0AC24293F9A",
+				type: "item",
+				item: "pamhc2trees:plum_sapling"
+			}]
+		},
+		{
+			x: -7.5d,
+			y: 3.0d,
+			id: "7C7D161219E53980",
+			tasks: [{
+				id: "69993A44FCC0F313",
+				type: "item",
+				item: "pamhc2trees:walnut_sapling"
+			}]
+		},
+		{
+			x: -7.5d,
+			y: 4.5d,
+			id: "756923060758DFC3",
+			tasks: [{
+				id: "69AD1556C61D9B38",
+				type: "item",
+				item: "pamhc2trees:spiderweb_sapling"
+			}]
+		},
+		{
+			x: -7.5d,
+			y: 6.0d,
+			id: "5FDB69F0BA409F69",
+			tasks: [{
+				id: "0E3E62B2CB175797",
+				type: "item",
+				item: "pamhc2trees:hazelnut_sapling"
+			}]
+		},
+		{
+			x: -7.5d,
+			y: 7.5d,
+			id: "06D53DAB4E15C8D7",
+			tasks: [{
+				id: "2C17C2D478561ED5",
+				type: "item",
+				item: "pamhc2trees:pawpaw_sapling"
+			}]
+		},
+		{
+			x: -9.0d,
+			y: 3.0d,
+			id: "0711A486F602DC68",
+			tasks: [{
+				id: "690959C75C015B5B",
+				type: "item",
+				item: "pamhc2trees:soursop_sapling"
+			}]
+		},
+		{
+			x: -7.5d,
+			y: -4.5d,
+			id: "5AF4320549BEA561",
+			tasks: [{
+				id: "6653EC2C3471018D",
+				type: "item",
+				item: "pamhc2trees:almond_sapling"
+			}]
+		},
+		{
+			x: -7.5d,
+			y: -3.0d,
+			id: "11506D6384F6D5E9",
+			tasks: [{
+				id: "3AA7CC472D4286BA",
+				type: "item",
+				item: "pamhc2trees:apricot_sapling"
+			}]
+		},
+		{
+			x: -7.5d,
+			y: -1.5d,
+			id: "27C6E3F4E1651B7E",
+			tasks: [{
+				id: "6723ED956396F0D2",
+				type: "item",
+				item: "pamhc2trees:banana_sapling"
+			}]
+		},
+		{
+			x: -7.5d,
+			y: 0.0d,
+			id: "679387B4C1214420",
+			tasks: [{
+				id: "0D6C283AA0AE31D4",
+				type: "item",
+				item: "pamhc2trees:cashew_sapling"
+			}]
+		},
+		{
+			x: -7.5d,
+			y: 1.5d,
+			id: "4D4E5BA383F77EB8",
+			tasks: [{
+				id: "7AD57A57C42D8F1B",
+				type: "item",
+				item: "pamhc2trees:cinnamon_sapling"
+			}]
+		},
+		{
+			x: -9.0d,
+			y: -4.5d,
+			id: "3C90665B06221372",
+			tasks: [{
+				id: "0D28AF68E371BE7F",
+				type: "item",
+				item: "pamhc2trees:coconut_sapling"
+			}]
+		},
+		{
+			x: -9.0d,
+			y: -3.0d,
+			id: "543B62C90314143B",
+			tasks: [{
+				id: "6F131AA08A95FBF0",
+				type: "item",
+				item: "pamhc2trees:date_sapling"
+			}]
+		},
+		{
+			x: -9.0d,
+			y: -1.5d,
+			id: "09950FDD4FFF7F81",
+			tasks: [{
+				id: "00214BF09AC93635",
+				type: "item",
+				item: "pamhc2trees:dragonfruit_sapling"
+			}]
+		},
+		{
+			x: -9.0d,
+			y: 0.0d,
+			id: "73D7D5AE5E4790CE",
+			tasks: [{
+				id: "38539C002CD01D91",
+				type: "item",
+				item: "pamhc2trees:durian_sapling"
+			}]
+		},
+		{
+			x: -9.0d,
+			y: 1.5d,
+			id: "5E840F019C025A6E",
+			tasks: [{
+				id: "3D82DF5F68B0D0F0",
+				type: "item",
+				item: "pamhc2trees:fig_sapling"
+			}]
+		},
+		{
+			x: -9.0d,
+			y: 4.5d,
+			id: "704EE9BBF4EE6EBF",
+			tasks: [{
+				id: "6E033E172CC02836",
+				type: "item",
+				item: "pamhc2trees:grapefruit_sapling"
+			}]
+		},
+		{
+			x: -9.0d,
+			y: 6.0d,
+			id: "73995ED92838C2D9",
+			tasks: [{
+				id: "0834504AF3723F07",
+				type: "item",
+				item: "pamhc2trees:lime_sapling"
+			}]
+		},
+		{
+			x: -9.0d,
+			y: 7.5d,
+			id: "703A4048181D0711",
+			tasks: [{
+				id: "09CD31CB9C2CF639",
+				type: "item",
+				item: "pamhc2trees:mango_sapling"
+			}]
 		}
 	]
 }
