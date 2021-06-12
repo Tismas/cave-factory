@@ -1000,7 +1000,54 @@
 				"69BEE75D1B61A85D",
 				"16EEF7F6F0C5658D",
 				"05B5B0B25759EC7E",
-				"3449880D5201F794"
+				"3449880D5201F794",
+				"199135D139B98C55",
+				"50A8ABFEBFAE83DB",
+				"2090D31CBCD0C1AA",
+				"40B63E50C52EDDF9",
+				"350CC33A055A246E",
+				"7CF201E157FBEBB1",
+				"53341C66CD9FB78E",
+				"34716B25A3897FDA",
+				"076FE9EDCE047DB6",
+				"298776767C125B7A",
+				"19EDEB953CBA6C7E",
+				"4A6EACBE925902B4",
+				"06D53DAB4E15C8D7",
+				"5FDB69F0BA409F69",
+				"703A4048181D0711",
+				"73995ED92838C2D9",
+				"1DD78C91C6A99C6A",
+				"35B0CB10EFB283C8",
+				"331855C681F4DF2F",
+				"4CEADD012BEB7E13",
+				"7C7C6983FB3D0692",
+				"704EE9BBF4EE6EBF",
+				"756923060758DFC3",
+				"7C7D161219E53980",
+				"0711A486F602DC68",
+				"007BFD1072E5229E",
+				"797E43EBAE838CCE",
+				"511F26D6EC366110",
+				"755AC73361BA309B",
+				"5E840F019C025A6E",
+				"4D4E5BA383F77EB8",
+				"679387B4C1214420",
+				"73D7D5AE5E4790CE",
+				"0A404D1BCB3BBD24",
+				"2964B208D276243A",
+				"1EC22207C9351DB8",
+				"05E5F77969A7086D",
+				"09950FDD4FFF7F81",
+				"27C6E3F4E1651B7E",
+				"11506D6384F6D5E9",
+				"543B62C90314143B",
+				"5AF4320549BEA561",
+				"3C90665B06221372",
+				"2A566A8CFD71380F",
+				"351AEE0BA4AC48C2",
+				"687BC66B3A4E9AFA",
+				"7D81457056D39F75"
 			],
 			id: "3A53793087C0AE35",
 			tasks: [{
@@ -1010,8 +1057,8 @@
 			}]
 		},
 		{
-			x: -4.5d,
-			y: -6.0d,
+			x: -12.0d,
+			y: 7.5d,
 			description: [
 				"The objective of this chapter is to prepare for ultimate automation of all foods in the pack.",
 				"",
@@ -1322,6 +1369,176 @@
 				id: "09CD31CB9C2CF639",
 				type: "item",
 				item: "pamhc2trees:mango_sapling"
+			}]
+		},
+		{
+			x: -10.5d,
+			y: -4.5d,
+			id: "2A566A8CFD71380F",
+			tasks: [{
+				id: "2200B37C51D99FFB",
+				type: "item",
+				item: "pamhc2trees:olive_sapling"
+			}]
+		},
+		{
+			x: -10.5d,
+			y: -3.0d,
+			id: "351AEE0BA4AC48C2",
+			tasks: [{
+				id: "7405C662F505C2C1",
+				type: "item",
+				item: "pamhc2trees:papaya_sapling"
+			}]
+		},
+		{
+			x: -10.5d,
+			y: -1.5d,
+			id: "05E5F77969A7086D",
+			tasks: [{
+				id: "714A036E7B0A610A",
+				type: "item",
+				item: "pamhc2trees:paperbark_sapling"
+			}]
+		},
+		{
+			x: -10.5d,
+			y: 0.0d,
+			id: "0A404D1BCB3BBD24",
+			tasks: [{
+				id: "19B5BBBAE709E361",
+				type: "item",
+				item: "pamhc2trees:pecan_sapling"
+			}]
+		},
+		{
+			x: -10.5d,
+			y: 1.5d,
+			id: "755AC73361BA309B",
+			tasks: [{
+				id: "76B77D8D1904BC53",
+				type: "item",
+				item: "pamhc2trees:peppercorn_sapling"
+			}]
+		},
+		{
+			x: -10.5d,
+			y: 3.0d,
+			id: "007BFD1072E5229E",
+			tasks: [{
+				id: "3FA539D137D12996",
+				type: "item",
+				item: "pamhc2trees:persimmon_sapling"
+			}]
+		},
+		{
+			x: -10.5d,
+			y: 4.5d,
+			id: "7C7C6983FB3D0692",
+			tasks: [{
+				id: "4690D64664324716",
+				type: "item",
+				item: "pamhc2trees:pistachio_sapling"
+			}]
+		},
+		{
+			x: -10.5d,
+			y: 6.0d,
+			id: "35B0CB10EFB283C8",
+			tasks: [{
+				id: "4BFE383C6FEEF44C",
+				type: "item",
+				item: "pamhc2trees:pomegranate_sapling"
+			}]
+		},
+		{
+			x: -10.5d,
+			y: 7.5d,
+			id: "1DD78C91C6A99C6A",
+			tasks: [{
+				id: "212753F18B69066E",
+				type: "item",
+				item: "pamhc2trees:starfruit_sapling"
+			}]
+		},
+		{
+			x: -12.0d,
+			y: -4.5d,
+			id: "7D81457056D39F75",
+			tasks: [{
+				id: "67FBAA4F042A0EA8",
+				type: "item",
+				item: "pamhc2trees:vanillabean_sapling"
+			}]
+		},
+		{
+			x: -12.0d,
+			y: -3.0d,
+			id: "687BC66B3A4E9AFA",
+			tasks: [{
+				id: "70183F5B07BE6CC8",
+				type: "item",
+				item: "pamhc2trees:breadfruit_sapling"
+			}]
+		},
+		{
+			x: -12.0d,
+			y: -1.5d,
+			id: "1EC22207C9351DB8",
+			tasks: [{
+				id: "4D201F7E55E28EFC",
+				type: "item",
+				item: "pamhc2trees:guava_sapling"
+			}]
+		},
+		{
+			x: -12.0d,
+			y: 0.0d,
+			id: "2964B208D276243A",
+			tasks: [{
+				id: "2A0EA2CA05D2617C",
+				type: "item",
+				item: "pamhc2trees:jackfruit_sapling"
+			}]
+		},
+		{
+			x: -12.0d,
+			y: 1.5d,
+			id: "511F26D6EC366110",
+			tasks: [{
+				id: "45C436F02A4DE298",
+				type: "item",
+				item: "pamhc2trees:lychee_sapling"
+			}]
+		},
+		{
+			x: -12.0d,
+			y: 3.0d,
+			id: "797E43EBAE838CCE",
+			tasks: [{
+				id: "4E171352A3188610",
+				type: "item",
+				item: "pamhc2trees:passionfruit_sapling"
+			}]
+		},
+		{
+			x: -12.0d,
+			y: 4.5d,
+			id: "4CEADD012BEB7E13",
+			tasks: [{
+				id: "0FD0AC9020535FCB",
+				type: "item",
+				item: "pamhc2trees:rambutan_sapling"
+			}]
+		},
+		{
+			x: -12.0d,
+			y: 6.0d,
+			id: "331855C681F4DF2F",
+			tasks: [{
+				id: "1B54E40C3D181C8D",
+				type: "item",
+				item: "pamhc2trees:tamarind_sapling"
 			}]
 		}
 	]
