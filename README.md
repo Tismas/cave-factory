@@ -58,7 +58,7 @@ Util:
 
 - lowered redstone chance
 - added some more quests (mainly second chapter which unlocks end dimension)
--
+- added bauxite to stone drops
 - updated all mods
 
 discord: https://discord.gg/pbVVZywj

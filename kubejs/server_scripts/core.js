@@ -122,6 +122,7 @@ const stoneDrops = {
   "minecraft:redstone_ore": 50,
   "minecraft:iron_ore": 75,
   "create:copper_ore": 75,
+  "immersiveengineering:ore_aluminum": 15,
   "minecraft:gold_ore": 15,
   "create:zinc_ore": 15,
   "minecraft:lapis_ore": 10,

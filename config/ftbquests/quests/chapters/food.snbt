@@ -275,6 +275,739 @@
 				type: "item",
 				item: "pamhc2crops:cauliflowerseeditem"
 			}]
+		},
+		{
+			x: 7.5d,
+			y: -4.5d,
+			id: "25EA0824F823E14A",
+			tasks: [{
+				id: "4287BB667D97B82E",
+				type: "item",
+				item: "pamhc2crops:celeryseeditem"
+			}]
+		},
+		{
+			x: 9.0d,
+			y: -4.5d,
+			id: "3449880D5201F794",
+			tasks: [{
+				id: "760D3269548C439C",
+				type: "item",
+				item: "pamhc2crops:chickpeaseeditem"
+			}]
+		},
+		{
+			x: 10.5d,
+			y: -4.5d,
+			id: "05B5B0B25759EC7E",
+			tasks: [{
+				id: "464D3A076F021EC6",
+				type: "item",
+				item: "pamhc2crops:chilipepperseeditem"
+			}]
+		},
+		{
+			x: 7.5d,
+			y: -3.0d,
+			id: "587EEDAD5E261002",
+			tasks: [{
+				id: "232E50AA0812F8B1",
+				type: "item",
+				item: "pamhc2crops:coffeebeanseeditem"
+			}]
+		},
+		{
+			x: 9.0d,
+			y: -3.0d,
+			id: "69BEE75D1B61A85D",
+			tasks: [{
+				id: "4E00628D9ACD04B3",
+				type: "item",
+				item: "pamhc2crops:cornseeditem"
+			}]
+		},
+		{
+			x: 10.5d,
+			y: -3.0d,
+			id: "16EEF7F6F0C5658D",
+			tasks: [{
+				id: "32AFF9B0BAC5E1FB",
+				type: "item",
+				item: "pamhc2crops:cottonseeditem"
+			}]
+		},
+		{
+			x: 7.5d,
+			y: -1.5d,
+			id: "2086F6C509A46BBE",
+			tasks: [{
+				id: "23ABB2149A0F4E8D",
+				type: "item",
+				item: "pamhc2crops:cranberryseeditem"
+			}]
+		},
+		{
+			x: 9.0d,
+			y: -1.5d,
+			id: "7A235984164B0FB2",
+			tasks: [{
+				id: "09105BF679CF0FEC",
+				type: "item",
+				item: "pamhc2crops:cucumberseeditem"
+			}]
+		},
+		{
+			x: 10.5d,
+			y: -1.5d,
+			id: "640DF1F2C46B92DB",
+			tasks: [{
+				id: "66B3FB3D9D902274",
+				type: "item",
+				item: "pamhc2crops:eggplantseeditem"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 0.0d,
+			id: "1749D31AD0252BC4",
+			tasks: [{
+				id: "191AACB769EA25A3",
+				type: "item",
+				item: "pamhc2crops:elderberryseeditem"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 0.0d,
+			id: "16A0BAB35F0E9004",
+			tasks: [{
+				id: "57E3E18C25CD3938",
+				type: "item",
+				item: "pamhc2crops:flaxseeditem"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 0.0d,
+			id: "6360782AA3A424BE",
+			tasks: [{
+				id: "57FD02DE028816A6",
+				type: "item",
+				item: "pamhc2crops:garlicseeditem"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 0.0d,
+			id: "664384B4259C8994",
+			tasks: [{
+				id: "3C9B883C8C31A9D3",
+				type: "item",
+				item: "pamhc2crops:gingerseeditem"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 0.0d,
+			id: "0A05A05F46874C1B",
+			tasks: [{
+				id: "33CBC848B11B3EEB",
+				type: "item",
+				item: "pamhc2crops:grapeseeditem"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 0.0d,
+			id: "6F9632F85ADD3400",
+			tasks: [{
+				id: "608C7E18F0F4576B",
+				type: "item",
+				item: "pamhc2crops:greengrapeseeditem"
+			}]
+		},
+		{
+			x: 7.5d,
+			y: 0.0d,
+			id: "370121F265D153BE",
+			tasks: [{
+				id: "327AF6A56216B334",
+				type: "item",
+				item: "pamhc2crops:huckleberryseeditem"
+			}]
+		},
+		{
+			x: 9.0d,
+			y: 0.0d,
+			id: "73013BA9BF1EEA66",
+			tasks: [{
+				id: "11B427B6E76B1D63",
+				type: "item",
+				item: "pamhc2crops:jicamaseeditem"
+			}]
+		},
+		{
+			x: 10.5d,
+			y: 0.0d,
+			id: "67ABA41AE1629205",
+			tasks: [{
+				id: "5F147EF455A63947",
+				type: "item",
+				item: "pamhc2crops:juniperberryseeditem"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 1.5d,
+			id: "1C0683440C4D6F13",
+			tasks: [{
+				id: "6F52E825C55A474F",
+				type: "item",
+				item: "pamhc2crops:juteseeditem"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 1.5d,
+			id: "504EA76B0360729A",
+			tasks: [{
+				id: "717214A7CDE3369D",
+				type: "item",
+				item: "pamhc2crops:kaleseeditem"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 1.5d,
+			id: "3F3A3831400C6EE8",
+			tasks: [{
+				id: "695222D77BCD92C9",
+				type: "item",
+				item: "pamhc2crops:kenafseeditem"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 1.5d,
+			id: "4A40EB343E83B33A",
+			tasks: [{
+				id: "73E73D0BF3B256F0",
+				type: "item",
+				item: "pamhc2crops:kiwiseeditem"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 1.5d,
+			id: "7135223BCCABEBAE",
+			tasks: [{
+				id: "758EBEDAE961C97F",
+				type: "item",
+				item: "pamhc2crops:kohlrabiseeditem"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 1.5d,
+			id: "04D2B6732D01AB92",
+			tasks: [{
+				id: "1C5619894DAF243E",
+				type: "item",
+				item: "pamhc2crops:leekseeditem"
+			}]
+		},
+		{
+			x: 7.5d,
+			y: 1.5d,
+			id: "379FA26BD2B06915",
+			tasks: [{
+				id: "771847AAB13B9146",
+				type: "item",
+				item: "pamhc2crops:lentilseeditem"
+			}]
+		},
+		{
+			x: 9.0d,
+			y: 1.5d,
+			id: "309EC865B4820041",
+			tasks: [{
+				id: "55D6F90E74AB9132",
+				type: "item",
+				item: "pamhc2crops:lettuceseeditem"
+			}]
+		},
+		{
+			x: 10.5d,
+			y: 1.5d,
+			id: "507258CF9E4EF128",
+			tasks: [{
+				id: "558361893C970B14",
+				type: "item",
+				item: "pamhc2crops:milletseeditem"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 3.0d,
+			id: "78A062EFE28832A3",
+			tasks: [{
+				id: "0B908EA686B23608",
+				type: "item",
+				item: "pamhc2crops:mulberryseeditem"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 3.0d,
+			id: "697E2A7F008388A6",
+			tasks: [{
+				id: "116E8363126302FD",
+				type: "item",
+				item: "pamhc2crops:mustardseedsseeditem"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 3.0d,
+			id: "55873E47E47A5F11",
+			tasks: [{
+				id: "2E06F73CE4D3E224",
+				type: "item",
+				item: "pamhc2crops:oatsseeditem"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 3.0d,
+			id: "1C19A1EE7A55AE80",
+			tasks: [{
+				id: "18CF0DEF4EC1BD39",
+				type: "item",
+				item: "pamhc2crops:okraseeditem"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 3.0d,
+			id: "7D11C825182A7D5F",
+			tasks: [{
+				id: "548C58E1E4F31960",
+				type: "item",
+				item: "pamhc2crops:onionseeditem"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 3.0d,
+			id: "487C0E8C6D6BA3A8",
+			tasks: [{
+				id: "0BFC0E1B4639768A",
+				type: "item",
+				item: "pamhc2crops:parsnipseeditem"
+			}]
+		},
+		{
+			x: 7.5d,
+			y: 3.0d,
+			id: "311AF8264E62EFE5",
+			tasks: [{
+				id: "37710BEFA6A3C9A3",
+				type: "item",
+				item: "pamhc2crops:peanutseeditem"
+			}]
+		},
+		{
+			x: 9.0d,
+			y: 3.0d,
+			id: "7E20BA14B595377B",
+			tasks: [{
+				id: "2A5A6BD57D1F16CC",
+				type: "item",
+				item: "pamhc2crops:peasseeditem"
+			}]
+		},
+		{
+			x: 10.5d,
+			y: 3.0d,
+			id: "4157D354E0197245",
+			tasks: [{
+				id: "2EFA07F35BA888F0",
+				type: "item",
+				item: "pamhc2crops:pineappleseeditem"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 4.5d,
+			id: "07FB69DBE4C8172E",
+			tasks: [{
+				id: "31AF09481C4EB61B",
+				type: "item",
+				item: "pamhc2crops:quinoaseeditem"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 4.5d,
+			id: "77B754413091D39E",
+			tasks: [{
+				id: "1000462AF287422C",
+				type: "item",
+				item: "pamhc2crops:radishseeditem"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 4.5d,
+			id: "448516C531625D75",
+			tasks: [{
+				id: "654EDFD307605F24",
+				type: "item",
+				item: "pamhc2crops:radishseeditem"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 4.5d,
+			id: "7C27944902695D9E",
+			tasks: [{
+				id: "583669F9123F05F9",
+				type: "item",
+				item: "pamhc2crops:raspberryseeditem"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 4.5d,
+			id: "5BDFA28EAB583BF2",
+			tasks: [{
+				id: "072A97459AF89756",
+				type: "item",
+				item: "pamhc2crops:rhubarbseeditem"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 4.5d,
+			id: "712BB9BCF5F9F946",
+			tasks: [{
+				id: "05A8CA589E5F9BFE",
+				type: "item",
+				item: "pamhc2crops:riceseeditem"
+			}]
+		},
+		{
+			x: 7.5d,
+			y: 4.5d,
+			id: "318ED37A58A150EE",
+			tasks: [{
+				id: "451D72919DABF209",
+				type: "item",
+				item: "pamhc2crops:rutabagaseeditem"
+			}]
+		},
+		{
+			x: 9.0d,
+			y: 4.5d,
+			id: "06CFB24155B62574",
+			tasks: [{
+				id: "7A1F1924631E5B95",
+				type: "item",
+				item: "pamhc2crops:ryeseeditem"
+			}]
+		},
+		{
+			x: 10.5d,
+			y: 4.5d,
+			id: "6227F68FDC761430",
+			tasks: [{
+				id: "68F19D6A48EA9541",
+				type: "item",
+				item: "pamhc2crops:scallionseeditem"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 6.0d,
+			id: "47E90C2E4AD25F85",
+			tasks: [{
+				id: "7F4820DE630E9E9F",
+				type: "item",
+				item: "pamhc2crops:sesameseedsseeditem"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 6.0d,
+			id: "448D9660038C3705",
+			tasks: [{
+				id: "1E633FA0CEE42BEC",
+				type: "item",
+				item: "pamhc2crops:sisalseeditem"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 6.0d,
+			id: "0C9E5D01F1EFD74A",
+			tasks: [{
+				id: "05BB6A8A943F9287",
+				type: "item",
+				item: "pamhc2crops:soybeanseeditem"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 6.0d,
+			id: "339ADE15561D2137",
+			tasks: [{
+				id: "1918D358495B46E3",
+				type: "item",
+				item: "pamhc2crops:spiceleafseeditem"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 6.0d,
+			id: "4A72CFB6426FFDC9",
+			tasks: [{
+				id: "740CD6B98D4A2050",
+				type: "item",
+				item: "pamhc2crops:spinachseeditem"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 6.0d,
+			id: "6433EE2D722C463B",
+			tasks: [{
+				id: "7246F6DE38335E32",
+				type: "item",
+				item: "pamhc2crops:strawberryseeditem"
+			}]
+		},
+		{
+			x: 7.5d,
+			y: 6.0d,
+			id: "3DBCBAC959EEE95D",
+			tasks: [{
+				id: "05E7823888109D5A",
+				type: "item",
+				item: "pamhc2crops:sweetpotatoseeditem"
+			}]
+		},
+		{
+			x: 9.0d,
+			y: 6.0d,
+			id: "1AD1AC8ABD828D08",
+			tasks: [{
+				id: "17B58C6F7CE91C24",
+				type: "item",
+				item: "pamhc2crops:taroseeditem"
+			}]
+		},
+		{
+			x: 10.5d,
+			y: 6.0d,
+			id: "56EB510CFC58CD63",
+			tasks: [{
+				id: "5632D1E2FBB656A2",
+				type: "item",
+				item: "pamhc2crops:tealeafseeditem"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 7.5d,
+			id: "34D6FE079E8CA04D",
+			tasks: [{
+				id: "182BFB2ED12F6121",
+				type: "item",
+				item: "pamhc2crops:tomatilloseeditem"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 7.5d,
+			id: "129FF8833494BAD3",
+			tasks: [{
+				id: "5FF76F36EBC0A29D",
+				type: "item",
+				item: "pamhc2crops:tomatoseeditem"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 7.5d,
+			id: "22864D6FC885E517",
+			tasks: [{
+				id: "50F5F1677AFDFF31",
+				type: "item",
+				item: "pamhc2crops:turnipseeditem"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 7.5d,
+			id: "5A2D70D0DB4605FD",
+			tasks: [{
+				id: "1E293617C343C74E",
+				type: "item",
+				item: "pamhc2crops:waterchestnutseeditem"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 7.5d,
+			id: "009E4FA72EE0BE24",
+			tasks: [{
+				id: "1931BB00DFABDE25",
+				type: "item",
+				item: "pamhc2crops:whitemushroomseeditem"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 7.5d,
+			id: "1A909AB375425D4F",
+			tasks: [{
+				id: "505DE81AD9989466",
+				type: "item",
+				item: "pamhc2crops:wintersquashseeditem"
+			}]
+		},
+		{
+			x: 7.5d,
+			y: 7.5d,
+			id: "2F10989A0BF9AFBC",
+			tasks: [{
+				id: "113D08A797F8DF7C",
+				type: "item",
+				item: "pamhc2crops:zucchiniseeditem"
+			}]
+		},
+		{
+			x: 9.0d,
+			y: 7.5d,
+			id: "6B93CF083D21C1AE",
+			tasks: [{
+				id: "5276433A3164DA7E",
+				type: "item",
+				item: "pamhc2foodcore:sunflowerseedsitem"
+			}]
+		},
+		{
+			x: 10.5d,
+			y: 7.5d,
+			id: "7BE3FD08A8C9EBA1",
+			tasks: [{
+				id: "5306F4A7C980D53C",
+				type: "item",
+				item: "pamhc2foodcore:roastedsunflowerseedsitem"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: 1.0d,
+			description: ["Now that you have all these you won't harvest them by hand, right?,,, RIGHT?"],
+			dependencies: [
+				"6175B58218E733FD",
+				"09DDC5C08DF78A37",
+				"026A930186FD8E56",
+				"6D4D4D66565CB4E0",
+				"236F652246E54990",
+				"7343259C152309A8",
+				"2FDD4615FCA41D76",
+				"6E78427963DBC211",
+				"2C01DADDE4933529",
+				"43501CFD944976CE",
+				"61B5E32EE1539B83",
+				"5058C441D5B1E157",
+				"1749D31AD0252BC4",
+				"1C0683440C4D6F13",
+				"78A062EFE28832A3",
+				"07FB69DBE4C8172E",
+				"47E90C2E4AD25F85",
+				"34D6FE079E8CA04D",
+				"129FF8833494BAD3",
+				"448D9660038C3705",
+				"77B754413091D39E",
+				"697E2A7F008388A6",
+				"504EA76B0360729A",
+				"16A0BAB35F0E9004",
+				"5F74DFFE7438AE76",
+				"29D191A9B42E209B",
+				"36AF6FDA3036EE13",
+				"110C02E329D3AF85",
+				"73BF4FA7EDC43878",
+				"65181DDD3B5F4A9E",
+				"6360782AA3A424BE",
+				"3F3A3831400C6EE8",
+				"55873E47E47A5F11",
+				"448516C531625D75",
+				"0C9E5D01F1EFD74A",
+				"22864D6FC885E517",
+				"5A2D70D0DB4605FD",
+				"339ADE15561D2137",
+				"7C27944902695D9E",
+				"1C19A1EE7A55AE80",
+				"4A40EB343E83B33A",
+				"664384B4259C8994",
+				"5216B642E398DC40",
+				"3738B1B9F0D8D06D",
+				"55A59BAD44F465B8",
+				"3AD6A3B4F88EC1F3",
+				"5DE0E4C899777F42",
+				"496CC2DDEF75D204",
+				"0A05A05F46874C1B",
+				"7135223BCCABEBAE",
+				"7D11C825182A7D5F",
+				"5BDFA28EAB583BF2",
+				"4A72CFB6426FFDC9",
+				"009E4FA72EE0BE24",
+				"1A909AB375425D4F",
+				"6433EE2D722C463B",
+				"712BB9BCF5F9F946",
+				"487C0E8C6D6BA3A8",
+				"04D2B6732D01AB92",
+				"6F9632F85ADD3400",
+				"54C423220CE553FF",
+				"09647434BD280332",
+				"1C8619AB32B395B4",
+				"25EA0824F823E14A",
+				"587EEDAD5E261002",
+				"2086F6C509A46BBE",
+				"370121F265D153BE",
+				"379FA26BD2B06915",
+				"311AF8264E62EFE5",
+				"318ED37A58A150EE",
+				"3DBCBAC959EEE95D",
+				"2F10989A0BF9AFBC",
+				"6B93CF083D21C1AE",
+				"7BE3FD08A8C9EBA1",
+				"56EB510CFC58CD63",
+				"1AD1AC8ABD828D08",
+				"06CFB24155B62574",
+				"6227F68FDC761430",
+				"4157D354E0197245",
+				"7E20BA14B595377B",
+				"309EC865B4820041",
+				"507258CF9E4EF128",
+				"73013BA9BF1EEA66",
+				"67ABA41AE1629205",
+				"640DF1F2C46B92DB",
+				"7A235984164B0FB2",
+				"69BEE75D1B61A85D",
+				"16EEF7F6F0C5658D",
+				"05B5B0B25759EC7E",
+				"3449880D5201F794"
+			],
+			id: "3A53793087C0AE35",
+			tasks: [{
+				id: "21728A2DF00502CE",
+				type: "item",
+				item: "create:mechanical_harvester"
+			}]
 		}
 	]
 }

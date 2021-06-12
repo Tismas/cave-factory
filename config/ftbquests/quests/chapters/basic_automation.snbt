@@ -916,10 +916,10 @@
 		},
 		{
 			title: "Static automatic resource generation",
-			x: -6.5d,
+			x: -5.0d,
 			y: -2.5d,
 			description: ["Basic cobble gen here can make a lot of recources"],
-			dependencies: ["251FE836D9C631D1"],
+			dependencies: ["36629C9E9B88196B"],
 			id: "27234BFE02A16A98",
 			tasks: [{
 				id: "6D3B654ABEFC54EF",
@@ -1209,6 +1209,11 @@
 				id: "6EFA13470A3DB89E",
 				type: "item",
 				item: "create:encased_fan"
+			}],
+			rewards: [{
+				id: "0ED1963D7ED68992",
+				type: "item",
+				item: "minecraft:campfire"
 			}]
 		},
 		{
@@ -1240,9 +1245,9 @@
 			}]
 		},
 		{
-			x: -6.5d,
+			x: -5.0d,
 			y: -1.0d,
-			dependencies: ["251FE836D9C631D1"],
+			dependencies: ["36629C9E9B88196B"],
 			id: "1C1569085B97A270",
 			tasks: [{
 				id: "4F55C70882178379",
@@ -1368,6 +1373,48 @@
 				id: "57E3ABB4CD19750C",
 				type: "item",
 				item: "minecraft:grass_block"
+			}]
+		},
+		{
+			x: -6.5d,
+			y: -1.0d,
+			dependencies: ["251FE836D9C631D1"],
+			id: "36629C9E9B88196B",
+			tasks: [{
+				id: "29DEE10725942A91",
+				type: "item",
+				item: "minecraft:quartz"
+			}]
+		},
+		{
+			x: -6.5d,
+			y: -2.5d,
+			description: [
+				"Easier way of controlling rotation speed. ",
+				"",
+				"You can reuse crafters that you setup for crushing wheels in making integrated circuits - if you give them a redstone signal they will start crafting even if not all slots are filled in."
+			],
+			dependencies: ["36629C9E9B88196B"],
+			id: "08FF9DB65F64C95A",
+			tasks: [{
+				id: "5E5CE96FC01ABF12",
+				type: "item",
+				item: "create:rotation_speed_controller"
+			}],
+			rewards: [{
+				id: "4BD5E8FD8C4FE591",
+				type: "item",
+				item: {
+					id: "create:handheld_blockzapper",
+					Count: 1b,
+					tag: {
+						Retriever: "Brass",
+						Scope: "Brass",
+						Amplifier: "Brass",
+						Body: "Brass",
+						Accelerator: "Brass"
+					}
+				}
 			}]
 		}
 	]
