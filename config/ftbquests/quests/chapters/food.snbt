@@ -1008,6 +1008,21 @@
 				type: "item",
 				item: "create:mechanical_harvester"
 			}]
+		},
+		{
+			x: -4.5d,
+			y: -6.0d,
+			description: [
+				"The objective of this chapter is to prepare for ultimate automation of all foods in the pack.",
+				"",
+				"With a dedication to @Biel"
+			],
+			id: "450E3B12EDDC7A34",
+			tasks: [{
+				id: "41453A658DA0BEFA",
+				type: "checkmark",
+				title: "Food factory"
+			}]
 		}
 	]
 }
