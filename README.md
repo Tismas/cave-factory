@@ -58,8 +58,8 @@ Util:
 
 - lowered redstone chance
 - added some more quests (mainly second chapter which unlocks end dimension)
-- added bauxite to stone drops
-- added twerking
+- added bauxite, silver and lead to stone drops
+- twerking
 - updated all mods
 
 discord: https://discord.gg/pbVVZywj

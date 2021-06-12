@@ -31,7 +31,8 @@
 				type: "item",
 				title: "Pearls",
 				item: "minecraft:ender_pearl",
-				count: 1000L
+				count: 1000L,
+				consume_items: true
 			}]
 		}
 	]

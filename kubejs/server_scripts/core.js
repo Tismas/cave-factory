@@ -7,11 +7,9 @@ settings.logErroringRecipes = true;
 
 onEvent("block.right_click", (event) => {
   const { block, hand, item, world, player } = event;
-  if (
-    hand.name() == "MAIN_HAND" &&
-    item.toString() == "item.empty" &&
-    player.isCrouching()
-  ) {
+  if (hand.name() != "MAIN_HAND") return;
+
+  if (item.toString() == "item.empty" && player.isCrouching()) {
     if (block.equals("minecraft:stone")) {
       const entity = world.createEntity("item");
       entity.item = "botania:pebble";
@@ -21,6 +19,16 @@ onEvent("block.right_click", (event) => {
         block.pos.z + 0.5
       );
       entity.spawn();
+    }
+  }
+  if (item == "create:wrench" && player.isCrouching()) {
+    if (block.equals("minecraft:end_portal_frame")) {
+      const hasEnderEye = block.properties.eye;
+      block.set("minecraft:air");
+      player.give("minecraft:end_portal_frame");
+      if (hasEnderEye == "true") {
+        player.give("minecraft:ender_eye");
+      }
     }
   }
 });
@@ -123,6 +131,8 @@ const stoneDrops = {
   "minecraft:iron_ore": 75,
   "create:copper_ore": 75,
   "immersiveengineering:ore_aluminum": 15,
+  "immersiveengineering:ore_silver": 15,
+  "immersiveengineering:ore_lead": 15,
   "minecraft:gold_ore": 15,
   "create:zinc_ore": 15,
   "minecraft:lapis_ore": 10,

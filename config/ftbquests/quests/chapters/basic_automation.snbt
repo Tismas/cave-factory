@@ -4,6 +4,7 @@
 	order_index: 0,
 	filename: "basic_automation",
 	title: "Basic automation",
+	icon: "engineersdecor:small_block_breaker",
 	default_quest_shape: "",
 	quests: [
 		{
