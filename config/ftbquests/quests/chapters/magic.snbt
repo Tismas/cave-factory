@@ -8,6 +8,7 @@
 	quests: [{
 		x: -2.5d,
 		y: 1.0d,
+		description: ["Create a 2x2 pool of water, surround it with flowers and throw a diamond into water to create a portal"],
 		id: "54E4F67C49D8034A",
 		tasks: [{
 			id: "5A3EBB8573A0EB73",

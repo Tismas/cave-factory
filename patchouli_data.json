@@ -35,6 +35,26 @@
         "bloodmagic:rituals/ritual_list/ritual_harvest"
       ],
       "completedManualQuests": []
+    },
+    "storagenetwork:network_book": {
+      "viewedEntries": [
+        "storagenetwork:exchange",
+        "storagenetwork:collector",
+        "storagenetwork:gs_priority",
+        "storagenetwork:gs_chunks",
+        "storagenetwork:storage_kabel",
+        "storagenetwork:filter_kabel"
+      ],
+      "bookmarks": [],
+      "history": [
+        "storagenetwork:filter_kabel",
+        "storagenetwork:storage_kabel",
+        "storagenetwork:gs_chunks",
+        "storagenetwork:gs_priority",
+        "storagenetwork:collector",
+        "storagenetwork:exchange"
+      ],
+      "completedManualQuests": []
     }
   }
 }

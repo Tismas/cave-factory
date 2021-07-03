@@ -66,6 +66,7 @@ Util:
 
 - lowered glowstone chance from torches
 - added all of the cobblestones to crushing recipe for gravel
+- added simple storage network quests
 - updated all mods
 
 discord: https://discord.gg/pbVVZywj

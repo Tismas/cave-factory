@@ -5,14 +5,166 @@
 	filename: "storage",
 	title: "Storage",
 	default_quest_shape: "",
-	quests: [{
-		x: 0.0d,
-		y: 0.0d,
-		id: "11735E87A4616DB2",
-		tasks: [{
-			id: "330C0CA4ACBE6A66",
-			type: "item",
-			item: "storagenetwork:master"
-		}]
-	}]
+	quests: [
+		{
+			x: -1.5d,
+			y: 1.5d,
+			description: ["Heart of the network"],
+			dependencies: ["20DC61B3ACD0513A"],
+			id: "11735E87A4616DB2",
+			tasks: [{
+				id: "330C0CA4ACBE6A66",
+				type: "item",
+				item: "storagenetwork:master"
+			}],
+			rewards: [{
+				id: "64E403B0F546BFA8",
+				type: "item",
+				item: {
+					id: "patchouli:guide_book",
+					Count: 1b,
+					tag: {
+						"patchouli:book": "storagenetwork:network_book"
+					}
+				}
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 0.0d,
+			description: ["Integrates crafting grid into the table"],
+			dependencies: ["1559CD058FE960AB"],
+			id: "126A4470B9031275",
+			tasks: [{
+				id: "7CA9085B08AEDC10",
+				type: "item",
+				item: "storagenetwork:request"
+			}],
+			rewards: [{
+				id: "542827E7C8AEB6D6",
+				type: "item",
+				item: "storagenetwork:kabel",
+				count: 16
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 0.0d,
+			description: ["Basic cable for connecting other, more useful cables together"],
+			id: "20DC61B3ACD0513A",
+			tasks: [{
+				id: "4392990C226A6770",
+				type: "item",
+				item: "storagenetwork:kabel"
+			}]
+		},
+		{
+			x: -0.5d,
+			y: -1.0d,
+			description: [
+				"Cable used to link other inventories to the network.",
+				"",
+				"Use it to connect storage drawer controller and a few diamond chests and you're set (at least untill you'll want autocrafting)",
+				"",
+				"To set priority or filter items you need filtered link cables tho"
+			],
+			dependencies: ["20DC61B3ACD0513A"],
+			id: "2C7B833F8745ADC7",
+			tasks: [{
+				id: "1DA0BB3AD83C0D5B",
+				type: "item",
+				item: "storagenetwork:storage_kabel"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -1.0d,
+			description: ["Imports stuff from inventory to the network"],
+			dependencies: ["20DC61B3ACD0513A"],
+			id: "060226B4E6093843",
+			tasks: [{
+				id: "56623C868AE484DC",
+				type: "item",
+				item: "storagenetwork:import_kabel"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 0.0d,
+			description: ["Same as import cable but can be configured and upgraded"],
+			dependencies: [
+				"20DC61B3ACD0513A",
+				"060226B4E6093843"
+			],
+			id: "01D84452556204A8",
+			tasks: [{
+				id: "0EF6E4B33E763039",
+				type: "item",
+				item: "storagenetwork:import_filter_kabel"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -1.5d,
+			description: ["Like link cables but can be configured(priority and filters) and can be upgraded"],
+			dependencies: ["20DC61B3ACD0513A"],
+			id: "7162D4A1F6F0AFE1",
+			tasks: [{
+				id: "1F6E01A7CDC9258F",
+				type: "item",
+				item: "storagenetwork:filter_kabel"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: 1.0d,
+			description: ["Exports items from network to the connected inventory"],
+			dependencies: ["20DC61B3ACD0513A"],
+			id: "6417724113F60898",
+			tasks: [{
+				id: "7F4FCDA7A7B6460A",
+				type: "item",
+				item: "storagenetwork:export_kabel"
+			}]
+		},
+		{
+			x: -0.5d,
+			y: 1.0d,
+			description: ["Allows you to see, pull and insert items from all connected inventories"],
+			dependencies: ["20DC61B3ACD0513A"],
+			id: "1559CD058FE960AB",
+			tasks: [{
+				id: "07691036FB589372",
+				type: "item",
+				item: "storagenetwork:inventory"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 0.0d,
+			description: [
+				"Allows you to access the network from anywhere as long as you have it with you",
+				"",
+				"Shift right click network root to link it"
+			],
+			dependencies: ["126A4470B9031275"],
+			id: "41C31AEB1B2335E9",
+			tasks: [{
+				id: "4E69B808790A4A79",
+				type: "item",
+				item: "storagenetwork:crafting_remote"
+			}]
+		},
+		{
+			x: 0.5d,
+			y: 2.0d,
+			dependencies: ["1559CD058FE960AB"],
+			id: "09828B6A756871F1",
+			tasks: [{
+				id: "57389192C561FC2F",
+				type: "item",
+				item: "storagenetwork:exchange"
+			}]
+		}
+	]
 }

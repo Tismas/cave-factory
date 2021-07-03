@@ -773,7 +773,11 @@
 			x: -6.5d,
 			y: 0.5d,
 			shape: "diamond",
-			description: ["This is a challenge. Using create make a machine that can dig space in front of it and keep moving forwards"],
+			description: [
+				"This is a challenge. Using create make a machine that can dig space in front of it and keep moving forwards",
+				"",
+				"You can also use cart assembler to move spawners"
+			],
 			dependencies: ["251FE836D9C631D1"],
 			id: "1C5C673AA4F24799",
 			tasks: [
