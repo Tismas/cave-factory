@@ -1583,6 +1583,206 @@
 				type: "item",
 				item: "pamhc2trees:tamarind_sapling"
 			}]
+		},
+		{
+			x: -13.5d,
+			y: -4.5d,
+			id: "4538D394EAC0248C",
+			tasks: [{
+				id: "3FF2FB1AE6DCE5C9",
+				type: "item",
+				item: "excompressum:wolf_bait"
+			}]
+		},
+		{
+			x: -13.5d,
+			y: -3.0d,
+			id: "7B28F5A69C41AD07",
+			tasks: [{
+				id: "7A7FD19F1EB7C304",
+				type: "item",
+				item: "excompressum:ocelot_bait"
+			}]
+		},
+		{
+			x: -13.5d,
+			y: -1.5d,
+			id: "0FF521954BD9A9D3",
+			tasks: [{
+				id: "0DA0DBF1A46E5957",
+				type: "item",
+				item: "excompressum:cow_bait"
+			}]
+		},
+		{
+			x: -13.5d,
+			y: 0.0d,
+			id: "2BA2E592F26BF2A5",
+			tasks: [{
+				id: "52C15562B4CACD3C",
+				type: "item",
+				item: "excompressum:pig_bait"
+			}]
+		},
+		{
+			x: -13.5d,
+			y: 1.5d,
+			id: "7C2B39BA8C422096",
+			tasks: [{
+				id: "53DF134952312377",
+				type: "item",
+				item: "excompressum:chicken_bait"
+			}]
+		},
+		{
+			x: -13.5d,
+			y: 3.0d,
+			id: "2D56B1AACE0586EB",
+			tasks: [{
+				id: "70D373F4F9B1D335",
+				type: "item",
+				item: "excompressum:sheep_bait"
+			}]
+		},
+		{
+			x: -13.5d,
+			y: 4.5d,
+			id: "01B17A593786141E",
+			tasks: [{
+				id: "53FAA350394D680F",
+				type: "item",
+				item: "excompressum:squid_bait"
+			}]
+		},
+		{
+			x: -13.5d,
+			y: 6.0d,
+			id: "3E4A0E314826B1AB",
+			tasks: [{
+				id: "6A49533477F6E846",
+				type: "item",
+				item: "excompressum:rabbit_bait"
+			}]
+		},
+		{
+			x: -13.5d,
+			y: 7.5d,
+			id: "3C580EC2106FF26B",
+			tasks: [{
+				id: "1730ED4F26358420",
+				type: "item",
+				item: "excompressum:horse_bait"
+			}]
+		},
+		{
+			x: -15.0d,
+			y: -1.5d,
+			id: "6BEE1CAD6756E7B1",
+			tasks: [{
+				id: "78851603BCA628FF",
+				type: "item",
+				item: "excompressum:donkey_bait"
+			}]
+		},
+		{
+			x: -15.0d,
+			y: -3.0d,
+			dependencies: ["6A0EEFBB24526029"],
+			id: "50F3F42F0769D152",
+			tasks: [{
+				id: "0F7BF9934B9AB1AE",
+				type: "item",
+				item: "excompressum:polar_bear_bait"
+			}]
+		},
+		{
+			x: -15.0d,
+			y: 7.5d,
+			id: "14BE10EC6BA3F51D",
+			tasks: [{
+				id: "1483C776720B47FE",
+				type: "item",
+				item: "excompressum:llama_bait"
+			}]
+		},
+		{
+			x: -15.0d,
+			y: 0.0d,
+			id: "58919C628D9B33D0",
+			tasks: [{
+				id: "0D95FFF217BC346F",
+				type: "item",
+				item: "excompressum:parrot_bait"
+			}]
+		},
+		{
+			x: -15.0d,
+			y: 1.5d,
+			id: "04EA1309FF51B60F",
+			tasks: [{
+				id: "62088780B8FFAE0B",
+				type: "item",
+				item: "excompressum:cat_bait"
+			}]
+		},
+		{
+			x: -15.0d,
+			y: 3.0d,
+			id: "6FA73DD7B28926EA",
+			tasks: [{
+				id: "0C11C728DCB6EC0C",
+				type: "item",
+				item: "excompressum:fox_bait"
+			}]
+		},
+		{
+			x: -15.0d,
+			y: 4.5d,
+			id: "0128F4A624B27D00",
+			tasks: [{
+				id: "168498755B8F5C29",
+				type: "item",
+				item: "excompressum:turtle_bait"
+			}]
+		},
+		{
+			x: -15.0d,
+			y: 6.0d,
+			id: "3B5BF36A210C8635",
+			tasks: [{
+				id: "50B4C3583F6DB52A",
+				type: "item",
+				item: "excompressum:mooshroom_bait"
+			}]
+		},
+		{
+			x: -15.0d,
+			y: -4.5d,
+			description: ["To get snow, place water near daisy, it will slowly turn into snow"],
+			dependencies: ["31B8F55E7591148C"],
+			id: "6A0EEFBB24526029",
+			tasks: [
+				{
+					id: "56DE22699A547D0B",
+					type: "item",
+					item: "botania:pure_daisy"
+				},
+				{
+					id: "36E32085D8C84D76",
+					type: "item",
+					item: "minecraft:snowball"
+				}
+			]
+		},
+		{
+			x: -16.5d,
+			y: -4.5d,
+			id: "31B8F55E7591148C",
+			tasks: [{
+				id: "4D5A8870B88E6207",
+				type: "item",
+				item: "botania:fertilizer"
+			}]
 		}
 	]
 }

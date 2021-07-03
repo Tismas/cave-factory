@@ -5,6 +5,13 @@ onEvent("recipes", (event) => {
   event.remove({ output: "create:mechanical_crafter" });
   event.remove({ id: "immersiveengineering:blastfurnace/steel" });
 
+  getItemsFromMod("excompressum").forEach((exCompressumItem) => {
+    const itemId = exCompressumItem.getId();
+    if (!itemId.contains("bait")) {
+      event.remove({ output: itemId });
+    }
+  });
+
   event.shapeless("minecraft:cobblestone", new Array(4).fill("botania:pebble"));
   event.shaped("7x create:mechanical_crafter", ["SSS", " S ", "SSS"], {
     S: "minecraft:crafting_table",

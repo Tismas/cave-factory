@@ -1,8 +1,11 @@
 // priority: 1
 
 const itemByTag = {};
+const itemByMod = {};
 
 Item.list.forEach((itemEl) => {
+  itemByMod[itemEl.mod] = itemByMod[itemEl.mod] || [];
+  itemByMod[itemEl.mod].push(itemEl);
   const tags = itemEl.tags;
   tags.forEach((tag) => {
     itemByTag[tag] = itemByTag[tag] || [];
@@ -30,6 +33,8 @@ function spawnFromPool(world, itemPool, count, x, y, z) {
 }
 
 function getItemsFromTag(tag) {
-  console.log(itemByTag);
   return itemByTag[tag] || [];
+}
+function getItemsFromMod(mod) {
+  return itemByMod[mod] || [];
 }
