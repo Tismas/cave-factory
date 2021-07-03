@@ -184,6 +184,8 @@
     "chancecubes:block_thrower": true,
     "chancecubes:potion-works": true,
     "chancecubes:connect_4": true,
-    "chancecubes:jar_guess": true
+    "chancecubes:jar_guess": true,
+    "chancecubes:dark_o_the_wise": true,
+    "chancecubes:loot_box": true
   }
 }

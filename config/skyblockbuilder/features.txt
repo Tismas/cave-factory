@@ -264,8 +264,8 @@ pamhc2trees:tamarind_worldgen
 pamhc2trees:maple_worldgen
 pamhc2trees:pinenut_worldgen
 create:create_config_driven_ore
-appliedenergistics2:charged_quartz_ore
 tconstruct:slime_tree
+appliedenergistics2:charged_quartz_ore
 immersiveengineering:mineral_vein
 immersiveengineering:ie_ore
 immersiveengineering:ore_retro

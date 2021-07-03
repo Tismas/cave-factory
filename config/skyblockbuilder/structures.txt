@@ -39,10 +39,10 @@ betterendforge:giant_mossy_glowshroom_structure
 betterendforge:painted_mountain_structure
 betterendforge:eternal_portal_structure
 betterendforge:giant_ice_star_structure
-appliedenergistics2:meteorite
 tconstruct:earth_slime_island
 tconstruct:overworld_slime_island
 tconstruct:clay_island
 tconstruct:nether_slime_island
 tconstruct:end_slime_island
+appliedenergistics2:meteorite
 quark:big_dungeon

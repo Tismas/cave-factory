@@ -8,4 +8,6 @@
 	tankFluidModel = false
 	#If true, the game will log all material textures which do not exist in resource packs but can be added, can be helpful for moddevs or resourcepack makers
 	logMissingMaterialTextures = false
+	#If true, the game will log all modifier textures which do not exist in resource packs but can be added, can be helpful for moddevs or resourcepack makers
+	logMissingModifierTextures = false
 
