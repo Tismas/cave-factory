@@ -938,7 +938,7 @@
 			]
 		},
 		{
-			x: 0.0d,
+			x: 1.5d,
 			y: 1.0d,
 			description: [
 				"Place it on the ground and feed it emeralds untill it won't accept anymore. It'll make it spawn villager after some time.",
@@ -952,6 +952,40 @@
 				id: "7AF97D57CCAC6FFC",
 				type: "item",
 				item: "botania:cocoon"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 1.0d,
+			description: [
+				"You can use drill to detect resources in a given chunk",
+				"",
+				"It requires power so here's a capacitor bank to make it easier to power it in different places",
+				"You can place the sample on the ground for future reference by shift right clicking it"
+			],
+			dependencies: ["0DBCF8BD514263E7"],
+			id: "6ACB35F695AC9C40",
+			tasks: [{
+				id: "6242DD5B19ED2B39",
+				type: "item",
+				item: "immersiveengineering:sample_drill"
+			}],
+			rewards: [{
+				id: "5A90990CB25E7F5A",
+				type: "item",
+				item: {
+					id: "immersiveengineering:capacitor_lv",
+					Count: 1b,
+					tag: {
+						sideConfig_0: 0,
+						ifluxEnergy: 100000,
+						sideConfig_1: 1,
+						sideConfig_2: 0,
+						sideConfig_3: 0,
+						sideConfig_4: 0,
+						sideConfig_5: 0
+					}
+				}
 			}]
 		}
 	]

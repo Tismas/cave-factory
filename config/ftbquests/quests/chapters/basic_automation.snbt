@@ -801,14 +801,33 @@
 					id: "2BC366BA32642749",
 					type: "item",
 					item: "create:mechanical_plough"
+				},
+				{
+					id: "5426B3BE033F2A2D",
+					type: "item",
+					item: {
+						id: "create:super_glue",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
 				}
 			],
-			rewards: [{
-				id: "402A1C4D7D8B1F0F",
-				type: "item",
-				item: "minecraft:rail",
-				count: 8
-			}]
+			rewards: [
+				{
+					id: "402A1C4D7D8B1F0F",
+					type: "item",
+					item: "minecraft:rail",
+					count: 8
+				},
+				{
+					id: "7EDC807CACABD386",
+					type: "item",
+					item: "create:linear_chassis",
+					count: 6
+				}
+			]
 		},
 		{
 			x: -14.0d,
