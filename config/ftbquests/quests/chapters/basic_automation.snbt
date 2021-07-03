@@ -188,12 +188,11 @@
 					Count: 1b,
 					tag: {
 						tic_stats: {
-							mining_speed: 4.4f,
-							attack: 1.0f,
-							reach: 5.0f,
-							durability: 104,
-							attack_speed: 1.2f,
-							harvest_level: 1
+							"tconstruct:attack_speed": 1.2f,
+							"tconstruct:mining_speed": 4.4f,
+							"tconstruct:attack_damage": 1.0f,
+							"tconstruct:harvest_level": 1.0f,
+							"tconstruct:durability": 104.0f
 						},
 						tic_broken: 0b,
 						tic_modifiers: [
@@ -1202,7 +1201,7 @@
 			description: [
 				"By blowing air through lava you can smelt items very efficiently. It will burn food though - to cook more delicate stuff, blow air through fire.",
 				"",
-				"Also it can wash curshed ores when air blows through water. It'll yield more output than furnace"
+				"Also it can wash crushed ores when air blows through water. It'll yield more output than furnace"
 			],
 			dependencies: ["6CC0325BEFA21C3A"],
 			id: "6F31CB43D28E66DB",

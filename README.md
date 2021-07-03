@@ -62,4 +62,10 @@ Util:
 - twerking
 - updated all mods
 
+# changelog 0.3.0
+
+- lowered glowstone chance from torches
+- added all of the cobblestones to crushing recipe for gravel
+- updated all mods
+
 discord: https://discord.gg/pbVVZywj

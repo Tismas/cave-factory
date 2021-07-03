@@ -33,9 +33,14 @@ onEvent("recipes", (event) => {
 
   event.stonecutting("4x tconstruct:seared_brick", "tconstruct:seared_stone");
   event.recipes.create.crushing(
-    Item.of("minecraft:glowstone_dust").withChance(0.5),
+    Item.of("minecraft:glowstone_dust").withChance(0.25),
     "minecraft:torch"
   );
+
+  const cobblestones = getItemsFromTag("forge:cobblestone");
+  cobblestones.forEach((cobble) => {
+    event.recipes.create.crushing("minecraft:gravel", cobble);
+  });
   event.recipes.create.crushing(
     Item.of("minecraft:vine"),
     "minecraft:mossy_cobblestone"
