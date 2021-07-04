@@ -67,6 +67,7 @@ Util:
 - lowered glowstone chance from torches
 - added all of the cobblestones to crushing recipe for gravel
 - added simple storage network quests
+- added twilight forest quests
 - added baits from ex compressum
 - updated all mods
 
