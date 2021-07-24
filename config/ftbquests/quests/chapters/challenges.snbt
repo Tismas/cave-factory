@@ -34,6 +34,20 @@
 				count: 1000L,
 				consume_items: true
 			}]
+		},
+		{
+			title: "That's gonna require a lot of space, but it looks kinda cool",
+			x: -3.0d,
+			y: 0.0d,
+			id: "5AC28678866E7EED",
+			tasks: [{
+				id: "06852975AC663ABF",
+				type: "advancement",
+				title: "Build minecolonies townhall level 5",
+				icon: "minecolonies:blockhuttownhall",
+				advancement: "minecolonies:minecolonies/build_town_hall_5",
+				criterion: ""
+			}]
 		}
 	]
 }

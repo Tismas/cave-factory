@@ -71,4 +71,10 @@ Util:
 - added baits from ex compressum
 - updated all mods
 
+# changelog 0.4.0
+
+- refined storage quests
+- infinite storage disk challenge
+- minecolonies townhall level 5 challenge
+
 discord: https://discord.gg/pbVVZywj
