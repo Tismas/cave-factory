@@ -51,17 +51,24 @@
 	#Max level for Plague Bringer [1..10|default:5]
 	#Range: 1 ~ 10
 	max_level_plague_bringer = 5
-	#Enables the enchantment Bone Shield [false/true|default:true]
-	enable_enchantment_bone_shield = true
 	#Enables the enchantment Blessing [false/true|default:true]
 	enable_enchantment_blessing = true
 	#Allows Curse of Bones at enchanting table [false/true|default:false]
 	curse_of_bones_enchanting_table = false
 	#Allows Blessing at enchanting table [false/true|default:false]
 	blessing_enchanting_table = false
-	#Max level for Curse of Bones [1..5|default:5]
-	#Range: 1 ~ 5
+	#Max level for Curse of Bones [1..10|default:5]
+	#Range: 1 ~ 10
 	max_level_curse_of_bones = 5
+	#Enables the enchantment Curse of Bones [false/true|default:true]
+	enable_enchantment_curse_of_bones = true
+	#Allows Soulbound at enchanting table [false/true|default:false]
+	soulbound_enchanting_table = true
+	#Allows Shadow Step at enchanting table [false/true|default:false]
+	shadow_step_enchanting_table = false
+	#Max level for Shadow Step [1..10|default:5]
+	#Range: 1 ~ 10
+	max_level_shadow_step = 5
 
 #For settings related to decorative tombs and magic items
 [decorative_grave]
