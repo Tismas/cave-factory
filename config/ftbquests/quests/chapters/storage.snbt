@@ -8,7 +8,7 @@
 	quests: [
 		{
 			x: -1.5d,
-			y: 1.5d,
+			y: 2.0d,
 			description: ["Heart of the network"],
 			dependencies: ["20DC61B3ACD0513A"],
 			id: "11735E87A4616DB2",
@@ -164,6 +164,287 @@
 				id: "57389192C561FC2F",
 				type: "item",
 				item: "storagenetwork:exchange"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 3.5d,
+			description: ["Heart of the refined storage network"],
+			dependencies: ["11735E87A4616DB2"],
+			id: "1FA9E95EABA9EFBB",
+			tasks: [{
+				id: "79001C35CD968D3B",
+				type: "item",
+				item: "refinedstorage:controller"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 0.0d,
+			dependencies: ["41C31AEB1B2335E9"],
+			id: "04DACCF7F7F4160D",
+			tasks: [{
+				id: "70F4803B82041C83",
+				type: "item",
+				item: "refinedstorageaddons:wireless_crafting_grid"
+			}],
+			rewards: [{
+				id: "150CE922F2BFFD16",
+				type: "item",
+				item: "refinedstorage:wireless_transmitter"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: 2.0d,
+			description: ["Exports items from storage into an inventory"],
+			dependencies: ["6417724113F60898"],
+			id: "5B46FC7180448A44",
+			tasks: [{
+				id: "43D50111505D8295",
+				type: "item",
+				item: "refinedstorage:exporter"
+			}],
+			rewards: [{
+				id: "53CD4B99D0C8981F",
+				type: "item",
+				item: "refinedstorage:speed_upgrade"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: 0.0d,
+			description: ["Imports items from an inventory into the network"],
+			dependencies: ["01D84452556204A8"],
+			id: "53710274B439B7BB",
+			tasks: [{
+				id: "221B511F29E882DA",
+				type: "item",
+				item: "refinedstorage:importer"
+			}],
+			rewards: [{
+				id: "03E5EB21C11B022C",
+				type: "item",
+				item: "refinedstorage:stack_upgrade"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -3.0d,
+			description: [
+				"Makes items in an inventory available in the network. Can be connected to storage drawers controller.",
+				"",
+				"Priority can be set - items are inserted into higher priority storages first"
+			],
+			dependencies: ["7162D4A1F6F0AFE1"],
+			id: "738C93167379AD7F",
+			tasks: [{
+				id: "66EE2ECD5F4634B9",
+				type: "item",
+				item: "refinedstorage:external_storage"
+			}]
+		},
+		{
+			x: 0.5d,
+			y: -2.0d,
+			dependencies: ["2C7B833F8745ADC7"],
+			id: "529728253F4D11EE",
+			tasks: [{
+				id: "532E467562C6BBD2",
+				type: "item",
+				item: "refinedstorage:cable"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 5.0d,
+			description: ["Insert storage disks into it to have a digital storage"],
+			dependencies: ["1FA9E95EABA9EFBB"],
+			id: "299918EF77320ED7",
+			tasks: [{
+				id: "5593DD31641D1C99",
+				type: "item",
+				item: "refinedstorage:disk_drive"
+			}],
+			rewards: [{
+				id: "140CEBB862B0D966",
+				type: "item",
+				item: "refinedstorage:1k_storage_disk"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 0.0d,
+			dependencies: ["04DACCF7F7F4160D"],
+			id: "7FB4143AD7DC9661",
+			tasks: [{
+				id: "24D307B4D41CADA6",
+				type: "item",
+				item: "refinedstorage:range_upgrade"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 0.0d,
+			dependencies: ["7FB4143AD7DC9661"],
+			id: "5E8CB2CDC5542FBF",
+			tasks: [{
+				id: "4AACB21A752A77B7",
+				type: "item",
+				item: "creativewirelesstransmitter:creative_wireless_transmitter"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 5.0d,
+			description: [
+				"If facing air it will craft stuff like in crafting table",
+				"If facing inventory/machine and has processing pattern - it will insert items into it.",
+				"",
+				"Can be upgraded to higher tiers to store more patterns and craft faster"
+			],
+			dependencies: ["6A34F3507E2BC1E7"],
+			id: "10018C7CB70CCD13",
+			tasks: [{
+				id: "67870712C0D8DBE4",
+				type: "item",
+				item: "refinedstorage:crafter"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 3.5d,
+			description: ["Let's you monitor crafting processes (things crafters are currently making)"],
+			dependencies: ["1FA9E95EABA9EFBB"],
+			id: "4A3E7285F854A1D1",
+			tasks: [{
+				id: "4C807637BA517549",
+				type: "item",
+				item: "refinedstorage:crafting_monitor"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 3.5d,
+			description: ["Let's you encode patterns to teach crafters how to make stuff"],
+			dependencies: ["1FA9E95EABA9EFBB"],
+			id: "6A34F3507E2BC1E7",
+			tasks: [{
+				id: "3EDB8E473EBB738B",
+				type: "item",
+				item: "refinedstorage:pattern_grid"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 5.0d,
+			description: ["Like crafting grid but for fluids"],
+			dependencies: ["1FA9E95EABA9EFBB"],
+			id: "5DABA20E5FDC2AE1",
+			tasks: [{
+				id: "40C6F66569B6F303",
+				type: "item",
+				item: "refinedstorage:fluid_grid"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 5.0d,
+			dependencies: ["10018C7CB70CCD13"],
+			id: "62CA82AD6284E148",
+			tasks: [{
+				id: "2D2F1F42F9A1DEE0",
+				type: "item",
+				item: "extrastorage:iron_crafter"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 6.5d,
+			dependencies: ["62CA82AD6284E148"],
+			id: "3BBA18154F1BB078",
+			tasks: [{
+				id: "070DA9A621E38D27",
+				type: "item",
+				item: "extrastorage:gold_crafter"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 6.5d,
+			dependencies: ["3BBA18154F1BB078"],
+			id: "6EB0C5EB1129CC72",
+			tasks: [{
+				id: "63B21D1BF61C2320",
+				type: "item",
+				item: "extrastorage:diamond_crafter"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 8.0d,
+			dependencies: ["6EB0C5EB1129CC72"],
+			id: "0EEB6C622AF422F6",
+			tasks: [{
+				id: "5377B2A1F711A5E9",
+				type: "item",
+				item: "extrastorage:netherite_crafter"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 6.5d,
+			dependencies: ["299918EF77320ED7"],
+			id: "42AE470668BFE67B",
+			tasks: [{
+				id: "022F6AFDA90AC998",
+				type: "item",
+				item: "refinedstorage:1k_storage_part"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 8.0d,
+			dependencies: ["42AE470668BFE67B"],
+			id: "5B68E88293D36F52",
+			tasks: [{
+				id: "61DDC14F01CB64DA",
+				type: "item",
+				item: "refinedstorage:4k_storage_part"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 8.0d,
+			dependencies: ["5B68E88293D36F52"],
+			id: "002836B518E45017",
+			tasks: [{
+				id: "787B71521619724E",
+				type: "item",
+				item: "refinedstorage:16k_storage_part"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 9.5d,
+			dependencies: ["002836B518E45017"],
+			id: "6A829CECDA9FA74E",
+			tasks: [{
+				id: "3EEA4B4D724BADD2",
+				type: "item",
+				item: "refinedstorage:64k_storage_part"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 6.5d,
+			description: ["Combine with storage part to crate a storage disk"],
+			dependencies: ["299918EF77320ED7"],
+			id: "459077D26C8430B3",
+			tasks: [{
+				id: "45CE4222B85FF7D4",
+				type: "item",
+				item: "refinedstorage:storage_housing"
 			}]
 		}
 	]

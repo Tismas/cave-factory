@@ -7,38 +7,22 @@
 	default_quest_shape: "",
 	quests: [
 		{
-			x: 0.0d,
-			y: 0.0d,
+			x: 1.0d,
+			y: 1.5d,
 			shape: "diamond",
+			description: [""],
 			id: "1380D74DC5EB219A",
 			tasks: [{
-				id: "0D5B576F9C0DDAD5",
-				type: "fluid",
-				title: "Blood",
-				icon: "tconstruct:blood_bucket",
-				fluid: "tconstruct:flowing_blood",
-				amount: 100000000L
-			}]
-		},
-		{
-			title: "Ender pearls",
-			x: -1.5d,
-			y: 0.0d,
-			shape: "diamond",
-			id: "5CB006296C1AA687",
-			tasks: [{
-				id: "267180BB07A9E790",
+				id: "053B506682A411A0",
 				type: "item",
-				title: "Pearls",
-				item: "minecraft:ender_pearl",
-				count: 1000L,
-				consume_items: true
+				item: "create:creative_fluid_tank"
 			}]
 		},
 		{
 			title: "That's gonna require a lot of space, but it looks kinda cool",
-			x: -3.0d,
-			y: 0.0d,
+			x: -1.5d,
+			y: 4.0d,
+			shape: "diamond",
 			id: "5AC28678866E7EED",
 			tasks: [{
 				id: "06852975AC663ABF",
@@ -47,6 +31,88 @@
 				icon: "minecolonies:blockhuttownhall",
 				advancement: "minecolonies:minecolonies/build_town_hall_5",
 				criterion: ""
+			}]
+		},
+		{
+			title: "You've won!",
+			x: -1.5d,
+			y: 1.5d,
+			description: ["Congratulations!"],
+			dependencies: [
+				"5AC28678866E7EED",
+				"1380D74DC5EB219A",
+				"590C4D62524410B9",
+				"4D32E62007372516",
+				"5FFC98512299D923"
+			],
+			id: "14CB0A11E8299ABF",
+			tasks: [{
+				id: "056A7911E4B54331",
+				type: "checkmark",
+				title: "You won!"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -1.0d,
+			id: "590C4D62524410B9",
+			tasks: [{
+				id: "53F25A85F0C207CF",
+				type: "item",
+				item: "extendedcrafting:ultimate_singularity"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 0.0d,
+			dependencies: ["590C4D62524410B9"],
+			id: "279EE1B066A337A4",
+			tasks: [{
+				id: "4892169B7B0F545C",
+				type: "item",
+				item: "extradisks:infinite_storage_part"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 0.0d,
+			dependencies: ["590C4D62524410B9"],
+			id: "67A9DD6B4126D588",
+			tasks: [{
+				id: "58D879E6770B57CF",
+				type: "item",
+				item: "extradisks:infinite_fluid_storage_part"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: 1.5d,
+			dependencies: ["6A208F68F2F71391"],
+			id: "5FFC98512299D923",
+			tasks: [{
+				id: "63C0FADE44A29C7D",
+				type: "item",
+				item: "create:creative_motor"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 3.0d,
+			id: "4D32E62007372516",
+			tasks: [{
+				id: "3440E761DAA9CF41",
+				type: "item",
+				item: "create:honeyed_apple"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 3.0d,
+			id: "6A208F68F2F71391",
+			tasks: [{
+				id: "07133A7608FE6586",
+				type: "item",
+				item: "immersiveengineering:capacitor_creative"
 			}]
 		}
 	]

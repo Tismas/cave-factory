@@ -13,6 +13,18 @@ onEvent("recipes", (event) => {
   });
 
   event.shapeless("minecraft:cobblestone", new Array(4).fill("botania:pebble"));
+  event.shaped(
+    "immersiveengineering:capacitor_creative",
+    ["FFF", "FCF", "FFF"],
+    {
+      F: Item.of("fluxnetworks:gargantuan_flux_storage", {
+        FluxData: {
+          energy: 128000000,
+        },
+      }),
+      C: "immersiveengineering:capacitor_hv",
+    }
+  );
   event.shaped("7x create:mechanical_crafter", ["SSS", " S ", "SSS"], {
     S: "minecraft:crafting_table",
   });
@@ -24,6 +36,46 @@ onEvent("recipes", (event) => {
     E: "minecraft:end_stone",
     P: "minecraft:ender_eye",
   });
+  event.replaceInput(
+    { id: "extradisks:part/infinite_storage_part" },
+    "minecraft:redstone",
+    "extendedcrafting:ultimate_singularity"
+  );
+  event.replaceInput(
+    { id: "creativewirelesstransmitter:creative_wireless_transmitter" },
+    "refinedstorage:wireless_transmitter",
+    "refinedstorage:range_upgrade"
+  );
+  event.replaceInput(
+    { id: "refinedstorageaddons:wireless_crafting_grid" },
+    "refinedstorage:crafting_grid",
+    "storagenetwork:crafting_remote"
+  );
+  event.replaceInput(
+    { id: "refinedstorage:controller" },
+    "refinedstorage:machine_casing",
+    "storagenetwork:master"
+  );
+  event.replaceInput(
+    { id: "refinedstorage:exporter" },
+    "refinedstorage:improved_processor",
+    "storagenetwork:export_kabel"
+  );
+  event.replaceInput(
+    { id: "refinedstorage:importer" },
+    "refinedstorage:improved_processor",
+    "storagenetwork:import_filter_kabel"
+  );
+  event.replaceInput(
+    { id: "refinedstorage:external_storage" },
+    "refinedstorage:improved_processor",
+    "storagenetwork:filter_kabel"
+  );
+  event.replaceInput(
+    { id: "refinedstorage:cable" },
+    "minecraft:redstone",
+    "storagenetwork:storage_kabel"
+  );
 
   event.smelting("minecraft:granite", "create:granite_cobblestone");
   event.smelting("minecraft:diorite", "create:diorite_cobblestone");
@@ -43,6 +95,21 @@ onEvent("recipes", (event) => {
     Item.of("minecraft:glowstone_dust").withChance(0.25),
     "minecraft:torch"
   );
+  event.recipes.create.crushing(
+    [
+      "bigreactors:yellorium_dust",
+      Item.of("2x bigreactors:yellorium_dust").withChance(0.3),
+    ],
+    "bigreactors:yellorite_ore"
+  );
+  event.recipes.create.filling("create:creative_fluid_tank", [
+    "create:fluid_tank",
+    Fluid.of("bloodmagic:life_essence_fluid", 100000000),
+  ]);
+  event.recipes.create.deploying("create:creative_motor", [
+    "create:furnace_engine",
+    "immersiveengineering:capacitor_creative",
+  ]);
 
   const cobblestones = getItemsFromTag("forge:cobblestone");
   cobblestones.forEach((cobble) => {

@@ -73,8 +73,13 @@ Util:
 
 # changelog 0.4.0
 
-- refined storage quests
-- infinite storage disk challenge
-- minecolonies townhall level 5 challenge
+- updated all mods and forge
+- added extreme reactors and added yellorite to stone drops
+- removed starting items except for quest book
+- removed ae2
+- changed the item for creating twilight forest portal
+- changed the way rftools casings are made (they are gated behind twilight forest now)
+- refined storage quests and addons
+- challenge quests overhaul
 
 discord: https://discord.gg/pbVVZywj

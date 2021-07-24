@@ -44,5 +44,4 @@ tconstruct:overworld_slime_island
 tconstruct:clay_island
 tconstruct:nether_slime_island
 tconstruct:end_slime_island
-appliedenergistics2:meteorite
 quark:big_dungeon

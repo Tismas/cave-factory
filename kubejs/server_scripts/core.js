@@ -63,6 +63,7 @@ const stoneDrops = {
   "minecraft:gold_ore": 15,
   "create:zinc_ore": 15,
   "minecraft:lapis_ore": 10,
+  "bigreactors:yellorite_ore": 5,
   "minecraft:emerald_ore": 2,
   "minecraft:diamond_ore": 2,
 };
@@ -147,3 +148,8 @@ onEvent("block.loot_tables", (event) => {
     });
   });
 });
+
+// onEvent("item.tags", (event) => {
+//   event.remove("twilightforest:portal/activator", "#forge:gems/diamond");
+//   event.add("twilightforest:portal/activator", "minecraft:dragon_egg");
+// });

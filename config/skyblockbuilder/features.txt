@@ -263,8 +263,9 @@ pamhc2trees:rambutan_worldgen
 pamhc2trees:tamarind_worldgen
 pamhc2trees:maple_worldgen
 pamhc2trees:pinenut_worldgen
+zerocore:mod_ores
+zerocore:mod_ores_regen
 tconstruct:slime_tree
-appliedenergistics2:charged_quartz_ore
 immersiveengineering:mineral_vein
 immersiveengineering:ie_ore
 immersiveengineering:ore_retro
