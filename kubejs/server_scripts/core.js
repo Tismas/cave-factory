@@ -60,6 +60,7 @@ const stoneDrops = {
   "immersiveengineering:ore_aluminum": 15,
   "immersiveengineering:ore_silver": 15,
   "immersiveengineering:ore_lead": 15,
+  "immersiveengineering:ore_nickel": 15,
   "minecraft:gold_ore": 15,
   "create:zinc_ore": 15,
   "minecraft:lapis_ore": 10,
@@ -149,7 +150,7 @@ onEvent("block.loot_tables", (event) => {
   });
 });
 
-// onEvent("item.tags", (event) => {
-//   event.remove("twilightforest:portal/activator", "#forge:gems/diamond");
-//   event.add("twilightforest:portal/activator", "minecraft:dragon_egg");
-// });
+onEvent("item.tags", (event) => {
+  event.remove("twilightforest:portal/activator", "#forge:gems/diamond");
+  event.add("twilightforest:portal/activator", "minecraft:dragon_egg");
+});

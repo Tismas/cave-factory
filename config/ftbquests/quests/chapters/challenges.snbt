@@ -10,7 +10,7 @@
 			x: 1.0d,
 			y: 1.5d,
 			shape: "diamond",
-			description: [""],
+			description: ["Infinite fluids"],
 			id: "1380D74DC5EB219A",
 			tasks: [{
 				id: "053B506682A411A0",
@@ -23,6 +23,7 @@
 			x: -1.5d,
 			y: 4.0d,
 			shape: "diamond",
+			description: ["Build townhall level 5 from minecolonies"],
 			id: "5AC28678866E7EED",
 			tasks: [{
 				id: "06852975AC663ABF",
@@ -43,7 +44,9 @@
 				"1380D74DC5EB219A",
 				"590C4D62524410B9",
 				"4D32E62007372516",
-				"5FFC98512299D923"
+				"5FFC98512299D923",
+				"279EE1B066A337A4",
+				"67A9DD6B4126D588"
 			],
 			id: "14CB0A11E8299ABF",
 			tasks: [{
@@ -55,6 +58,10 @@
 		{
 			x: -1.5d,
 			y: -1.0d,
+			dependencies: [
+				"0D39843BBF4BC3EF",
+				"6E8AEDCB46B877F3"
+			],
 			id: "590C4D62524410B9",
 			tasks: [{
 				id: "53F25A85F0C207CF",
@@ -65,6 +72,7 @@
 		{
 			x: -3.0d,
 			y: 0.0d,
+			shape: "diamond",
 			dependencies: ["590C4D62524410B9"],
 			id: "279EE1B066A337A4",
 			tasks: [{
@@ -76,6 +84,7 @@
 		{
 			x: 0.0d,
 			y: 0.0d,
+			shape: "diamond",
 			dependencies: ["590C4D62524410B9"],
 			id: "67A9DD6B4126D588",
 			tasks: [{
@@ -87,6 +96,8 @@
 		{
 			x: -4.0d,
 			y: 1.5d,
+			shape: "diamond",
+			description: ["Infinite mechanical power"],
 			dependencies: ["6A208F68F2F71391"],
 			id: "5FFC98512299D923",
 			tasks: [{
@@ -98,6 +109,8 @@
 		{
 			x: 0.0d,
 			y: 3.0d,
+			shape: "diamond",
+			description: ["Eat everything that is edible in the pack"],
 			id: "4D32E62007372516",
 			tasks: [{
 				id: "3440E761DAA9CF41",
@@ -108,11 +121,35 @@
 		{
 			x: -3.0d,
 			y: 3.0d,
+			shape: "diamond",
+			description: ["All of the capacitors need to be fully charged and have all sides disabled (due to technical limitations, sorry)"],
 			id: "6A208F68F2F71391",
 			tasks: [{
 				id: "07133A7608FE6586",
 				type: "item",
 				item: "immersiveengineering:capacitor_creative"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -2.5d,
+			description: ["A bigger table"],
+			id: "0D39843BBF4BC3EF",
+			tasks: [{
+				id: "19F2BE772767AC30",
+				type: "item",
+				item: "extendedcrafting:ultimate_table"
+			}]
+		},
+		{
+			x: -0.5d,
+			y: -2.5d,
+			description: ["Singularity maker"],
+			id: "6E8AEDCB46B877F3",
+			tasks: [{
+				id: "7B0E60F397DF8F8E",
+				type: "item",
+				item: "extendedcrafting:compressor"
 			}]
 		}
 	]

@@ -258,7 +258,11 @@
 		{
 			x: -1.5d,
 			y: 5.0d,
-			description: ["Insert storage disks into it to have a digital storage"],
+			description: [
+				"Insert storage disks into it to have a digital storage",
+				"",
+				"You can also set a priority for it"
+			],
 			dependencies: ["1FA9E95EABA9EFBB"],
 			id: "299918EF77320ED7",
 			tasks: [{

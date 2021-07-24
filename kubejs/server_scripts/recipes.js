@@ -3,6 +3,9 @@
 onEvent("recipes", (event) => {
   event.remove({ output: "botania:cocoon" });
   event.remove({ output: "create:mechanical_crafter" });
+  event.remove({ output: "extendedcrafting:frame" });
+  event.remove({ output: "extendedcrafting:the_ultimate_catalyst" });
+  event.remove({ output: "rftoolsbase:machine_frame" });
   event.remove({ id: "immersiveengineering:blastfurnace/steel" });
 
   getItemsFromMod("excompressum").forEach((exCompressumItem) => {
@@ -13,21 +16,17 @@ onEvent("recipes", (event) => {
   });
 
   event.shapeless("minecraft:cobblestone", new Array(4).fill("botania:pebble"));
-  event.shaped(
-    "immersiveengineering:capacitor_creative",
-    ["FFF", "FCF", "FFF"],
-    {
-      F: Item.of("fluxnetworks:gargantuan_flux_storage", {
-        FluxData: {
-          energy: 128000000,
-        },
-      }),
-      C: "immersiveengineering:capacitor_hv",
-    }
-  );
   event.shaped("7x create:mechanical_crafter", ["SSS", " S ", "SSS"], {
     S: "minecraft:crafting_table",
   });
+  event.shaped(
+    "immersiveengineering:capacitor_creative",
+    [" C ", "CHC", " C "],
+    {
+      C: "extendedcrafting:the_ultimate_catalyst",
+      H: "immersiveengineering:capacitor_hv",
+    }
+  );
   event.shaped("botania:cocoon", ["SSS", "SPS", "SSS"], {
     S: "minecraft:string",
     P: "botania:fel_pumpkin",
@@ -38,6 +37,11 @@ onEvent("recipes", (event) => {
   });
   event.replaceInput(
     { id: "extradisks:part/infinite_storage_part" },
+    "minecraft:redstone",
+    "extendedcrafting:ultimate_singularity"
+  );
+  event.replaceInput(
+    { id: "extradisks:part/infinite_fluid_storage_part" },
     "minecraft:redstone",
     "extendedcrafting:ultimate_singularity"
   );
@@ -91,6 +95,76 @@ onEvent("recipes", (event) => {
   event.smelting("create:dark_scoria", "create:dark_scoria_cobblestone");
 
   event.stonecutting("4x tconstruct:seared_brick", "tconstruct:seared_stone");
+
+  event.recipes.create
+    .sequenced_assembly(
+      [
+        Item.of("rftoolsbase:machine_frame").withChance(100.0),
+        Item.of("twilightforest:lamp_of_cinders").withChance(1.0),
+      ],
+      "create:brass_casing",
+      [
+        event.recipes.create.deploying(
+          "immersiveengineering:steel_scaffolding_standard",
+          [
+            "create:brass_casing",
+            "immersiveengineering:steel_scaffolding_standard",
+          ]
+        ),
+        event.recipes.create.deploying("minecraft:iron_block", [
+          "create:brass_casing",
+          "minecraft:iron_block",
+        ]),
+        event.recipes.create.deploying("twilightforest:lamp_of_cinders", [
+          "create:brass_casing",
+          "twilightforest:lamp_of_cinders",
+        ]),
+      ]
+    )
+    .loops(1);
+  event.recipes.create.mechanical_crafting(
+    "extendedcrafting:frame",
+    [
+      "IIIIIII",
+      "ISGGGSI",
+      "IGSGSGI",
+      "IGGSGGI",
+      "IGSGSGI",
+      "ISGGGSI",
+      "IIIIIII",
+    ],
+    {
+      I: "extendedcrafting:black_iron_ingot",
+      G: "minecraft:glass",
+      S: "extendedcrafting:black_iron_slate",
+    }
+  );
+  event.recipes.create.mechanical_crafting(
+    "extendedcrafting:the_ultimate_catalyst",
+    [
+      "FFFFFFFFF",
+      "FFFFFFFFF",
+      "FFFFFFFFF",
+      "FFFFFFFFF",
+      "FFFFUFFFF",
+      "FFFFFFFFF",
+      "FFFFFFFFF",
+      "FFFFFFFFF",
+      "FFFFFFFFF",
+    ],
+    {
+      U: "extendedcrafting:the_ultimate_component",
+      F: Item.of("immersiveengineering:capacitor_hv", {
+        sideConfig_0: 0,
+        ifluxEnergy: 4000000,
+        sideConfig_1: 0,
+        sideConfig_2: 0,
+        sideConfig_3: 0,
+        sideConfig_4: 0,
+        sideConfig_5: 0,
+      }),
+    }
+  );
   event.recipes.create.crushing(
     Item.of("minecraft:glowstone_dust").withChance(0.25),
     "minecraft:torch"

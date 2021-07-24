@@ -9,6 +9,7 @@ function initializeHelperDicts() {
   Item.list.forEach((itemEl) => {
     itemByMod[itemEl.mod] = itemByMod[itemEl.mod] || [];
     itemByMod[itemEl.mod].push(itemEl);
+    console.log(Object.keys(itemEl.item.getItem()));
     const tags = itemEl.tags;
     tags.forEach((tag) => {
       itemByTag[tag] = itemByTag[tag] || [];
