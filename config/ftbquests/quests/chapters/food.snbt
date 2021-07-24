@@ -4,6 +4,7 @@
 	order_index: 3,
 	filename: "food",
 	title: "Food",
+	icon: "minecraft:wheat",
 	default_quest_shape: "",
 	quests: [
 		{

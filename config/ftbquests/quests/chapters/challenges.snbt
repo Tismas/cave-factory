@@ -4,6 +4,7 @@
 	order_index: 5,
 	filename: "challenges",
 	title: "Challenges",
+	icon: "create:creative_motor",
 	default_quest_shape: "",
 	quests: [
 		{
@@ -110,13 +111,4194 @@
 			x: 0.0d,
 			y: 3.0d,
 			shape: "diamond",
-			description: ["Eat everything that is edible in the pack"],
+			description: [
+				"Eat everything that is edible in the pack",
+				"",
+				""
+			],
 			id: "4D32E62007372516",
-			tasks: [{
-				id: "3440E761DAA9CF41",
-				type: "item",
-				item: "create:honeyed_apple"
-			}]
+			tasks: [
+				{
+					id: "3440E761DAA9CF41",
+					type: "item",
+					item: "create:honeyed_apple"
+				},
+				{
+					id: "000000000000B75B",
+					type: "item",
+					item: "minecraft:apple"
+				},
+				{
+					id: "000000000000B2A4",
+					type: "item",
+					item: "minecraft:mushroom_stew"
+				},
+				{
+					id: "000000000000D9B1",
+					type: "item",
+					item: "minecraft:bread"
+				},
+				{
+					id: "00000000000044EF",
+					type: "item",
+					item: "minecraft:porkchop"
+				},
+				{
+					id: "0000000000007B82",
+					type: "item",
+					item: "minecraft:cooked_porkchop"
+				},
+				{
+					id: "0000000000003E60",
+					type: "item",
+					item: "minecraft:golden_apple"
+				},
+				{
+					id: "0000000000001568",
+					type: "item",
+					item: "minecraft:enchanted_golden_apple"
+				},
+				{
+					id: "0000000000003A31",
+					type: "item",
+					item: "minecraft:cod"
+				},
+				{
+					id: "000000000000F0EE",
+					type: "item",
+					item: "minecraft:salmon"
+				},
+				{
+					id: "00000000000081D9",
+					type: "item",
+					item: "minecraft:tropical_fish"
+				},
+				{
+					id: "000000000000865B",
+					type: "item",
+					item: "minecraft:pufferfish"
+				},
+				{
+					id: "00000000000007A2",
+					type: "item",
+					item: "minecraft:cooked_cod"
+				},
+				{
+					id: "000000000000B23C",
+					type: "item",
+					item: "minecraft:cooked_salmon"
+				},
+				{
+					id: "0000000000004D7E",
+					type: "item",
+					item: "minecraft:cookie"
+				},
+				{
+					id: "0000000000004F84",
+					type: "item",
+					item: "minecraft:melon_slice"
+				},
+				{
+					id: "0000000000009D87",
+					type: "item",
+					item: "minecraft:dried_kelp"
+				},
+				{
+					id: "000000000000152E",
+					type: "item",
+					item: "minecraft:beef"
+				},
+				{
+					id: "000000000000001F",
+					type: "item",
+					item: "minecraft:cooked_beef"
+				},
+				{
+					id: "000000000000C05C",
+					type: "item",
+					item: "minecraft:chicken"
+				},
+				{
+					id: "000000000000D6A1",
+					type: "item",
+					item: "minecraft:cooked_chicken"
+				},
+				{
+					id: "000000000000B01F",
+					type: "item",
+					item: "minecraft:rotten_flesh"
+				},
+				{
+					id: "0000000000003575",
+					type: "item",
+					item: "minecraft:spider_eye"
+				},
+				{
+					id: "000000000000A489",
+					type: "item",
+					item: "minecraft:carrot"
+				},
+				{
+					id: "0000000000004D3A",
+					type: "item",
+					item: "minecraft:potato"
+				},
+				{
+					id: "00000000000071F7",
+					type: "item",
+					item: "minecraft:baked_potato"
+				},
+				{
+					id: "000000000000F4CC",
+					type: "item",
+					item: "minecraft:poisonous_potato"
+				},
+				{
+					id: "0000000000003190",
+					type: "item",
+					item: "minecraft:golden_carrot"
+				},
+				{
+					id: "000000000000C580",
+					type: "item",
+					item: "minecraft:pumpkin_pie"
+				},
+				{
+					id: "000000000000F321",
+					type: "item",
+					item: "minecraft:rabbit"
+				},
+				{
+					id: "0000000000000C6A",
+					type: "item",
+					item: "minecraft:cooked_rabbit"
+				},
+				{
+					id: "000000000000C138",
+					type: "item",
+					item: "minecraft:rabbit_stew"
+				},
+				{
+					id: "000000000000EEE9",
+					type: "item",
+					item: "minecraft:mutton"
+				},
+				{
+					id: "0000000000001882",
+					type: "item",
+					item: "minecraft:cooked_mutton"
+				},
+				{
+					id: "000000000000A23C",
+					type: "item",
+					item: "minecraft:chorus_fruit"
+				},
+				{
+					id: "000000000000DDB8",
+					type: "item",
+					item: "minecraft:beetroot"
+				},
+				{
+					id: "0000000000001E56",
+					type: "item",
+					item: "minecraft:beetroot_soup"
+				},
+				{
+					id: "0000000000009B8A",
+					type: "item",
+					item: "minecraft:sweet_berries"
+				},
+				{
+					id: "000000000000A6D2",
+					type: "item",
+					item: "minecraft:honey_bottle"
+				},
+				{
+					id: "000000000000B81A",
+					type: "item",
+					item: "twilightforest:raw_venison"
+				},
+				{
+					id: "0000000000000240",
+					type: "item",
+					item: "twilightforest:cooked_venison"
+				},
+				{
+					id: "000000000000FFF5",
+					type: "item",
+					item: "twilightforest:hydra_chop"
+				},
+				{
+					id: "000000000000D3CE",
+					type: "item",
+					item: "twilightforest:raw_meef"
+				},
+				{
+					id: "0000000000003CC8",
+					type: "item",
+					item: "twilightforest:cooked_meef"
+				},
+				{
+					id: "000000000000B760",
+					type: "item",
+					item: "twilightforest:meef_stroganoff"
+				},
+				{
+					id: "00000000000080FF",
+					type: "item",
+					item: "twilightforest:maze_wafer"
+				},
+				{
+					id: "00000000000041B3",
+					type: "item",
+					item: "twilightforest:experiment_115"
+				},
+				{
+					id: "000000000000D781",
+					type: "item",
+					item: "betterendforge:shadow_berry_raw"
+				},
+				{
+					id: "000000000000729F",
+					type: "item",
+					item: "betterendforge:shadow_berry_cooked"
+				},
+				{
+					id: "000000000000F5A4",
+					type: "item",
+					item: "betterendforge:end_fish_raw"
+				},
+				{
+					id: "00000000000095A6",
+					type: "item",
+					item: "betterendforge:end_fish_cooked"
+				},
+				{
+					id: "000000000000A4BA",
+					type: "item",
+					item: "betterendforge:sweet_berry_jelly"
+				},
+				{
+					id: "000000000000E9FD",
+					type: "item",
+					item: "betterendforge:shadow_berry_jelly"
+				},
+				{
+					id: "000000000000F843",
+					type: "item",
+					item: "betterendforge:blossom_berry"
+				},
+				{
+					id: "000000000000C4C1",
+					type: "item",
+					item: "betterendforge:amber_root_raw"
+				},
+				{
+					id: "64FA4C842DD4D3FC",
+					type: "item",
+					item: "betterendforge:chorus_mushroom_raw"
+				},
+				{
+					id: "00000000000035A4",
+					type: "item",
+					item: "betterendforge:chorus_mushroom_cooked"
+				},
+				{
+					id: "0000000000002C2F",
+					type: "item",
+					item: "betterendforge:umbrella_cluster_juice"
+				},
+				{
+					id: "000000000000ACC2",
+					type: "item",
+					item: "farmersdelight:cabbage"
+				},
+				{
+					id: "00000000000068CF",
+					type: "item",
+					item: "farmersdelight:tomato"
+				},
+				{
+					id: "0000000000009428",
+					type: "item",
+					item: "farmersdelight:onion"
+				},
+				{
+					id: "000000000000F3AE",
+					type: "item",
+					item: "farmersdelight:fried_egg"
+				},
+				{
+					id: "000000000000565E",
+					type: "item",
+					item: "farmersdelight:tomato_sauce"
+				},
+				{
+					id: "000000000000B822",
+					type: "item",
+					item: "farmersdelight:wheat_dough"
+				},
+				{
+					id: "000000000000248E",
+					type: "item",
+					item: "farmersdelight:raw_pasta"
+				},
+				{
+					id: "000000000000A2A5",
+					type: "item",
+					item: "farmersdelight:pumpkin_slice"
+				},
+				{
+					id: "00000000000088A9",
+					type: "item",
+					item: "farmersdelight:cabbage_leaf"
+				},
+				{
+					id: "000000000000F134",
+					type: "item",
+					item: "farmersdelight:minced_beef"
+				},
+				{
+					id: "0000000000004AFA",
+					type: "item",
+					item: "farmersdelight:beef_patty"
+				},
+				{
+					id: "0000000000000A01",
+					type: "item",
+					item: "farmersdelight:chicken_cuts"
+				},
+				{
+					id: "0000000000008260",
+					type: "item",
+					item: "farmersdelight:cooked_chicken_cuts"
+				},
+				{
+					id: "00000000000069DB",
+					type: "item",
+					item: "farmersdelight:bacon"
+				},
+				{
+					id: "000000000000DD47",
+					type: "item",
+					item: "farmersdelight:cooked_bacon"
+				},
+				{
+					id: "0000000000009BC2",
+					type: "item",
+					item: "farmersdelight:cod_slice"
+				},
+				{
+					id: "0000000000001B98",
+					type: "item",
+					item: "farmersdelight:cooked_cod_slice"
+				},
+				{
+					id: "0000000000001F8F",
+					type: "item",
+					item: "farmersdelight:salmon_slice"
+				},
+				{
+					id: "000000000000F15F",
+					type: "item",
+					item: "farmersdelight:cooked_salmon_slice"
+				},
+				{
+					id: "000000000000E0AE",
+					type: "item",
+					item: "farmersdelight:mutton_chops"
+				},
+				{
+					id: "000000000000455F",
+					type: "item",
+					item: "farmersdelight:cooked_mutton_chops"
+				},
+				{
+					id: "00000000000010BB",
+					type: "item",
+					item: "farmersdelight:ham"
+				},
+				{
+					id: "0000000000008A3F",
+					type: "item",
+					item: "farmersdelight:smoked_ham"
+				},
+				{
+					id: "00000000000009EC",
+					type: "item",
+					item: "farmersdelight:pie_crust"
+				},
+				{
+					id: "0000000000004D5E",
+					type: "item",
+					item: "farmersdelight:cake_slice"
+				},
+				{
+					id: "000000000000DCED",
+					type: "item",
+					item: "farmersdelight:apple_pie_slice"
+				},
+				{
+					id: "0000000000001A29",
+					type: "item",
+					item: "farmersdelight:sweet_berry_cheesecake_slice"
+				},
+				{
+					id: "000000000000D5B4",
+					type: "item",
+					item: "farmersdelight:chocolate_pie_slice"
+				},
+				{
+					id: "000000000000B61B",
+					type: "item",
+					item: "farmersdelight:sweet_berry_cookie"
+				},
+				{
+					id: "0000000000002FC2",
+					type: "item",
+					item: "farmersdelight:honey_cookie"
+				},
+				{
+					id: "000000000000273B",
+					type: "item",
+					item: "farmersdelight:melon_popsicle"
+				},
+				{
+					id: "000000000000AFF0",
+					type: "item",
+					item: "farmersdelight:fruit_salad"
+				},
+				{
+					id: "00000000000006FD",
+					type: "item",
+					item: "farmersdelight:mixed_salad"
+				},
+				{
+					id: "000000000000753B",
+					type: "item",
+					item: "farmersdelight:nether_salad"
+				},
+				{
+					id: "0000000000005C90",
+					type: "item",
+					item: "farmersdelight:barbecue_stick"
+				},
+				{
+					id: "0000000000001A6A",
+					type: "item",
+					item: "farmersdelight:egg_sandwich"
+				},
+				{
+					id: "000000000000C5E5",
+					type: "item",
+					item: "farmersdelight:chicken_sandwich"
+				},
+				{
+					id: "0000000000000CFE",
+					type: "item",
+					item: "farmersdelight:hamburger"
+				},
+				{
+					id: "000000000000A453",
+					type: "item",
+					item: "farmersdelight:bacon_sandwich"
+				},
+				{
+					id: "000000000000A227",
+					type: "item",
+					item: "farmersdelight:mutton_wrap"
+				},
+				{
+					id: "00000000000082EC",
+					type: "item",
+					item: "farmersdelight:dumplings"
+				},
+				{
+					id: "0000000000000D26",
+					type: "item",
+					item: "farmersdelight:stuffed_potato"
+				},
+				{
+					id: "00000000000017E3",
+					type: "item",
+					item: "farmersdelight:cabbage_rolls"
+				},
+				{
+					id: "0000000000008BCF",
+					type: "item",
+					item: "farmersdelight:cooked_rice"
+				},
+				{
+					id: "0000000000005187",
+					type: "item",
+					item: "farmersdelight:beef_stew"
+				},
+				{
+					id: "00000000000049A6",
+					type: "item",
+					item: "farmersdelight:chicken_soup"
+				},
+				{
+					id: "0000000000007126",
+					type: "item",
+					item: "farmersdelight:vegetable_soup"
+				},
+				{
+					id: "0000000000000936",
+					type: "item",
+					item: "farmersdelight:fish_stew"
+				},
+				{
+					id: "0000000000008C5B",
+					type: "item",
+					item: "farmersdelight:fried_rice"
+				},
+				{
+					id: "0000000000004165",
+					type: "item",
+					item: "farmersdelight:pumpkin_soup"
+				},
+				{
+					id: "0000000000000EA9",
+					type: "item",
+					item: "farmersdelight:baked_cod_stew"
+				},
+				{
+					id: "0000000000003A46",
+					type: "item",
+					item: "farmersdelight:noodle_soup"
+				},
+				{
+					id: "0000000000004B72",
+					type: "item",
+					item: "farmersdelight:pasta_with_meatballs"
+				},
+				{
+					id: "000000000000C685",
+					type: "item",
+					item: "farmersdelight:pasta_with_mutton_chop"
+				},
+				{
+					id: "0000000000008A42",
+					type: "item",
+					item: "farmersdelight:roasted_mutton_chops"
+				},
+				{
+					id: "00000000000073F0",
+					type: "item",
+					item: "farmersdelight:vegetable_noodles"
+				},
+				{
+					id: "00000000000086A9",
+					type: "item",
+					item: "farmersdelight:steak_and_potatoes"
+				},
+				{
+					id: "000000000000B390",
+					type: "item",
+					item: "farmersdelight:ratatouille"
+				},
+				{
+					id: "0000000000005834",
+					type: "item",
+					item: "farmersdelight:squid_ink_pasta"
+				},
+				{
+					id: "00000000000047F0",
+					type: "item",
+					item: "farmersdelight:grilled_salmon"
+				},
+				{
+					id: "0000000000007882",
+					type: "item",
+					item: "farmersdelight:roast_chicken"
+				},
+				{
+					id: "000000000000C370",
+					type: "item",
+					item: "farmersdelight:stuffed_pumpkin"
+				},
+				{
+					id: "000000000000E327",
+					type: "item",
+					item: "farmersdelight:honey_glazed_ham"
+				},
+				{
+					id: "000000000000906B",
+					type: "item",
+					item: "farmersdelight:shepherds_pie"
+				},
+				{
+					id: "00000000000077B5",
+					type: "item",
+					item: "farmersdelight:dog_food"
+				},
+				{
+					id: "000000000000AE74",
+					type: "item",
+					item: "botania:mana_cookie"
+				},
+				{
+					id: "0000000000009DF2",
+					type: "item",
+					item: "pamhc2foodextended:soymilkitem"
+				},
+				{
+					id: "000000000000A562",
+					type: "item",
+					item: "pamhc2foodextended:silkentofuitem"
+				},
+				{
+					id: "0000000000009623",
+					type: "item",
+					item: "pamhc2foodextended:firmtofuitem"
+				},
+				{
+					id: "000000000000CAEE",
+					type: "item",
+					item: "pamhc2foodextended:almondbutteritem"
+				},
+				{
+					id: "000000000000E399",
+					type: "item",
+					item: "pamhc2foodextended:chestnutbutteritem"
+				},
+				{
+					id: "000000000000BF4F",
+					type: "item",
+					item: "pamhc2foodextended:cashewbutteritem"
+				},
+				{
+					id: "00000000000088F8",
+					type: "item",
+					item: "pamhc2foodextended:hazelnutbutteritem"
+				},
+				{
+					id: "000000000000F9C7",
+					type: "item",
+					item: "pamhc2foodextended:peanutbutteritem"
+				},
+				{
+					id: "000000000000C1AD",
+					type: "item",
+					item: "pamhc2foodextended:pecanbutteritem"
+				},
+				{
+					id: "00000000000064DD",
+					type: "item",
+					item: "pamhc2foodextended:pistachiobutteritem"
+				},
+				{
+					id: "0000000000001C6F",
+					type: "item",
+					item: "pamhc2foodextended:walnutbutteritem"
+				},
+				{
+					id: "000000000000BE46",
+					type: "item",
+					item: "pamhc2foodextended:sunflowerseedsbutteritem"
+				},
+				{
+					id: "0000000000000FA7",
+					type: "item",
+					item: "pamhc2foodextended:rawtofabbititem"
+				},
+				{
+					id: "0000000000009A7B",
+					type: "item",
+					item: "pamhc2foodextended:rawtofaconitem"
+				},
+				{
+					id: "0000000000007A9A",
+					type: "item",
+					item: "pamhc2foodextended:rawtofeakitem"
+				},
+				{
+					id: "0000000000005759",
+					type: "item",
+					item: "pamhc2foodextended:rawtofickenitem"
+				},
+				{
+					id: "000000000000603D",
+					type: "item",
+					item: "pamhc2foodextended:rawtofishitem"
+				},
+				{
+					id: "000000000000F115",
+					type: "item",
+					item: "pamhc2foodextended:rawtofuttonitem"
+				},
+				{
+					id: "00000000000061FC",
+					type: "item",
+					item: "pamhc2foodextended:cookedtofabbititem"
+				},
+				{
+					id: "000000000000BB13",
+					type: "item",
+					item: "pamhc2foodextended:cookedtofaconitem"
+				},
+				{
+					id: "000000000000F07C",
+					type: "item",
+					item: "pamhc2foodextended:cookedtofeakitem"
+				},
+				{
+					id: "000000000000126A",
+					type: "item",
+					item: "pamhc2foodextended:cookedtofickenitem"
+				},
+				{
+					id: "000000000000FE1D",
+					type: "item",
+					item: "pamhc2foodextended:cookedtofishitem"
+				},
+				{
+					id: "0000000000006945",
+					type: "item",
+					item: "pamhc2foodextended:cookedtofuttonitem"
+				},
+				{
+					id: "0000000000005CFB",
+					type: "item",
+					item: "pamhc2foodextended:anchovypepperonipizzaitem"
+				},
+				{
+					id: "0000000000002CA4",
+					type: "item",
+					item: "pamhc2foodextended:bbqsauceitem"
+				},
+				{
+					id: "0000000000007AF1",
+					type: "item",
+					item: "pamhc2foodextended:bbqchickenpizzaitem"
+				},
+				{
+					id: "0000000000000D9F",
+					type: "item",
+					item: "pamhc2foodextended:beansandriceitem"
+				},
+				{
+					id: "00000000000067B1",
+					type: "item",
+					item: "pamhc2foodextended:chimichangaitem"
+				},
+				{
+					id: "000000000000B45A",
+					type: "item",
+					item: "pamhc2foodextended:chipsandsalsaitem"
+				},
+				{
+					id: "000000000000A5B2",
+					type: "item",
+					item: "pamhc2foodextended:cornmealitem"
+				},
+				{
+					id: "00000000000029E4",
+					type: "item",
+					item: "pamhc2foodextended:deluxenachoesitem"
+				},
+				{
+					id: "00000000000044EC",
+					type: "item",
+					item: "pamhc2foodextended:enchiladaitem"
+				},
+				{
+					id: "000000000000AEF5",
+					type: "item",
+					item: "pamhc2foodextended:fiestacornsaladitem"
+				},
+				{
+					id: "000000000000E00B",
+					type: "item",
+					item: "pamhc2foodextended:fishtacoitem"
+				},
+				{
+					id: "000000000000DCD0",
+					type: "item",
+					item: "pamhc2foodextended:garlicbreaditem"
+				},
+				{
+					id: "000000000000E062",
+					type: "item",
+					item: "pamhc2foodextended:garlicchickenitem"
+				},
+				{
+					id: "000000000000F334",
+					type: "item",
+					item: "pamhc2foodextended:garlicmashedpotatoesitem"
+				},
+				{
+					id: "000000000000A4C7",
+					type: "item",
+					item: "pamhc2foodextended:hamandpineapplepizzaitem"
+				},
+				{
+					id: "000000000000FEA5",
+					type: "item",
+					item: "pamhc2foodextended:meatfeastpizzaitem"
+				},
+				{
+					id: "000000000000E9A3",
+					type: "item",
+					item: "pamhc2foodextended:nachoesitem"
+				},
+				{
+					id: "000000000000F5F6",
+					type: "item",
+					item: "pamhc2foodextended:pepperoniitem"
+				},
+				{
+					id: "000000000000DF49",
+					type: "item",
+					item: "pamhc2foodextended:pepperonipizzaitem"
+				},
+				{
+					id: "0000000000003899",
+					type: "item",
+					item: "pamhc2foodextended:pizzasliceitem"
+				},
+				{
+					id: "0000000000005D72",
+					type: "item",
+					item: "pamhc2foodextended:quesadillaitem"
+				},
+				{
+					id: "000000000000A987",
+					type: "item",
+					item: "pamhc2foodextended:refriedbeansitem"
+				},
+				{
+					id: "000000000000618C",
+					type: "item",
+					item: "pamhc2foodextended:salsaitem"
+				},
+				{
+					id: "0000000000007094",
+					type: "item",
+					item: "pamhc2foodextended:sausageitem"
+				},
+				{
+					id: "000000000000AFBE",
+					type: "item",
+					item: "pamhc2foodextended:spagettiandmeatballsitem"
+				},
+				{
+					id: "000000000000AE13",
+					type: "item",
+					item: "pamhc2foodextended:spagettiitem"
+				},
+				{
+					id: "000000000000D67E",
+					type: "item",
+					item: "pamhc2foodextended:spaghettidinneritem"
+				},
+				{
+					id: "000000000000DEE7",
+					type: "item",
+					item: "pamhc2foodextended:stuffedchilipeppersitem"
+				},
+				{
+					id: "000000000000B042",
+					type: "item",
+					item: "pamhc2foodextended:supremepizzaitem"
+				},
+				{
+					id: "0000000000009207",
+					type: "item",
+					item: "pamhc2foodextended:tacoitem"
+				},
+				{
+					id: "000000000000A8D4",
+					type: "item",
+					item: "pamhc2foodextended:tortillachipsitem"
+				},
+				{
+					id: "00000000000067FA",
+					type: "item",
+					item: "pamhc2foodextended:tortillaitem"
+				},
+				{
+					id: "000000000000C210",
+					type: "item",
+					item: "pamhc2foodextended:bbqpotatochipsitem"
+				},
+				{
+					id: "0000000000002974",
+					type: "item",
+					item: "pamhc2foodextended:candiedgingeritem"
+				},
+				{
+					id: "00000000000078CB",
+					type: "item",
+					item: "pamhc2foodextended:candiedlemonitem"
+				},
+				{
+					id: "000000000000601B",
+					type: "item",
+					item: "pamhc2foodextended:candiedpecansitem"
+				},
+				{
+					id: "0000000000000485",
+					type: "item",
+					item: "pamhc2foodextended:candiedsweetpotatoesitem"
+				},
+				{
+					id: "00000000000013CA",
+					type: "item",
+					item: "pamhc2foodextended:candiedwalnutsitem"
+				},
+				{
+					id: "000000000000E561",
+					type: "item",
+					item: "pamhc2foodextended:cheddarandsourcreampotatochipsitem"
+				},
+				{
+					id: "000000000000B3E9",
+					type: "item",
+					item: "pamhc2foodextended:cherrysodaitem"
+				},
+				{
+					id: "0000000000009A68",
+					type: "item",
+					item: "pamhc2foodextended:chilichocolateitem"
+				},
+				{
+					id: "0000000000005F79",
+					type: "item",
+					item: "pamhc2foodextended:chipsanddipitem"
+				},
+				{
+					id: "0000000000009FF9",
+					type: "item",
+					item: "pamhc2foodextended:chocolatecherryitem"
+				},
+				{
+					id: "0000000000008BFF",
+					type: "item",
+					item: "pamhc2foodextended:chocolatecoconutbaritem"
+				},
+				{
+					id: "000000000000523E",
+					type: "item",
+					item: "pamhc2foodextended:chocolateorangeitem"
+				},
+				{
+					id: "000000000000DB49",
+					type: "item",
+					item: "pamhc2foodextended:chocolatepeanutbaritem"
+				},
+				{
+					id: "000000000000FB8C",
+					type: "item",
+					item: "pamhc2foodextended:chocolatestrawberryitem"
+				},
+				{
+					id: "000000000000E6DF",
+					type: "item",
+					item: "pamhc2foodextended:colasodaitem"
+				},
+				{
+					id: "0000000000009102",
+					type: "item",
+					item: "pamhc2foodextended:cornchipsitem"
+				},
+				{
+					id: "0000000000000D82",
+					type: "item",
+					item: "pamhc2foodextended:crispyricepuffbarsitem"
+				},
+				{
+					id: "0000000000006AB7",
+					type: "item",
+					item: "pamhc2foodextended:energydrinkitem"
+				},
+				{
+					id: "0000000000005047",
+					type: "item",
+					item: "pamhc2foodextended:gingersodaitem"
+				},
+				{
+					id: "00000000000086E1",
+					type: "item",
+					item: "pamhc2foodextended:grapefruitsodaitem"
+				},
+				{
+					id: "000000000000F929",
+					type: "item",
+					item: "pamhc2foodextended:grapesodaitem"
+				},
+				{
+					id: "000000000000AA5F",
+					type: "item",
+					item: "pamhc2foodextended:hazelnutchocolateitem"
+				},
+				{
+					id: "000000000000D163",
+					type: "item",
+					item: "pamhc2foodextended:lemonlimesodaitem"
+				},
+				{
+					id: "0000000000006398",
+					type: "item",
+					item: "pamhc2foodextended:maplecandiedbaconitem"
+				},
+				{
+					id: "000000000000D1F7",
+					type: "item",
+					item: "pamhc2foodextended:marzipanitem"
+				},
+				{
+					id: "000000000000A8BE",
+					type: "item",
+					item: "pamhc2foodextended:orangesodaitem"
+				},
+				{
+					id: "0000000000007191",
+					type: "item",
+					item: "pamhc2foodextended:peanutbuttercupitem"
+				},
+				{
+					id: "0000000000007696",
+					type: "item",
+					item: "pamhc2foodextended:peppermintitem"
+				},
+				{
+					id: "0000000000007FC4",
+					type: "item",
+					item: "pamhc2foodextended:popcornitem"
+				},
+				{
+					id: "0000000000009301",
+					type: "item",
+					item: "pamhc2foodextended:pralinesitem"
+				},
+				{
+					id: "00000000000023A8",
+					type: "item",
+					item: "pamhc2foodextended:rootbeerfloatitem"
+				},
+				{
+					id: "000000000000E515",
+					type: "item",
+					item: "pamhc2foodextended:rootbeersodaitem"
+				},
+				{
+					id: "0000000000005A94",
+					type: "item",
+					item: "pamhc2foodextended:sesamesnapsitem"
+				},
+				{
+					id: "000000000000D5D7",
+					type: "item",
+					item: "pamhc2foodextended:sourcreamandonionpotatochipsitem"
+				},
+				{
+					id: "000000000000C7EC",
+					type: "item",
+					item: "pamhc2foodextended:strawberrysodaitem"
+				},
+				{
+					id: "000000000000E6A2",
+					type: "item",
+					item: "pamhc2foodextended:theatreboxitem"
+				},
+				{
+					id: "000000000000D878",
+					type: "item",
+					item: "pamhc2foodextended:ediblerootitem"
+				},
+				{
+					id: "0000000000004794",
+					type: "item",
+					item: "pamhc2foodextended:baconmushroomburgeritem"
+				},
+				{
+					id: "000000000000FF35",
+					type: "item",
+					item: "pamhc2foodextended:bamboosteamedriceitem"
+				},
+				{
+					id: "00000000000046F4",
+					type: "item",
+					item: "pamhc2foodextended:bananasplititem"
+				},
+				{
+					id: "000000000000FEF9",
+					type: "item",
+					item: "pamhc2foodextended:biscuititem"
+				},
+				{
+					id: "00000000000024C9",
+					type: "item",
+					item: "pamhc2foodextended:biscuitsandgravyitem"
+				},
+				{
+					id: "000000000000E7E1",
+					type: "item",
+					item: "pamhc2foodextended:bltitem"
+				},
+				{
+					id: "00000000000041F1",
+					type: "item",
+					item: "pamhc2foodextended:breadedporkchopitem"
+				},
+				{
+					id: "00000000000049BA",
+					type: "item",
+					item: "pamhc2foodextended:broccolimacitem"
+				},
+				{
+					id: "0000000000000272",
+					type: "item",
+					item: "pamhc2foodextended:brownieitem"
+				},
+				{
+					id: "0000000000008194",
+					type: "item",
+					item: "pamhc2foodextended:carrotjuiceitem"
+				},
+				{
+					id: "000000000000AD3D",
+					type: "item",
+					item: "pamhc2foodextended:cheezepuffsitem"
+				},
+				{
+					id: "0000000000006082",
+					type: "item",
+					item: "pamhc2foodextended:cherryicecreamitem"
+				},
+				{
+					id: "0000000000005B23",
+					type: "item",
+					item: "pamhc2foodextended:chickennoodlesoupitem"
+				},
+				{
+					id: "00000000000060FD",
+					type: "item",
+					item: "pamhc2foodextended:chilidogitem"
+				},
+				{
+					id: "000000000000C8C8",
+					type: "item",
+					item: "pamhc2foodextended:chiliitem"
+				},
+				{
+					id: "00000000000066EC",
+					type: "item",
+					item: "pamhc2foodextended:chocolatemilkitem"
+				},
+				{
+					id: "000000000000E6CB",
+					type: "item",
+					item: "pamhc2foodextended:cinnamonappleoatmealitem"
+				},
+				{
+					id: "00000000000090FA",
+					type: "item",
+					item: "pamhc2foodextended:cinnamonsugardonutitem"
+				},
+				{
+					id: "000000000000FE23",
+					type: "item",
+					item: "pamhc2foodextended:cinnamontoastitem"
+				},
+				{
+					id: "000000000000E85A",
+					type: "item",
+					item: "pamhc2foodextended:coleslawitem"
+				},
+				{
+					id: "0000000000007EF6",
+					type: "item",
+					item: "pamhc2foodextended:cornbreaditem"
+				},
+				{
+					id: "000000000000FAE9",
+					type: "item",
+					item: "pamhc2foodextended:corndogitem"
+				},
+				{
+					id: "0000000000004C98",
+					type: "item",
+					item: "pamhc2foodextended:cornflakesitem"
+				},
+				{
+					id: "00000000000062F7",
+					type: "item",
+					item: "pamhc2foodextended:cornonthecobitem"
+				},
+				{
+					id: "000000000000EBAE",
+					type: "item",
+					item: "pamhc2foodextended:cranberrysauceitem"
+				},
+				{
+					id: "0000000000007402",
+					type: "item",
+					item: "pamhc2foodextended:crispyricepuffcerealitem"
+				},
+				{
+					id: "0000000000001E4E",
+					type: "item",
+					item: "pamhc2foodextended:delightedmealitem"
+				},
+				{
+					id: "0000000000003CDC",
+					type: "item",
+					item: "pamhc2foodextended:deluxecheeseburgeritem"
+				},
+				{
+					id: "0000000000009764",
+					type: "item",
+					item: "pamhc2foodextended:eggsaladitem"
+				},
+				{
+					id: "00000000000099FB",
+					type: "item",
+					item: "pamhc2foodextended:epicbltitem"
+				},
+				{
+					id: "000000000000C8F7",
+					type: "item",
+					item: "pamhc2foodextended:frenchtoastitem"
+				},
+				{
+					id: "0000000000007EAB",
+					type: "item",
+					item: "pamhc2foodextended:frosteddonutitem"
+				},
+				{
+					id: "000000000000D26F",
+					type: "item",
+					item: "pamhc2foodextended:gravyitem"
+				},
+				{
+					id: "000000000000FD60",
+					type: "item",
+					item: "pamhc2foodextended:greenbeancasseroleitem"
+				},
+				{
+					id: "0000000000000AC6",
+					type: "item",
+					item: "pamhc2foodextended:groundcinnamonitem"
+				},
+				{
+					id: "0000000000000731",
+					type: "item",
+					item: "pamhc2foodextended:loadedbakedpotatoitem"
+				},
+				{
+					id: "0000000000000121",
+					type: "item",
+					item: "pamhc2foodextended:mapleoatmealitem"
+				},
+				{
+					id: "000000000000B451",
+					type: "item",
+					item: "pamhc2foodextended:maplesyruppancakesitem"
+				},
+				{
+					id: "0000000000006ABB",
+					type: "item",
+					item: "pamhc2foodextended:maplesyrupwafflesitem"
+				},
+				{
+					id: "0000000000000BE0",
+					type: "item",
+					item: "pamhc2foodextended:mcpamitem"
+				},
+				{
+					id: "000000000000C975",
+					type: "item",
+					item: "pamhc2foodextended:melonjellysandwichitem"
+				},
+				{
+					id: "000000000000549E",
+					type: "item",
+					item: "pamhc2foodextended:mozzerellasticksitem"
+				},
+				{
+					id: "000000000000817B",
+					type: "item",
+					item: "pamhc2foodextended:pancakesitem"
+				},
+				{
+					id: "000000000000A237",
+					type: "item",
+					item: "pamhc2foodextended:peachesandcreamoatmealitem"
+				},
+				{
+					id: "00000000000017D1",
+					type: "item",
+					item: "pamhc2foodextended:potatosaladitem"
+				},
+				{
+					id: "000000000000806E",
+					type: "item",
+					item: "pamhc2foodextended:potatoskinsitem"
+				},
+				{
+					id: "000000000000D63B",
+					type: "item",
+					item: "pamhc2foodextended:powdereddonutitem"
+				},
+				{
+					id: "000000000000BE60",
+					type: "item",
+					item: "pamhc2foodextended:sweetberryjellysandwichitem"
+				},
+				{
+					id: "0000000000009C6D",
+					type: "item",
+					item: "pamhc2foodextended:wafflesitem"
+				},
+				{
+					id: "000000000000A4DE",
+					type: "item",
+					item: "pamhc2foodextended:blackberryjuiceitem"
+				},
+				{
+					id: "000000000000297F",
+					type: "item",
+					item: "pamhc2foodextended:blueberryjuiceitem"
+				},
+				{
+					id: "0000000000008BA7",
+					type: "item",
+					item: "pamhc2foodextended:cactusfruitjuiceitem"
+				},
+				{
+					id: "0000000000003549",
+					type: "item",
+					item: "pamhc2foodextended:candleberryjuiceitem"
+				},
+				{
+					id: "000000000000465C",
+					type: "item",
+					item: "pamhc2foodextended:cranberryjuiceitem"
+				},
+				{
+					id: "000000000000BDB3",
+					type: "item",
+					item: "pamhc2foodextended:elderberryjuiceitem"
+				},
+				{
+					id: "000000000000438C",
+					type: "item",
+					item: "pamhc2foodextended:huckleberryjuiceitem"
+				},
+				{
+					id: "00000000000092DA",
+					type: "item",
+					item: "pamhc2foodextended:juniperberryjuiceitem"
+				},
+				{
+					id: "0000000000003A99",
+					type: "item",
+					item: "pamhc2foodextended:mulberryjuiceitem"
+				},
+				{
+					id: "0000000000006BD7",
+					type: "item",
+					item: "pamhc2foodextended:raspberryjuiceitem"
+				},
+				{
+					id: "000000000000B085",
+					type: "item",
+					item: "pamhc2foodextended:strawberryjuiceitem"
+				},
+				{
+					id: "00000000000047B9",
+					type: "item",
+					item: "pamhc2foodextended:cantaloupejuiceitem"
+				},
+				{
+					id: "0000000000007C53",
+					type: "item",
+					item: "pamhc2foodextended:grapejuiceitem"
+				},
+				{
+					id: "00000000000018CC",
+					type: "item",
+					item: "pamhc2foodextended:greengrapejuiceitem"
+				},
+				{
+					id: "00000000000059CE",
+					type: "item",
+					item: "pamhc2foodextended:kiwijuiceitem"
+				},
+				{
+					id: "0000000000005E15",
+					type: "item",
+					item: "pamhc2foodextended:pineapplejuiceitem"
+				},
+				{
+					id: "000000000000D969",
+					type: "item",
+					item: "pamhc2foodextended:cherryjuiceitem"
+				},
+				{
+					id: "0000000000006DF6",
+					type: "item",
+					item: "pamhc2foodextended:orangejuiceitem"
+				},
+				{
+					id: "000000000000EDCA",
+					type: "item",
+					item: "pamhc2foodextended:peachjuiceitem"
+				},
+				{
+					id: "0000000000007FB3",
+					type: "item",
+					item: "pamhc2foodextended:pearjuiceitem"
+				},
+				{
+					id: "00000000000097DF",
+					type: "item",
+					item: "pamhc2foodextended:plumjuiceitem"
+				},
+				{
+					id: "0000000000008E46",
+					type: "item",
+					item: "pamhc2foodextended:pawpawjuiceitem"
+				},
+				{
+					id: "000000000000E0CD",
+					type: "item",
+					item: "pamhc2foodextended:soursopjuiceitem"
+				},
+				{
+					id: "000000000000B7A5",
+					type: "item",
+					item: "pamhc2foodextended:apricotjuiceitem"
+				},
+				{
+					id: "00000000000052D4",
+					type: "item",
+					item: "pamhc2foodextended:bananajuiceitem"
+				},
+				{
+					id: "000000000000DEDB",
+					type: "item",
+					item: "pamhc2foodextended:datejuiceitem"
+				},
+				{
+					id: "0000000000005E62",
+					type: "item",
+					item: "pamhc2foodextended:dragonfruitjuiceitem"
+				},
+				{
+					id: "000000000000D71E",
+					type: "item",
+					item: "pamhc2foodextended:figjuiceitem"
+				},
+				{
+					id: "000000000000BC90",
+					type: "item",
+					item: "pamhc2foodextended:grapefruitjuiceitem"
+				},
+				{
+					id: "000000000000E0CB",
+					type: "item",
+					item: "pamhc2foodextended:mangojuiceitem"
+				},
+				{
+					id: "0000000000009B60",
+					type: "item",
+					item: "pamhc2foodextended:papayajuiceitem"
+				},
+				{
+					id: "0000000000009100",
+					type: "item",
+					item: "pamhc2foodextended:persimmonjuiceitem"
+				},
+				{
+					id: "000000000000A71E",
+					type: "item",
+					item: "pamhc2foodextended:pomegranatejuiceitem"
+				},
+				{
+					id: "00000000000087D3",
+					type: "item",
+					item: "pamhc2foodextended:starfruitjuiceitem"
+				},
+				{
+					id: "0000000000004F5B",
+					type: "item",
+					item: "pamhc2foodextended:breadfruitjuiceitem"
+				},
+				{
+					id: "0000000000007207",
+					type: "item",
+					item: "pamhc2foodextended:jackfruitjuiceitem"
+				},
+				{
+					id: "000000000000B12D",
+					type: "item",
+					item: "pamhc2foodextended:guavajuiceitem"
+				},
+				{
+					id: "0000000000006FE4",
+					type: "item",
+					item: "pamhc2foodextended:lycheejuiceitem"
+				},
+				{
+					id: "0000000000009C4A",
+					type: "item",
+					item: "pamhc2foodextended:passionfruitjuiceitem"
+				},
+				{
+					id: "000000000000F5B5",
+					type: "item",
+					item: "pamhc2foodextended:rambutanjuiceitem"
+				},
+				{
+					id: "0000000000003919",
+					type: "item",
+					item: "pamhc2foodextended:tamarindjuiceitem"
+				},
+				{
+					id: "000000000000D1E2",
+					type: "item",
+					item: "pamhc2foodextended:gooseberryjuiceitem"
+				},
+				{
+					id: "000000000000F369",
+					type: "item",
+					item: "pamhc2foodextended:durianjuiceitem"
+				},
+				{
+					id: "0000000000001A5A",
+					type: "item",
+					item: "pamhc2foodextended:lemonjuiceitem"
+				},
+				{
+					id: "000000000000C465",
+					type: "item",
+					item: "pamhc2foodextended:limejuiceitem"
+				},
+				{
+					id: "0000000000001E0A",
+					type: "item",
+					item: "pamhc2foodextended:blackberryjellyitem"
+				},
+				{
+					id: "00000000000096B9",
+					type: "item",
+					item: "pamhc2foodextended:blueberryjellyitem"
+				},
+				{
+					id: "00000000000000ED",
+					type: "item",
+					item: "pamhc2foodextended:cactusfruitjellyitem"
+				},
+				{
+					id: "000000000000DDFE",
+					type: "item",
+					item: "pamhc2foodextended:candleberryjellyitem"
+				},
+				{
+					id: "000000000000B0C7",
+					type: "item",
+					item: "pamhc2foodextended:cranberryjellyitem"
+				},
+				{
+					id: "0000000000002EA2",
+					type: "item",
+					item: "pamhc2foodextended:elderberryjellyitem"
+				},
+				{
+					id: "000000000000577A",
+					type: "item",
+					item: "pamhc2foodextended:huckleberryjellyitem"
+				},
+				{
+					id: "0000000000008A0E",
+					type: "item",
+					item: "pamhc2foodextended:juniperberryjellyitem"
+				},
+				{
+					id: "0000000000002CED",
+					type: "item",
+					item: "pamhc2foodextended:mulberryjellyitem"
+				},
+				{
+					id: "0000000000008B8B",
+					type: "item",
+					item: "pamhc2foodextended:raspberryjellyitem"
+				},
+				{
+					id: "0000000000008762",
+					type: "item",
+					item: "pamhc2foodextended:strawberryjellyitem"
+				},
+				{
+					id: "000000000000D248",
+					type: "item",
+					item: "pamhc2foodextended:cantaloupejellyitem"
+				},
+				{
+					id: "000000000000A4B0",
+					type: "item",
+					item: "pamhc2foodextended:grapejellyitem"
+				},
+				{
+					id: "0000000000001384",
+					type: "item",
+					item: "pamhc2foodextended:greengrapejellyitem"
+				},
+				{
+					id: "000000000000E2C2",
+					type: "item",
+					item: "pamhc2foodextended:kiwijellyitem"
+				},
+				{
+					id: "00000000000099DE",
+					type: "item",
+					item: "pamhc2foodextended:pineapplejellyitem"
+				},
+				{
+					id: "000000000000E0C9",
+					type: "item",
+					item: "pamhc2foodextended:cherryjellyitem"
+				},
+				{
+					id: "0000000000008C4D",
+					type: "item",
+					item: "pamhc2foodextended:orangejellyitem"
+				},
+				{
+					id: "00000000000056A6",
+					type: "item",
+					item: "pamhc2foodextended:peachjellyitem"
+				},
+				{
+					id: "000000000000DC96",
+					type: "item",
+					item: "pamhc2foodextended:pearjellyitem"
+				},
+				{
+					id: "000000000000C38A",
+					type: "item",
+					item: "pamhc2foodextended:plumjellyitem"
+				},
+				{
+					id: "000000000000EA40",
+					type: "item",
+					item: "pamhc2foodextended:pawpawjellyitem"
+				},
+				{
+					id: "00000000000079E8",
+					type: "item",
+					item: "pamhc2foodextended:soursopjellyitem"
+				},
+				{
+					id: "000000000000B8AF",
+					type: "item",
+					item: "pamhc2foodextended:apricotjellyitem"
+				},
+				{
+					id: "000000000000FBF2",
+					type: "item",
+					item: "pamhc2foodextended:bananajellyitem"
+				},
+				{
+					id: "0000000000008D0E",
+					type: "item",
+					item: "pamhc2foodextended:datejellyitem"
+				},
+				{
+					id: "0000000000002AE0",
+					type: "item",
+					item: "pamhc2foodextended:dragonfruitjellyitem"
+				},
+				{
+					id: "000000000000278B",
+					type: "item",
+					item: "pamhc2foodextended:figjellyitem"
+				},
+				{
+					id: "000000000000FAF4",
+					type: "item",
+					item: "pamhc2foodextended:grapefruitjellyitem"
+				},
+				{
+					id: "000000000000DB41",
+					type: "item",
+					item: "pamhc2foodextended:mangojellyitem"
+				},
+				{
+					id: "0000000000005045",
+					type: "item",
+					item: "pamhc2foodextended:papayajellyitem"
+				},
+				{
+					id: "0000000000001545",
+					type: "item",
+					item: "pamhc2foodextended:persimmonjellyitem"
+				},
+				{
+					id: "0000000000006379",
+					type: "item",
+					item: "pamhc2foodextended:pomegranatejellyitem"
+				},
+				{
+					id: "0000000000007DEA",
+					type: "item",
+					item: "pamhc2foodextended:starfruitjellyitem"
+				},
+				{
+					id: "000000000000BBE1",
+					type: "item",
+					item: "pamhc2foodextended:breadfruitjellyitem"
+				},
+				{
+					id: "0000000000009BB9",
+					type: "item",
+					item: "pamhc2foodextended:jackfruitjellyitem"
+				},
+				{
+					id: "000000000000FBDF",
+					type: "item",
+					item: "pamhc2foodextended:guavajellyitem"
+				},
+				{
+					id: "0000000000009602",
+					type: "item",
+					item: "pamhc2foodextended:lycheejellyitem"
+				},
+				{
+					id: "0000000000009FFC",
+					type: "item",
+					item: "pamhc2foodextended:passionfruitjellyitem"
+				},
+				{
+					id: "0000000000008196",
+					type: "item",
+					item: "pamhc2foodextended:rambutanjellyitem"
+				},
+				{
+					id: "0000000000007DF8",
+					type: "item",
+					item: "pamhc2foodextended:tamarindjellyitem"
+				},
+				{
+					id: "000000000000255B",
+					type: "item",
+					item: "pamhc2foodextended:gooseberryjellyitem"
+				},
+				{
+					id: "00000000000082A0",
+					type: "item",
+					item: "pamhc2foodextended:durianjellyitem"
+				},
+				{
+					id: "000000000000C288",
+					type: "item",
+					item: "pamhc2foodextended:lemonjellyitem"
+				},
+				{
+					id: "00000000000080C7",
+					type: "item",
+					item: "pamhc2foodextended:limejellyitem"
+				},
+				{
+					id: "0000000000008D20",
+					type: "item",
+					item: "pamhc2foodextended:blackberrysmoothieitem"
+				},
+				{
+					id: "0000000000001C10",
+					type: "item",
+					item: "pamhc2foodextended:blueberrysmoothieitem"
+				},
+				{
+					id: "000000000000D196",
+					type: "item",
+					item: "pamhc2foodextended:cactusfruitsmoothieitem"
+				},
+				{
+					id: "0000000000001D82",
+					type: "item",
+					item: "pamhc2foodextended:candleberrysmoothieitem"
+				},
+				{
+					id: "0000000000007451",
+					type: "item",
+					item: "pamhc2foodextended:cranberrysmoothieitem"
+				},
+				{
+					id: "0000000000001820",
+					type: "item",
+					item: "pamhc2foodextended:elderberrysmoothieitem"
+				},
+				{
+					id: "0000000000007B2D",
+					type: "item",
+					item: "pamhc2foodextended:huckleberrysmoothieitem"
+				},
+				{
+					id: "000000000000DF96",
+					type: "item",
+					item: "pamhc2foodextended:juniperberrysmoothieitem"
+				},
+				{
+					id: "000000000000A0B2",
+					type: "item",
+					item: "pamhc2foodextended:mulberrysmoothieitem"
+				},
+				{
+					id: "000000000000444F",
+					type: "item",
+					item: "pamhc2foodextended:raspberrysmoothieitem"
+				},
+				{
+					id: "000000000000C88F",
+					type: "item",
+					item: "pamhc2foodextended:strawberrysmoothieitem"
+				},
+				{
+					id: "00000000000005B7",
+					type: "item",
+					item: "pamhc2foodextended:cantaloupesmoothieitem"
+				},
+				{
+					id: "0000000000004D10",
+					type: "item",
+					item: "pamhc2foodextended:grapesmoothieitem"
+				},
+				{
+					id: "0000000000004EB1",
+					type: "item",
+					item: "pamhc2foodextended:greengrapesmoothieitem"
+				},
+				{
+					id: "0000000000000A94",
+					type: "item",
+					item: "pamhc2foodextended:kiwismoothieitem"
+				},
+				{
+					id: "000000000000182E",
+					type: "item",
+					item: "pamhc2foodextended:pineapplesmoothieitem"
+				},
+				{
+					id: "0000000000004FE8",
+					type: "item",
+					item: "pamhc2foodextended:cherrysmoothieitem"
+				},
+				{
+					id: "000000000000DC30",
+					type: "item",
+					item: "pamhc2foodextended:orangesmoothieitem"
+				},
+				{
+					id: "0000000000003DEE",
+					type: "item",
+					item: "pamhc2foodextended:peachsmoothieitem"
+				},
+				{
+					id: "0000000000005EFE",
+					type: "item",
+					item: "pamhc2foodextended:pearsmoothieitem"
+				},
+				{
+					id: "000000000000F5C6",
+					type: "item",
+					item: "pamhc2foodextended:plumsmoothieitem"
+				},
+				{
+					id: "000000000000669A",
+					type: "item",
+					item: "pamhc2foodextended:pawpawsmoothieitem"
+				},
+				{
+					id: "0000000000004F60",
+					type: "item",
+					item: "pamhc2foodextended:soursopsmoothieitem"
+				},
+				{
+					id: "000000000000D08D",
+					type: "item",
+					item: "pamhc2foodextended:apricotsmoothieitem"
+				},
+				{
+					id: "000000000000CAE8",
+					type: "item",
+					item: "pamhc2foodextended:bananasmoothieitem"
+				},
+				{
+					id: "0000000000000589",
+					type: "item",
+					item: "pamhc2foodextended:datesmoothieitem"
+				},
+				{
+					id: "00000000000062A3",
+					type: "item",
+					item: "pamhc2foodextended:dragonfruitsmoothieitem"
+				},
+				{
+					id: "000000000000A7DE",
+					type: "item",
+					item: "pamhc2foodextended:figsmoothieitem"
+				},
+				{
+					id: "000000000000AFF8",
+					type: "item",
+					item: "pamhc2foodextended:grapefruitsmoothieitem"
+				},
+				{
+					id: "000000000000FF25",
+					type: "item",
+					item: "pamhc2foodextended:mangosmoothieitem"
+				},
+				{
+					id: "00000000000022E1",
+					type: "item",
+					item: "pamhc2foodextended:papayasmoothieitem"
+				},
+				{
+					id: "000000000000EF9F",
+					type: "item",
+					item: "pamhc2foodextended:persimmonsmoothieitem"
+				},
+				{
+					id: "0000000000007DF7",
+					type: "item",
+					item: "pamhc2foodextended:pomegranatesmoothieitem"
+				},
+				{
+					id: "000000000000C033",
+					type: "item",
+					item: "pamhc2foodextended:starfruitsmoothieitem"
+				},
+				{
+					id: "0000000000004FFC",
+					type: "item",
+					item: "pamhc2foodextended:breadfruitsmoothieitem"
+				},
+				{
+					id: "000000000000F582",
+					type: "item",
+					item: "pamhc2foodextended:jackfruitsmoothieitem"
+				},
+				{
+					id: "0000000000002DA0",
+					type: "item",
+					item: "pamhc2foodextended:guavasmoothieitem"
+				},
+				{
+					id: "000000000000A513",
+					type: "item",
+					item: "pamhc2foodextended:lycheesmoothieitem"
+				},
+				{
+					id: "0000000000003017",
+					type: "item",
+					item: "pamhc2foodextended:passionfruitsmoothieitem"
+				},
+				{
+					id: "000000000000C7B0",
+					type: "item",
+					item: "pamhc2foodextended:rambutansmoothieitem"
+				},
+				{
+					id: "000000000000EEDE",
+					type: "item",
+					item: "pamhc2foodextended:tamarindsmoothieitem"
+				},
+				{
+					id: "000000000000CF88",
+					type: "item",
+					item: "pamhc2foodextended:gooseberrysmoothieitem"
+				},
+				{
+					id: "0000000000004909",
+					type: "item",
+					item: "pamhc2foodextended:duriansmoothieitem"
+				},
+				{
+					id: "0000000000009457",
+					type: "item",
+					item: "pamhc2foodextended:lemonsmoothieitem"
+				},
+				{
+					id: "000000000000DD1D",
+					type: "item",
+					item: "pamhc2foodextended:limesmoothieitem"
+				},
+				{
+					id: "0000000000001F6F",
+					type: "item",
+					item: "pamhc2foodextended:blackberrypieitem"
+				},
+				{
+					id: "000000000000C9B5",
+					type: "item",
+					item: "pamhc2foodextended:blueberrypieitem"
+				},
+				{
+					id: "0000000000000182",
+					type: "item",
+					item: "pamhc2foodextended:cactusfruitpieitem"
+				},
+				{
+					id: "0000000000000597",
+					type: "item",
+					item: "pamhc2foodextended:candleberrypieitem"
+				},
+				{
+					id: "00000000000046CC",
+					type: "item",
+					item: "pamhc2foodextended:cranberrypieitem"
+				},
+				{
+					id: "000000000000577B",
+					type: "item",
+					item: "pamhc2foodextended:elderberrypieitem"
+				},
+				{
+					id: "00000000000059DB",
+					type: "item",
+					item: "pamhc2foodextended:huckleberrypieitem"
+				},
+				{
+					id: "00000000000044DD",
+					type: "item",
+					item: "pamhc2foodextended:juniperberrypieitem"
+				},
+				{
+					id: "000000000000DBC7",
+					type: "item",
+					item: "pamhc2foodextended:mulberrypieitem"
+				},
+				{
+					id: "0000000000008825",
+					type: "item",
+					item: "pamhc2foodextended:raspberrypieitem"
+				},
+				{
+					id: "000000000000B903",
+					type: "item",
+					item: "pamhc2foodextended:strawberrypieitem"
+				},
+				{
+					id: "000000000000193F",
+					type: "item",
+					item: "pamhc2foodextended:cantaloupepieitem"
+				},
+				{
+					id: "0000000000003D7B",
+					type: "item",
+					item: "pamhc2foodextended:grapepieitem"
+				},
+				{
+					id: "0000000000002D15",
+					type: "item",
+					item: "pamhc2foodextended:greengrapepieitem"
+				},
+				{
+					id: "0000000000003884",
+					type: "item",
+					item: "pamhc2foodextended:kiwipieitem"
+				},
+				{
+					id: "000000000000E7D6",
+					type: "item",
+					item: "pamhc2foodextended:pineapplepieitem"
+				},
+				{
+					id: "0000000000001AC9",
+					type: "item",
+					item: "pamhc2foodextended:cherrypieitem"
+				},
+				{
+					id: "000000000000B899",
+					type: "item",
+					item: "pamhc2foodextended:orangepieitem"
+				},
+				{
+					id: "0000000000007CB0",
+					type: "item",
+					item: "pamhc2foodextended:peachpieitem"
+				},
+				{
+					id: "0000000000005A4C",
+					type: "item",
+					item: "pamhc2foodextended:pearpieitem"
+				},
+				{
+					id: "0000000000006C73",
+					type: "item",
+					item: "pamhc2foodextended:plumpieitem"
+				},
+				{
+					id: "0000000000007298",
+					type: "item",
+					item: "pamhc2foodextended:pawpawpieitem"
+				},
+				{
+					id: "000000000000E6D4",
+					type: "item",
+					item: "pamhc2foodextended:soursoppieitem"
+				},
+				{
+					id: "0000000000006BB4",
+					type: "item",
+					item: "pamhc2foodextended:apricotpieitem"
+				},
+				{
+					id: "000000000000BE45",
+					type: "item",
+					item: "pamhc2foodextended:bananapieitem"
+				},
+				{
+					id: "000000000000E616",
+					type: "item",
+					item: "pamhc2foodextended:datepieitem"
+				},
+				{
+					id: "0000000000002098",
+					type: "item",
+					item: "pamhc2foodextended:dragonfruitpieitem"
+				},
+				{
+					id: "00000000000072FF",
+					type: "item",
+					item: "pamhc2foodextended:figpieitem"
+				},
+				{
+					id: "000000000000B50B",
+					type: "item",
+					item: "pamhc2foodextended:grapefruitpieitem"
+				},
+				{
+					id: "000000000000ED30",
+					type: "item",
+					item: "pamhc2foodextended:mangopieitem"
+				},
+				{
+					id: "000000000000AA87",
+					type: "item",
+					item: "pamhc2foodextended:papayapieitem"
+				},
+				{
+					id: "000000000000F9DC",
+					type: "item",
+					item: "pamhc2foodextended:persimmonpieitem"
+				},
+				{
+					id: "000000000000D992",
+					type: "item",
+					item: "pamhc2foodextended:pomegranatepieitem"
+				},
+				{
+					id: "000000000000058B",
+					type: "item",
+					item: "pamhc2foodextended:starfruitpieitem"
+				},
+				{
+					id: "00000000000095FB",
+					type: "item",
+					item: "pamhc2foodextended:breadfruitpieitem"
+				},
+				{
+					id: "0000000000007728",
+					type: "item",
+					item: "pamhc2foodextended:jackfruitpieitem"
+				},
+				{
+					id: "000000000000D307",
+					type: "item",
+					item: "pamhc2foodextended:guavapieitem"
+				},
+				{
+					id: "000000000000236E",
+					type: "item",
+					item: "pamhc2foodextended:lycheepieitem"
+				},
+				{
+					id: "00000000000098F3",
+					type: "item",
+					item: "pamhc2foodextended:passionfruitpieitem"
+				},
+				{
+					id: "0000000000001426",
+					type: "item",
+					item: "pamhc2foodextended:rambutanpieitem"
+				},
+				{
+					id: "0000000000006557",
+					type: "item",
+					item: "pamhc2foodextended:tamarindpieitem"
+				},
+				{
+					id: "0000000000000DE7",
+					type: "item",
+					item: "pamhc2foodextended:gooseberrypieitem"
+				},
+				{
+					id: "000000000000389B",
+					type: "item",
+					item: "pamhc2foodextended:durianpieitem"
+				},
+				{
+					id: "0000000000007C24",
+					type: "item",
+					item: "pamhc2foodextended:lemonpieitem"
+				},
+				{
+					id: "000000000000BA77",
+					type: "item",
+					item: "pamhc2foodextended:limepieitem"
+				},
+				{
+					id: "0000000000006AC1",
+					type: "item",
+					item: "pamhc2foodextended:blackberryjellytoastitem"
+				},
+				{
+					id: "000000000000DD7E",
+					type: "item",
+					item: "pamhc2foodextended:blueberryjellytoastitem"
+				},
+				{
+					id: "000000000000B7B5",
+					type: "item",
+					item: "pamhc2foodextended:candleberryjellytoastitem"
+				},
+				{
+					id: "2554590D4BAFE92F",
+					type: "item",
+					item: "pamhc2foodextended:cactusfruitjellytoastitem"
+				},
+				{
+					id: "0000000000000533",
+					type: "item",
+					item: "pamhc2foodextended:cranberryjellytoastitem"
+				},
+				{
+					id: "00000000000042A8",
+					type: "item",
+					item: "pamhc2foodextended:elderberryjellytoastitem"
+				},
+				{
+					id: "0000000000007220",
+					type: "item",
+					item: "pamhc2foodextended:huckleberryjellytoastitem"
+				},
+				{
+					id: "0000000000006271",
+					type: "item",
+					item: "pamhc2foodextended:juniperberryjellytoastitem"
+				},
+				{
+					id: "0000000000008674",
+					type: "item",
+					item: "pamhc2foodextended:mulberryjellytoastitem"
+				},
+				{
+					id: "000000000000D740",
+					type: "item",
+					item: "pamhc2foodextended:raspberryjellytoastitem"
+				},
+				{
+					id: "000000000000DD90",
+					type: "item",
+					item: "pamhc2foodextended:strawberryjellytoastitem"
+				},
+				{
+					id: "000000000000A1DF",
+					type: "item",
+					item: "pamhc2foodextended:cantaloupejellytoastitem"
+				},
+				{
+					id: "000000000000CBB5",
+					type: "item",
+					item: "pamhc2foodextended:grapejellytoastitem"
+				},
+				{
+					id: "0000000000005851",
+					type: "item",
+					item: "pamhc2foodextended:greengrapejellytoastitem"
+				},
+				{
+					id: "00000000000017A2",
+					type: "item",
+					item: "pamhc2foodextended:kiwijellytoastitem"
+				},
+				{
+					id: "000000000000FDBA",
+					type: "item",
+					item: "pamhc2foodextended:pineapplejellytoastitem"
+				},
+				{
+					id: "000000000000412A",
+					type: "item",
+					item: "pamhc2foodextended:cherryjellytoastitem"
+				},
+				{
+					id: "0000000000001EC9",
+					type: "item",
+					item: "pamhc2foodextended:orangejellytoastitem"
+				},
+				{
+					id: "0000000000004E0D",
+					type: "item",
+					item: "pamhc2foodextended:peachjellytoastitem"
+				},
+				{
+					id: "0000000000005407",
+					type: "item",
+					item: "pamhc2foodextended:pearjellytoastitem"
+				},
+				{
+					id: "0000000000002E11",
+					type: "item",
+					item: "pamhc2foodextended:plumjellytoastitem"
+				},
+				{
+					id: "0000000000005BF9",
+					type: "item",
+					item: "pamhc2foodextended:pawpawjellytoastitem"
+				},
+				{
+					id: "0000000000002057",
+					type: "item",
+					item: "pamhc2foodextended:soursopjellytoastitem"
+				},
+				{
+					id: "000000000000E246",
+					type: "item",
+					item: "pamhc2foodextended:apricotjellytoastitem"
+				},
+				{
+					id: "000000000000A9ED",
+					type: "item",
+					item: "pamhc2foodextended:bananajellytoastitem"
+				},
+				{
+					id: "000000000000C505",
+					type: "item",
+					item: "pamhc2foodextended:datejellytoastitem"
+				},
+				{
+					id: "000000000000B13E",
+					type: "item",
+					item: "pamhc2foodextended:dragonfruitjellytoastitem"
+				},
+				{
+					id: "00000000000068BC",
+					type: "item",
+					item: "pamhc2foodextended:figjellytoastitem"
+				},
+				{
+					id: "0000000000000770",
+					type: "item",
+					item: "pamhc2foodextended:grapefruitjellytoastitem"
+				},
+				{
+					id: "000000000000FC16",
+					type: "item",
+					item: "pamhc2foodextended:mangojellytoastitem"
+				},
+				{
+					id: "000000000000E823",
+					type: "item",
+					item: "pamhc2foodextended:papayajellytoastitem"
+				},
+				{
+					id: "000000000000A0AB",
+					type: "item",
+					item: "pamhc2foodextended:persimmonjellytoastitem"
+				},
+				{
+					id: "000000000000DDB0",
+					type: "item",
+					item: "pamhc2foodextended:pomegranatejellytoastitem"
+				},
+				{
+					id: "0000000000005C4C",
+					type: "item",
+					item: "pamhc2foodextended:starfruitjellytoastitem"
+				},
+				{
+					id: "000000000000A434",
+					type: "item",
+					item: "pamhc2foodextended:breadfruitjellytoastitem"
+				},
+				{
+					id: "000000000000B8A8",
+					type: "item",
+					item: "pamhc2foodextended:jackfruitjellytoastitem"
+				},
+				{
+					id: "7E99E3F8BED4D7FE",
+					type: "item",
+					item: "pamhc2foodextended:guavajellytoastitem"
+				},
+				{
+					id: "000000000000ABAA",
+					type: "item",
+					item: "pamhc2foodextended:lycheejellytoastitem"
+				},
+				{
+					id: "0000000000004B77",
+					type: "item",
+					item: "pamhc2foodextended:passionfruitjellytoastitem"
+				},
+				{
+					id: "0000000000000C68",
+					type: "item",
+					item: "pamhc2foodextended:rambutanjellytoastitem"
+				},
+				{
+					id: "0000000000008660",
+					type: "item",
+					item: "pamhc2foodextended:tamarindjellytoastitem"
+				},
+				{
+					id: "0000000000009C8F",
+					type: "item",
+					item: "pamhc2foodextended:gooseberryjellytoastitem"
+				},
+				{
+					id: "0000000000008FFE",
+					type: "item",
+					item: "pamhc2foodextended:durianjellytoastitem"
+				},
+				{
+					id: "000000000000D7AB",
+					type: "item",
+					item: "pamhc2foodextended:lemonjellytoastitem"
+				},
+				{
+					id: "000000000000998E",
+					type: "item",
+					item: "pamhc2foodextended:limejellytoastitem"
+				},
+				{
+					id: "000000000000F667",
+					type: "item",
+					item: "pamhc2foodextended:blackberryyogurtitem"
+				},
+				{
+					id: "0000000000007DE3",
+					type: "item",
+					item: "pamhc2foodextended:blueberryyogurtitem"
+				},
+				{
+					id: "0000000000003620",
+					type: "item",
+					item: "pamhc2foodextended:cactusfruityogurtitem"
+				},
+				{
+					id: "0000000000007874",
+					type: "item",
+					item: "pamhc2foodextended:candleberryyogurtitem"
+				},
+				{
+					id: "000000000000B3AE",
+					type: "item",
+					item: "pamhc2foodextended:cranberryyogurtitem"
+				},
+				{
+					id: "000000000000E4C7",
+					type: "item",
+					item: "pamhc2foodextended:elderberryyogurtitem"
+				},
+				{
+					id: "0000000000005C69",
+					type: "item",
+					item: "pamhc2foodextended:huckleberryyogurtitem"
+				},
+				{
+					id: "000000000000D8DB",
+					type: "item",
+					item: "pamhc2foodextended:juniperberryyogurtitem"
+				},
+				{
+					id: "0000000000006174",
+					type: "item",
+					item: "pamhc2foodextended:mulberryyogurtitem"
+				},
+				{
+					id: "000000000000F7FE",
+					type: "item",
+					item: "pamhc2foodextended:raspberryyogurtitem"
+				},
+				{
+					id: "00000000000098A9",
+					type: "item",
+					item: "pamhc2foodextended:strawberryyogurtitem"
+				},
+				{
+					id: "0000000000001803",
+					type: "item",
+					item: "pamhc2foodextended:cantaloupeyogurtitem"
+				},
+				{
+					id: "00000000000092F0",
+					type: "item",
+					item: "pamhc2foodextended:grapeyogurtitem"
+				},
+				{
+					id: "00000000000090AF",
+					type: "item",
+					item: "pamhc2foodextended:greengrapeyogurtitem"
+				},
+				{
+					id: "000000000000532A",
+					type: "item",
+					item: "pamhc2foodextended:kiwiyogurtitem"
+				},
+				{
+					id: "00000000000060B8",
+					type: "item",
+					item: "pamhc2foodextended:pineappleyogurtitem"
+				},
+				{
+					id: "00000000000049DB",
+					type: "item",
+					item: "pamhc2foodextended:cherryyogurtitem"
+				},
+				{
+					id: "000000000000D57A",
+					type: "item",
+					item: "pamhc2foodextended:orangeyogurtitem"
+				},
+				{
+					id: "000000000000FA10",
+					type: "item",
+					item: "pamhc2foodextended:peachyogurtitem"
+				},
+				{
+					id: "0000000000006E5F",
+					type: "item",
+					item: "pamhc2foodextended:pearyogurtitem"
+				},
+				{
+					id: "000000000000CA9E",
+					type: "item",
+					item: "pamhc2foodextended:plumyogurtitem"
+				},
+				{
+					id: "0000000000002B74",
+					type: "item",
+					item: "pamhc2foodextended:pawpawyogurtitem"
+				},
+				{
+					id: "0000000000007D2E",
+					type: "item",
+					item: "pamhc2foodextended:soursopyogurtitem"
+				},
+				{
+					id: "000000000000FBCC",
+					type: "item",
+					item: "pamhc2foodextended:apricotyogurtitem"
+				},
+				{
+					id: "0000000000007190",
+					type: "item",
+					item: "pamhc2foodextended:bananayogurtitem"
+				},
+				{
+					id: "0000000000003C93",
+					type: "item",
+					item: "pamhc2foodextended:dateyogurtitem"
+				},
+				{
+					id: "000000000000C16E",
+					type: "item",
+					item: "pamhc2foodextended:dragonfruityogurtitem"
+				},
+				{
+					id: "0000000000001931",
+					type: "item",
+					item: "pamhc2foodextended:figyogurtitem"
+				},
+				{
+					id: "000000000000C4C4",
+					type: "item",
+					item: "pamhc2foodextended:grapefruityogurtitem"
+				},
+				{
+					id: "0000000000008FD4",
+					type: "item",
+					item: "pamhc2foodextended:mangoyogurtitem"
+				},
+				{
+					id: "0000000000003D58",
+					type: "item",
+					item: "pamhc2foodextended:papayayogurtitem"
+				},
+				{
+					id: "0000000000001885",
+					type: "item",
+					item: "pamhc2foodextended:persimmonyogurtitem"
+				},
+				{
+					id: "0000000000002C2C",
+					type: "item",
+					item: "pamhc2foodextended:pomegranateyogurtitem"
+				},
+				{
+					id: "000000000000A7B1",
+					type: "item",
+					item: "pamhc2foodextended:starfruityogurtitem"
+				},
+				{
+					id: "000000000000C2B3",
+					type: "item",
+					item: "pamhc2foodextended:breadfruityogurtitem"
+				},
+				{
+					id: "0000000000007C1B",
+					type: "item",
+					item: "pamhc2foodextended:jackfruityogurtitem"
+				},
+				{
+					id: "0000000000007014",
+					type: "item",
+					item: "pamhc2foodextended:guavayogurtitem"
+				},
+				{
+					id: "000000000000DBB9",
+					type: "item",
+					item: "pamhc2foodextended:lycheeyogurtitem"
+				},
+				{
+					id: "000000000000534A",
+					type: "item",
+					item: "pamhc2foodextended:passionfruityogurtitem"
+				},
+				{
+					id: "000000000000575D",
+					type: "item",
+					item: "pamhc2foodextended:rambutanyogurtitem"
+				},
+				{
+					id: "0000000000005C39",
+					type: "item",
+					item: "pamhc2foodextended:tamarindyogurtitem"
+				},
+				{
+					id: "0000000000002A57",
+					type: "item",
+					item: "pamhc2foodextended:gooseberryyogurtitem"
+				},
+				{
+					id: "000000000000C14C",
+					type: "item",
+					item: "pamhc2foodextended:durianyogurtitem"
+				},
+				{
+					id: "000000000000DDDC",
+					type: "item",
+					item: "pamhc2foodextended:lemonyogurtitem"
+				},
+				{
+					id: "000000000000ABF0",
+					type: "item",
+					item: "pamhc2foodextended:limeyogurtitem"
+				},
+				{
+					id: "0000000000001027",
+					type: "item",
+					item: "pamhc2foodextended:blackberryjellysandwichitem"
+				},
+				{
+					id: "000000000000C5D9",
+					type: "item",
+					item: "pamhc2foodextended:blueberryjellysandwichitem"
+				},
+				{
+					id: "0000000000007122",
+					type: "item",
+					item: "pamhc2foodextended:cactusfruitjellysandwichitem"
+				},
+				{
+					id: "000000000000B235",
+					type: "item",
+					item: "pamhc2foodextended:candleberryjellysandwichitem"
+				},
+				{
+					id: "0000000000000A55",
+					type: "item",
+					item: "pamhc2foodextended:cranberryjellysandwichitem"
+				},
+				{
+					id: "0000000000002AA9",
+					type: "item",
+					item: "pamhc2foodextended:elderberryjellysandwichitem"
+				},
+				{
+					id: "00000000000059FE",
+					type: "item",
+					item: "pamhc2foodextended:huckleberryjellysandwichitem"
+				},
+				{
+					id: "0000000000000693",
+					type: "item",
+					item: "pamhc2foodextended:juniperberryjellysandwichitem"
+				},
+				{
+					id: "000000000000C9F1",
+					type: "item",
+					item: "pamhc2foodextended:mulberryjellysandwichitem"
+				},
+				{
+					id: "0000000000009DE9",
+					type: "item",
+					item: "pamhc2foodextended:raspberryjellysandwichitem"
+				},
+				{
+					id: "0000000000007E3F",
+					type: "item",
+					item: "pamhc2foodextended:strawberryjellysandwichitem"
+				},
+				{
+					id: "000000000000DE2B",
+					type: "item",
+					item: "pamhc2foodextended:cantaloupejellysandwichitem"
+				},
+				{
+					id: "0000000000004638",
+					type: "item",
+					item: "pamhc2foodextended:grapejellysandwichitem"
+				},
+				{
+					id: "000000000000C9B1",
+					type: "item",
+					item: "pamhc2foodextended:greengrapejellysandwichitem"
+				},
+				{
+					id: "000000000000CFFF",
+					type: "item",
+					item: "pamhc2foodextended:kiwijellysandwichitem"
+				},
+				{
+					id: "0000000000009E64",
+					type: "item",
+					item: "pamhc2foodextended:pineapplejellysandwichitem"
+				},
+				{
+					id: "000000000000CC2C",
+					type: "item",
+					item: "pamhc2foodextended:applejellysandwichitem"
+				},
+				{
+					id: "00000000000052B5",
+					type: "item",
+					item: "pamhc2foodextended:cherryjellysandwichitem"
+				},
+				{
+					id: "000000000000E80C",
+					type: "item",
+					item: "pamhc2foodextended:orangejellysandwichitem"
+				},
+				{
+					id: "000000000000A4F7",
+					type: "item",
+					item: "pamhc2foodextended:peachjellysandwichitem"
+				},
+				{
+					id: "000000000000E208",
+					type: "item",
+					item: "pamhc2foodextended:pearjellysandwichitem"
+				},
+				{
+					id: "0000000000007415",
+					type: "item",
+					item: "pamhc2foodextended:plumjellysandwichitem"
+				},
+				{
+					id: "0000000000003903",
+					type: "item",
+					item: "pamhc2foodextended:pawpawjellysandwichitem"
+				},
+				{
+					id: "0000000000003769",
+					type: "item",
+					item: "pamhc2foodextended:soursopjellysandwichitem"
+				},
+				{
+					id: "000000000000556B",
+					type: "item",
+					item: "pamhc2foodextended:apricotjellysandwichitem"
+				},
+				{
+					id: "000000000000086C",
+					type: "item",
+					item: "pamhc2foodextended:bananajellysandwichitem"
+				},
+				{
+					id: "0000000000008D25",
+					type: "item",
+					item: "pamhc2foodextended:datejellysandwichitem"
+				},
+				{
+					id: "0000000000000A2A",
+					type: "item",
+					item: "pamhc2foodextended:dragonfruitjellysandwichitem"
+				},
+				{
+					id: "0000000000001340",
+					type: "item",
+					item: "pamhc2foodextended:figjellysandwichitem"
+				},
+				{
+					id: "000000000000F282",
+					type: "item",
+					item: "pamhc2foodextended:grapefruitjellysandwichitem"
+				},
+				{
+					id: "0000000000000D0D",
+					type: "item",
+					item: "pamhc2foodextended:mangojellysandwichitem"
+				},
+				{
+					id: "000000000000D5DF",
+					type: "item",
+					item: "pamhc2foodextended:papayajellysandwichitem"
+				},
+				{
+					id: "00000000000078BE",
+					type: "item",
+					item: "pamhc2foodextended:persimmonjellysandwichitem"
+				},
+				{
+					id: "000000000000023F",
+					type: "item",
+					item: "pamhc2foodextended:pomegranatejellysandwichitem"
+				},
+				{
+					id: "000000000000E1BD",
+					type: "item",
+					item: "pamhc2foodextended:starfruitjellysandwichitem"
+				},
+				{
+					id: "000000000000FF98",
+					type: "item",
+					item: "pamhc2foodextended:breadfruitjellysandwichitem"
+				},
+				{
+					id: "000000000000A512",
+					type: "item",
+					item: "pamhc2foodextended:jackfruitjellysandwichitem"
+				},
+				{
+					id: "000000000000A4C4",
+					type: "item",
+					item: "pamhc2foodextended:guavajellysandwichitem"
+				},
+				{
+					id: "000000000000A0B4",
+					type: "item",
+					item: "pamhc2foodextended:lycheejellysandwichitem"
+				},
+				{
+					id: "0000000000006EF6",
+					type: "item",
+					item: "pamhc2foodextended:passionfruitjellysandwichitem"
+				},
+				{
+					id: "000000000000F377",
+					type: "item",
+					item: "pamhc2foodextended:rambutanjellysandwichitem"
+				},
+				{
+					id: "000000000000E8CD",
+					type: "item",
+					item: "pamhc2foodextended:tamarindjellysandwichitem"
+				},
+				{
+					id: "00000000000014FD",
+					type: "item",
+					item: "pamhc2foodextended:gooseberryjellysandwichitem"
+				},
+				{
+					id: "0000000000004B81",
+					type: "item",
+					item: "pamhc2foodextended:durianjellysandwichitem"
+				},
+				{
+					id: "0000000000002DE9",
+					type: "item",
+					item: "pamhc2foodextended:lemonjellysandwichitem"
+				},
+				{
+					id: "000000000000A2BD",
+					type: "item",
+					item: "pamhc2foodextended:limejellysandwichitem"
+				},
+				{
+					id: "0000000000002E24",
+					type: "item",
+					item: "pamhc2trees:avocadoitem"
+				},
+				{
+					id: "000000000000A1E8",
+					type: "item",
+					item: "pamhc2trees:candlenutitem"
+				},
+				{
+					id: "000000000000AB7D",
+					type: "item",
+					item: "pamhc2trees:cherryitem"
+				},
+				{
+					id: "000000000000D702",
+					type: "item",
+					item: "pamhc2trees:chestnutitem"
+				},
+				{
+					id: "000000000000061D",
+					type: "item",
+					item: "pamhc2trees:gooseberryitem"
+				},
+				{
+					id: "000000000000D182",
+					type: "item",
+					item: "pamhc2trees:lemonitem"
+				},
+				{
+					id: "0000000000007872",
+					type: "item",
+					item: "pamhc2trees:orangeitem"
+				},
+				{
+					id: "000000000000F21B",
+					type: "item",
+					item: "pamhc2trees:peachitem"
+				},
+				{
+					id: "000000000000F6CB",
+					type: "item",
+					item: "pamhc2trees:pearitem"
+				},
+				{
+					id: "0000000000005B77",
+					type: "item",
+					item: "pamhc2trees:plumitem"
+				},
+				{
+					id: "0000000000004135",
+					type: "item",
+					item: "pamhc2trees:walnutitem"
+				},
+				{
+					id: "0000000000009659",
+					type: "item",
+					item: "pamhc2trees:hazelnutitem"
+				},
+				{
+					id: "000000000000D385",
+					type: "item",
+					item: "pamhc2trees:pawpawitem"
+				},
+				{
+					id: "00000000000066DD",
+					type: "item",
+					item: "pamhc2trees:soursopitem"
+				},
+				{
+					id: "000000000000667E",
+					type: "item",
+					item: "pamhc2trees:almonditem"
+				},
+				{
+					id: "000000000000DD38",
+					type: "item",
+					item: "pamhc2trees:apricotitem"
+				},
+				{
+					id: "000000000000B3DB",
+					type: "item",
+					item: "pamhc2trees:bananaitem"
+				},
+				{
+					id: "000000000000DB82",
+					type: "item",
+					item: "pamhc2trees:cashewitem"
+				},
+				{
+					id: "000000000000040A",
+					type: "item",
+					item: "pamhc2trees:coconutitem"
+				},
+				{
+					id: "0000000000009D5E",
+					type: "item",
+					item: "pamhc2trees:dateitem"
+				},
+				{
+					id: "0000000000001C78",
+					type: "item",
+					item: "pamhc2trees:dragonfruititem"
+				},
+				{
+					id: "000000000000E40E",
+					type: "item",
+					item: "pamhc2trees:durianitem"
+				},
+				{
+					id: "000000000000D82B",
+					type: "item",
+					item: "pamhc2trees:figitem"
+				},
+				{
+					id: "00000000000083B5",
+					type: "item",
+					item: "pamhc2trees:grapefruititem"
+				},
+				{
+					id: "000000000000B6C8",
+					type: "item",
+					item: "pamhc2trees:limeitem"
+				},
+				{
+					id: "00000000000053E8",
+					type: "item",
+					item: "pamhc2trees:mangoitem"
+				},
+				{
+					id: "0000000000002FBA",
+					type: "item",
+					item: "pamhc2trees:oliveitem"
+				},
+				{
+					id: "0000000000003FE6",
+					type: "item",
+					item: "pamhc2trees:papayaitem"
+				},
+				{
+					id: "0000000000008CCD",
+					type: "item",
+					item: "pamhc2trees:pecanitem"
+				},
+				{
+					id: "00000000000010A0",
+					type: "item",
+					item: "pamhc2trees:persimmonitem"
+				},
+				{
+					id: "0000000000007117",
+					type: "item",
+					item: "pamhc2trees:pistachioitem"
+				},
+				{
+					id: "000000000000DE15",
+					type: "item",
+					item: "pamhc2trees:pomegranateitem"
+				},
+				{
+					id: "0000000000003ACA",
+					type: "item",
+					item: "pamhc2trees:starfruititem"
+				},
+				{
+					id: "00000000000014DA",
+					type: "item",
+					item: "pamhc2trees:breadfruititem"
+				},
+				{
+					id: "000000000000E0E7",
+					type: "item",
+					item: "pamhc2trees:guavaitem"
+				},
+				{
+					id: "00000000000001F4",
+					type: "item",
+					item: "pamhc2trees:jackfruititem"
+				},
+				{
+					id: "0000000000004CCC",
+					type: "item",
+					item: "pamhc2trees:lycheeitem"
+				},
+				{
+					id: "000000000000A111",
+					type: "item",
+					item: "pamhc2trees:passionfruititem"
+				},
+				{
+					id: "00000000000003CA",
+					type: "item",
+					item: "pamhc2trees:rambutanitem"
+				},
+				{
+					id: "00000000000059A1",
+					type: "item",
+					item: "pamhc2trees:tamarinditem"
+				},
+				{
+					id: "0000000000000A31",
+					type: "item",
+					item: "pamhc2trees:maplesyrupitem"
+				},
+				{
+					id: "000000000000B48F",
+					type: "item",
+					item: "pamhc2trees:pinenutitem"
+				},
+				{
+					id: "0000000000009034",
+					type: "item",
+					item: "pamhc2trees:roastedchestnutitem"
+				},
+				{
+					id: "00000000000048E3",
+					type: "item",
+					item: "pamhc2trees:roastedhazelnutitem"
+				},
+				{
+					id: "00000000000045A2",
+					type: "item",
+					item: "pamhc2trees:roastedwalnutitem"
+				},
+				{
+					id: "000000000000F783",
+					type: "item",
+					item: "pamhc2trees:roastedalmonditem"
+				},
+				{
+					id: "0000000000003C18",
+					type: "item",
+					item: "pamhc2trees:roastedcashewitem"
+				},
+				{
+					id: "0000000000007FA8",
+					type: "item",
+					item: "pamhc2trees:roastedpecanitem"
+				},
+				{
+					id: "000000000000643F",
+					type: "item",
+					item: "pamhc2trees:roastedpistachioitem"
+				},
+				{
+					id: "000000000000D520",
+					type: "item",
+					item: "pamhc2trees:roastedpinenutitem"
+				},
+				{
+					id: "00000000000014D2",
+					type: "item",
+					item: "tconstruct:bacon"
+				},
+				{
+					id: "0000000000007046",
+					type: "item",
+					item: "pamhc2crops:artichokeitem"
+				},
+				{
+					id: "00000000000049E7",
+					type: "item",
+					item: "pamhc2crops:asparagusitem"
+				},
+				{
+					id: "0000000000008E8C",
+					type: "item",
+					item: "pamhc2crops:bellpepperitem"
+				},
+				{
+					id: "000000000000935B",
+					type: "item",
+					item: "pamhc2crops:broccoliitem"
+				},
+				{
+					id: "0000000000000B08",
+					type: "item",
+					item: "pamhc2crops:brusselsproutitem"
+				},
+				{
+					id: "000000000000ACD5",
+					type: "item",
+					item: "pamhc2crops:cabbageitem"
+				},
+				{
+					id: "0000000000001AD8",
+					type: "item",
+					item: "pamhc2crops:caulifloweritem"
+				},
+				{
+					id: "000000000000543B",
+					type: "item",
+					item: "pamhc2crops:celeryitem"
+				},
+				{
+					id: "000000000000501A",
+					type: "item",
+					item: "pamhc2crops:chilipepperitem"
+				},
+				{
+					id: "0000000000008097",
+					type: "item",
+					item: "pamhc2crops:cucumberitem"
+				},
+				{
+					id: "000000000000107C",
+					type: "item",
+					item: "pamhc2crops:eggplantitem"
+				},
+				{
+					id: "000000000000FD84",
+					type: "item",
+					item: "pamhc2crops:kaleitem"
+				},
+				{
+					id: "0000000000007A97",
+					type: "item",
+					item: "pamhc2crops:lettuceitem"
+				},
+				{
+					id: "000000000000F27F",
+					type: "item",
+					item: "pamhc2crops:okraitem"
+				},
+				{
+					id: "0000000000006E5B",
+					type: "item",
+					item: "pamhc2crops:peasitem"
+				},
+				{
+					id: "000000000000FE8B",
+					type: "item",
+					item: "pamhc2crops:spinachitem"
+				},
+				{
+					id: "000000000000459C",
+					type: "item",
+					item: "pamhc2crops:tomatilloitem"
+				},
+				{
+					id: "000000000000BBA9",
+					type: "item",
+					item: "pamhc2crops:tomatoitem"
+				},
+				{
+					id: "0000000000004BF0",
+					type: "item",
+					item: "pamhc2crops:wintersquashitem"
+				},
+				{
+					id: "0000000000000A4D",
+					type: "item",
+					item: "pamhc2crops:zucchiniitem"
+				},
+				{
+					id: "000000000000E2BF",
+					type: "item",
+					item: "pamhc2crops:arrowrootitem"
+				},
+				{
+					id: "0000000000001065",
+					type: "item",
+					item: "pamhc2crops:cassavaitem"
+				},
+				{
+					id: "0000000000000E26",
+					type: "item",
+					item: "pamhc2crops:garlicitem"
+				},
+				{
+					id: "0000000000008103",
+					type: "item",
+					item: "pamhc2crops:jicamaitem"
+				},
+				{
+					id: "000000000000A2FC",
+					type: "item",
+					item: "pamhc2crops:leekitem"
+				},
+				{
+					id: "0000000000006E53",
+					type: "item",
+					item: "pamhc2crops:kohlrabiitem"
+				},
+				{
+					id: "0000000000009492",
+					type: "item",
+					item: "pamhc2crops:onionitem"
+				},
+				{
+					id: "0000000000007EED",
+					type: "item",
+					item: "pamhc2crops:parsnipitem"
+				},
+				{
+					id: "000000000000B37F",
+					type: "item",
+					item: "pamhc2crops:peanutitem"
+				},
+				{
+					id: "0000000000000E54",
+					type: "item",
+					item: "pamhc2crops:radishitem"
+				},
+				{
+					id: "0000000000003495",
+					type: "item",
+					item: "pamhc2crops:rhubarbitem"
+				},
+				{
+					id: "00000000000036AE",
+					type: "item",
+					item: "pamhc2crops:rutabagaitem"
+				},
+				{
+					id: "00000000000059EA",
+					type: "item",
+					item: "pamhc2crops:scallionitem"
+				},
+				{
+					id: "00000000000073D1",
+					type: "item",
+					item: "pamhc2crops:sweetpotatoitem"
+				},
+				{
+					id: "000000000000C61C",
+					type: "item",
+					item: "pamhc2crops:taroitem"
+				},
+				{
+					id: "000000000000F5C0",
+					type: "item",
+					item: "pamhc2crops:turnipitem"
+				},
+				{
+					id: "0000000000002DF0",
+					type: "item",
+					item: "pamhc2crops:waterchestnutitem"
+				},
+				{
+					id: "0000000000008EF9",
+					type: "item",
+					item: "pamhc2crops:blackberryitem"
+				},
+				{
+					id: "000000000000FC07",
+					type: "item",
+					item: "pamhc2crops:blueberryitem"
+				},
+				{
+					id: "000000000000B1E0",
+					type: "item",
+					item: "pamhc2crops:cactusfruititem"
+				},
+				{
+					id: "000000000000E87F",
+					type: "item",
+					item: "pamhc2crops:candleberryitem"
+				},
+				{
+					id: "0000000000002BFB",
+					type: "item",
+					item: "pamhc2crops:cantaloupeitem"
+				},
+				{
+					id: "000000000000C080",
+					type: "item",
+					item: "pamhc2crops:cranberryitem"
+				},
+				{
+					id: "000000000000467D",
+					type: "item",
+					item: "pamhc2crops:elderberryitem"
+				},
+				{
+					id: "00000000000082BB",
+					type: "item",
+					item: "pamhc2crops:grapeitem"
+				},
+				{
+					id: "000000000000F558",
+					type: "item",
+					item: "pamhc2crops:greengrapeitem"
+				},
+				{
+					id: "00000000000053B0",
+					type: "item",
+					item: "pamhc2crops:huckleberryitem"
+				},
+				{
+					id: "0000000000009973",
+					type: "item",
+					item: "pamhc2crops:juniperberryitem"
+				},
+				{
+					id: "0000000000008988",
+					type: "item",
+					item: "pamhc2crops:kiwiitem"
+				},
+				{
+					id: "00000000000023D9",
+					type: "item",
+					item: "pamhc2crops:mulberryitem"
+				},
+				{
+					id: "00000000000079B0",
+					type: "item",
+					item: "pamhc2crops:pineappleitem"
+				},
+				{
+					id: "000000000000B6BC",
+					type: "item",
+					item: "pamhc2crops:raspberryitem"
+				},
+				{
+					id: "000000000000BC75",
+					type: "item",
+					item: "pamhc2crops:strawberryitem"
+				},
+				{
+					id: "00000000000012C1",
+					type: "item",
+					item: "pamhc2crops:whitemushroomitem"
+				},
+				{
+					id: "0000000000001A9A",
+					type: "item",
+					item: "pamhc2crops:spiceleafitem"
+				},
+				{
+					id: "00000000000092C9",
+					type: "item",
+					item: "pamhc2crops:bakedarrowrootitem"
+				},
+				{
+					id: "000000000000492E",
+					type: "item",
+					item: "pamhc2crops:bakedcassavaitem"
+				},
+				{
+					id: "0000000000005342",
+					type: "item",
+					item: "pamhc2crops:roastedgarlicitem"
+				},
+				{
+					id: "0000000000005611",
+					type: "item",
+					item: "pamhc2crops:bakedjicamaitem"
+				},
+				{
+					id: "0000000000008BB7",
+					type: "item",
+					item: "pamhc2crops:roastedleekitem"
+				},
+				{
+					id: "00000000000036DD",
+					type: "item",
+					item: "pamhc2crops:roastedkohlrabiitem"
+				},
+				{
+					id: "0000000000008655",
+					type: "item",
+					item: "pamhc2crops:roastedonionitem"
+				},
+				{
+					id: "00000000000031C1",
+					type: "item",
+					item: "pamhc2crops:bakedparsnipitem"
+				},
+				{
+					id: "000000000000F192",
+					type: "item",
+					item: "pamhc2crops:roastedpeanutitem"
+				},
+				{
+					id: "000000000000DF0C",
+					type: "item",
+					item: "pamhc2crops:roastedradishitem"
+				},
+				{
+					id: "000000000000387A",
+					type: "item",
+					item: "pamhc2crops:roastedrhubarbitem"
+				},
+				{
+					id: "000000000000B888",
+					type: "item",
+					item: "pamhc2crops:bakedrutabagaitem"
+				},
+				{
+					id: "000000000000D654",
+					type: "item",
+					item: "pamhc2crops:roastedscallionitem"
+				},
+				{
+					id: "000000000000A402",
+					type: "item",
+					item: "pamhc2crops:bakedsweetpotatoitem"
+				},
+				{
+					id: "0000000000003700",
+					type: "item",
+					item: "pamhc2crops:bakedtaroitem"
+				},
+				{
+					id: "000000000000965C",
+					type: "item",
+					item: "pamhc2crops:bakedturnipitem"
+				},
+				{
+					id: "0000000000002658",
+					type: "item",
+					item: "pamhc2crops:bakedwaterchestnutitem"
+				},
+				{
+					id: "0000000000006EA1",
+					type: "item",
+					item: "pamhc2crops:roastedmushroomitem"
+				},
+				{
+					id: "0000000000005AD5",
+					type: "item",
+					item: "pamhc2crops:hotteaitem"
+				},
+				{
+					id: "000000000000FB2F",
+					type: "item",
+					item: "pamhc2crops:hotcoffeeitem"
+				},
+				{
+					id: "000000000000D65A",
+					type: "item",
+					item: "create:bar_of_chocolate"
+				},
+				{
+					id: "000000000000F022",
+					type: "item",
+					item: "create:sweet_roll"
+				},
+				{
+					id: "000000000000F3BF",
+					type: "item",
+					item: "create:chocolate_glazed_berries"
+				},
+				{
+					id: "000000000000DE7E",
+					type: "item",
+					item: "create:honeyed_apple"
+				},
+				{
+					id: "000000000000CFC8",
+					type: "item",
+					item: "pamhc2foodcore:toastitem"
+				},
+				{
+					id: "000000000000118D",
+					type: "item",
+					item: "pamhc2foodcore:grilledcheeseitem"
+				},
+				{
+					id: "0000000000008D8B",
+					type: "item",
+					item: "pamhc2foodcore:carrotbreaditem"
+				},
+				{
+					id: "00000000000081DC",
+					type: "item",
+					item: "pamhc2foodcore:pumpkinbreaditem"
+				},
+				{
+					id: "000000000000028C",
+					type: "item",
+					item: "pamhc2foodcore:macncheeseitem"
+				},
+				{
+					id: "0000000000007BB6",
+					type: "item",
+					item: "pamhc2foodcore:noodlesoupitem"
+				},
+				{
+					id: "0000000000001405",
+					type: "item",
+					item: "pamhc2foodcore:sweetberrypieitem"
+				},
+				{
+					id: "000000000000F01A",
+					type: "item",
+					item: "pamhc2foodcore:applepieitem"
+				},
+				{
+					id: "00000000000075D9",
+					type: "item",
+					item: "pamhc2foodcore:chocolatecupcakeitem"
+				},
+				{
+					id: "000000000000D07D",
+					type: "item",
+					item: "pamhc2foodcore:carrotcupcakeitem"
+				},
+				{
+					id: "000000000000F09C",
+					type: "item",
+					item: "pamhc2foodcore:caramelcupcakeitem"
+				},
+				{
+					id: "0000000000005EAF",
+					type: "item",
+					item: "pamhc2foodcore:pumpkincupcakeitem"
+				},
+				{
+					id: "0000000000009433",
+					type: "item",
+					item: "pamhc2foodcore:chocolatecakeitem"
+				},
+				{
+					id: "000000000000E23B",
+					type: "item",
+					item: "pamhc2foodcore:cheesecakeitem"
+				},
+				{
+					id: "000000000000E627",
+					type: "item",
+					item: "pamhc2foodcore:pumpkincheesecakeitem"
+				},
+				{
+					id: "0000000000005AAF",
+					type: "item",
+					item: "pamhc2foodcore:carrotcakeitem"
+				},
+				{
+					id: "000000000000B1DB",
+					type: "item",
+					item: "pamhc2foodcore:chocolatemuffinitem"
+				},
+				{
+					id: "0000000000009D65",
+					type: "item",
+					item: "pamhc2foodcore:carrotmuffinitem"
+				},
+				{
+					id: "0000000000003AC5",
+					type: "item",
+					item: "pamhc2foodcore:pumpkinmuffinitem"
+				},
+				{
+					id: "000000000000BE96",
+					type: "item",
+					item: "pamhc2foodcore:caramelmuffinitem"
+				},
+				{
+					id: "0000000000008099",
+					type: "item",
+					item: "pamhc2foodcore:donutitem"
+				},
+				{
+					id: "0000000000004433",
+					type: "item",
+					item: "pamhc2foodcore:chocolatedonutitem"
+				},
+				{
+					id: "0000000000008186",
+					type: "item",
+					item: "pamhc2foodcore:jellydonutitem"
+				},
+				{
+					id: "000000000000C53F",
+					type: "item",
+					item: "pamhc2foodcore:crackeritem"
+				},
+				{
+					id: "00000000000077C8",
+					type: "item",
+					item: "pamhc2foodcore:softpretzelitem"
+				},
+				{
+					id: "000000000000F025",
+					type: "item",
+					item: "pamhc2foodcore:cheeseitem"
+				},
+				{
+					id: "0000000000003A22",
+					type: "item",
+					item: "pamhc2foodcore:yogurtitem"
+				},
+				{
+					id: "00000000000057CD",
+					type: "item",
+					item: "pamhc2foodcore:chocolateyogurtitem"
+				},
+				{
+					id: "00000000000055F8",
+					type: "item",
+					item: "pamhc2foodcore:appleyogurtitem"
+				},
+				{
+					id: "0000000000003573",
+					type: "item",
+					item: "pamhc2foodcore:sweetberryyogurtitem"
+				},
+				{
+					id: "000000000000410C",
+					type: "item",
+					item: "pamhc2foodcore:pumpkinyogurtitem"
+				},
+				{
+					id: "000000000000DEC5",
+					type: "item",
+					item: "pamhc2foodcore:caramelyogurtitem"
+				},
+				{
+					id: "00000000000087A1",
+					type: "item",
+					item: "pamhc2foodcore:icecreamitem"
+				},
+				{
+					id: "00000000000074B3",
+					type: "item",
+					item: "pamhc2foodcore:chocolateicecreamitem"
+				},
+				{
+					id: "000000000000AB26",
+					type: "item",
+					item: "pamhc2foodcore:caramelicecreamitem"
+				},
+				{
+					id: "0000000000007C3F",
+					type: "item",
+					item: "pamhc2foodcore:cookiesandmilkitem"
+				},
+				{
+					id: "0000000000006CAC",
+					type: "item",
+					item: "pamhc2foodcore:chocolatebaritem"
+				},
+				{
+					id: "000000000000DF55",
+					type: "item",
+					item: "pamhc2foodcore:hotchocolateitem"
+				},
+				{
+					id: "0000000000000F01",
+					type: "item",
+					item: "pamhc2foodcore:chocolatebaconitem"
+				},
+				{
+					id: "000000000000BCBA",
+					type: "item",
+					item: "pamhc2foodcore:chocolatepuddingitem"
+				},
+				{
+					id: "0000000000002CD0",
+					type: "item",
+					item: "pamhc2foodcore:chocolaterollitem"
+				},
+				{
+					id: "00000000000073BF",
+					type: "item",
+					item: "pamhc2foodcore:chocolatecaramelfudgeitem"
+				},
+				{
+					id: "000000000000A9CB",
+					type: "item",
+					item: "pamhc2foodcore:smoresitem"
+				},
+				{
+					id: "0000000000003EA5",
+					type: "item",
+					item: "pamhc2foodcore:trailmixitem"
+				},
+				{
+					id: "000000000000090A",
+					type: "item",
+					item: "pamhc2foodcore:boiledeggitem"
+				},
+				{
+					id: "0000000000003E1B",
+					type: "item",
+					item: "pamhc2foodcore:friedeggitem"
+				},
+				{
+					id: "000000000000B04E",
+					type: "item",
+					item: "pamhc2foodcore:scrambledeggitem"
+				},
+				{
+					id: "0000000000001CA8",
+					type: "item",
+					item: "pamhc2foodcore:applejuiceitem"
+				},
+				{
+					id: "000000000000DEAE",
+					type: "item",
+					item: "pamhc2foodcore:applesmoothieitem"
+				},
+				{
+					id: "000000000000FB29",
+					type: "item",
+					item: "pamhc2foodcore:applejellyitem"
+				},
+				{
+					id: "00000000000006A5",
+					type: "item",
+					item: "pamhc2foodcore:applejellytoastitem"
+				},
+				{
+					id: "0000000000007B41",
+					type: "item",
+					item: "pamhc2foodcore:applesauceitem"
+				},
+				{
+					id: "000000000000DED8",
+					type: "item",
+					item: "pamhc2foodcore:melonjuiceitem"
+				},
+				{
+					id: "000000000000D2A8",
+					type: "item",
+					item: "pamhc2foodcore:melonsmoothieitem"
+				},
+				{
+					id: "0000000000008B83",
+					type: "item",
+					item: "pamhc2foodcore:melonjellyitem"
+				},
+				{
+					id: "0000000000007653",
+					type: "item",
+					item: "pamhc2foodcore:melonjellytoastitem"
+				},
+				{
+					id: "0000000000005333",
+					type: "item",
+					item: "pamhc2foodcore:sweetberryjuiceitem"
+				},
+				{
+					id: "0000000000003F2E",
+					type: "item",
+					item: "pamhc2foodcore:sweetberrysmoothieitem"
+				},
+				{
+					id: "0000000000001E37",
+					type: "item",
+					item: "pamhc2foodcore:sweetberryjellyitem"
+				},
+				{
+					id: "000000000000CFA1",
+					type: "item",
+					item: "pamhc2foodcore:sweetberryjellytoastitem"
+				},
+				{
+					id: "000000000000A76D",
+					type: "item",
+					item: "pamhc2foodcore:friedchickenitem"
+				},
+				{
+					id: "0000000000006170",
+					type: "item",
+					item: "pamhc2foodcore:groundchickenitem"
+				},
+				{
+					id: "00000000000088C6",
+					type: "item",
+					item: "pamhc2foodcore:chickennuggetitem"
+				},
+				{
+					id: "0000000000002B66",
+					type: "item",
+					item: "pamhc2foodcore:basicchickensandwichitem"
+				},
+				{
+					id: "000000000000D4C1",
+					type: "item",
+					item: "pamhc2foodcore:chickenjerkyitem"
+				},
+				{
+					id: "000000000000ED62",
+					type: "item",
+					item: "pamhc2foodcore:chickenpotpieitem"
+				},
+				{
+					id: "00000000000081BD",
+					type: "item",
+					item: "pamhc2foodcore:chickendinneritem"
+				},
+				{
+					id: "0000000000005C75",
+					type: "item",
+					item: "pamhc2foodcore:potroastitem"
+				},
+				{
+					id: "000000000000BB72",
+					type: "item",
+					item: "pamhc2foodcore:groundbeefitem"
+				},
+				{
+					id: "00000000000097B0",
+					type: "item",
+					item: "pamhc2foodcore:basichamburgeritem"
+				},
+				{
+					id: "0000000000000BAA",
+					type: "item",
+					item: "pamhc2foodcore:basiccheeseburgeritem"
+				},
+				{
+					id: "0000000000003DA5",
+					type: "item",
+					item: "pamhc2foodcore:baconcheeseburgeritem"
+				},
+				{
+					id: "000000000000EC1E",
+					type: "item",
+					item: "pamhc2foodcore:beefjerkyitem"
+				},
+				{
+					id: "0000000000006A69",
+					type: "item",
+					item: "pamhc2foodcore:groundporkitem"
+				},
+				{
+					id: "000000000000924A",
+					type: "item",
+					item: "pamhc2foodcore:porkjerkyitem"
+				},
+				{
+					id: "000000000000DA61",
+					type: "item",
+					item: "pamhc2foodcore:hotdogitem"
+				},
+				{
+					id: "000000000000E14A",
+					type: "item",
+					item: "pamhc2foodcore:baconandeggsitem"
+				},
+				{
+					id: "000000000000AFED",
+					type: "item",
+					item: "pamhc2foodcore:epicbaconitem"
+				},
+				{
+					id: "00000000000047E2",
+					type: "item",
+					item: "pamhc2foodcore:groundfishitem"
+				},
+				{
+					id: "00000000000034A6",
+					type: "item",
+					item: "pamhc2foodcore:fishsticksitem"
+				},
+				{
+					id: "000000000000AF87",
+					type: "item",
+					item: "pamhc2foodcore:basicfishsandwichitem"
+				},
+				{
+					id: "0000000000003374",
+					type: "item",
+					item: "pamhc2foodcore:fishjerkyitem"
+				},
+				{
+					id: "0000000000006F53",
+					type: "item",
+					item: "pamhc2foodcore:fishandchipsitem"
+				},
+				{
+					id: "000000000000CAD3",
+					type: "item",
+					item: "pamhc2foodcore:groundmuttonitem"
+				},
+				{
+					id: "000000000000C118",
+					type: "item",
+					item: "pamhc2foodcore:muttonjerkyitem"
+				},
+				{
+					id: "0000000000006EB4",
+					type: "item",
+					item: "pamhc2foodcore:groundrabbititem"
+				},
+				{
+					id: "00000000000071DE",
+					type: "item",
+					item: "pamhc2foodcore:rabbitjerkyitem"
+				},
+				{
+					id: "0000000000001C02",
+					type: "item",
+					item: "pamhc2foodcore:butteredbakedpotatoitem"
+				},
+				{
+					id: "00000000000047EF",
+					type: "item",
+					item: "pamhc2foodcore:mashedpotatoesitem"
+				},
+				{
+					id: "000000000000DC88",
+					type: "item",
+					item: "pamhc2foodcore:friesitem"
+				},
+				{
+					id: "000000000000D9A0",
+					type: "item",
+					item: "pamhc2foodcore:potatochipsitem"
+				},
+				{
+					id: "000000000000CDDE",
+					type: "item",
+					item: "pamhc2foodcore:potatosoupitem"
+				},
+				{
+					id: "000000000000AF71",
+					type: "item",
+					item: "pamhc2foodcore:glazedcarrotsitem"
+				},
+				{
+					id: "000000000000109E",
+					type: "item",
+					item: "pamhc2foodcore:carrotsoupitem"
+				},
+				{
+					id: "0000000000008C4A",
+					type: "item",
+					item: "pamhc2foodcore:pickledbeetsitem"
+				},
+				{
+					id: "000000000000C31D",
+					type: "item",
+					item: "pamhc2foodcore:pumpkinsoupitem"
+				},
+				{
+					id: "0000000000007D5D",
+					type: "item",
+					item: "pamhc2foodcore:caramelitem"
+				},
+				{
+					id: "0000000000006481",
+					type: "item",
+					item: "pamhc2foodcore:caramelappleitem"
+				},
+				{
+					id: "000000000000EB95",
+					type: "item",
+					item: "pamhc2foodcore:marshmellowsitem"
+				},
+				{
+					id: "0000000000006620",
+					type: "item",
+					item: "pamhc2foodcore:marshmellowchicksitem"
+				},
+				{
+					id: "000000000000BFAE",
+					type: "item",
+					item: "pamhc2foodcore:cottoncandyitem"
+				},
+				{
+					id: "0000000000000297",
+					type: "item",
+					item: "pamhc2foodcore:gummybearsitem"
+				},
+				{
+					id: "000000000000D370",
+					type: "item",
+					item: "pamhc2foodcore:jellybeansitem"
+				},
+				{
+					id: "000000000000A760",
+					type: "item",
+					item: "pamhc2foodcore:stockitem"
+				},
+				{
+					id: "0000000000005B73",
+					type: "item",
+					item: "pamhc2foodcore:sunflowerseedsitem"
+				},
+				{
+					id: "000000000000D7DC",
+					type: "item",
+					item: "pamhc2foodcore:roastedsunflowerseedsitem"
+				},
+				{
+					id: "000000000000C7F1",
+					type: "item",
+					item: "pamhc2foodcore:fruitpunchitem"
+				},
+				{
+					id: "000000000000B39C",
+					type: "item",
+					item: "pamhc2foodcore:stewitem"
+				},
+				{
+					id: "0000000000004EDE",
+					type: "item",
+					item: "pamhc2foodcore:bakedvegetablemedlyitem"
+				},
+				{
+					id: "0000000000007D6F",
+					type: "item",
+					item: "pamhc2foodcore:fruitsaladitem"
+				},
+				{
+					id: "0000000000000782",
+					type: "item",
+					item: "pamhc2foodcore:meatloafitem"
+				},
+				{
+					id: "00000000000031FF",
+					type: "item",
+					item: "pamhc2foodcore:p8juiceitem"
+				},
+				{
+					id: "0000000000003F11",
+					type: "item",
+					item: "pamhc2foodcore:fruitcrumbleitem"
+				},
+				{
+					id: "0000000000007B49",
+					type: "item",
+					item: "quark:root_item"
+				},
+				{
+					id: "0000000000003BBD",
+					type: "item",
+					item: "quark:crab_leg"
+				},
+				{
+					id: "0000000000001F94",
+					type: "item",
+					item: "quark:cooked_crab_leg"
+				},
+				{
+					id: "00000000000031EA",
+					type: "item",
+					item: "quark:frog_leg"
+				},
+				{
+					id: "000000000000A6B6",
+					type: "item",
+					item: "quark:cooked_frog_leg"
+				},
+				{
+					id: "000000000000AF6A",
+					type: "item",
+					item: "quark:golden_frog_leg"
+				},
+				{
+					id: "0000000000009EDB",
+					type: "item",
+					item: "minecolonies:milky_bread"
+				},
+				{
+					id: "0000000000002DBC",
+					type: "item",
+					item: "minecolonies:sugary_bread"
+				},
+				{
+					id: "000000000000618A",
+					type: "item",
+					item: "minecolonies:golden_bread"
+				},
+				{
+					id: "0000000000006985",
+					type: "item",
+					item: "minecolonies:chorus_bread"
+				}
+			]
 		},
 		{
 			x: -3.0d,

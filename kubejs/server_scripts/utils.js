@@ -3,13 +3,18 @@
 const itemByTag = {};
 const itemByMod = {};
 
+let s4 = () => {
+  return Math.floor((1 + Math.random()) * 0x10000)
+    .toString(16)
+    .substring(1);
+};
+
 function initializeHelperDicts() {
   if (Object.keys(itemByTag).length > 0) return;
 
   Item.list.forEach((itemEl) => {
     itemByMod[itemEl.mod] = itemByMod[itemEl.mod] || [];
     itemByMod[itemEl.mod].push(itemEl);
-    console.log(Object.keys(itemEl.item.getItem()));
     const tags = itemEl.tags;
     tags.forEach((tag) => {
       itemByTag[tag] = itemByTag[tag] || [];

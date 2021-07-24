@@ -4,6 +4,7 @@
 	order_index: 4,
 	filename: "magic",
 	title: "Exploration",
+	icon: "twilightforest:lich_trophy",
 	default_quest_shape: "",
 	quests: [
 		{

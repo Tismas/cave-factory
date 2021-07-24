@@ -74,12 +74,13 @@ Util:
 # changelog 0.4.0
 
 - updated all mods and forge (⚠ Use your intagrated circuits before updating as they will disappear ⚠)
-- added extreme reactors and added yellorite to stone drops
+- added extreme reactors and pipez
+- added yellorite and nickel to stone drops
+- added refined storage quests and addons
 - removed starting items except for the quest book
 - removed ae2
-- changed the item for creating twilight forest portal to dragon scale
+- changed the item for creating twilight forest portal to dragon egg
 - changed the way rftools casings are made (they are gated behind twilight forest now)
-- refined storage quests and addons
 - challenges quests
 
 discord: https://discord.gg/pbVVZywj

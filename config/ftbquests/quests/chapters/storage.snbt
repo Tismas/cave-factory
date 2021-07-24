@@ -4,6 +4,7 @@
 	order_index: 2,
 	filename: "storage",
 	title: "Storage",
+	icon: "refinedstorage:controller",
 	default_quest_shape: "",
 	quests: [
 		{
