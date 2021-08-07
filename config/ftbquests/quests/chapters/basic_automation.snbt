@@ -1039,7 +1039,7 @@
 		},
 		{
 			x: -8.0d,
-			y: 0.5d,
+			y: 2.0d,
 			description: ["We will need some kind of vessel to cantain fluids in it"],
 			dependencies: ["5B9C05F62A007ACA"],
 			id: "63441E36C7195AC1",
@@ -1127,7 +1127,7 @@
 			}]
 		},
 		{
-			x: -8.0d,
+			x: -9.5d,
 			y: 2.0d,
 			description: [
 				"Remember that you can hold 'W' with a cursor above most items from Create to see how they work",
@@ -1372,8 +1372,8 @@
 			}]
 		},
 		{
-			x: -9.5d,
-			y: 2.0d,
+			x: -11.0d,
+			y: 0.5d,
 			description: ["Something to make plates on"],
 			dependencies: ["768891E581B6597F"],
 			id: "1D6A8A3D6F2E252B",
@@ -1438,6 +1438,18 @@
 						Accelerator: "Brass"
 					}
 				}
+			}]
+		},
+		{
+			x: -8.0d,
+			y: 0.5d,
+			description: ["Witherproof block, might help you with killing withers"],
+			dependencies: ["251FE836D9C631D1"],
+			id: "45F69CCE06E7A18E",
+			tasks: [{
+				id: "2C283A4A156E6781",
+				type: "item",
+				item: "engineersdecor:panzerglass_block"
 			}]
 		}
 	]

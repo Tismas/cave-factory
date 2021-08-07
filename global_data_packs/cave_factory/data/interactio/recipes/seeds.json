@@ -623,14 +623,7 @@
       },
       {
         "result": {
-          "item": "pamhc2foodcore:sunflowerseedsitem",
-          "count": 1
-        },
-        "weight": 1
-      },
-      {
-        "result": {
-          "item": "pamhc2foodcore:roastedsunflowerseedsitem",
+          "item": "farmersdelight:rice",
           "count": 1
         },
         "weight": 1

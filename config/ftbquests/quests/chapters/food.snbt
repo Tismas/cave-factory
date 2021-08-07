@@ -889,26 +889,6 @@
 			}]
 		},
 		{
-			x: 9.0d,
-			y: 7.5d,
-			id: "6B93CF083D21C1AE",
-			tasks: [{
-				id: "5276433A3164DA7E",
-				type: "item",
-				item: "pamhc2foodcore:sunflowerseedsitem"
-			}]
-		},
-		{
-			x: 10.5d,
-			y: 7.5d,
-			id: "7BE3FD08A8C9EBA1",
-			tasks: [{
-				id: "5306F4A7C980D53C",
-				type: "item",
-				item: "pamhc2foodcore:roastedsunflowerseedsitem"
-			}]
-		},
-		{
 			x: -4.5d,
 			y: 1.0d,
 			description: ["Now that you have all these you won't harvest them by hand, right?,,, RIGHT?"],
@@ -985,8 +965,6 @@
 				"318ED37A58A150EE",
 				"3DBCBAC959EEE95D",
 				"2F10989A0BF9AFBC",
-				"6B93CF083D21C1AE",
-				"7BE3FD08A8C9EBA1",
 				"56EB510CFC58CD63",
 				"1AD1AC8ABD828D08",
 				"06CFB24155B62574",
@@ -1049,7 +1027,9 @@
 				"2A566A8CFD71380F",
 				"351AEE0BA4AC48C2",
 				"687BC66B3A4E9AFA",
-				"7D81457056D39F75"
+				"7D81457056D39F75",
+				"665B2EC2C5485AB8",
+				"15F87C3938C337DB"
 			],
 			id: "3A53793087C0AE35",
 			tasks: [{
@@ -1783,6 +1763,28 @@
 				id: "4D5A8870B88E6207",
 				type: "item",
 				item: "botania:fertilizer"
+			}]
+		},
+		{
+			x: 9.0d,
+			y: 7.5d,
+			description: ["Can be exchanged/processed into rice"],
+			id: "665B2EC2C5485AB8",
+			tasks: [{
+				id: "2A8937B014D96FC1",
+				type: "item",
+				item: "farmersdelight:rice_panicle"
+			}]
+		},
+		{
+			x: 10.5d,
+			y: 7.5d,
+			description: ["Must be planted on 1 block deep water"],
+			id: "15F87C3938C337DB",
+			tasks: [{
+				id: "09161428F768B202",
+				type: "item",
+				item: "farmersdelight:rice"
 			}]
 		}
 	]

@@ -1,0 +1,106 @@
+{
+  "type": "extendedcrafting:shaped_table",
+  "pattern": [
+    "QWERTYUIO",
+    "PASDFGHJK",
+    "LZXCVBNMq",
+    "we       ",
+    "         ",
+    "         ",
+    "         ",
+    "         ",
+    "         "
+  ],
+  "key": {
+    "Q": {
+      "tag": "forge:ingots/iron"
+    },
+    "W": {
+      "tag": "forge:ingots/gold"
+    },
+    "E": {
+      "tag": "forge:ingots/netherite"
+    },
+    "R": {
+      "tag": "forge:ingots/aeternium"
+    },
+    "T": {
+      "tag": "forge:ingots/thallasium"
+    },
+    "Y": {
+      "tag": "forge:ingots/terminite"
+    },
+    "U": {
+      "tag": "forge:ingots/copper"
+    },
+    "I": {
+      "tag": "forge:ingots/zinc"
+    },
+    "O": {
+      "tag": "forge:ingots/brass"
+    },
+    "P": {
+      "tag": "forge:ingots/aluminum"
+    },
+    "A": {
+      "tag": "forge:ingots/lead"
+    },
+    "S": {
+      "tag": "forge:ingots/silver"
+    },
+    "D": {
+      "tag": "forge:ingots/nickel"
+    },
+    "F": {
+      "tag": "forge:ingots/uranium"
+    },
+    "G": {
+      "tag": "forge:ingots/constantan"
+    },
+    "H": {
+      "tag": "forge:ingots/electrum"
+    },
+    "J": {
+      "tag": "forge:ingots/steel"
+    },
+    "K": {
+      "tag": "forge:ingots/hop_graphite"
+    },
+    "L": {
+      "tag": "twilightforest:ingots/ironwood"
+    },
+    "Z": {
+      "tag": "twilightforest:ingots/fiery"
+    },
+    "X": {
+      "tag": "twilightforest:ingots/knightmetal"
+    },
+    "C": {
+      "tag": "forge:ingots/cobalt"
+    },
+    "V": {
+      "tag": "forge:ingots/slimesteel"
+    },
+    "B": {
+      "tag": "forge:ingots/silicon_bronze"
+    },
+    "N": {
+      "tag": "forge:ingots/rose_gold"
+    },
+    "M": {
+      "tag": "forge:ingots/pig_iron"
+    },
+    "q": {
+      "tag": "forge:ingots/queens_slime"
+    },
+    "w": {
+      "tag": "forge:ingots/manyullyn"
+    },
+    "e": {
+      "tag": "forge:ingots/hepatizon"
+    }
+  },
+  "result": {
+    "item": "extendedcrafting:the_ultimate_ingot"
+  }
+}

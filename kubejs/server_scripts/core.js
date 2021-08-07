@@ -52,6 +52,19 @@ const cobbleDrops = {
   "create:dark_scoria_cobblestone": 20,
 };
 const stoneDrops = {
+  "minecraft:stone": 100,
+  "minecraft:andesite": 50,
+  "minecraft:granite": 50,
+  "minecraft:diorite": 50,
+  "tconstruct:seared_stone": 40,
+  "create:limestone": 20,
+  "create:weathered_limestone": 20,
+  "create:dolomite": 20,
+  "create:gabbro": 20,
+  "create:scoria": 20,
+  "create:dark_scoria": 20,
+};
+const oreDrops = {
   "minecraft:air": 500,
   "minecraft:coal_ore": 125,
   "minecraft:redstone_ore": 50,
@@ -64,7 +77,7 @@ const stoneDrops = {
   "minecraft:gold_ore": 15,
   "create:zinc_ore": 15,
   "minecraft:lapis_ore": 10,
-  "bigreactors:yellorite_ore": 5,
+  "immersiveengineering:ore_uranium": 5,
   "minecraft:emerald_ore": 2,
   "minecraft:diamond_ore": 2,
 };
@@ -125,25 +138,53 @@ onEvent("entity.spawned", (event) => {
 
 onEvent("block.loot_tables", (event) => {
   event.build("minecraft:stone", (table) => {
+    const stonePool = {
+      type: "minecraft:group",
+      conditions: [
+        {
+          condition: "minecraft:match_tool",
+          predicate: {
+            enchantments: [
+              {
+                enchantment: "minecraft:silk_touch",
+                levels: {
+                  min: 1,
+                },
+              },
+            ],
+          },
+        },
+      ],
+      children: Object.keys(stoneDrops).map((name) => ({
+        type: "minecraft:item",
+        name: name,
+        weight: stoneDrops[name],
+      })),
+    };
+    const cobblePool = {
+      type: "minecraft:group",
+      children: Object.keys(cobbleDrops).map((name) => ({
+        type: "minecraft:item",
+        name: name,
+        weight: cobbleDrops[name],
+      })),
+    };
     table.pool((pool) => {
       pool.rolls = 1;
       pool.survivesExplosion();
-      Object.keys(cobbleDrops).forEach((name) => {
-        pool.addEntry({
-          type: "minecraft:item",
-          name: name,
-          weight: cobbleDrops[name],
-        });
+      pool.addEntry({
+        type: "minecraft:alternatives",
+        children: [stonePool, cobblePool],
       });
     });
     table.pool((pool) => {
       pool.rolls = 1;
       pool.survivesExplosion();
-      Object.keys(stoneDrops).forEach((name) => {
+      Object.keys(oreDrops).forEach((name) => {
         pool.addEntry({
           type: "minecraft:item",
           name: name,
-          weight: stoneDrops[name],
+          weight: oreDrops[name],
         });
       });
     });

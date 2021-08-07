@@ -16,6 +16,14 @@ onEvent("recipes", (event) => {
   });
 
   event.shapeless("minecraft:cobblestone", new Array(4).fill("botania:pebble"));
+  event.shapeless(
+    "immersiveengineering:ore_uranium",
+    "bigreactors:yellorite_ore"
+  );
+  event.shapeless(
+    "bigreactors:yellorite_ore",
+    "immersiveengineering:ore_uranium"
+  );
   event.shaped("7x create:mechanical_crafter", ["SSS", " S ", "SSS"], {
     S: "minecraft:crafting_table",
   });
