@@ -1,988 +1,989 @@
 {
-	id: "0F5F32B947699E88",
-	group: "",
-	order_index: 1,
-	filename: "factory",
-	title: "Factory",
-	icon: "immersiveengineering:conveyor_basic",
-	default_quest_shape: "",
+	id: "0F5F32B947699E88"
+	group: ""
+	order_index: 1
+	filename: "factory"
+	title: "Factory"
+	icon: "immersiveengineering:conveyor_basic"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -4.5d,
-			y: -0.5d,
-			description: ["Treated wood is used in many immersive engineering recipes. I suggest making a stack or few."],
-			dependencies: ["3BF666A613E1C259"],
-			id: "7479F4E3E8E9D1A1",
+			x: -4.5d
+			y: -0.5d
+			description: ["Treated wood is used in many immersive engineering recipes. I suggest making a stack or few."]
+			dependencies: ["3BF666A613E1C259"]
+			id: "7479F4E3E8E9D1A1"
 			tasks: [{
-				id: "1C87E10CC3E15CC1",
-				type: "item",
+				id: "1C87E10CC3E15CC1"
+				type: "item"
 				item: "immersiveengineering:treated_wood_horizontal"
 			}]
-		},
+		}
 		{
-			x: -9.0d,
-			y: -0.5d,
+			x: -9.0d
+			y: -0.5d
 			description: [
-				"Check JEI for the possible ways of getting clay, there are a couple of them",
-				"",
+				"Check JEI for the possible ways of getting clay, there are a couple of them"
+				""
 				"Build a 3x3x3 cube and right click middle one with a hammer"
-			],
-			id: "7F8986FDAEB83F16",
+			]
+			id: "7F8986FDAEB83F16"
 			tasks: [{
-				id: "6EBC0FD2B3BB4A4E",
-				type: "item",
-				item: "immersiveengineering:cokebrick",
+				id: "6EBC0FD2B3BB4A4E"
+				type: "item"
+				item: "immersiveengineering:cokebrick"
 				count: 27L
-			}],
+			}]
 			rewards: [{
-				id: "49524C78D199A24E",
-				type: "item",
+				id: "49524C78D199A24E"
+				type: "item"
 				item: {
-					id: "immersiveengineering:hammer",
-					Count: 1b,
+					id: "immersiveengineering:hammer"
+					Count: 1b
 					tag: {
 						Damage: 0
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: -7.5d,
-			y: -0.5d,
+			x: -7.5d
+			y: -0.5d
 			description: [
-				"Coke coal is produced from coal in coke oven. It can be used as more efficient fuel.",
-				"",
+				"Coke coal is produced from coal in coke oven. It can be used as more efficient fuel."
+				""
 				"Creosote oil is byproduct of that process and can be used as a fuel or to make treated planks."
-			],
-			dependencies: ["7F8986FDAEB83F16"],
-			id: "3049E6FB7CD5ECCF",
+			]
+			dependencies: ["7F8986FDAEB83F16"]
+			id: "3049E6FB7CD5ECCF"
 			tasks: [{
-				id: "309F641EA96A0694",
-				type: "item",
+				id: "309F641EA96A0694"
+				type: "item"
 				item: "immersiveengineering:coal_coke"
-			}],
+			}]
 			rewards: [{
-				id: "4DBA24C066674FEA",
-				type: "item",
+				id: "4DBA24C066674FEA"
+				type: "item"
 				item: "immersivepetroleum:projector"
 			}]
-		},
+		}
 		{
-			x: -3.0d,
-			y: -0.5d,
+			x: -3.0d
+			y: -0.5d
 			description: [
-				"You can attach up to 3 water wheels to 1 kinetic dynamo.",
-				"",
-				"Make water flow all around it to make the most out of it",
-				"",
+				"You can attach up to 3 water wheels to 1 kinetic dynamo."
+				""
+				"Make water flow all around it to make the most out of it"
+				""
 				"If it's not generating power, break and place water wheel again"
-			],
+			]
 			dependencies: [
-				"7479F4E3E8E9D1A1",
-				"3D2FE88593ADB9C6",
+				"7479F4E3E8E9D1A1"
+				"3D2FE88593ADB9C6"
 				"6DE031566EACB0B7"
-			],
-			id: "7A8C2C713175BB4B",
+			]
+			id: "7A8C2C713175BB4B"
 			tasks: [{
-				id: "24771DD3F1789EE6",
-				type: "item",
+				id: "24771DD3F1789EE6"
+				type: "item"
 				item: "immersiveengineering:watermill"
 			}]
-		},
+		}
 		{
-			x: -6.0d,
-			y: -0.5d,
-			description: ["You can extract creosote oil by placing bucket in the slot with blue dot"],
-			dependencies: ["3049E6FB7CD5ECCF"],
-			id: "3BF666A613E1C259",
+			x: -6.0d
+			y: -0.5d
+			description: ["You can extract creosote oil by placing bucket in the slot with blue dot"]
+			dependencies: ["3049E6FB7CD5ECCF"]
+			id: "3BF666A613E1C259"
 			tasks: [{
-				id: "5A29BBCF6807101E",
-				type: "item",
+				id: "5A29BBCF6807101E"
+				type: "item"
 				item: "immersiveengineering:creosote_bucket"
-			}],
+			}]
 			rewards: [{
-				id: "01133067425A4F22",
-				type: "item",
+				id: "01133067425A4F22"
+				type: "item"
 				item: {
+					id: "immersiveengineering:toolbox"
+					Count: 1b
 					ForgeCaps: {
 						Parent: {
-							Size: 23,
-							Items: []
+							Size: 23
+							Items: [ ]
 						}
-					},
-					id: "immersiveengineering:toolbox",
-					Count: 1b
+					}
 				}
 			}]
-		},
+		}
 		{
-			x: -3.0d,
-			y: 2.5d,
-			description: ["Produces Forge Energy(FE)/Redstone Flux(RF) - basically electricity. You need to attach water wheel/windmill to it."],
-			dependencies: ["43FAD98FF33D37EC"],
-			id: "784D7F01C733B3EE",
+			x: -3.0d
+			y: 2.5d
+			description: ["Produces Forge Energy(FE)/Redstone Flux(RF) - basically electricity. You need to attach water wheel/windmill to it."]
+			dependencies: ["43FAD98FF33D37EC"]
+			id: "784D7F01C733B3EE"
 			tasks: [{
-				id: "0ADC31CE022D9375",
-				type: "item",
+				id: "0ADC31CE022D9375"
+				type: "item"
 				item: "immersiveengineering:dynamo"
 			}]
-		},
+		}
 		{
-			x: -3.0d,
-			y: 4.0d,
-			description: ["Used to disconnect cables and in some crafting recipes"],
-			id: "43FAD98FF33D37EC",
+			x: -3.0d
+			y: 4.0d
+			description: ["Used to disconnect cables and in some crafting recipes"]
+			id: "43FAD98FF33D37EC"
 			tasks: [{
-				id: "69E85AD1B4301658",
-				type: "item",
+				id: "69E85AD1B4301658"
+				type: "item"
 				item: {
-					id: "immersiveengineering:wirecutter",
-					Count: 1b,
+					id: "immersiveengineering:wirecutter"
+					Count: 1b
 					tag: {
 						Damage: 0
 					}
 				}
-			}],
+			}]
 			rewards: [{
-				id: "3E61873EBA2FE7E9",
-				type: "item",
+				id: "3E61873EBA2FE7E9"
+				type: "item"
 				item: "immersiveengineering:manual"
 			}]
-		},
+		}
 		{
-			x: -7.5d,
-			y: -2.0d,
+			x: -7.5d
+			y: -2.0d
 			description: [
-				"Trees? Probably for decoration",
-				"Although you might find some fruits...",
-				"",
+				"Trees? Probably for decoration"
+				"Although you might find some fruits..."
+				""
 				"Throw seeds into creosote oil to get random sapling"
-			],
-			dependencies: ["3BF666A613E1C259"],
-			id: "4B150AADE960C4C4",
+			]
+			dependencies: ["3BF666A613E1C259"]
+			id: "4B150AADE960C4C4"
 			tasks: [{
-				id: "1CC32C53C353D66C",
-				type: "item",
-				title: "Any #minecraft:saplings",
+				id: "1CC32C53C353D66C"
+				type: "item"
+				title: "Any #minecraft:saplings"
 				item: {
-					id: "itemfilters:tag",
-					Count: 1b,
+					id: "itemfilters:tag"
+					Count: 1b
 					tag: {
 						value: "minecraft:saplings"
 					}
 				}
-			}],
+			}]
 			rewards: [{
-				id: "5410F27976F1172E",
-				type: "item",
+				id: "5410F27976F1172E"
+				type: "item"
 				item: "pamhc2foodcore:juiceritem"
 			}]
-		},
+		}
 		{
-			title: "Metal press",
-			x: -1.5d,
-			y: -2.0d,
+			title: "Metal press"
+			x: -1.5d
+			y: -2.0d
 			description: [
-				"Metal press will reshape metals more efficiently. For example it will yield 2 wires instead of 1 got using wire cutters",
-				"",
+				"Metal press will reshape metals more efficiently. For example it will yield 2 wires instead of 1 got using wire cutters"
+				""
 				"Projector will guide you on how to build this multiblock structure"
-			],
+			]
 			dependencies: [
-				"7A8C2C713175BB4B",
+				"7A8C2C713175BB4B"
 				"3D2FE88593ADB9C6"
-			],
-			id: "47F93C318A00CA40",
+			]
+			id: "47F93C318A00CA40"
 			tasks: [
 				{
-					id: "0AF6D53B76BCFA30",
-					type: "item",
-					item: "immersiveengineering:steel_scaffolding_standard",
+					id: "0AF6D53B76BCFA30"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
 					count: 2L
-				},
+				}
 				{
-					id: "5DBA2D31EB17AAF4",
-					type: "item",
+					id: "5DBA2D31EB17AAF4"
+					type: "item"
 					item: "minecraft:piston"
-				},
+				}
 				{
-					id: "45A70EABDC9E1DCF",
-					type: "item",
-					item: "immersiveengineering:conveyor_basic",
+					id: "45A70EABDC9E1DCF"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
 					count: 2L
-				},
+				}
 				{
-					id: "6AD7B7E370AC9521",
-					type: "item",
+					id: "6AD7B7E370AC9521"
+					type: "item"
 					item: "immersiveengineering:rs_engineering"
-				},
+				}
 				{
-					id: "0CF2BDD05F51C0ED",
-					type: "item",
+					id: "0CF2BDD05F51C0ED"
+					type: "item"
 					item: "immersiveengineering:heavy_engineering"
 				}
 			]
-		},
+		}
 		{
-			x: -3.0d,
-			y: -2.0d,
+			x: -3.0d
+			y: -2.0d
 			description: [
-				"Steel is a little bit more expensive here, 3 iron for 1 steel",
-				"",
+				"Steel is a little bit more expensive here, 3 iron for 1 steel"
+				""
 				".... at least untill you get arc furnace"
-			],
-			dependencies: ["2F2FF6DAFDD2046F"],
-			id: "3D2FE88593ADB9C6",
+			]
+			dependencies: ["2F2FF6DAFDD2046F"]
+			id: "3D2FE88593ADB9C6"
 			tasks: [{
-				id: "57F5CEB9996B805E",
-				type: "item",
+				id: "57F5CEB9996B805E"
+				type: "item"
 				item: "immersiveengineering:ingot_steel"
 			}]
-		},
+		}
 		{
-			x: -3.0d,
-			y: -3.5d,
-			description: ["Same as coke oven"],
-			id: "2F2FF6DAFDD2046F",
+			x: -3.0d
+			y: -3.5d
+			description: ["Same as coke oven"]
+			id: "2F2FF6DAFDD2046F"
 			tasks: [{
-				id: "6A7EF75AF1B61C75",
-				type: "item",
+				id: "6A7EF75AF1B61C75"
+				type: "item"
 				item: "immersiveengineering:blastbrick"
 			}]
-		},
+		}
 		{
-			x: -6.0d,
-			y: -2.0d,
-			description: ["Used for crafting immersive engineering specific items. Requires blueprints"],
-			dependencies: ["7479F4E3E8E9D1A1"],
-			id: "7809B3356048B612",
+			x: -6.0d
+			y: -2.0d
+			description: ["Used for crafting immersive engineering specific items. Requires blueprints"]
+			dependencies: ["7479F4E3E8E9D1A1"]
+			id: "7809B3356048B612"
 			tasks: [{
-				id: "6726495B7291DFD1",
-				type: "item",
+				id: "6726495B7291DFD1"
+				type: "item"
 				item: "immersiveengineering:workbench"
 			}]
-		},
+		}
 		{
-			title: "Arc Furnace",
-			x: 1.5d,
-			y: -0.5d,
+			title: "Arc Furnace"
+			x: 1.5d
+			y: -0.5d
 			description: [
-				"Requires a lot of RF to operate but if you supply enough it can smelt items really fast",
-				"",
+				"Requires a lot of RF to operate but if you supply enough it can smelt items really fast"
+				""
 				"Projector will guide you on how to build this multiblock structure"
-			],
-			dependencies: ["59C051777F14D1A1"],
-			id: "078CC6C761FC0AAD",
+			]
+			dependencies: ["59C051777F14D1A1"]
+			id: "078CC6C761FC0AAD"
 			tasks: [
 				{
-					id: "300A95407E5A9D18",
-					type: "item",
-					item: "immersiveengineering:blastbrick_reinforced",
+					id: "300A95407E5A9D18"
+					type: "item"
+					item: "immersiveengineering:blastbrick_reinforced"
 					count: 27L
-				},
+				}
 				{
-					id: "39137B936BB82130",
-					type: "item",
-					item: "immersiveengineering:slab_sheetmetal_steel",
+					id: "39137B936BB82130"
+					type: "item"
+					item: "immersiveengineering:slab_sheetmetal_steel"
 					count: 14L
-				},
+				}
 				{
-					id: "612CE09362855B92",
-					type: "item",
-					item: "immersiveengineering:light_engineering",
+					id: "612CE09362855B92"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
 					count: 10L
-				},
+				}
 				{
-					id: "5B167D9307AE2A45",
-					type: "item",
-					item: "immersiveengineering:sheetmetal_steel",
+					id: "5B167D9307AE2A45"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
 					count: 8L
-				},
+				}
 				{
-					id: "4B6562FD39C0AF57",
-					type: "item",
-					item: "immersiveengineering:storage_steel",
+					id: "4B6562FD39C0AF57"
+					type: "item"
+					item: "immersiveengineering:storage_steel"
 					count: 6L
-				},
+				}
 				{
-					id: "38AA8936E771021D",
-					type: "item",
-					item: "immersiveengineering:steel_scaffolding_standard",
+					id: "38AA8936E771021D"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
 					count: 5L
-				},
+				}
 				{
-					id: "193C1ECFD86BCCB6",
-					type: "item",
-					item: "immersiveengineering:heavy_engineering",
+					id: "193C1ECFD86BCCB6"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
 					count: 5L
-				},
+				}
 				{
-					id: "30AC6A09D6791B2B",
-					type: "item",
+					id: "30AC6A09D6791B2B"
+					type: "item"
 					item: "minecraft:cauldron"
-				},
+				}
 				{
-					id: "5D484777900FAC6A",
-					type: "item",
+					id: "5D484777900FAC6A"
+					type: "item"
 					item: "immersiveengineering:rs_engineering"
 				}
 			]
-		},
+		}
 		{
-			x: 3.0d,
-			y: -0.5d,
-			description: ["¯\\_(ツ)_/¯"],
-			dependencies: ["078CC6C761FC0AAD"],
-			id: "223B1D7866FA50A6",
+			x: 3.0d
+			y: -0.5d
+			description: ["¯\\_(ツ)_/¯"]
+			dependencies: ["078CC6C761FC0AAD"]
+			id: "223B1D7866FA50A6"
 			tasks: [{
-				id: "5D909A4E04AA3E03",
-				type: "item",
+				id: "5D909A4E04AA3E03"
+				type: "item"
 				item: "minecraft:end_stone"
 			}]
-		},
+		}
 		{
-			x: 4.5d,
-			y: -0.5d,
-			description: ["They all need to face inside, if you missplace them, you can pick them up with create wrench"],
-			dependencies: ["223B1D7866FA50A6"],
-			id: "5B52570D17956977",
+			x: 4.5d
+			y: -0.5d
+			description: ["They all need to face inside, if you missplace them, you can pick them up with create wrench"]
+			dependencies: ["223B1D7866FA50A6"]
+			id: "5B52570D17956977"
 			tasks: [{
-				id: "6CD57CA29A12CAED",
-				type: "item",
-				item: "minecraft:end_portal_frame",
+				id: "6CD57CA29A12CAED"
+				type: "item"
+				item: "minecraft:end_portal_frame"
 				count: 12L
 			}]
-		},
+		}
 		{
-			title: "Destilation tower",
-			x: -1.5d,
-			y: 2.5d,
+			title: "Destilation tower"
+			x: -1.5d
+			y: 2.5d
 			description: [
-				"Turns crude oil into other fluids and produces bitumen as byproduct",
-				"",
+				"Turns crude oil into other fluids and produces bitumen as byproduct"
+				""
 				"Projector will guide you on how to build this multiblock structure"
-			],
-			dependencies: ["0DBCF8BD514263E7"],
-			id: "036B4F77A0666431",
+			]
+			dependencies: ["0DBCF8BD514263E7"]
+			id: "036B4F77A0666431"
 			tasks: [
 				{
-					id: "689FAF790C6DE426",
-					type: "item",
-					item: "immersiveengineering:steel_scaffolding_standard",
+					id: "689FAF790C6DE426"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
 					count: 25L
-				},
+				}
 				{
-					id: "750C01F6ECFD5A04",
-					type: "item",
-					item: "immersiveengineering:slab_steel_scaffolding_grate_top",
+					id: "750C01F6ECFD5A04"
+					type: "item"
+					item: "immersiveengineering:slab_steel_scaffolding_grate_top"
 					count: 33L
-				},
+				}
 				{
-					id: "742B7DBC60AB6DB9",
-					type: "item",
-					item: "immersiveengineering:fluid_pipe",
+					id: "742B7DBC60AB6DB9"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
 					count: 17L
-				},
+				}
 				{
-					id: "147CAE792C9B6A1E",
-					type: "item",
-					item: "immersiveengineering:sheetmetal_iron",
+					id: "147CAE792C9B6A1E"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
 					count: 60L
-				},
+				}
 				{
-					id: "625D620070EA95CE",
-					type: "item",
-					item: "immersiveengineering:heavy_engineering",
+					id: "625D620070EA95CE"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
 					count: 4L
-				},
+				}
 				{
-					id: "24BCA09B1D2AD6E3",
-					type: "item",
+					id: "24BCA09B1D2AD6E3"
+					type: "item"
 					item: "immersiveengineering:rs_engineering"
 				}
 			]
-		},
+		}
 		{
-			x: -1.5d,
-			y: 4.0d,
-			dependencies: ["036B4F77A0666431"],
-			id: "5C00730321CE4422",
+			x: -1.5d
+			y: 4.0d
+			dependencies: ["036B4F77A0666431"]
+			id: "5C00730321CE4422"
 			tasks: [{
-				id: "3E621FE0F57B8FCB",
-				type: "item",
+				id: "3E621FE0F57B8FCB"
+				type: "item"
 				item: "immersivepetroleum:bitumen"
 			}]
-		},
+		}
 		{
-			x: -1.5d,
-			y: 5.5d,
-			description: ["Entities walk/run 20% faster on it"],
-			dependencies: ["5C00730321CE4422"],
-			id: "2E7CDF10D5A75DB4",
+			x: -1.5d
+			y: 5.5d
+			description: ["Entities walk/run 20% faster on it"]
+			dependencies: ["5C00730321CE4422"]
+			id: "2E7CDF10D5A75DB4"
 			tasks: [{
-				id: "5E289DFD5505A230",
-				type: "item",
+				id: "5E289DFD5505A230"
+				type: "item"
 				item: "immersivepetroleum:asphalt"
 			}]
-		},
+		}
 		{
-			x: -6.0d,
-			y: -3.5d,
-			description: ["Will mainly allow you to craft mechanical components cheaper"],
-			dependencies: ["7809B3356048B612"],
-			id: "6517D25F733AF09B",
+			x: -6.0d
+			y: -3.5d
+			description: ["Will mainly allow you to craft mechanical components cheaper"]
+			dependencies: ["7809B3356048B612"]
+			id: "6517D25F733AF09B"
 			tasks: [{
-				id: "591615A1432C57FF",
-				type: "item",
+				id: "591615A1432C57FF"
+				type: "item"
 				item: {
-					id: "immersiveengineering:blueprint",
-					Count: 1b,
+					id: "immersiveengineering:blueprint"
+					Count: 1b
 					tag: {
 						blueprint: "components"
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: 0.0d,
-			y: -0.5d,
-			description: ["Arc furnace needs 3 graphite electrodes to operate"],
+			x: 0.0d
+			y: -0.5d
+			description: ["Arc furnace needs 3 graphite electrodes to operate"]
 			dependencies: [
-				"4D1239A67971D11C",
+				"4D1239A67971D11C"
 				"7C0E641120BB683D"
-			],
-			id: "59C051777F14D1A1",
+			]
+			id: "59C051777F14D1A1"
 			tasks: [
 				{
-					id: "12E1B108F338FCA1",
-					type: "item",
+					id: "12E1B108F338FCA1"
+					type: "item"
 					item: {
-						id: "immersiveengineering:graphite_electrode",
-						Count: 1b,
+						id: "immersiveengineering:graphite_electrode"
+						Count: 1b
 						tag: {
 							graphDmg: 0
 						}
-					},
+					}
 					count: 3L
-				},
+				}
 				{
-					id: "0A36E1081CE08A92",
-					type: "item",
+					id: "0A36E1081CE08A92"
+					type: "item"
 					item: {
-						id: "immersiveengineering:blueprint",
-						Count: 1b,
+						id: "immersiveengineering:blueprint"
+						Count: 1b
 						tag: {
 							blueprint: "electrode"
 						}
 					}
 				}
 			]
-		},
+		}
 		{
-			x: -9.0d,
-			y: 1.0d,
+			x: -9.0d
+			y: 1.0d
 			description: [
-				"Internal tank fills up quickly, let's transport creosote oil into some kind of external tank.",
-				"",
+				"Internal tank fills up quickly, let's transport creosote oil into some kind of external tank."
+				""
 				"You can use either create or immersive engineering pipes"
-			],
-			dependencies: ["7F8986FDAEB83F16"],
-			id: "37CA6C8BF7CE199E",
+			]
+			dependencies: ["7F8986FDAEB83F16"]
+			id: "37CA6C8BF7CE199E"
 			tasks: [{
-				id: "79DA7750A7C62846",
-				type: "item",
-				title: "Pipe",
+				id: "79DA7750A7C62846"
+				type: "item"
+				title: "Pipe"
 				item: {
-					id: "itemfilters:or",
-					Count: 1b,
+					id: "itemfilters:or"
+					Count: 1b
 					tag: {
 						items: [
 							{
-								id: "create:fluid_pipe",
+								id: "create:fluid_pipe"
 								Count: 1b
-							},
+							}
 							{
-								id: "immersiveengineering:fluid_pipe",
+								id: "immersiveengineering:fluid_pipe"
 								Count: 1b
 							}
 						]
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: -9.0d,
-			y: 2.5d,
+			x: -9.0d
+			y: 2.5d
 			description: [
-				"Both of them need some kind extracting mechanism",
-				"",
+				"Both of them need some kind extracting mechanism"
+				""
 				"Immersive enginnering one requires RF and redstone signal, create one requires rotational power"
-			],
-			dependencies: ["37CA6C8BF7CE199E"],
-			dependency_requirement: "one_completed",
-			id: "0CAD984FE73B039B",
+			]
+			dependencies: ["37CA6C8BF7CE199E"]
+			dependency_requirement: "one_completed"
+			id: "0CAD984FE73B039B"
 			tasks: [{
-				id: "1306502131FF86FC",
-				type: "item",
-				title: "Fluid extractor",
+				id: "1306502131FF86FC"
+				type: "item"
+				title: "Fluid extractor"
 				item: {
-					id: "itemfilters:or",
-					Count: 1b,
+					id: "itemfilters:or"
+					Count: 1b
 					tag: {
 						items: [
 							{
-								id: "immersiveengineering:fluid_pump",
+								id: "immersiveengineering:fluid_pump"
 								Count: 1b
-							},
+							}
 							{
-								id: "create:mechanical_pump",
+								id: "create:mechanical_pump"
 								Count: 1b
 							}
 						]
 					}
 				}
 			}]
-		},
+		}
 		{
-			title: "Tank from create",
-			x: -7.5d,
-			y: 2.5d,
-			description: ["Merges with adjecent tanks up to 3x32x3, allowing to store up to 2304 buckets"],
-			dependencies: ["0CAD984FE73B039B"],
-			id: "3B16D78BFB951296",
+			title: "Tank from create"
+			x: -7.5d
+			y: 2.5d
+			description: ["Merges with adjecent tanks up to 3x32x3, allowing to store up to 2304 buckets"]
+			dependencies: ["0CAD984FE73B039B"]
+			id: "3B16D78BFB951296"
 			tasks: [{
-				id: "50E4340200A1734A",
-				type: "item",
+				id: "50E4340200A1734A"
+				type: "item"
 				item: "create:fluid_tank"
 			}]
-		},
+		}
 		{
-			title: "Tank from immersive engineering",
-			x: -7.5d,
-			y: 1.0d,
-			description: ["Holds up to 512 buckets"],
+			title: "Tank from immersive engineering"
+			x: -7.5d
+			y: 1.0d
+			description: ["Holds up to 512 buckets"]
 			dependencies: [
-				"0CAD984FE73B039B",
+				"0CAD984FE73B039B"
 				"7479F4E3E8E9D1A1"
-			],
-			id: "4AC5E2290D3B5E12",
+			]
+			id: "4AC5E2290D3B5E12"
 			tasks: [
 				{
-					id: "28315041D1903249",
-					type: "item",
-					item: "immersiveengineering:sheetmetal_iron",
+					id: "28315041D1903249"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
 					count: 34L
-				},
+				}
 				{
-					id: "6DA95163A43EE958",
-					type: "item",
-					item: "immersiveengineering:treated_fence",
+					id: "6DA95163A43EE958"
+					type: "item"
+					item: "immersiveengineering:treated_fence"
 					count: 4L
 				}
 			]
-		},
+		}
 		{
-			title: "Assembler",
-			x: -4.5d,
-			y: -2.0d,
+			title: "Assembler"
+			x: -4.5d
+			y: -2.0d
 			description: [
-				"Crafting treated planks can get tedious. An assembler can help with that.",
-				"",
+				"Crafting treated planks can get tedious. An assembler can help with that."
+				""
 				"Projector will guide you on how to build this multiblock structure"
-			],
+			]
 			dependencies: [
-				"3D2FE88593ADB9C6",
-				"7479F4E3E8E9D1A1",
+				"3D2FE88593ADB9C6"
+				"7479F4E3E8E9D1A1"
 				"7A8C2C713175BB4B"
-			],
-			id: "560F7BF257D8EE59",
+			]
+			id: "560F7BF257D8EE59"
 			tasks: [
 				{
-					id: "364E5761844FD04D",
-					type: "item",
-					item: "immersiveengineering:sheetmetal_iron",
+					id: "364E5761844FD04D"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
 					count: 9L
-				},
+				}
 				{
-					id: "1E96503C50E16279",
-					type: "item",
-					item: "immersiveengineering:steel_scaffolding_standard",
+					id: "1E96503C50E16279"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
 					count: 6L
-				},
+				}
 				{
-					id: "29BE64B8B40CB7B1",
-					type: "item",
-					item: "immersiveengineering:slab_sheetmetal_iron",
+					id: "29BE64B8B40CB7B1"
+					type: "item"
+					item: "immersiveengineering:slab_sheetmetal_iron"
 					count: 6L
-				},
+				}
 				{
-					id: "5C7B44A619565E08",
-					type: "item",
-					item: "immersiveengineering:rs_engineering",
-					count: 2L
-				},
-				{
-					id: "1B13D9E27C989016",
-					type: "item",
-					item: "immersiveengineering:light_engineering",
-					count: 2L
-				},
-				{
-					id: "086E981D7FB61D68",
-					type: "item",
-					item: "immersiveengineering:conveyor_basic",
+					id: "5C7B44A619565E08"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
 					count: 2L
 				}
-			],
+				{
+					id: "1B13D9E27C989016"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "086E981D7FB61D68"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 2L
+				}
+			]
 			rewards: [
 				{
-					id: "191AE11987B614F4",
-					type: "item",
+					id: "191AE11987B614F4"
+					type: "item"
 					item: {
-						id: "endertanks:ender_tank",
-						Count: 1b,
+						id: "endertanks:ender_tank"
+						Count: 1b
 						tag: {
-							owner: "all",
+							owner: "all"
 							code: "EEE"
 						}
 					}
-				},
+				}
 				{
-					id: "2A943DABCF5C6F11",
-					type: "item",
+					id: "2A943DABCF5C6F11"
+					type: "item"
 					item: {
-						id: "endertanks:ender_bucket",
-						Count: 1b,
+						id: "endertanks:ender_bucket"
+						Count: 1b
 						tag: {
-							owner: "all",
+							owner: "all"
 							code: "EEE"
 						}
 					}
 				}
 			]
-		},
+		}
 		{
-			title: "Pumpjack",
-			x: -1.5d,
-			y: 1.0d,
+			title: "Pumpjack"
+			x: -1.5d
+			y: 1.0d
 			description: [
-				"Pumpjack will allow you to aquire crude oil. Requires RF to operate",
-				"",
+				"Pumpjack will allow you to aquire crude oil. Requires RF to operate"
+				""
 				"Projector will guide you on how to build this multiblock structure"
-			],
-			dependencies: ["7A8C2C713175BB4B"],
-			id: "0DBCF8BD514263E7",
+			]
+			dependencies: ["7A8C2C713175BB4B"]
+			id: "0DBCF8BD514263E7"
 			tasks: [
 				{
-					id: "3EB7DD93A8B5E51A",
-					type: "item",
-					item: "immersiveengineering:steel_scaffolding_standard",
+					id: "3EB7DD93A8B5E51A"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
 					count: 11L
-				},
+				}
 				{
-					id: "44EA358504E8E4D7",
-					type: "item",
-					item: "immersiveengineering:treated_fence",
+					id: "44EA358504E8E4D7"
+					type: "item"
+					item: "immersiveengineering:treated_fence"
 					count: 6L
-				},
+				}
 				{
-					id: "0C7A13089A286F4B",
-					type: "item",
-					item: "immersiveengineering:fluid_pipe",
+					id: "0C7A13089A286F4B"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
 					count: 4L
-				},
+				}
 				{
-					id: "57C0A92E2A83D66E",
-					type: "item",
-					item: "immersiveengineering:sheetmetal_steel",
+					id: "57C0A92E2A83D66E"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
 					count: 4L
-				},
+				}
 				{
-					id: "2440781CB528EDA0",
-					type: "item",
-					item: "immersiveengineering:storage_steel",
+					id: "2440781CB528EDA0"
+					type: "item"
+					item: "immersiveengineering:storage_steel"
 					count: 2L
-				},
+				}
 				{
-					id: "64C3DA6F7C32FA6D",
-					type: "item",
+					id: "64C3DA6F7C32FA6D"
+					type: "item"
 					item: "immersiveengineering:rs_engineering"
-				},
+				}
 				{
-					id: "09334882E675B23A",
-					type: "item",
-					item: "immersiveengineering:heavy_engineering",
+					id: "09334882E675B23A"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
 					count: 2L
-				},
+				}
 				{
-					id: "7BB4DEB4C93ADC7B",
-					type: "item",
-					item: "immersiveengineering:light_engineering",
+					id: "7BB4DEB4C93ADC7B"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
 					count: 2L
 				}
 			]
-		},
+		}
 		{
-			x: -3.0d,
-			y: 1.0d,
+			x: -3.0d
+			y: 1.0d
 			description: [
-				"Connectors can extract/insert power but can only one connected cable to it. To transfer power to multiple machines you'll need wire relays.",
-				"",
+				"Connectors can extract/insert power but can only one connected cable to it. To transfer power to multiple machines you'll need wire relays."
+				""
 				"Not insulated cables will deal damage if walked into"
-			],
-			dependencies: ["784D7F01C733B3EE"],
-			id: "6DE031566EACB0B7",
+			]
+			dependencies: ["784D7F01C733B3EE"]
+			id: "6DE031566EACB0B7"
 			tasks: [
 				{
-					id: "580B7557F211E489",
-					type: "item",
+					id: "580B7557F211E489"
+					type: "item"
 					item: "immersiveengineering:wirecoil_copper_ins"
-				},
+				}
 				{
-					id: "6C728AAE8C46818C",
-					type: "item",
+					id: "6C728AAE8C46818C"
+					type: "item"
 					item: "immersiveengineering:connector_lv"
-				},
+				}
 				{
-					id: "67CCC7CBC520C97B",
-					type: "item",
+					id: "67CCC7CBC520C97B"
+					type: "item"
 					item: "immersiveengineering:connector_lv_relay"
 				}
 			]
-		},
+		}
 		{
-			title: "Squeezer",
-			x: -1.5d,
-			y: -0.5d,
-			description: ["Squeezer can make graphite dust from coke dust and plant oil from plants/seeds"],
-			dependencies: ["7A8C2C713175BB4B"],
-			id: "4D1239A67971D11C",
+			title: "Squeezer"
+			x: -1.5d
+			y: -0.5d
+			description: ["Squeezer can make graphite dust from coke dust and plant oil from plants/seeds"]
+			dependencies: ["7A8C2C713175BB4B"]
+			id: "4D1239A67971D11C"
 			tasks: [
 				{
-					id: "040D77E22B6D69FB",
-					type: "item",
-					item: "immersiveengineering:steel_scaffolding_standard",
+					id: "040D77E22B6D69FB"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
 					count: 6L
-				},
+				}
 				{
-					id: "5F76F7A49079BA36",
-					type: "item",
-					item: "immersiveengineering:wooden_barrel",
+					id: "5F76F7A49079BA36"
+					type: "item"
+					item: "immersiveengineering:wooden_barrel"
 					count: 4L
-				},
+				}
 				{
-					id: "26D79FDA6B72CF1D",
-					type: "item",
-					item: "immersiveengineering:steel_fence",
+					id: "26D79FDA6B72CF1D"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
 					count: 3L
-				},
+				}
 				{
-					id: "7A6319C8D90751B4",
-					type: "item",
-					item: "immersiveengineering:fluid_pipe",
+					id: "7A6319C8D90751B4"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
 					count: 2L
-				},
+				}
 				{
-					id: "11F34B263BF68699",
-					type: "item",
-					item: "immersiveengineering:light_engineering",
+					id: "11F34B263BF68699"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
 					count: 2L
-				},
+				}
 				{
-					id: "27F6A0D034059603",
-					type: "item",
+					id: "27F6A0D034059603"
+					type: "item"
 					item: "immersiveengineering:rs_engineering"
-				},
+				}
 				{
-					id: "7E7B2C4F53B835E6",
-					type: "item",
+					id: "7E7B2C4F53B835E6"
+					type: "item"
 					item: "minecraft:piston"
 				}
 			]
-		},
+		}
 		{
-			title: "Fermenter",
-			x: -1.5d,
-			y: -3.5d,
-			description: ["Turns apples/sugar cane/melons/potatos into ethanol"],
-			dependencies: ["3D2FE88593ADB9C6"],
-			id: "08D375834F8A51A2",
+			title: "Fermenter"
+			x: -1.5d
+			y: -3.5d
+			description: ["Turns apples/sugar cane/melons/potatos into ethanol"]
+			dependencies: ["3D2FE88593ADB9C6"]
+			id: "08D375834F8A51A2"
 			tasks: [
 				{
-					id: "23D93A58F188E8FD",
-					type: "item",
-					item: "immersiveengineering:steel_scaffolding_standard",
+					id: "23D93A58F188E8FD"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
 					count: 6L
-				},
+				}
 				{
-					id: "355FF5CEEB5591CC",
-					type: "item",
-					item: "minecraft:cauldron",
+					id: "355FF5CEEB5591CC"
+					type: "item"
+					item: "minecraft:cauldron"
 					count: 4L
-				},
+				}
 				{
-					id: "2058079668199C60",
-					type: "item",
-					item: "immersiveengineering:sheetmetal_iron",
+					id: "2058079668199C60"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
 					count: 4L
-				},
+				}
 				{
-					id: "60BD5395876A5DEA",
-					type: "item",
-					item: "immersiveengineering:fluid_pipe",
+					id: "60BD5395876A5DEA"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
 					count: 2L
-				},
+				}
 				{
-					id: "4996E6CF9F970336",
-					type: "item",
-					item: "immersiveengineering:light_engineering",
+					id: "4996E6CF9F970336"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
 					count: 2L
-				},
+				}
 				{
-					id: "652C5A4F2B29E6C4",
-					type: "item",
+					id: "652C5A4F2B29E6C4"
+					type: "item"
 					item: "immersiveengineering:rs_engineering"
 				}
 			]
-		},
+		}
 		{
-			title: "Refinery",
-			x: 0.0d,
-			y: -2.0d,
-			description: ["Makes biodiesel from ethanol and plant oil"],
+			title: "Refinery"
+			x: 0.0d
+			y: -2.0d
+			description: ["Makes biodiesel from ethanol and plant oil"]
 			dependencies: [
-				"08D375834F8A51A2",
+				"08D375834F8A51A2"
 				"4D1239A67971D11C"
-			],
-			id: "719817D97F315CBD",
+			]
+			id: "719817D97F315CBD"
 			tasks: [
 				{
-					id: "7778F50002B376EF",
-					type: "item",
-					item: "immersiveengineering:steel_scaffolding_standard",
+					id: "7778F50002B376EF"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
 					count: 8L
-				},
+				}
 				{
-					id: "168569F6C7E049ED",
-					type: "item",
-					item: "immersiveengineering:sheetmetal_iron",
+					id: "168569F6C7E049ED"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
 					count: 16L
-				},
+				}
 				{
-					id: "256913B7B9E4ECA3",
-					type: "item",
-					item: "immersiveengineering:fluid_pipe",
+					id: "256913B7B9E4ECA3"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
 					count: 5L
-				},
+				}
 				{
-					id: "47640B8D4A27995F",
-					type: "item",
-					item: "immersiveengineering:light_engineering",
+					id: "47640B8D4A27995F"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
 					count: 2L
-				},
+				}
 				{
-					id: "69AC3DC20C3655F5",
-					type: "item",
-					item: "immersiveengineering:heavy_engineering",
+					id: "69AC3DC20C3655F5"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
 					count: 2L
-				},
+				}
 				{
-					id: "5CEC65C186EAE255",
-					type: "item",
+					id: "5CEC65C186EAE255"
+					type: "item"
 					item: "immersiveengineering:rs_engineering"
 				}
 			]
-		},
+		}
 		{
-			title: "Diesel generator",
-			x: 1.5d,
-			y: -2.0d,
-			description: ["Better energy generation, at least if you can constantly supply it with fuel"],
-			dependencies: ["719817D97F315CBD"],
-			id: "04C955A51053C823",
+			title: "Diesel generator"
+			x: 1.5d
+			y: -2.0d
+			description: ["Better energy generation, at least if you can constantly supply it with fuel"]
+			dependencies: ["719817D97F315CBD"]
+			id: "04C955A51053C823"
 			tasks: [
 				{
-					id: "425E10C7DCACD6D3",
-					type: "item",
-					item: "immersiveengineering:steel_scaffolding_standard",
+					id: "425E10C7DCACD6D3"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
 					count: 6L
-				},
+				}
 				{
-					id: "35971A4DCD607A10",
-					type: "item",
-					item: "immersiveengineering:heavy_engineering",
+					id: "35971A4DCD607A10"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
 					count: 13L
-				},
+				}
 				{
-					id: "6395D11176A5993D",
-					type: "item",
-					item: "immersiveengineering:radiator",
+					id: "6395D11176A5993D"
+					type: "item"
+					item: "immersiveengineering:radiator"
 					count: 9L
-				},
+				}
 				{
-					id: "60F8B199CB51FBCE",
-					type: "item",
-					item: "immersiveengineering:fluid_pipe",
+					id: "60F8B199CB51FBCE"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
 					count: 5L
-				},
+				}
 				{
-					id: "05FCC3D40326DCE3",
-					type: "item",
-					item: "immersiveengineering:generator",
+					id: "05FCC3D40326DCE3"
+					type: "item"
+					item: "immersiveengineering:generator"
 					count: 4L
-				},
+				}
 				{
-					id: "03416401390A2688",
-					type: "item",
+					id: "03416401390A2688"
+					type: "item"
 					item: "immersiveengineering:rs_engineering"
 				}
 			]
-		},
+		}
 		{
-			x: 1.5d,
-			y: 1.0d,
+			x: 1.5d
+			y: 1.0d
 			description: [
-				"Place it on the ground and feed it emeralds untill it won't accept anymore. It'll make it spawn villager after some time.",
-				"",
-				"Anvil as a workstation will make villager sell blueprint for graphite electrodes on level 5",
-				"",
+				"Place it on the ground and feed it emeralds untill it won't accept anymore. It'll make it spawn villager after some time."
+				""
+				"Anvil as a workstation will make villager sell blueprint for graphite electrodes on level 5"
+				""
 				"And the slavery begins..."
-			],
-			id: "7C0E641120BB683D",
+			]
+			id: "7C0E641120BB683D"
 			tasks: [{
-				id: "7AF97D57CCAC6FFC",
-				type: "item",
+				id: "7AF97D57CCAC6FFC"
+				type: "item"
 				item: "botania:cocoon"
 			}]
-		},
+		}
 		{
-			x: 0.0d,
-			y: 1.0d,
+			x: 0.0d
+			y: 1.0d
 			description: [
-				"You can use drill to detect resources in a given chunk",
-				"",
-				"It requires power so here's a capacitor bank to make it easier to power it in different places",
+				"You can use drill to detect resources in a given chunk"
+				""
+				"It requires power so here's a capacitor bank to make it easier to power it in different places"
 				"You can place the sample on the ground for future reference by shift right clicking it"
-			],
-			dependencies: ["0DBCF8BD514263E7"],
-			id: "6ACB35F695AC9C40",
+			]
+			dependencies: ["0DBCF8BD514263E7"]
+			id: "6ACB35F695AC9C40"
 			tasks: [{
-				id: "6242DD5B19ED2B39",
-				type: "item",
+				id: "6242DD5B19ED2B39"
+				type: "item"
 				item: "immersiveengineering:sample_drill"
-			}],
+			}]
 			rewards: [{
-				id: "5A90990CB25E7F5A",
-				type: "item",
+				id: "5A90990CB25E7F5A"
+				type: "item"
 				item: {
-					id: "immersiveengineering:capacitor_lv",
-					Count: 1b,
+					id: "immersiveengineering:capacitor_lv"
+					Count: 1b
 					tag: {
-						sideConfig_0: 0,
-						ifluxEnergy: 100000,
-						sideConfig_1: 1,
-						sideConfig_2: 0,
-						sideConfig_3: 0,
-						sideConfig_4: 0,
+						sideConfig_0: 0
+						ifluxEnergy: 100000
+						sideConfig_1: 1
+						sideConfig_2: 0
+						sideConfig_3: 0
+						sideConfig_4: 0
 						sideConfig_5: 0
 					}
 				}

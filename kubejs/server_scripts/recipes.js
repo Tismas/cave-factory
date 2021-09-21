@@ -195,7 +195,9 @@ onEvent("recipes", (event) => {
 
   const cobblestones = getItemsFromTag("forge:cobblestone");
   cobblestones.forEach((cobble) => {
-    event.recipes.create.crushing("minecraft:gravel", cobble);
+    if (cobble !== "minecraft:mossy_cobblestone") {
+      event.recipes.create.crushing("minecraft:gravel", cobble);
+    }
   });
   event.recipes.create.crushing(
     Item.of("minecraft:vine"),
