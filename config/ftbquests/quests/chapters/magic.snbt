@@ -18,9 +18,9 @@
 			]
 			id: "54E4F67C49D8034A"
 			tasks: [{
-				id: "5A3EBB8573A0EB73"
-				type: "dimension"
-				dimension: "twilightforest:twilightforest"
+				id: "1F52BAC9D4120143"
+				type: "item"
+				item: "minecraft:dragon_egg"
 			}]
 		}
 		{
