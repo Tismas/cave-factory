@@ -50,12 +50,25 @@
 				type: "item"
 				item: "minecraft:lava_bucket"
 			}]
-			rewards: [{
-				id: "6332A4788A82106F"
-				type: "item"
-				item: "minecraft:obsidian"
-				random_bonus: 11
-			}]
+			rewards: [
+				{
+					id: "700F9E40A14D90C2"
+					type: "item"
+					item: {
+						id: "minecraft:flint_and_steel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7E181AFB73DD5A91"
+					type: "item"
+					item: "minecraft:obsidian"
+					random_bonus: 8
+				}
+			]
 		}
 		{
 			x: -9.5d
@@ -68,32 +81,18 @@
 				type: "item"
 				item: "minecraft:water_bucket"
 			}]
-			rewards: [
-				{
-					id: "4B9CBD8C3CEE7F36"
-					type: "item"
-					item: {
-						id: "endertanks:ender_bucket"
-						Count: 1b
-						tag: {
-							owner: "all"
-							code: "000"
-						}
+			rewards: [{
+				id: "4B9CBD8C3CEE7F36"
+				type: "item"
+				item: {
+					id: "endertanks:ender_bucket"
+					Count: 1b
+					tag: {
+						owner: "all"
+						code: "000"
 					}
 				}
-				{
-					id: "43F364FD029C71C4"
-					type: "item"
-					item: {
-						id: "endertanks:ender_tank"
-						Count: 1b
-						tag: {
-							owner: "all"
-							code: "000"
-						}
-					}
-				}
-			]
+			}]
 		}
 		{
 			title: "Dig out pebbles"
@@ -188,6 +187,7 @@
 					id: "tconstruct:pickaxe"
 					Count: 1b
 					tag: {
+						tic_multipliers: { }
 						tic_stats: {
 							"tconstruct:attack_speed": 1.2f
 							"tconstruct:mining_speed": 4.4f
@@ -199,7 +199,7 @@
 						tic_modifiers: [
 							{
 								name: "tconstruct:piercing"
-								level: 2s
+								level: 1s
 							}
 							{
 								name: "tconstruct:stonebound"
@@ -744,6 +744,7 @@
 			}]
 		}
 		{
+			title: "To the nether"
 			x: -8.0d
 			y: -1.0d
 			description: ["The nether has vanilla terrain generation. "]
@@ -753,9 +754,10 @@
 			]
 			id: "251FE836D9C631D1"
 			tasks: [{
-				id: "4AA929A26A5BA1CB"
-				type: "dimension"
-				dimension: "minecraft:the_nether"
+				id: "2BEC392773BA49CC"
+				type: "item"
+				item: "minecraft:obsidian"
+				count: 10L
 			}]
 			rewards: [{
 				id: "14E5BA1EE41A40B6"
