@@ -266,6 +266,7 @@ pamhc2trees:pinenut_worldgen
 zerocore:mod_ores
 zerocore:mod_ores_regen
 tconstruct:slime_tree
+tconstruct:slime_fungus
 immersiveengineering:mineral_vein
 immersiveengineering:ie_ore
 immersiveengineering:ore_retro

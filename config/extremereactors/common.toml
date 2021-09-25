@@ -70,6 +70,9 @@
 		#If set, coal will be smeltable into graphite bars.
 		#Disable this if other mods need to smelt coal into their own products.
 		registerCoalForSmelting = true
+		#If set, coal blocks will be smeltable into graphite blocks.
+		#Disable this if other mods need to smelt coal blocks into their own products.
+		registerCoalBlockForSmelting = true
 
 	#Define how ores generates in the world
 	[common.worldgen]

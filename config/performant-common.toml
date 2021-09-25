@@ -132,4 +132,7 @@ displayTooLargePackets = true
 	#Set the watchdog timeout for the integrated server in miliseconds, -1 Disables it. 1 second = 1000 miliseconds, default = 180000
 	#Range: -1 ~ 500000
 	singlePlayerWatchDogTimeout = 180000
+	#Set the maximum allowed amount of same sounds playing at the same time. Lowers e.g. lag of flowing water and other cases where a sound is repeated a lot at once. Default = 10
+	#Range: 1 ~ 4000
+	maxSameSounds = 10
 

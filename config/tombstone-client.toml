@@ -19,8 +19,6 @@
 	show_shadow_step = true
 	#Shows shield particles on villager [false/true|default:true]
 	show_shield_particle = true
-	#Enables the special rendering and particles for Halloween [false/true|default:true]
-	enable_halloween_effect = true
 	#Decimal value for the color of the grave text <Death Date> [0..16777215|default:2962496]
 	#Range: 0 ~ 16777215
 	text_color_death_date = 2962496
@@ -67,4 +65,6 @@
 	#Defines when to automatically equip your items [NEVER/GRAVE_RECOVERY/DEATH_RESPAWN/ALWAYS|default:ALWAYS]
 	#Allowed Values: NEVER, GRAVE_RECOVERY, DEATH_RESPAWN, ALWAYS
 	auto_equip_rule = "ALWAYS"
+	#Allows the ghost to appear around you during Halloween [false/true|default:true]
+	allow_halloween_ghost = true
 
