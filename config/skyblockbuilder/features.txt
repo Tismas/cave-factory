@@ -88,6 +88,7 @@ twilightforest:wood_roots
 twilightforest:snow_under_trees
 twilightforest:anywhere_tree
 twilightforest:dark_forest_placer
+supplementaries:road_sign_feature
 betterendforge:end_lotus
 betterendforge:end_lotus_leaf
 betterendforge:bubble_coral
@@ -281,3 +282,4 @@ quark:deferred_feature_underground_ores
 quark:deferred_feature_underground_decoration
 quark:deferred_feature_vegetal_decoration
 quark:deferred_feature_top_layer_modification
+chisel:replace_block_downwards
