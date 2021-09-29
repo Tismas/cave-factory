@@ -186,7 +186,7 @@
 			description: [
 				"Metal press will reshape metals more efficiently. For example it will yield 2 wires instead of 1 got using wire cutters"
 				""
-				"Projector will guide you on how to build this multiblock structure"
+				"The projector can guide you on how to build this multiblock structure"
 			]
 			dependencies: [
 				"7A8C2C713175BB4B"
@@ -248,6 +248,7 @@
 				id: "6A7EF75AF1B61C75"
 				type: "item"
 				item: "immersiveengineering:blastbrick"
+				count: 27L
 			}]
 		}
 		{
@@ -264,7 +265,7 @@
 		}
 		{
 			title: "Arc Furnace"
-			x: 1.5d
+			x: 3.0d
 			y: -0.5d
 			description: [
 				"Requires a lot of RF to operate but if you supply enough it can smelt items really fast"
@@ -329,7 +330,7 @@
 			]
 		}
 		{
-			x: 3.0d
+			x: 4.5d
 			y: -0.5d
 			description: ["¯\\_(ツ)_/¯"]
 			dependencies: ["078CC6C761FC0AAD"]
@@ -341,7 +342,7 @@
 			}]
 		}
 		{
-			x: 4.5d
+			x: 6.0d
 			y: -0.5d
 			description: ["They all need to face inside, if you missplace them, you can pick them up with create wrench"]
 			dependencies: ["223B1D7866FA50A6"]
@@ -354,13 +355,13 @@
 			}]
 		}
 		{
-			title: "Destilation tower"
+			title: "Distillation tower"
 			x: -1.5d
 			y: 2.5d
 			description: [
-				"Turns crude oil into other fluids and produces bitumen as byproduct"
+				"Turns crude oil into other fluids and produces bitumen as a byproduct"
 				""
-				"Projector will guide you on how to build this multiblock structure"
+				"The projector can guide you on how to build this multiblock structure"
 			]
 			dependencies: ["0DBCF8BD514263E7"]
 			id: "036B4F77A0666431"
@@ -444,12 +445,12 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: 1.5d
 			y: -0.5d
 			description: ["Arc furnace needs 3 graphite electrodes to operate"]
 			dependencies: [
-				"4D1239A67971D11C"
 				"7C0E641120BB683D"
+				"1426BC3340042A83"
 			]
 			id: "59C051777F14D1A1"
 			tasks: [
@@ -668,7 +669,7 @@
 			description: [
 				"Pumpjack will allow you to aquire crude oil. Requires RF to operate"
 				""
-				"Projector will guide you on how to build this multiblock structure"
+				"The projector can guide you on how to build this multiblock structure"
 			]
 			dependencies: ["7A8C2C713175BB4B"]
 			id: "0DBCF8BD514263E7"
@@ -754,7 +755,11 @@
 			title: "Squeezer"
 			x: -1.5d
 			y: -0.5d
-			description: ["Squeezer can make graphite dust from coke dust and plant oil from plants/seeds"]
+			description: [
+				"Squeezer can make graphite dust from coke dust and plant oil from plants/seeds"
+				""
+				"The projector can guide you on how to build this multiblock structure"
+			]
 			dependencies: ["7A8C2C713175BB4B"]
 			id: "4D1239A67971D11C"
 			tasks: [
@@ -988,6 +993,49 @@
 					}
 				}
 			}]
+		}
+		{
+			title: "Crusher"
+			x: 0.0d
+			y: -0.5d
+			description: [
+				"Throw coke coal into it to make coke dust"
+				"You can check more recipes in the JEI by finding something it makes (for example coke dust) and clicking 'U' on the machine on the left side"
+			]
+			dependencies: ["4D1239A67971D11C"]
+			id: "1426BC3340042A83"
+			tasks: [
+				{
+					id: "538106F2C1C2A741"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 10L
+					consume_items: false
+				}
+				{
+					id: "14D40A5AD3FBDD03"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 10L
+				}
+				{
+					id: "704163302706DF69"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "753F85F49CD6958A"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 8L
+				}
+				{
+					id: "3F899E5A46C3E96D"
+					type: "item"
+					item: "minecraft:hopper"
+					count: 9L
+				}
+			]
 		}
 	]
 }

@@ -65,11 +65,11 @@ const stoneDrops = {
   "create:dark_scoria": 20,
 };
 const oreDrops = {
-  "minecraft:air": 500,
+  "minecraft:air": 450,
   "minecraft:coal_ore": 125,
-  "minecraft:redstone_ore": 50,
-  "minecraft:iron_ore": 75,
-  "create:copper_ore": 75,
+  "minecraft:redstone_ore": 40,
+  "minecraft:iron_ore": 40,
+  "create:copper_ore": 40,
   "immersiveengineering:ore_aluminum": 15,
   "immersiveengineering:ore_silver": 15,
   "immersiveengineering:ore_lead": 15,
@@ -77,9 +77,9 @@ const oreDrops = {
   "minecraft:gold_ore": 15,
   "create:zinc_ore": 15,
   "minecraft:lapis_ore": 10,
-  "immersiveengineering:ore_uranium": 5,
-  "minecraft:emerald_ore": 2,
-  "minecraft:diamond_ore": 2,
+  "immersiveengineering:ore_uranium": 10,
+  "minecraft:emerald_ore": 5,
+  "minecraft:diamond_ore": 5,
 };
 
 onEvent("block.right_click", (event) => {

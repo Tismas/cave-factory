@@ -392,6 +392,11 @@
 						}
 					}
 				}
+				{
+					id: "6FAB605C1D507CDC"
+					type: "item"
+					item: "minecraft:diamond"
+				}
 			]
 		}
 		{
@@ -1161,10 +1166,15 @@
 				item: "bloodmagic:weakbloodorb"
 			}]
 			rewards: [{
-				id: "2A99AAD8B25998F0"
+				id: "2847F085C3E2FFCF"
 				type: "item"
-				item: "tconstruct:silky_cloth"
-				count: 5
+				item: {
+					id: "bloodmagic:basemonstersoul"
+					Count: 1b
+					tag: {
+						souls: 5.0d
+					}
+				}
 			}]
 		}
 		{
@@ -1428,19 +1438,9 @@
 				item: "create:rotation_speed_controller"
 			}]
 			rewards: [{
-				id: "4BD5E8FD8C4FE591"
+				id: "619DF8D261F6C734"
 				type: "item"
-				item: {
-					id: "create:handheld_blockzapper"
-					Count: 1b
-					tag: {
-						Retriever: "Brass"
-						Scope: "Brass"
-						Amplifier: "Brass"
-						Body: "Brass"
-						Accelerator: "Brass"
-					}
-				}
+				item: "create:wand_of_symmetry"
 			}]
 		}
 		{
@@ -1453,6 +1453,199 @@
 				id: "2C283A4A156E6781"
 				type: "item"
 				item: "engineersdecor:panzerglass_block"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -4.0d
+			dependencies: ["0D7C514E1C1440B7"]
+			id: "1D13C3ED06095DF6"
+			tasks: [{
+				id: "42C4FA32F63CE5CA"
+				type: "item"
+				title: "Tinkers anvil"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "tconstruct:tinkers_anvil"
+								Count: 1b
+								tag: {
+									texture: "tconstruct:slimesteel_block"
+								}
+							}
+							{
+								id: "tconstruct:tinkers_anvil"
+								Count: 1b
+								tag: {
+									texture: "tconstruct:tinkers_bronze_block"
+								}
+							}
+							{
+								id: "tconstruct:tinkers_anvil"
+								Count: 1b
+								tag: {
+									texture: "tconstruct:rose_gold_block"
+								}
+							}
+							{
+								id: "tconstruct:tinkers_anvil"
+								Count: 1b
+								tag: {
+									texture: "tconstruct:pig_iron_block"
+								}
+							}
+							{
+								id: "tconstruct:tinkers_anvil"
+								Count: 1b
+								tag: {
+									texture: "tconstruct:queens_slime_block"
+								}
+							}
+							{
+								id: "tconstruct:tinkers_anvil"
+								Count: 1b
+								tag: {
+									texture: "tconstruct:manyullyn_block"
+								}
+							}
+							{
+								id: "tconstruct:tinkers_anvil"
+								Count: 1b
+								tag: {
+									texture: "tconstruct:hepatizon_block"
+								}
+							}
+							{
+								id: "tconstruct:tinkers_anvil"
+								Count: 1b
+								tag: {
+									texture: "minecraft:netherite_block"
+								}
+							}
+							{
+								id: "tconstruct:tinkers_anvil"
+								Count: 1b
+								tag: {
+									texture: "create:brass_block"
+								}
+							}
+							{
+								id: "tconstruct:tinkers_anvil"
+								Count: 1b
+								tag: {
+									texture: "immersiveengineering:storage_electrum"
+								}
+							}
+							{
+								id: "tconstruct:tinkers_anvil"
+								Count: 1b
+								tag: {
+									texture: "immersiveengineering:storage_constantan"
+								}
+							}
+							{
+								id: "tconstruct:tinkers_anvil"
+								Count: 1b
+								tag: {
+									texture: "immersiveengineering:storage_steel"
+								}
+							}
+							{
+								id: "tconstruct:scorched_anvil"
+								Count: 1b
+								tag: {
+									texture: "tconstruct:slimesteel_block"
+								}
+							}
+							{
+								id: "tconstruct:scorched_anvil"
+								Count: 1b
+								tag: {
+									texture: "tconstruct:tinkers_bronze_block"
+								}
+							}
+							{
+								id: "tconstruct:scorched_anvil"
+								Count: 1b
+								tag: {
+									texture: "tconstruct:rose_gold_block"
+								}
+							}
+							{
+								id: "tconstruct:scorched_anvil"
+								Count: 1b
+								tag: {
+									texture: "tconstruct:pig_iron_block"
+								}
+							}
+							{
+								id: "tconstruct:scorched_anvil"
+								Count: 1b
+								tag: {
+									texture: "tconstruct:queens_slime_block"
+								}
+							}
+							{
+								id: "tconstruct:scorched_anvil"
+								Count: 1b
+								tag: {
+									texture: "tconstruct:manyullyn_block"
+								}
+							}
+							{
+								id: "tconstruct:scorched_anvil"
+								Count: 1b
+								tag: {
+									texture: "tconstruct:hepatizon_block"
+								}
+							}
+							{
+								id: "tconstruct:scorched_anvil"
+								Count: 1b
+								tag: {
+									texture: "minecraft:netherite_block"
+								}
+							}
+							{
+								id: "tconstruct:scorched_anvil"
+								Count: 1b
+								tag: {
+									texture: "create:brass_block"
+								}
+							}
+							{
+								id: "tconstruct:scorched_anvil"
+								Count: 1b
+								tag: {
+									texture: "immersiveengineering:storage_electrum"
+								}
+							}
+							{
+								id: "tconstruct:scorched_anvil"
+								Count: 1b
+								tag: {
+									texture: "immersiveengineering:storage_constantan"
+								}
+							}
+							{
+								id: "tconstruct:scorched_anvil"
+								Count: 1b
+								tag: {
+									texture: "immersiveengineering:storage_steel"
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "43A6FC4AB4207431"
+				type: "item"
+				item: "tconstruct:silky_cloth"
+				count: 5
 			}]
 		}
 	]
