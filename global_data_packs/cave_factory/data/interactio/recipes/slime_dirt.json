@@ -1,0 +1,45 @@
+{
+  "type": "interactio:item_fluid_transform",
+  "inputs": [
+    {
+      "item": "minecraft:dirt",
+      "count": 1,
+      "return_chance": 0
+    }
+  ],
+  "fluid": {
+    "fluid": "minecraft:milk"
+  },
+  "output": {
+    "entries": [
+      {
+        "result": {
+          "item": "tconstruct:earth_slime_dirt",
+          "count": 1
+        },
+        "weight": 1
+      },
+      {
+        "result": {
+          "item": "tconstruct:sky_slime_dirt",
+          "count": 1
+        },
+        "weight": 1
+      },
+      {
+        "result": {
+          "item": "tconstruct:ender_slime_dirt",
+          "count": 1
+        },
+        "weight": 1
+      },
+      {
+        "result": {
+          "item": "tconstruct:ichor_slime_dirt",
+          "count": 1
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

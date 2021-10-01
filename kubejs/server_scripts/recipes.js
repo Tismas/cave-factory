@@ -15,6 +15,34 @@ onEvent("recipes", (event) => {
     }
   });
 
+  event.shapeless(Item.of("tconstruct:creative_slot", '{slot:"upgrades"}'), [
+    "tconstruct:scorched_stone",
+    "tconstruct:slimesteel_block",
+    "tconstruct:queens_slime_block",
+    "tconstruct:pig_iron_block",
+    "minecraft:netherite_block",
+    "tconstruct:hepatizon_block",
+    "tconstruct:manyullyn_block",
+    "tconstruct:rose_gold_block",
+    "tconstruct:tinkers_bronze_block",
+  ]);
+  event.shaped(
+    Item.of("tconstruct:creative_slot", '{slot:"souls"}'),
+    ["XXX", "XEX", "XXX"],
+    {
+      X: "envirocore:xerothium_crystal",
+      E: "minecraft:emerald",
+    }
+  );
+  event.shaped(
+    Item.of("tconstruct:creative_slot", '{slot:"armor"}'),
+    ["EEE", "EDE", "EEE"],
+    {
+      D: "minecraft:diamond_chestplate",
+      E: "minecraft:emerald_block",
+    }
+  );
+
   event.shapeless("minecraft:cobblestone", new Array(4).fill("botania:pebble"));
   event.shapeless(
     "immersiveengineering:ore_uranium",
@@ -207,6 +235,12 @@ onEvent("recipes", (event) => {
     Fluid.of("minecraft:water", 250),
     "minecraft:cactus"
   );
+  event.recipes.create
+    .mixing(Item.of("tconstruct:creative_slot", '{slot:"abilities"}'), [
+      "minecraft:nether_star",
+      Fluid.of("bloodmagic:life_essence_fluid", 1000),
+    ])
+    .superheated();
 
   event.recipes.immersiveengineering.blast_furnace(
     "immersiveengineering:ingot_steel",
@@ -218,7 +252,7 @@ onEvent("recipes", (event) => {
     "minecraft:sand"
   );
 
-  const { altar } = event.recipes.bloodmagic;
+  const { altar, soulforge } = event.recipes.bloodmagic;
   event.shaped("4x bloodmagic:ritualstone", ["BRB", "ROR", "BRB"], {
     B: "bloodmagic:blankslate",
     R: "bloodmagic:reinforcedslate",
@@ -242,4 +276,10 @@ onEvent("recipes", (event) => {
     .altarSyphon(10000)
     .drainRate(10)
     .consumptionRate(10);
+  soulforge("minecraft:phantom_membrane", [
+    "minecraft:white_bed",
+    "minecraft:rotten_flesh",
+  ])
+    .minimumDrain(100)
+    .drain(10);
 });

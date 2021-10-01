@@ -1,0 +1,38 @@
+{
+  "type": "interactio:item_fluid_transform",
+  "inputs": [
+    {
+      "tag": "minecraft:saplings",
+      "count": 1,
+      "return_chance": 0
+    }
+  ],
+  "fluid": {
+    "fluid": "minecraft:milk"
+  },
+  "output": {
+    "entries": [
+      {
+        "result": {
+          "item": "tconstruct:earth_slime_sapling",
+          "count": 1
+        },
+        "weight": 1
+      },
+      {
+        "result": {
+          "item": "tconstruct:sky_slime_sapling",
+          "count": 1
+        },
+        "weight": 1
+      },
+      {
+        "result": {
+          "item": "tconstruct:ender_slime_sapling",
+          "count": 1
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

@@ -27,6 +27,8 @@
 				"Check JEI for the possible ways of getting clay, there are a couple of them"
 				""
 				"Build a 3x3x3 cube and right click middle one with a hammer"
+				""
+				"Hammer can also be used to configure machines, right click to configure side you're looking at and shift right click to configure opposite side. For example toggle between input/output/nothing on capacitor bank"
 			]
 			id: "7F8986FDAEB83F16"
 			tasks: [{
@@ -517,7 +519,7 @@
 			description: [
 				"Both of them need some kind extracting mechanism"
 				""
-				"Immersive enginnering one requires RF and redstone signal, create one requires rotational power"
+				"Immersive enginnering one requires redstone signal to work and rf makes it work faster, create one requires rotational power"
 			]
 			dependencies: ["37CA6C8BF7CE199E"]
 			dependency_requirement: "one_completed"
@@ -730,6 +732,8 @@
 				"Connectors can extract/insert power but can only one connected cable to it. To transfer power to multiple machines you'll need wire relays."
 				""
 				"Not insulated cables will deal damage if walked into"
+				""
+				"To get hemp - use bonemeal on grass and break tall grass"
 			]
 			dependencies: ["784D7F01C733B3EE"]
 			id: "6DE031566EACB0B7"

@@ -195,3 +195,12 @@ onEvent("item.tags", (event) => {
   event.remove("twilightforest:portal/activator", "#forge:gems/diamond");
   event.add("twilightforest:portal/activator", "minecraft:dragon_egg");
 });
+
+onEvent("entity.loot_tables", (event) => {
+  event.addEntity("minecraft:ender_dragon", (table) => {
+    table.addPool((pool) => {
+      pool.rolls = 1;
+      pool.addItem("minecraft:dragon_egg", 1);
+    });
+  });
+});
