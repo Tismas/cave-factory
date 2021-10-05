@@ -212,10 +212,41 @@ onEvent("recipes", (event) => {
     ],
     "bigreactors:yellorite_ore"
   );
-  event.recipes.create.filling("create:creative_fluid_tank", [
-    "create:fluid_tank",
-    Fluid.of("bloodmagic:life_essence_fluid", 100000000),
-  ]);
+
+  event.recipes.create.filling(
+    Item.of("tconstruct:earth_slime_sapling").withChance(1.0),
+    ["minecraft:oak_sapling", Fluid.of("minecraft:milk", 1000)]
+  );
+  event.recipes.create.filling(
+    Item.of("tconstruct:sky_slime_sapling").withChance(1.0),
+    ["twilightforest:rainboak_sapling", Fluid.of("minecraft:milk", 1000)]
+  );
+  event.recipes.create.filling(
+    Item.of("tconstruct:ender_slime_sapling").withChance(1.0),
+    ["betterendforge:dragon_tree_sapling", Fluid.of("minecraft:milk", 1000)]
+  );
+
+  event.recipes.create.filling(
+    Item.of("tconstruct:earth_slime_dirt").withChance(1.0),
+    ["minecraft:dirt", Fluid.of("minecraft:milk", 1000)]
+  );
+  event.recipes.create.filling(
+    Item.of("tconstruct:sky_slime_dirt").withChance(1.0),
+    ["twilightforest:etched_nagastone_mossy", Fluid.of("minecraft:milk", 1000)]
+  );
+  event.recipes.create.filling(
+    Item.of("tconstruct:sky_slime_dirt").withChance(1.0),
+    ["twilightforest:nagastone_pillar_mossy", Fluid.of("minecraft:milk", 1000)]
+  );
+  event.recipes.create.filling(
+    Item.of("tconstruct:ender_slime_dirt").withChance(1.0),
+    ["minecraft:end_stone", Fluid.of("minecraft:milk", 1000)]
+  );
+  event.recipes.create.filling(
+    Item.of("tconstruct:ichor_slime_dirt").withChance(1.0),
+    ["minecraft:netherrack", Fluid.of("minecraft:milk", 1000)]
+  );
+
   event.recipes.create.deploying("create:creative_motor", [
     "create:furnace_engine",
     "immersiveengineering:capacitor_creative",
@@ -269,6 +300,11 @@ onEvent("recipes", (event) => {
   });
   altar("minecraft:dirt", "minecraft:granite")
     .altarSyphon(10)
+    .drainRate(10)
+    .consumptionRate(10);
+  altar("create:creative_fluid_tank", "create:fluid_tank")
+    .upgradeLevel(4)
+    .altarSyphon(1000000)
     .drainRate(10)
     .consumptionRate(10);
   altar("bloodmagic:activationcrystalweak", "tconstruct:seared_melter")
