@@ -13,7 +13,7 @@ onEvent("jei.hide.items", (event) => {
   exCompressumItems.forEach((exCompressumItem) => {
     const itemId = exCompressumItem.getId();
     if (!itemId.contains("bait")) {
-      event.hide(itemId);
+      event.hide(Item.of(itemId).ignoreNBT());
     }
   });
 });

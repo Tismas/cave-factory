@@ -1048,7 +1048,7 @@
 		{
 			x: -8.0d
 			y: 2.0d
-			description: ["We will need some kind of vessel to cantain fluids in it"]
+			description: ["We will need some kind of vessel to contain fluids in it"]
 			dependencies: ["5B9C05F62A007ACA"]
 			id: "63441E36C7195AC1"
 			tasks: [{
@@ -1237,7 +1237,7 @@
 			description: [
 				"By blowing air through lava you can smelt items very efficiently. It will burn food though - to cook more delicate stuff, blow air through fire."
 				""
-				"Also it can wash crushed ores when air blows through water. It'll yield more output than furnace"
+				"Also it can wash crushed ores when air blows through water. It'll yield more output than a furnace"
 			]
 			dependencies: ["6CC0325BEFA21C3A"]
 			id: "6F31CB43D28E66DB"

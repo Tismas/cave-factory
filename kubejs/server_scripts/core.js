@@ -137,7 +137,7 @@ onEvent("entity.spawned", (event) => {
 });
 
 onEvent("block.loot_tables", (event) => {
-  event.build("minecraft:stone", (table) => {
+  event.addBlock("minecraft:stone", (table) => {
     const stonePool = {
       type: "minecraft:group",
       conditions: [
@@ -169,7 +169,7 @@ onEvent("block.loot_tables", (event) => {
         weight: cobbleDrops[name],
       })),
     };
-    table.pool((pool) => {
+    table.addPool((pool) => {
       pool.rolls = 1;
       pool.survivesExplosion();
       pool.addEntry({
@@ -177,7 +177,7 @@ onEvent("block.loot_tables", (event) => {
         children: [stonePool, cobblePool],
       });
     });
-    table.pool((pool) => {
+    table.addPool((pool) => {
       pool.rolls = 1;
       pool.survivesExplosion();
       Object.keys(oreDrops).forEach((name) => {
