@@ -291,3 +291,8 @@
 		#Turns on/off a chance that the entity that wears backpack gets jukebox upgrade and plays a music disc.
 		playJukebox = true
 
+	#Stack Upgrade Settings
+	[common.stackUpgrade]
+		#List of items that are not supposed to stack in backpack even when stack upgrade is inserted. Item registry names are expected here.
+		nonStackableItems = []
+

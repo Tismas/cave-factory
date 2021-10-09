@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: May 15, 2021 3:29:21 PM
+To refresh this file, delete it and run /reload command again! Last updated: Oct 9, 2021 11:36:18 AM
 
 #tconstruct:crafting_station_blacklist
 - tconstruct:crafting_station
@@ -18,6 +18,7 @@ To refresh this file, delete it and run /reload command again! Last updated: May
 - immersiveengineering:blastfurnaceadvanced
 - immersiveengineering:alloysmelter
 - immersiveengineering:modworkbench
+- immersiveengineering:circuittable
 - immersiveengineering:watermill
 - immersiveengineering:razorwire
 - immersiveengineering:connectorstructural
@@ -63,6 +64,12 @@ To refresh this file, delete it and run /reload command again! Last updated: May
 - immersiveengineering:mv_relay
 - immersiveengineering:hv_conn
 - immersiveengineering:hv_relay
+- fluxnetworks:flux_plug
+- fluxnetworks:flux_point
+- fluxnetworks:flux_controller
+- fluxnetworks:basic_flux_storage
+- fluxnetworks:herculean_flux_storage
+- fluxnetworks:gargantuan_flux_storage
 
 #forge:immovable
 - immersiveengineering:balloon
@@ -71,6 +78,7 @@ To refresh this file, delete it and run /reload command again! Last updated: May
 - immersiveengineering:blastfurnaceadvanced
 - immersiveengineering:alloysmelter
 - immersiveengineering:modworkbench
+- immersiveengineering:circuittable
 - immersiveengineering:watermill
 - immersiveengineering:razorwire
 - immersiveengineering:connectorstructural
@@ -116,3 +124,9 @@ To refresh this file, delete it and run /reload command again! Last updated: May
 - immersiveengineering:mv_relay
 - immersiveengineering:hv_conn
 - immersiveengineering:hv_relay
+- fluxnetworks:flux_plug
+- fluxnetworks:flux_point
+- fluxnetworks:flux_controller
+- fluxnetworks:basic_flux_storage
+- fluxnetworks:herculean_flux_storage
+- fluxnetworks:gargantuan_flux_storage

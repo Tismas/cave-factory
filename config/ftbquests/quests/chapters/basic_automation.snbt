@@ -82,14 +82,13 @@
 				item: "minecraft:water_bucket"
 			}]
 			rewards: [{
-				id: "4B9CBD8C3CEE7F36"
+				id: "40B38B585747F05B"
 				type: "item"
 				item: {
-					id: "endertanks:ender_bucket"
+					id: "tanknull:tank_1"
 					Count: 1b
 					tag: {
-						owner: "all"
-						code: "000"
+						fluidinv: { }
 					}
 				}
 			}]
@@ -98,7 +97,11 @@
 			title: "Dig out pebbles"
 			x: -21.5d
 			y: -1.0d
-			description: ["Sneak right click on a stone block with an empty hand to get some pebbles"]
+			description: [
+				"Sneak right click on a stone block with an empty hand to get some pebbles"
+				""
+				"Make sure the quest to the left of this one is checked. Scroll to zoom in/out, you can also drag the screen aournd."
+			]
 			dependencies: ["061A729FEE740077"]
 			id: "32C7C71A34A9B34E"
 			tasks: [{
@@ -106,6 +109,11 @@
 				type: "item"
 				item: "botania:pebble"
 				count: 4L
+			}]
+			rewards: [{
+				id: "6C11FB1825B3D6B0"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -177,6 +185,8 @@
 				"Combine tool parts in the tinker station to create a pickaxe."
 				""
 				"I suggest using the reward to upgrade your pickaxe in the tinker station."
+				""
+				"You can exchange the head later without loosing the diamond modifier"
 			]
 			dependencies: ["7DB43AAD78BFDCCA"]
 			id: "0F1A826EBBBCF62A"
@@ -538,13 +548,20 @@
 			title: "Cut seared stone into bricks"
 			x: -15.5d
 			y: 3.5d
-			description: ["Main material in creating smeltery components"]
+			description: ["Main material for creating smeltery components"]
 			dependencies: ["3A44C74978569596"]
 			id: "10629E1FB3F75B96"
 			tasks: [{
 				id: "0208D1676D5D95BC"
 				type: "item"
 				item: "tconstruct:seared_brick"
+			}]
+			rewards: [{
+				id: "4904373B9D7FAD94"
+				type: "item"
+				item: "tconstruct:seared_bricks"
+				count: 4
+				random_bonus: 12
 			}]
 		}
 		{
@@ -584,7 +601,7 @@
 			title: "Time to get something to eat"
 			x: -14.0d
 			y: 2.0d
-			description: ["Throw dirt on the ground and wait around 15 seconds to get a random plants"]
+			description: ["Throw dirt on the ground and wait 15 seconds to get a random plant"]
 			dependencies: ["00776BA8447A22E1"]
 			id: "3827F00A3A367375"
 			tasks: [{
@@ -685,6 +702,12 @@
 				type: "item"
 				item: "minecraft:sand"
 			}]
+			rewards: [{
+				id: "6FBF263DDBCE5DE5"
+				type: "item"
+				item: "minecraft:glass"
+				random_bonus: 63
+			}]
 		}
 		{
 			title: "Tier 3"
@@ -751,7 +774,7 @@
 		{
 			title: "To the nether"
 			x: -8.0d
-			y: -1.0d
+			y: 0.5d
 			description: ["The nether has vanilla terrain generation. "]
 			dependencies: [
 				"6CC0325BEFA21C3A"
@@ -765,10 +788,10 @@
 				count: 10L
 			}]
 			rewards: [{
-				id: "14E5BA1EE41A40B6"
+				id: "7B8EDEDE272A90D8"
 				type: "item"
 				item: {
-					id: "minecraft:golden_boots"
+					id: "minecraft:golden_leggings"
 					Count: 1b
 					tag: {
 						Damage: 0
@@ -779,7 +802,7 @@
 		{
 			title: "Clearing some space"
 			x: -6.5d
-			y: 0.5d
+			y: 2.0d
 			shape: "diamond"
 			description: [
 				"This is a challenge. Using create make a machine that can dig space in front of it and keep moving forwards"
@@ -863,7 +886,7 @@
 		{
 			title: "Smelting in bulk"
 			x: -6.5d
-			y: -4.0d
+			y: -2.5d
 			description: ["Full version of smeltery requires lava to operate"]
 			dependencies: ["6CC0325BEFA21C3A"]
 			id: "0D7C514E1C1440B7"
@@ -878,17 +901,20 @@
 					type: "item"
 					item: "tconstruct:seared_basin"
 				}
-				{
-					id: "74EDD6A24FDB32E5"
-					type: "item"
-					item: "tconstruct:seared_fuel_tank"
-				}
 			]
 			rewards: [{
-				id: "5928993AEA55E855"
+				id: "6B9CB8A7237EDA1D"
 				type: "item"
-				item: "tconstruct:seared_bricks"
-				count: 9
+				item: {
+					id: "tconstruct:seared_fuel_tank"
+					Count: 1b
+					tag: {
+						tank: {
+							FluidName: "minecraft:lava"
+							Amount: 4000
+						}
+					}
+				}
 			}]
 		}
 		{
@@ -948,8 +974,12 @@
 		{
 			title: "Static automatic resource generation"
 			x: -5.0d
-			y: -2.5d
-			description: ["Basic cobble gen here can make a lot of recources"]
+			y: -1.0d
+			description: [
+				"Basic cobble gen here can make a lot of recources"
+				""
+				"You can use compacting machine to reduce cobble gen lag"
+			]
 			dependencies: ["36629C9E9B88196B"]
 			id: "27234BFE02A16A98"
 			tasks: [{
@@ -957,16 +987,31 @@
 				type: "item"
 				item: "engineersdecor:small_block_breaker"
 			}]
-			rewards: [{
-				id: "242A6F3EE3791DDF"
-				type: "item"
-				item: "minecraft:hopper"
-			}]
+			rewards: [
+				{
+					id: "0C8383B88C9AA81C"
+					type: "item"
+					item: "engineersdecor:factory_hopper"
+				}
+				{
+					id: "477F15119E085BC8"
+					type: "item"
+					item: "compactmachines:machine_large"
+				}
+				{
+					id: "78DBF43A0B29A42F"
+					type: "item"
+					item: "compactmachines:personal_shrinking_device"
+				}
+			]
 		}
 		{
 			x: -12.5d
 			y: 3.5d
-			description: ["Time to get some food"]
+			description: [
+				"Time to get some food"
+				"Fruit salad is pretty easy to get and gives a lot of saturation"
+			]
 			dependencies: ["3827F00A3A367375"]
 			id: "6B4E6817CD72EC1C"
 			tasks: [{
@@ -1046,7 +1091,7 @@
 			}]
 		}
 		{
-			x: -8.0d
+			x: -9.5d
 			y: 2.0d
 			description: ["We will need some kind of vessel to contain fluids in it"]
 			dependencies: ["5B9C05F62A007ACA"]
@@ -1055,6 +1100,12 @@
 				id: "302F408CCC0C1607"
 				type: "item"
 				item: "create:basin"
+			}]
+			rewards: [{
+				id: "4896B1FC881B2859"
+				type: "item"
+				item: "minecraft:cactus"
+				count: 2
 			}]
 		}
 		{
@@ -1113,6 +1164,11 @@
 				item: "create:mechanical_crafter"
 				count: 21L
 			}]
+			rewards: [{
+				id: "41A0513D8F571BD2"
+				type: "item"
+				item: "minecraft:barrel"
+			}]
 		}
 		{
 			x: -23.0d
@@ -1133,10 +1189,15 @@
 				type: "checkmark"
 				title: "Welcome!"
 			}]
+			rewards: [{
+				id: "4D26EC4828F1CB96"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
-			x: -9.5d
-			y: 2.0d
+			x: -11.0d
+			y: 0.5d
 			description: [
 				"Remember that you can hold 'W' with a cursor above most items from Create to see how they work"
 				""
@@ -1149,6 +1210,20 @@
 				type: "item"
 				item: "create:mechanical_mixer"
 			}]
+			rewards: [
+				{
+					id: "05095B27397F7169"
+					type: "item"
+					item: "create:cogwheel"
+					count: 8
+				}
+				{
+					id: "0E4A5C5BA76F44B1"
+					type: "item"
+					item: "create:large_cogwheel"
+					count: 8
+				}
+			]
 		}
 		{
 			x: -14.0d
@@ -1157,6 +1232,7 @@
 				"Used for crafting and to get blood into your blood network by placing it in the altar"
 				""
 				"Right click to bind it to yourself"
+				"It won't work unbound"
 			]
 			dependencies: ["5F97DEFC2F171248"]
 			id: "4A88E15C4EE1D69C"
@@ -1263,6 +1339,12 @@
 				type: "item"
 				item: "minecraft:coal"
 			}]
+			rewards: [{
+				id: "31D9402B688B8D74"
+				type: "item"
+				item: "tinycoal:tinycoal"
+				count: 64
+			}]
 		}
 		{
 			x: -10.5d
@@ -1282,7 +1364,7 @@
 		}
 		{
 			x: -5.0d
-			y: -1.0d
+			y: 0.5d
 			dependencies: ["36629C9E9B88196B"]
 			id: "1C1569085B97A270"
 			tasks: [{
@@ -1341,6 +1423,11 @@
 					item: "minecraft:slime_ball"
 				}
 			]
+			rewards: [{
+				id: "1A8C07E5350EAF35"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			x: -9.5d
@@ -1363,7 +1450,10 @@
 		{
 			x: -12.5d
 			y: 2.0d
-			description: ["Cactuses contain a lot of water... I've heard. Maybe we will be able to extract it using a mixer"]
+			description: [
+				"Cactuses contain a lot of water... I've heard. Maybe we will be able to extract it using a mixer"
+				"Throw dirt on the ground and wait 15 seconds to get a chance of creating the green stuff"
+			]
 			dependencies: ["00776BA8447A22E1"]
 			id: "5DAA0D10D64209E5"
 			tasks: [{
@@ -1371,10 +1461,17 @@
 				type: "item"
 				item: "minecraft:cactus"
 			}]
+			rewards: [{
+				id: "10D1B2CD6D0D2BD6"
+				type: "item"
+				item: "minecraft:sugar_cane"
+				count: 4
+				random_bonus: 4
+			}]
 		}
 		{
 			x: -11.0d
-			y: 2.0d
+			y: 3.5d
 			description: ["To make mixer we will need some iron plates. Mechanical press will make it possible"]
 			dependencies: ["5DAA0D10D64209E5"]
 			id: "768891E581B6597F"
@@ -1383,10 +1480,16 @@
 				type: "item"
 				item: "create:mechanical_press"
 			}]
+			rewards: [{
+				id: "3224E1EEFC42D12C"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 5
+			}]
 		}
 		{
 			x: -11.0d
-			y: 0.5d
+			y: 2.0d
 			description: ["Something to make plates on"]
 			dependencies: ["768891E581B6597F"]
 			id: "1D6A8A3D6F2E252B"
@@ -1394,6 +1497,12 @@
 				id: "11B1CEACD8E2AC30"
 				type: "item"
 				item: "create:depot"
+			}]
+			rewards: [{
+				id: "563628F2A6EC873D"
+				type: "item"
+				item: "create:andesite_casing"
+				count: 8
 			}]
 		}
 		{
@@ -1410,10 +1519,17 @@
 				type: "item"
 				item: "minecraft:grass_block"
 			}]
+			rewards: [{
+				id: "1B4BF782E3C7910C"
+				type: "item"
+				item: "minecraft:bone_meal"
+				count: 4
+				random_bonus: 12
+			}]
 		}
 		{
 			x: -6.5d
-			y: -1.0d
+			y: 0.5d
 			dependencies: ["251FE836D9C631D1"]
 			id: "36629C9E9B88196B"
 			tasks: [{
@@ -1421,10 +1537,26 @@
 				type: "item"
 				item: "minecraft:quartz"
 			}]
+			rewards: [
+				{
+					id: "491FD1CF9549259E"
+					type: "item"
+					item: "minecraft:soul_soil"
+					count: 4
+					random_bonus: 4
+				}
+				{
+					id: "4E01810339E12A55"
+					type: "item"
+					item: "minecraft:soul_sand"
+					count: 4
+					random_bonus: 4
+				}
+			]
 		}
 		{
 			x: -6.5d
-			y: -2.5d
+			y: -1.0d
 			description: [
 				"Easier way of controlling rotation speed. "
 				""
@@ -1445,7 +1577,7 @@
 		}
 		{
 			x: -8.0d
-			y: 0.5d
+			y: 2.0d
 			description: ["Witherproof block, might help you with killing withers"]
 			dependencies: ["251FE836D9C631D1"]
 			id: "45F69CCE06E7A18E"
@@ -1454,10 +1586,16 @@
 				type: "item"
 				item: "engineersdecor:panzerglass_block"
 			}]
+			rewards: [{
+				id: "59D13EDBDBDB85C3"
+				type: "item"
+				item: "minecraft:wither_skeleton_skull"
+			}]
 		}
 		{
 			x: -5.0d
-			y: -4.0d
+			y: -2.5d
+			description: ["Tinkers anvil will allow you to create more advanced tools (like a vein miner)"]
 			dependencies: ["0D7C514E1C1440B7"]
 			id: "1D13C3ED06095DF6"
 			tasks: [{

@@ -7,6 +7,7 @@ onEvent("recipes", (event) => {
   event.remove({ output: "extendedcrafting:the_ultimate_catalyst" });
   event.remove({ output: "rftoolsbase:machine_frame" });
   event.remove({ id: "immersiveengineering:blastfurnace/steel" });
+  event.remove({ id: "compactmachines:wall" });
 
   getItemsFromMod("excompressum").forEach((exCompressumItem) => {
     const itemId = exCompressumItem.getId();
@@ -40,6 +41,30 @@ onEvent("recipes", (event) => {
     {
       D: "minecraft:diamond_chestplate",
       E: "minecraft:emerald_block",
+    }
+  );
+  event.shaped(Item.of("minecraft:dragon_egg"), ["SSS", "SES", "SSS"], {
+    S: "bountifulbaubles:ender_dragon_scale",
+    E: "minecraft:egg",
+  });
+
+  event.shaped(
+    Item.of("ironjetpacks:creative_jetpack"),
+    ["NCN", "NJN", "U U"],
+    {
+      N: "minecraft:netherite_block",
+      C: "immersiveengineering:capacitor_creative",
+      J: "ironjetpacks:emerald_jetpack",
+      U: "extendedcrafting:the_ultimate_component",
+    }
+  );
+
+  event.shaped(
+    Item.of("compactmachines:wall").withCount(64),
+    ["CCC", "CSC", "CCC"],
+    {
+      C: "minecraft:coal_block",
+      S: "extendedcrafting:ultimate_singularity",
     }
   );
 
@@ -191,14 +216,8 @@ onEvent("recipes", (event) => {
     {
       U: "extendedcrafting:the_ultimate_component",
       F: Item.of("immersiveengineering:capacitor_hv", {
-        sideConfig_0: 0,
         ifluxEnergy: 4000000,
-        sideConfig_1: 0,
-        sideConfig_2: 0,
-        sideConfig_3: 0,
-        sideConfig_4: 0,
-        sideConfig_5: 0,
-      }),
+      }).weakNBT(),
     }
   );
   event.recipes.create.crushing(
@@ -266,6 +285,10 @@ onEvent("recipes", (event) => {
     Fluid.of("minecraft:water", 250),
     "minecraft:cactus"
   );
+  event.recipes.create.mixing("fluxnetworks:flux_dust", [
+    "minecraft:obsidian",
+    "minecraft:redstone",
+  ]);
   event.recipes.create
     .mixing(Item.of("tconstruct:creative_slot", '{slot:"abilities"}'), [
       "minecraft:nether_star",

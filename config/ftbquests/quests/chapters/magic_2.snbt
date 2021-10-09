@@ -1,0 +1,26 @@
+{
+	id: "22C36E34716D5B61"
+	group: ""
+	order_index: 2
+	filename: "magic_2"
+	title: "*Magic*"
+	icon: "bloodmagic:altar"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: -4.0d
+		y: -1.0d
+		id: "75CC762C50F44BD5"
+		tasks: [{
+			id: "441EB751C40C1AB9"
+			type: "item"
+			item: {
+				id: "bloodmagic:soulgempetty"
+				Count: 1b
+				tag: {
+					souls: 64.0d
+				}
+			}
+		}]
+	}]
+}

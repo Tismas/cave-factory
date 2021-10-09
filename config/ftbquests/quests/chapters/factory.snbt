@@ -11,13 +11,20 @@
 		{
 			x: -4.5d
 			y: -0.5d
-			description: ["Treated wood is used in many immersive engineering recipes. I suggest making a stack or few."]
+			description: ["Treated wood is used in many immersive engineering recipes. I suggest making a stack or a few."]
 			dependencies: ["3BF666A613E1C259"]
 			id: "7479F4E3E8E9D1A1"
 			tasks: [{
 				id: "1C87E10CC3E15CC1"
 				type: "item"
 				item: "immersiveengineering:treated_wood_horizontal"
+			}]
+			rewards: [{
+				id: "265C8E03C3AD4339"
+				type: "item"
+				item: "immersiveengineering:stick_treated"
+				count: 12
+				random_bonus: 12
 			}]
 		}
 		{
@@ -91,6 +98,11 @@
 				type: "item"
 				item: "immersiveengineering:watermill"
 			}]
+			rewards: [{
+				id: "763EFADB9F871085"
+				type: "item"
+				item: "immersiveengineering:thermoelectric_generator"
+			}]
 		}
 		{
 			x: -6.0d
@@ -128,6 +140,13 @@
 				id: "0ADC31CE022D9375"
 				type: "item"
 				item: "immersiveengineering:dynamo"
+			}]
+			rewards: [{
+				id: "21ADB3FB941BDBAD"
+				type: "item"
+				item: "immersiveengineering:wirecoil_copper"
+				count: 4
+				random_bonus: 4
 			}]
 		}
 		{
@@ -224,6 +243,11 @@
 					item: "immersiveengineering:heavy_engineering"
 				}
 			]
+			rewards: [{
+				id: "3EF8D2CB47B100B7"
+				type: "item"
+				item: "immersiveengineering:mold_wire"
+			}]
 		}
 		{
 			x: -3.0d
@@ -240,17 +264,34 @@
 				type: "item"
 				item: "immersiveengineering:ingot_steel"
 			}]
+			rewards: [{
+				id: "343C51CCA2260F95"
+				type: "item"
+				item: "immersiveengineering:component_steel"
+				count: 4
+				random_bonus: 8
+			}]
 		}
 		{
 			x: -3.0d
 			y: -3.5d
-			description: ["Same as coke oven"]
+			description: [
+				"Same as coke oven"
+				"Makes steel from iron"
+			]
 			id: "2F2FF6DAFDD2046F"
 			tasks: [{
 				id: "6A7EF75AF1B61C75"
 				type: "item"
 				item: "immersiveengineering:blastbrick"
 				count: 27L
+			}]
+			rewards: [{
+				id: "42D2FDE54B99283C"
+				type: "item"
+				item: "quark:magma_bricks"
+				count: 4
+				random_bonus: 8
 			}]
 		}
 		{
@@ -263,6 +304,17 @@
 				id: "6726495B7291DFD1"
 				type: "item"
 				item: "immersiveengineering:workbench"
+			}]
+			rewards: [{
+				id: "44F2DBB857FE7FDE"
+				type: "item"
+				item: {
+					id: "immersiveengineering:blueprint"
+					Count: 1b
+					tag: {
+						blueprint: "bullet"
+					}
+				}
 			}]
 		}
 		{
@@ -330,6 +382,21 @@
 					item: "immersiveengineering:rs_engineering"
 				}
 			]
+			rewards: [
+				{
+					id: "4F5264B1E2FB226A"
+					type: "item"
+					item: "minecraft:sand"
+					count: 16
+					random_bonus: 16
+				}
+				{
+					id: "7D2042B859713F5A"
+					type: "item"
+					item: "immersiveengineering:connector_hv"
+					count: 3
+				}
+			]
 		}
 		{
 			x: 4.5d
@@ -341,6 +408,11 @@
 				id: "5D909A4E04AA3E03"
 				type: "item"
 				item: "minecraft:end_stone"
+			}]
+			rewards: [{
+				id: "20011D87D89A9817"
+				type: "item"
+				item: "minecraft:ender_eye"
 			}]
 		}
 		{
@@ -354,6 +426,18 @@
 				type: "item"
 				item: "minecraft:end_portal_frame"
 				count: 12L
+			}]
+			rewards: [{
+				id: "1AD4AE639EF58F4F"
+				type: "item"
+				item: {
+					id: "minecraft:tipped_arrow"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:strong_harming"
+					}
+				}
+				count: 64
 			}]
 		}
 		{
@@ -404,6 +488,18 @@
 					item: "immersiveengineering:rs_engineering"
 				}
 			]
+			rewards: [
+				{
+					id: "307D4BABA3A7AF8A"
+					type: "item"
+					item: "immersivepetroleum:auto_lubricator"
+				}
+				{
+					id: "42FA9F92AC9515F0"
+					type: "item"
+					item: "immersivepetroleum:flarestack"
+				}
+			]
 		}
 		{
 			x: -1.5d
@@ -414,6 +510,12 @@
 				id: "3E621FE0F57B8FCB"
 				type: "item"
 				item: "immersivepetroleum:bitumen"
+			}]
+			rewards: [{
+				id: "2F22EB90B0ACDA68"
+				type: "item"
+				item: "immersiveengineering:slag"
+				count: 64
 			}]
 		}
 		{
@@ -426,6 +528,13 @@
 				id: "5E289DFD5505A230"
 				type: "item"
 				item: "immersivepetroleum:asphalt"
+			}]
+			rewards: [{
+				id: "5678FFF76AF1EE1D"
+				type: "item"
+				item: "immersiveengineering:concrete"
+				count: 8
+				random_bonus: 16
 			}]
 		}
 		{
@@ -445,11 +554,24 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "1A283ADB6AB4CB77"
+				type: "item"
+				item: "immersiveengineering:component_iron"
+				count: 4
+				random_bonus: 8
+			}]
 		}
 		{
 			x: 1.5d
 			y: -0.5d
-			description: ["Arc furnace needs 3 graphite electrodes to operate"]
+			description: [
+				"Arc furnace needs 3 graphite electrodes to operate"
+				""
+				"Use blueprint to craft electrode with full durability"
+				""
+				"You can also enchant them"
+			]
 			dependencies: [
 				"7C0E641120BB683D"
 				"1426BC3340042A83"
@@ -480,6 +602,21 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "68B5AC476FF18DF3"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 3s
+							id: "minecraft:unbreaking"
+						}]
+					}
+				}
+				count: 3
+			}]
 		}
 		{
 			x: -9.0d
@@ -511,6 +648,11 @@
 						]
 					}
 				}
+			}]
+			rewards: [{
+				id: "741E2A640863A993"
+				type: "item"
+				item: "immersiveengineering:fluid_sorter"
 			}]
 		}
 		{
@@ -545,6 +687,18 @@
 					}
 				}
 			}]
+			rewards: [
+				{
+					id: "31657CFAB1722591"
+					type: "item"
+					item: "minecraft:lever"
+				}
+				{
+					id: "467CBB02A890F773"
+					type: "item"
+					item: "create:cogwheel"
+				}
+			]
 		}
 		{
 			title: "Tank from create"
@@ -557,6 +711,11 @@
 				id: "50E4340200A1734A"
 				type: "item"
 				item: "create:fluid_tank"
+			}]
+			rewards: [{
+				id: "1774C24F479443F5"
+				type: "item"
+				item: "sophisticatedbackpacks:tank_upgrade"
 			}]
 		}
 		{
@@ -583,6 +742,11 @@
 					count: 4L
 				}
 			]
+			rewards: [{
+				id: "735F7144D27E8748"
+				type: "item"
+				item: "trashcans:liquid_trash_can"
+			}]
 		}
 		{
 			title: "Assembler"
@@ -637,32 +801,11 @@
 					count: 2L
 				}
 			]
-			rewards: [
-				{
-					id: "191AE11987B614F4"
-					type: "item"
-					item: {
-						id: "endertanks:ender_tank"
-						Count: 1b
-						tag: {
-							owner: "all"
-							code: "EEE"
-						}
-					}
-				}
-				{
-					id: "2A943DABCF5C6F11"
-					type: "item"
-					item: {
-						id: "endertanks:ender_bucket"
-						Count: 1b
-						tag: {
-							owner: "all"
-							code: "EEE"
-						}
-					}
-				}
-			]
+			rewards: [{
+				id: "374E0D432932B065"
+				type: "item"
+				item: "immersiveengineering:conveyor_extract"
+			}]
 		}
 		{
 			title: "Pumpjack"
@@ -672,6 +815,7 @@
 				"Pumpjack will allow you to aquire crude oil. Requires RF to operate"
 				""
 				"The projector can guide you on how to build this multiblock structure"
+				""
 			]
 			dependencies: ["7A8C2C713175BB4B"]
 			id: "0DBCF8BD514263E7"
@@ -724,6 +868,11 @@
 					count: 2L
 				}
 			]
+			rewards: [{
+				id: "618FE1FF410C232C"
+				type: "item"
+				item: "immersiveengineering:powerpack"
+			}]
 		}
 		{
 			x: -3.0d
@@ -754,13 +903,20 @@
 					item: "immersiveengineering:connector_lv_relay"
 				}
 			]
+			rewards: [{
+				id: "085FAEFCFC701336"
+				type: "item"
+				item: "immersiveengineering:hemp_fabric"
+				count: 8
+				random_bonus: 8
+			}]
 		}
 		{
 			title: "Squeezer"
 			x: -1.5d
 			y: -0.5d
 			description: [
-				"Squeezer can make graphite dust from coke dust and plant oil from plants/seeds"
+				"Squeezer can make HOP graphite dust from coke dust (8 to 1 ratio) and plant oil from plants/seeds"
 				""
 				"The projector can guide you on how to build this multiblock structure"
 			]
@@ -808,6 +964,13 @@
 					item: "minecraft:piston"
 				}
 			]
+			rewards: [{
+				id: "1ACF179C30007A03"
+				type: "item"
+				item: "minecraft:wheat_seeds"
+				count: 32
+				random_bonus: 32
+			}]
 		}
 		{
 			title: "Fermenter"
@@ -853,6 +1016,13 @@
 					item: "immersiveengineering:rs_engineering"
 				}
 			]
+			rewards: [{
+				id: "267D2BD1960A579B"
+				type: "item"
+				item: "minecraft:potato"
+				count: 4
+				random_bonus: 8
+			}]
 		}
 		{
 			title: "Refinery"
@@ -901,6 +1071,22 @@
 					item: "immersiveengineering:rs_engineering"
 				}
 			]
+			rewards: [
+				{
+					id: "52CD3F3337AC8806"
+					type: "item"
+					item: "immersiveengineering:connector_hv"
+					count: 2
+					random_bonus: 4
+				}
+				{
+					id: "79E7237964337B96"
+					type: "item"
+					item: "immersiveengineering:wirecoil_steel"
+					count: 2
+					random_bonus: 4
+				}
+			]
 		}
 		{
 			title: "Diesel generator"
@@ -946,6 +1132,18 @@
 					item: "immersiveengineering:rs_engineering"
 				}
 			]
+			rewards: [
+				{
+					id: "0AA9FD844932F122"
+					type: "item"
+					item: "immersiveengineering:capacitor_hv"
+				}
+				{
+					id: "084C5662AF15EA5E"
+					type: "item"
+					item: "immersiveengineering:transformer_hv"
+				}
+			]
 		}
 		{
 			x: 1.5d
@@ -963,6 +1161,18 @@
 				type: "item"
 				item: "botania:cocoon"
 			}]
+			rewards: [
+				{
+					id: "61C6E3135E8F51D0"
+					type: "item"
+					item: "minecraft:anvil"
+				}
+				{
+					id: "3E70A353269A3B27"
+					type: "item"
+					item: "minecraft:lectern"
+				}
+			]
 		}
 		{
 			x: 0.0d
@@ -970,7 +1180,10 @@
 			description: [
 				"You can use drill to detect resources in a given chunk"
 				""
-				"It requires power so here's a capacitor bank to make it easier to power it in different places"
+				"It requires power so here's a portable generator to make it easier to power it in different places"
+				""
+				"Right click it to drill core sample and when it's done right click to pop it off"
+				""
 				"You can place the sample on the ground for future reference by shift right clicking it"
 			]
 			dependencies: ["0DBCF8BD514263E7"]
@@ -981,21 +1194,9 @@
 				item: "immersiveengineering:sample_drill"
 			}]
 			rewards: [{
-				id: "5A90990CB25E7F5A"
+				id: "59DE1EAF11E754DD"
 				type: "item"
-				item: {
-					id: "immersiveengineering:capacitor_lv"
-					Count: 1b
-					tag: {
-						sideConfig_0: 0
-						ifluxEnergy: 100000
-						sideConfig_1: 1
-						sideConfig_2: 0
-						sideConfig_3: 0
-						sideConfig_4: 0
-						sideConfig_5: 0
-					}
-				}
+				item: "immersivepetroleum:gas_generator"
 			}]
 		}
 		{
@@ -1040,6 +1241,13 @@
 					count: 9L
 				}
 			]
+			rewards: [{
+				id: "764FD523A171F004"
+				type: "item"
+				item: "immersiveengineering:dust_coke"
+				count: 2
+				random_bonus: 2
+			}]
 		}
 	]
 }

@@ -1,7 +1,7 @@
 {
 	id: "47E8D662EA1C9A5B"
 	group: ""
-	order_index: 5
+	order_index: 6
 	filename: "challenges"
 	title: "Challenges"
 	icon: "create:creative_motor"
@@ -4305,7 +4305,7 @@
 			x: -3.0d
 			y: 3.0d
 			shape: "diamond"
-			description: ["All of the capacitors need to be fully charged and have all sides disabled (due to technical limitations, sorry)"]
+			description: ["All of the capacitors need to be fully charged!"]
 			id: "6A208F68F2F71391"
 			tasks: [{
 				id: "07133A7608FE6586"
@@ -4333,6 +4333,24 @@
 				id: "7B0E60F397DF8F8E"
 				type: "item"
 				item: "extendedcrafting:compressor"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 4.5d
+			description: ["Creative flight at last"]
+			dependencies: ["6A208F68F2F71391"]
+			id: "388284C3B6B2502C"
+			tasks: [{
+				id: "0FAB7A62159B57FE"
+				type: "item"
+				item: {
+					id: "ironjetpacks:creative_jetpack"
+					Count: 1b
+					tag: {
+						Throttle: 1.0d
+					}
+				}
 			}]
 		}
 	]

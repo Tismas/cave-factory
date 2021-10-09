@@ -10,7 +10,7 @@
 	#Forge tags are supported
 	[general.lists]
 		#Basalt gen
-		block_list_basalt = ["minecraft:basalt|60", "minecraft:blackstone|60", "minecraft:netherrack|60", "minecraft:nether_quartz_ore|30", "minecraft:nether_gold_ore|30", "minecraft:ancient_debris|1"]
+		block_list_basalt = ["minecraft:basalt|60", "minecraft:blackstone|60", "minecraft:netherrack|60", "minecraft:nether_quartz_ore|30", "minecraft:nether_gold_ore|30", "minecraft:ancient_debris|1", "tconstruct:cobalt_ore|1"]
 		#Cobble gen
 		block_list_cobble = ["minecraft:cobblestone|50", "minecraft:stone|50"]
 		#Stone gen
@@ -29,5 +29,5 @@
 			#   ["cobblestone", "minecraft:diamond_block", ["minecraft:diamond_block"]],
 			#   ["cobblestone", "minecraft:dirt", ["forge:dirt"]],
 			#   ["cobblestone", "minecraft:white_wool", ["minecraft:wool"]]]
-			custom_generators = []
+			custom_generators = [["stone", "betterendforge:terminite_block", ["minecraft:end_stone|60", "minecraft:purpur_block|60", "quark:biotite_ore|10", "rftoolsbase:dimensionalshard_end|5", "betterendforge:thallasium_ore|2", "betterendforge:ender_ore|1", "betterendforge:aurora_crystal|1", "betterendforge:amber_ore|1"]]]
 

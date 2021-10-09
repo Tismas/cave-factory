@@ -169,7 +169,7 @@ onEvent("block.loot_tables", (event) => {
         weight: cobbleDrops[name],
       })),
     };
-    table.addPool((pool) => {
+    table.pool((pool) => {
       pool.rolls = 1;
       pool.survivesExplosion();
       pool.addEntry({
@@ -177,7 +177,7 @@ onEvent("block.loot_tables", (event) => {
         children: [stonePool, cobblePool],
       });
     });
-    table.addPool((pool) => {
+    table.pool((pool) => {
       pool.rolls = 1;
       pool.survivesExplosion();
       Object.keys(oreDrops).forEach((name) => {
