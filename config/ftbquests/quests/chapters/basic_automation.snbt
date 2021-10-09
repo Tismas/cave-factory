@@ -416,7 +416,9 @@
 			description: [
 				"You will need to upgrade altar to at least tier III to get some lava."
 				""
-				"You can preview what this structure looks like in sanguine scientiem. Use rewards from this quest to upgrade the spawner (right click on it with them in hand)"
+				"You can preview what this structure looks like in sanguine scientiem. "
+				""
+				"Use rewards from this quest to upgrade the spawner (right click on it with them in hand)"
 			]
 			dependencies: ["4A88E15C4EE1D69C"]
 			id: "65D9548ADD45ED8E"
@@ -730,11 +732,25 @@
 					count: 4L
 				}
 			]
-			rewards: [{
-				id: "743B46D29372A36D"
-				type: "item"
-				item: "minecraft:gold_block"
-			}]
+			rewards: [
+				{
+					id: "743B46D29372A36D"
+					type: "item"
+					item: "minecraft:gold_block"
+				}
+				{
+					id: "64D1EDAC8DE763B4"
+					type: "item"
+					item: "minecraft:sugar"
+					count: 5
+				}
+				{
+					id: "3D47DC0929470F13"
+					type: "item"
+					item: "minecraft:clock"
+					count: 5
+				}
+			]
 		}
 		{
 			title: "First ritual - serenade of the nether"
@@ -1233,6 +1249,8 @@
 				""
 				"Right click to bind it to yourself"
 				"It won't work unbound"
+				""
+				"Use rewards from this quest to upgrade the spawner (right click on it with them in hand)"
 			]
 			dependencies: ["5F97DEFC2F171248"]
 			id: "4A88E15C4EE1D69C"
@@ -1241,17 +1259,20 @@
 				type: "item"
 				item: "bloodmagic:weakbloodorb"
 			}]
-			rewards: [{
-				id: "2847F085C3E2FFCF"
-				type: "item"
-				item: {
-					id: "bloodmagic:basemonstersoul"
-					Count: 1b
-					tag: {
-						souls: 5.0d
-					}
+			rewards: [
+				{
+					id: "5CF2390A38AE02A0"
+					type: "item"
+					item: "minecraft:sugar"
+					count: 5
 				}
-			}]
+				{
+					id: "1DE0FCFD4261961D"
+					type: "item"
+					item: "minecraft:clock"
+					count: 5
+				}
+			]
 		}
 		{
 			x: -14.0d

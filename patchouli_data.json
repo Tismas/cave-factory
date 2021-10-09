@@ -16,23 +16,27 @@
         "bloodmagic:rituals/ritual_list/ritual_water",
         "bloodmagic:altar/blood_altar",
         "bloodmagic:rituals/ritual_list/ritual_lava",
-        "bloodmagic:altar/blood_rune/capacity_rune"
+        "bloodmagic:altar/blood_rune/capacity_rune",
+        "bloodmagic:altar/slates",
+        "bloodmagic:rituals/ritual_list/ritual_simple_dungeon",
+        "bloodmagic:rituals/ritual_list/ritual_well_of_suffering",
+        "bloodmagic:alchemy_array/sigil/seer"
       ],
       "bookmarks": [],
       "history": [
+        "bloodmagic:alchemy_array/sigil/seer",
+        "bloodmagic:altar/blood_altar",
+        "bloodmagic:rituals/ritual_list/ritual_crystal_harvest",
+        "bloodmagic:rituals/ritual_list/ritual_crystal_split",
+        "bloodmagic:rituals/ritual_list/ritual_well_of_suffering",
+        "bloodmagic:rituals/ritual_list/ritual_simple_dungeon",
+        "bloodmagic:altar/slates",
         "bloodmagic:altar/blood_rune/capacity_rune",
         "bloodmagic:rituals/ritual_list/ritual_lava",
         "bloodmagic:rituals/ritual_list/ritual_water",
-        "bloodmagic:altar/blood_altar",
         "bloodmagic:rituals/ritual_list/ritual_feathered_knife",
         "bloodmagic:rituals/ritual_list/ritual_crushing",
-        "bloodmagic:rituals/ritual_list/ritual_regeneration",
-        "bloodmagic:rituals/ritual_list/ritual_magnetic",
-        "bloodmagic:rituals/ritual_list/ritual_armour_evolve",
-        "bloodmagic:rituals/ritual_list/ritual_crystal_split",
-        "bloodmagic:rituals/ritual_list/ritual_ellipse",
-        "bloodmagic:rituals/ritual_list/ritual_crystal_harvest",
-        "bloodmagic:rituals/ritual_list/ritual_harvest"
+        "bloodmagic:rituals/ritual_list/ritual_regeneration"
       ],
       "completedManualQuests": []
     },

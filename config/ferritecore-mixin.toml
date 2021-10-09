@@ -16,4 +16,6 @@ populateNeighborTable = false
 replacePropertyMap = true
 #Deduplicate vertex data of baked quads in the basic model implementations
 bakedQuadDeduplication = true
+#Do not keep already-parsed NBT data for partially loaded chunks in memory
+reducedChunkNBT = true
 

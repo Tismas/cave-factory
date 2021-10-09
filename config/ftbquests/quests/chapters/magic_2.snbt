@@ -7,20 +7,634 @@
 	icon: "bloodmagic:altar"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [{
-		x: -4.0d
-		y: -1.0d
-		id: "75CC762C50F44BD5"
-		tasks: [{
-			id: "441EB751C40C1AB9"
-			type: "item"
-			item: {
-				id: "bloodmagic:soulgempetty"
-				Count: 1b
-				tag: {
-					souls: 64.0d
+	quests: [
+		{
+			x: -4.0d
+			y: -1.0d
+			description: ["Storage for demonic will"]
+			dependencies: [
+				"25C69540ADE51B28"
+				"31C1A8FF5ACF02EC"
+			]
+			id: "75CC762C50F44BD5"
+			tasks: [{
+				id: "441EB751C40C1AB9"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgempetty"
+					Count: 1b
+					tag: {
+						souls: 64.0d
+					}
 				}
-			}
-		}]
-	}]
+			}]
+			rewards: [{
+				id: "5A00487269D722D3"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgempetty"
+					Count: 1b
+					tag: {
+						souls: 0.0d
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.0d
+			description: ["If you kill mobs with this sword they will drop demonic will."]
+			dependencies: ["75CC762C50F44BD5"]
+			id: "7714B77E954B998E"
+			tasks: [{
+				id: "739D938640435462"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulsword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "2DD5B27E7705EC09"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 3s
+							id: "minecraft:looting"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.0d
+			description: ["More demonic will storage"]
+			dependencies: ["7714B77E954B998E"]
+			id: "605C2673C94C4172"
+			tasks: [{
+				id: "2E3D97BE02E2F086"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgemlesser"
+					Count: 1b
+					tag: {
+						souls: 256.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "0901DEAAEABBDB16"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 3s
+							id: "minecraft:sweeping"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.0d
+			description: ["This tier unlocks some interesting recipes"]
+			dependencies: ["605C2673C94C4172"]
+			id: "18763E4B91ED7A23"
+			tasks: [{
+				id: "1FC1DBE9D91AF7ED"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgemcommon"
+					Count: 1b
+					tag: {
+						souls: 1024.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "75ADC0DA0DEC31BD"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 5s
+							id: "minecraft:sharpness"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.5d
+			dependencies: [
+				"18763E4B91ED7A23"
+				"28A4A6177AAB5D7E"
+				"1702ED47EBA0CFA4"
+			]
+			id: "7B2D7EA234CC5D47"
+			tasks: [{
+				id: "38E72E52244A1AF6"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgemgreater"
+					Count: 1b
+					tag: {
+						souls: 4096.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "365762780F64108D"
+				type: "item"
+				item: "bloodmagic:dungeon_brick1"
+				count: 64
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.0d
+			dependencies: ["18763E4B91ED7A23"]
+			id: "35738704BD50248F"
+			tasks: [{
+				id: "1FD2A1046E333AF4"
+				type: "item"
+				item: "bloodmagic:demoncrystallizer"
+			}]
+			rewards: [{
+				id: "0DC63F4AEBE653F8"
+				type: "item"
+				item: "bloodmagic:demoncrucible"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -1.0d
+			description: ["Used to craft stuff that require demonic will"]
+			id: "31C1A8FF5ACF02EC"
+			tasks: [{
+				id: "561B3F091086EB34"
+				type: "item"
+				item: "bloodmagic:soulforge"
+			}]
+			rewards: [{
+				id: "4D4BA08E2282BD4D"
+				type: "item"
+				item: {
+					id: "minecraft:iron_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: -2.5d
+			description: ["Throw it into a mob and kill it to obtain some demonic will"]
+			id: "25C69540ADE51B28"
+			tasks: [{
+				id: "680908EBA091F329"
+				type: "item"
+				item: "bloodmagic:soulsnare"
+			}]
+			rewards: [{
+				id: "749027E4640A19A4"
+				type: "item"
+				item: "minecraft:string"
+				count: 16
+				random_bonus: 16
+			}]
+		}
+		{
+			title: "Time for some real rituals"
+			x: 2.0d
+			y: -4.0d
+			description: ["This diviner is used to construct and perform even more advanced rituals"]
+			dependencies: [
+				"4FBAB657D89F2EE2"
+				"5BA5516E758E8326"
+			]
+			id: "3DB11EDD8D5C06A6"
+			tasks: [{
+				id: "5FE40AC0FC59B45D"
+				type: "item"
+				item: "bloodmagic:ritualdivinerdusk"
+			}]
+			rewards: [{
+				id: "08D1CAD22E21058E"
+				type: "item"
+				item: "bloodmagic:ritualstone"
+				count: 10
+				random_bonus: 20
+			}]
+		}
+		{
+			x: -4.0d
+			y: -4.0d
+			description: [
+				"After right clicking the central piece you'll be transported to a room with 4 doors and a chest."
+				""
+				"If you're lucky there will be a key (or a few) in a chest which opens the doors. You can also craft it."
+				""
+				"In each room you'll find some loot, monsters, spawners and blocks from blood magic which you can harvest"
+				""
+				"Don't try to break the doors!!! - it won't generate the room, you must use the key. "
+			]
+			dependencies: ["6F46CDB0E279B8A6"]
+			id: "376ED6AD487D0ED9"
+			tasks: [{
+				id: "7627462A44794E39"
+				type: "item"
+				item: "bloodmagic:weak_tau"
+			}]
+			rewards: [{
+				id: "75DCFFF5C36EB1B8"
+				type: "item"
+				item: "minecraft:cow_spawn_egg"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -4.0d
+			description: [
+				"Tau fruit can be grown like any other crop. But if you grow it with a Mob (for example a cow) standing on it, every time the fruit hits the next growth stage it will leech life from the mob. Every time it does that it has 20% change of becoming saturated."
+				""
+				"Patience is your friend here."
+			]
+			dependencies: ["376ED6AD487D0ED9"]
+			id: "361F8BD21D7D0A5E"
+			tasks: [{
+				id: "2716413F789DD768"
+				type: "item"
+				item: "bloodmagic:strong_tau"
+			}]
+			rewards: [
+				{
+					id: "2AA49753ED935590"
+					type: "item"
+					item: "buildersaddition:iron_fence_rough"
+					count: 4
+				}
+				{
+					id: "2B30EA92D2FFA9A0"
+					type: "item"
+					item: "cfm:spruce_upgraded_fence"
+					count: 4
+				}
+				{
+					id: "3D7830D8239C0B4D"
+					type: "item"
+					item: "engineersdecor:steel_mesh_fence"
+					count: 4
+				}
+				{
+					id: "465C598AFB329242"
+					type: "item"
+					item: "bloodmagic:dungeon_brick_wall"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "Tier IV altar"
+			x: 0.5d
+			y: -4.0d
+			description: [
+				"At tier IV you can finally automate life essence!"
+				""
+				"Remember to upgrade your blank runes so that they're useful"
+			]
+			dependencies: ["28A4A6177AAB5D7E"]
+			id: "5BA5516E758E8326"
+			tasks: [
+				{
+					id: "1DC9252A41836DCE"
+					type: "item"
+					item: "bloodmagic:blankrune"
+					count: 28L
+				}
+				{
+					id: "1C1714B562747DA4"
+					type: "item"
+					item: "bloodmagic:largebloodstonebrick"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "71D890D6E22D84AE"
+				type: "item"
+				item: "create:redstone_link"
+				count: 2
+			}]
+		}
+		{
+			title: "The edge of a hidden realm"
+			x: -5.5d
+			y: -4.0d
+			description: [
+				"Required 80k LP in your blood network to activate"
+				""
+				"The Edge of the Hidden Realm Ritual will create a portal to the Blood Magic Dungeon."
+			]
+			id: "6F46CDB0E279B8A6"
+			tasks: [
+				{
+					id: "7F59A338ABE3580F"
+					type: "item"
+					item: "bloodmagic:ritualstone"
+					count: 36L
+				}
+				{
+					id: "2DA3F220CF92A134"
+					type: "item"
+					item: "bloodmagic:masterritualstone"
+				}
+			]
+			rewards: [{
+				id: "4E878D7E47E73E57"
+				type: "item"
+				item: "bloodmagic:simplekey"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.0d
+			description: ["Using alchemical reaction chamber, saturated tau fruit and a sanguaine reverter you can create weak blood shard which is required to create tier V altar."]
+			dependencies: [
+				"75033267177BDC0A"
+				"361F8BD21D7D0A5E"
+				"5457AAA22B599BC2"
+			]
+			id: "28A4A6177AAB5D7E"
+			tasks: [{
+				id: "1BF356C68801A18E"
+				type: "item"
+				item: "bloodmagic:weakbloodshard"
+			}]
+			rewards: [{
+				id: "6C57F5EEC26043B6"
+				type: "item"
+				item: "bloodmagic:lavacrystal"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.5d
+			dependencies: ["18763E4B91ED7A23"]
+			id: "75033267177BDC0A"
+			tasks: [{
+				id: "63B0CF29D4E6EE67"
+				type: "item"
+				item: {
+					id: "bloodmagic:sanguinereverter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "6DC117D34A3892F7"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 3s
+							id: "minecraft:unbreaking"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -5.5d
+			description: ["Can be used to recycle unused blood orbs and much more. Check JEI or other recipes."]
+			id: "5457AAA22B599BC2"
+			tasks: [{
+				id: "5769FF7FACD8715C"
+				type: "item"
+				item: "bloodmagic:alchemicalreactionchamber"
+			}]
+			rewards: [{
+				id: "6C81257A347041DE"
+				type: "item"
+				item: {
+					id: "bloodmagic:primitive_hydration_cell"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Well of suffering"
+			x: 3.5d
+			y: -4.0d
+			description: ["Drains life from nearby mobs and fills nearby blood altar with life essence."]
+			dependencies: ["3DB11EDD8D5C06A6"]
+			id: "59C730FCAA89075C"
+			tasks: [
+				{
+					id: "25338E12FEA72AA2"
+					type: "item"
+					item: "bloodmagic:masterritualstone"
+				}
+				{
+					id: "53E07012C3674DF4"
+					type: "item"
+					item: "bloodmagic:ritualstone"
+					count: 36L
+				}
+			]
+			rewards: [
+				{
+					id: "2813EAA6ABBA7729"
+					type: "item"
+					item: "minecraft:spawner"
+				}
+				{
+					id: "0EA29F3C0162EA40"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 5s
+								id: "apotheosis:capturing"
+							}]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "All the will"
+			x: 6.0d
+			y: -2.5d
+			shape: "diamond"
+			description: [
+				"Automate will crystals and fill 5 greater tartaric gems with all variants of will!"
+				""
+				"Look into Crack of the Fractured Crystal ritual and Resonance of the Faceted Crystal ritual"
+			]
+			id: "1B8AE3A3FD5607D1"
+			tasks: [{
+				id: "06B9BD72B47445EA"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Resonance of the Faceted Crystal"
+			x: 5.0d
+			y: -2.0d
+			dependencies: [
+				"3DB11EDD8D5C06A6"
+				"35738704BD50248F"
+			]
+			id: "299F6BBCAEA4F3D3"
+			tasks: [
+				{
+					id: "317743086C2F9375"
+					type: "item"
+					item: "bloodmagic:ritualstone"
+					count: 20L
+				}
+				{
+					id: "536D56DFB4E17283"
+					type: "item"
+					item: "bloodmagic:corrosivecrystal"
+				}
+				{
+					id: "4C4AAD1AD5E1FFBE"
+					type: "item"
+					item: "bloodmagic:vengefulcrystal"
+				}
+				{
+					id: "6CF016F65897A6CB"
+					type: "item"
+					item: "bloodmagic:destructivecrystal"
+				}
+				{
+					id: "5F1A8B8ADCE29097"
+					type: "item"
+					item: "bloodmagic:steadfastcrystal"
+				}
+				{
+					id: "70B6B5D733BA5EE6"
+					type: "item"
+					item: "bloodmagic:masterritualstone"
+				}
+			]
+			rewards: [
+				{
+					id: "7CF9022CE8A9FB12"
+					type: "item"
+					item: {
+						id: "bloodmagic:livingleggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2641C117B6ADCDC5"
+					type: "item"
+					item: {
+						id: "bloodmagic:livingboots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Crack of the Fractured Crystal "
+			x: 5.0d
+			y: -3.0d
+			dependencies: [
+				"35738704BD50248F"
+				"3DB11EDD8D5C06A6"
+			]
+			id: "56E6B89D456B3D14"
+			tasks: [
+				{
+					id: "6657FE944F773901"
+					type: "item"
+					item: "bloodmagic:ritualstone"
+					count: 44L
+				}
+				{
+					id: "568B73105AEA9564"
+					type: "item"
+					item: "bloodmagic:masterritualstone"
+				}
+			]
+			rewards: [
+				{
+					id: "4EB7F77F54043F61"
+					type: "item"
+					item: {
+						id: "bloodmagic:livinghelmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2264DD0960EF8CD0"
+					type: "item"
+					item: {
+						id: "bloodmagic:livingplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+							livingStats: {
+								maxPoints: 100
+								upgrades: [ ]
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -2.5d
+			dependencies: ["35738704BD50248F"]
+			id: "1702ED47EBA0CFA4"
+			tasks: [{
+				id: "6013E3DF53BFE990"
+				type: "item"
+				item: "bloodmagic:defaultcrystal"
+			}]
+			rewards: [{
+				id: "6E57E5AA595536F2"
+				type: "item"
+				item: "bloodmagic:demonwillgauge"
+			}]
+		}
+	]
 }
