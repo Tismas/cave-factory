@@ -1648,5 +1648,61 @@
 				count: 5
 			}]
 		}
+		{
+			title: "Time for some real rituals"
+			x: -9.5d
+			y: -4.0d
+			description: ["This diviner is used to construct and perform even more advanced rituals"]
+			dependencies: ["4FBAB657D89F2EE2"]
+			id: "3DB11EDD8D5C06A6"
+			tasks: [{
+				id: "5FE40AC0FC59B45D"
+				type: "item"
+				item: "bloodmagic:ritualdivinerdusk"
+			}]
+		}
+		{
+			x: -9.5d
+			y: -5.5d
+			description: [
+				"perform the Edge of the Hidden Realm Ritual to transport to the Blood Magic Dungeon Realm."
+				""
+				"Here you will find some nice loot like keys which can open the portals in the dungeon and even some fruit!"
+			]
+			dependencies: ["3DB11EDD8D5C06A6"]
+			id: "376ED6AD487D0ED9"
+			tasks: [{
+				id: "7627462A44794E39"
+				type: "item"
+				item: "bloodmagic:weak_tau"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -5.5d
+			description: [
+				"Tau fruit can be used to grow Tau Fruit like any other crop or if you grow it with a Mob (for example a cow) standing on it when the fruit hits the next growth stage it has a 20% chance to leech life from the mob and become saturated."
+				""
+				"Patience is your friend here."
+			]
+			dependencies: ["376ED6AD487D0ED9"]
+			id: "361F8BD21D7D0A5E"
+			tasks: [{
+				id: "2716413F789DD768"
+				type: "item"
+				item: "bloodmagic:strong_tau"
+			}]
+			rewards: [{
+				id: "0B6AD10475F66D16"
+				type: "item"
+				item: {
+					id: "bloodmagic:sanguinereverter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
 	]
 }
