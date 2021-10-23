@@ -98,11 +98,18 @@
 				type: "item"
 				item: "immersiveengineering:watermill"
 			}]
-			rewards: [{
-				id: "763EFADB9F871085"
-				type: "item"
-				item: "immersiveengineering:thermoelectric_generator"
-			}]
+			rewards: [
+				{
+					id: "763EFADB9F871085"
+					type: "item"
+					item: "immersiveengineering:thermoelectric_generator"
+				}
+				{
+					id: "38ACEB0197F8DA34"
+					type: "item"
+					item: "immersiveengineering:charging_station"
+				}
+			]
 		}
 		{
 			x: -6.0d
@@ -1247,6 +1254,71 @@
 				item: "immersiveengineering:dust_coke"
 				count: 2
 				random_bonus: 2
+			}]
+		}
+		{
+			title: "Highway"
+			x: 0.0d
+			y: 5.5d
+			shape: "diamond"
+			description: [
+				"Challenge"
+				""
+				"Use asphalt concrete on all your pathways to move between locations faster"
+			]
+			id: "09AA0A44DB68F7F1"
+			tasks: [{
+				id: "4215FB48A9858DCC"
+				type: "checkmark"
+				title: "Cover all your pathways with asphalt concrete"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 5.5d
+			shape: "diamond"
+			description: [
+				"Challenge"
+				""
+				"Create completly automatic sustainable steel setup"
+			]
+			id: "7D4DF3D1668E0875"
+			tasks: [{
+				id: "7718D8FEE63D7A7E"
+				type: "checkmark"
+				title: "Auto steel"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 5.5d
+			shape: "diamond"
+			description: [
+				"Challenge"
+				""
+				"Create a setup that can constatly supply diesel generator with enough fuel"
+			]
+			id: "6C1C542B51786F2F"
+			tasks: [{
+				id: "5E3CA202E4DFFC8C"
+				type: "checkmark"
+				title: "Diesel power"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 5.5d
+			shape: "diamond"
+			description: [
+				"Challenge"
+				""
+				"Supply arc furnace with enough power to run it constantly at full speed"
+			]
+			id: "3AD5604FD4EA3EA9"
+			tasks: [{
+				id: "71426A62D839E04E"
+				type: "checkmark"
+				title: "Arc furnace full speed"
 			}]
 		}
 	]

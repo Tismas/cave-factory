@@ -197,7 +197,7 @@ onEvent("item.tags", (event) => {
 });
 
 onEvent("entity.loot_tables", (event) => {
-  event.addEntity("minecraft:ender_dragon", (table) => {
+  event.modifyEntity("minecraft:ender_dragon", (table) => {
     table.addPool((pool) => {
       pool.rolls = 1;
       pool.addItem("minecraft:dragon_egg", 1);

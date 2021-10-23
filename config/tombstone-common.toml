@@ -36,7 +36,7 @@
 	#Allows to fill an existing grave instead of creating a new one [false/true|default:true]
 	allow_to_fill_existing_grave = true
 	#Whether to unlock access to a grave if the player has been killed by another player [false/true|default:true]
-	pvp_unlock_grave = true
+	pvp_unlock_grave = false
 	#Prevents death outside the borders of the world [false/true|default:true]
 	prevent_death_outside_world_border = true
 	#Prevents death outside the build height [false/true|default:false]
@@ -157,7 +157,7 @@
 
 #Allows to customize or disable the enchantments
 [enchantments]
-	#Restricts the effect of Shadow Step to players [false/true|default:false]
+	#Restricts the effect of Shadow Step to players [false/true|default:true]
 	restrict_shadow_step_to_player = true
 	#The wearer is also affected by the effect if his alignment is not bad [false/true|default:true]
 	nerf_plague_bringer = true

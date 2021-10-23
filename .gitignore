@@ -15,3 +15,7 @@ server_pack
 emojiful
 servers.dat
 servers.dat_old
+config/environmental/core/components/frames/frames.json
+config/environmental/core/components/modifiers/modifiers.json
+config/environmental/core/components/panels/panels.json
+config/environmental/tech/void_miner/void_miner.json

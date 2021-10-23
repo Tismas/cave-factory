@@ -1,7 +1,7 @@
 {
 	id: "009B29948DDFF001"
 	group: ""
-	order_index: 5
+	order_index: 6
 	filename: "magic"
 	title: "Exploration"
 	icon: "twilightforest:lich_trophy"
@@ -22,6 +22,12 @@
 				type: "item"
 				item: "minecraft:dragon_egg"
 			}]
+			rewards: [{
+				id: "5B46F04002C6F67B"
+				type: "item"
+				item: "minecraft:dandelion"
+				count: 8
+			}]
 		}
 		{
 			x: -2.5d
@@ -37,6 +43,11 @@
 				id: "7DE8484BEF3C9841"
 				type: "checkmark"
 				title: "Twilight forest biomes"
+			}]
+			rewards: [{
+				id: "14305ADF32F41D7F"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -54,6 +65,12 @@
 				type: "item"
 				item: "twilightforest:magic_map_empty"
 			}]
+			rewards: [{
+				id: "0B0A59F6CB4728B3"
+				type: "item"
+				item: "twilightforest:cooked_venison"
+				random_bonus: 7
+			}]
 		}
 		{
 			x: -2.5d
@@ -65,6 +82,13 @@
 				id: "731A6964C215FB97"
 				type: "item"
 				item: "twilightforest:naga_trophy"
+			}]
+			rewards: [{
+				id: "5DF0B549DC30004F"
+				type: "item"
+				item: "twilightforest:naga_scale"
+				count: 12
+				random_bonus: 12
 			}]
 		}
 		{
@@ -119,6 +143,13 @@
 				type: "item"
 				item: "twilightforest:yeti_trophy"
 			}]
+			rewards: [{
+				id: "2152D8DD7B029917"
+				type: "item"
+				item: "twilightforest:alpha_fur"
+				count: 12
+				random_bonus: 12
+			}]
 		}
 		{
 			x: -2.5d
@@ -135,6 +166,17 @@
 				type: "item"
 				item: "twilightforest:knight_phantom_trophy"
 			}]
+			rewards: [{
+				id: "27ED7DE21BE187B7"
+				type: "item"
+				item: {
+					id: "twilightforest:block_and_chain"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
 		}
 		{
 			x: -4.0d
@@ -146,6 +188,11 @@
 				id: "536CD3496A3FADA4"
 				type: "item"
 				item: "twilightforest:minoshroom_trophy"
+			}]
+			rewards: [{
+				id: "1D23AFA08E4B3E9E"
+				type: "item"
+				item: "twilightforest:maze_slime_spawn_egg"
 			}]
 		}
 		{
@@ -161,6 +208,12 @@
 				id: "6CE72D2005A7FB2A"
 				type: "item"
 				item: "twilightforest:ur_ghast_trophy"
+			}]
+			rewards: [{
+				id: "53C404A202D6CF80"
+				type: "item"
+				item: "twilightforest:fiery_tears"
+				random_bonus: 11
 			}]
 		}
 		{
@@ -178,6 +231,20 @@
 				type: "item"
 				item: "twilightforest:snow_queen_trophy"
 			}]
+			rewards: [{
+				id: "3AB94F7A8AA53CA8"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 5s
+							id: "minecraft:power"
+						}]
+					}
+				}
+			}]
 		}
 		{
 			x: -4.0d
@@ -194,16 +261,28 @@
 				type: "item"
 				item: "twilightforest:hydra_trophy"
 			}]
+			rewards: [{
+				id: "4274B6C95EC67CED"
+				type: "item"
+				item: "twilightforest:fiery_blood"
+				random_bonus: 11
+			}]
 		}
 		{
 			x: -5.5d
 			y: 7.0d
-			description: ["Can be found in the chests in the maze"]
+			description: ["Can be found in the chests in the minoshroom maze"]
 			id: "5ADD305DB64F6F9A"
 			tasks: [{
 				id: "69BDED1C2E890C18"
 				type: "item"
 				item: "twilightforest:maze_map_focus"
+			}]
+			rewards: [{
+				id: "2DD87A31CC6CC532"
+				type: "item"
+				item: "minecraft:paper"
+				count: 8
 			}]
 		}
 		{
@@ -217,11 +296,20 @@
 				type: "item"
 				item: "twilightforest:maze_map_empty"
 			}]
+			rewards: [{
+				id: "72A3BBE95E4A1F9A"
+				type: "item"
+				item: "twilightforest:maze_map_focus"
+				count: 4
+			}]
 		}
 		{
 			x: -8.5d
 			y: 7.0d
+			shape: "diamond"
 			description: [
+				"Challenge"
+				""
 				"Can be found in the secret room which is easiest to find using the maze map"
 				""
 				"You'll need to break in but be carefull - the whole place is gonna blow up if you mess up"
@@ -255,6 +343,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "647F34AF5DE10B9C"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			x: -2.5d
@@ -284,6 +377,13 @@
 					item: "twilightforest:uberous_soil"
 				}
 			]
+			rewards: [{
+				id: "77DC90BE16CE2974"
+				type: "item"
+				item: "twilightforest:unripe_trollber"
+				count: 32
+				random_bonus: 32
+			}]
 		}
 		{
 			x: -2.5d
@@ -296,6 +396,17 @@
 				type: "item"
 				item: {
 					id: "twilightforest:giant_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "234044675F9BA96D"
+				type: "item"
+				item: {
+					id: "twilightforest:giant_sword"
 					Count: 1b
 					tag: {
 						Damage: 0
@@ -320,6 +431,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "1B0CC3A3AABB1B9E"
+				type: "item"
+				item: "create:brass_casing"
+			}]
 		}
 		{
 			x: -1.0d
@@ -332,11 +448,19 @@
 				type: "item"
 				item: "twilightforest:castle_brick"
 			}]
+			rewards: [{
+				id: "00CABE8545B6C055"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
 			x: -3.5d
 			y: 3.5d
-			description: ["Good old shulker box to help you with inventory management out there"]
+			description: [
+				"Good old shulker box to help you with inventory management out there"
+				"As well as a backpack"
+			]
 			dependencies: ["50392595761FE917"]
 			id: "5E4E884076BFD4F9"
 			tasks: [{
@@ -344,11 +468,18 @@
 				type: "checkmark"
 				title: "Inventory management"
 			}]
-			rewards: [{
-				id: "3F0A830414A00C09"
-				type: "item"
-				item: "minecraft:shulker_box"
-			}]
+			rewards: [
+				{
+					id: "3F0A830414A00C09"
+					type: "item"
+					item: "minecraft:shulker_box"
+				}
+				{
+					id: "1DDE93BE626DE401"
+					type: "item"
+					item: "sophisticatedbackpacks:backpack"
+				}
+			]
 		}
 	]
 }

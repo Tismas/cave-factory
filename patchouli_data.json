@@ -51,12 +51,12 @@
       ],
       "bookmarks": [],
       "history": [
+        "storagenetwork:exchange",
         "storagenetwork:filter_kabel",
         "storagenetwork:storage_kabel",
         "storagenetwork:gs_chunks",
         "storagenetwork:gs_priority",
-        "storagenetwork:collector",
-        "storagenetwork:exchange"
+        "storagenetwork:collector"
       ],
       "completedManualQuests": []
     }

@@ -1,7 +1,7 @@
 {
 	id: "22C36E34716D5B61"
 	group: ""
-	order_index: 2
+	order_index: 3
 	filename: "magic_2"
 	title: "*Magic*"
 	icon: "bloodmagic:altar"
@@ -373,7 +373,7 @@
 		{
 			x: -1.0d
 			y: -4.0d
-			description: ["Using alchemical reaction chamber, saturated tau fruit and a sanguaine reverter you can create weak blood shard which is required to create tier V altar."]
+			description: ["Using alchemical reaction chamber, saturated tau fruit and a sanguine reverter you can create weak blood shard which is required to create tier V altar."]
 			dependencies: [
 				"75033267177BDC0A"
 				"361F8BD21D7D0A5E"
@@ -492,6 +492,8 @@
 			y: -2.5d
 			shape: "diamond"
 			description: [
+				"Challenge"
+				""
 				"Automate will crystals and fill 5 greater tartaric gems with all variants of will!"
 				""
 				"Look into Crack of the Fractured Crystal ritual and Resonance of the Faceted Crystal ritual"
@@ -634,6 +636,24 @@
 				id: "6E57E5AA595536F2"
 				type: "item"
 				item: "bloodmagic:demonwillgauge"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -5.5d
+			shape: "diamond"
+			description: [
+				"Challenge"
+				""
+				"Now that you have automated blood - automate all slates"
+				""
+				"Extra points: use blood magic routing nodes for that automation"
+			]
+			id: "0EE02A8D5D07FBC8"
+			tasks: [{
+				id: "746327FAB4223136"
+				type: "checkmark"
+				title: "All the slates"
 			}]
 		}
 	]

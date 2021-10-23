@@ -1,7 +1,7 @@
 {
 	id: "7770694E3E85F0A3"
 	group: ""
-	order_index: 3
+	order_index: 4
 	filename: "storage"
 	title: "Storage"
 	icon: "refinedstorage:controller"
@@ -20,15 +20,9 @@
 				item: "storagenetwork:master"
 			}]
 			rewards: [{
-				id: "64E403B0F546BFA8"
+				id: "2F1A792A01AE30AA"
 				type: "item"
-				item: {
-					id: "patchouli:guide_book"
-					Count: 1b
-					tag: {
-						"patchouli:book": "storagenetwork:network_book"
-					}
-				}
+				item: "storagedrawers:compacting_drawers_3"
 			}]
 		}
 		{
@@ -59,6 +53,17 @@
 				type: "item"
 				item: "storagenetwork:kabel"
 			}]
+			rewards: [{
+				id: "2FD85588A8D85F98"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "storagenetwork:network_book"
+					}
+				}
+			}]
 		}
 		{
 			x: -0.5d
@@ -77,6 +82,11 @@
 				type: "item"
 				item: "storagenetwork:storage_kabel"
 			}]
+			rewards: [{
+				id: "175FE7BE88DCC486"
+				type: "item"
+				item: "ironchest:obsidian_chest"
+			}]
 		}
 		{
 			x: -2.5d
@@ -88,6 +98,12 @@
 				id: "56623C868AE484DC"
 				type: "item"
 				item: "storagenetwork:import_kabel"
+			}]
+			rewards: [{
+				id: "0AC6FFA1629CC9FF"
+				type: "item"
+				item: "storagedrawers:emerald_storage_upgrade"
+				count: 4
 			}]
 		}
 		{
@@ -104,6 +120,12 @@
 				type: "item"
 				item: "storagenetwork:import_filter_kabel"
 			}]
+			rewards: [{
+				id: "774E5CEB671ABBB8"
+				type: "item"
+				item: "storagedrawers:void_upgrade"
+				count: 4
+			}]
 		}
 		{
 			x: -1.5d
@@ -115,6 +137,11 @@
 				id: "1F6E01A7CDC9258F"
 				type: "item"
 				item: "storagenetwork:filter_kabel"
+			}]
+			rewards: [{
+				id: "70B68195209B9977"
+				type: "item"
+				item: "create:adjustable_crate"
 			}]
 		}
 		{
@@ -128,6 +155,11 @@
 				type: "item"
 				item: "storagenetwork:export_kabel"
 			}]
+			rewards: [{
+				id: "7EDC265372F4D8A9"
+				type: "item"
+				item: "ironfurnaces:diamond_furnace"
+			}]
 		}
 		{
 			x: -0.5d
@@ -139,6 +171,11 @@
 				id: "07691036FB589372"
 				type: "item"
 				item: "storagenetwork:inventory"
+			}]
+			rewards: [{
+				id: "43C635913C6F013C"
+				type: "item"
+				item: "storagenetwork:stack_upgrade"
 			}]
 		}
 		{
@@ -156,16 +193,36 @@
 				type: "item"
 				item: "storagenetwork:crafting_remote"
 			}]
+			rewards: [
+				{
+					id: "16B62BC79F1BB9D3"
+					type: "item"
+					item: "minecraft:lapis_lazuli"
+					count: 16
+				}
+				{
+					id: "200F7D571874E9E7"
+					type: "item"
+					item: "minecraft:quartz"
+					count: 16
+				}
+			]
 		}
 		{
 			x: 0.5d
 			y: 2.0d
+			description: ["Interface for use with other machines and mods. For example you can point a hopper into it to insert items into the network"]
 			dependencies: ["1559CD058FE960AB"]
 			id: "09828B6A756871F1"
 			tasks: [{
 				id: "57389192C561FC2F"
 				type: "item"
 				item: "storagenetwork:exchange"
+			}]
+			rewards: [{
+				id: "406EE9ABC6357D62"
+				type: "item"
+				item: "storagenetwork:speed_upgrade"
 			}]
 		}
 		{
@@ -179,10 +236,27 @@
 				type: "item"
 				item: "refinedstorage:controller"
 			}]
+			rewards: [
+				{
+					id: "60BFBDDB3D4365B5"
+					type: "item"
+					item: "fluxnetworks:flux_point"
+				}
+				{
+					id: "2EE2A9085E8120CE"
+					type: "item"
+					item: "refinedstorage:wrench"
+				}
+			]
 		}
 		{
 			x: 3.0d
 			y: 0.0d
+			description: [
+				"Allows you to access refined storage network wirelessly"
+				""
+				"You need a transmitter tho and the range will be limited..."
+			]
 			dependencies: ["41C31AEB1B2335E9"]
 			id: "04DACCF7F7F4160D"
 			tasks: [{
@@ -245,16 +319,29 @@
 				type: "item"
 				item: "refinedstorage:external_storage"
 			}]
+			rewards: [{
+				id: "54064819DC36AD67"
+				type: "item"
+				item: "storagedrawers:controller_slave"
+			}]
 		}
 		{
 			x: 0.5d
 			y: -2.0d
+			description: ["Connect stuff together with these cables"]
 			dependencies: ["2C7B833F8745ADC7"]
 			id: "529728253F4D11EE"
 			tasks: [{
 				id: "532E467562C6BBD2"
 				type: "item"
 				item: "refinedstorage:cable"
+			}]
+			rewards: [{
+				id: "53A66E63B436EF5C"
+				type: "item"
+				item: "minecraft:quartz"
+				count: 32
+				random_bonus: 32
 			}]
 		}
 		{
@@ -281,6 +368,7 @@
 		{
 			x: 4.5d
 			y: 0.0d
+			description: ["... but it's range can be expanded using these"]
 			dependencies: ["04DACCF7F7F4160D"]
 			id: "7FB4143AD7DC9661"
 			tasks: [{
@@ -288,10 +376,17 @@
 				type: "item"
 				item: "refinedstorage:range_upgrade"
 			}]
+			rewards: [{
+				id: "6520D3575651AF8A"
+				type: "item"
+				item: "refinedstorage:range_upgrade"
+				count: 3
+			}]
 		}
 		{
 			x: 6.0d
 			y: 0.0d
+			subtitle: "Infinite range, across dimensions, doesn't require power"
 			dependencies: ["7FB4143AD7DC9661"]
 			id: "5E8CB2CDC5542FBF"
 			tasks: [{
@@ -299,9 +394,14 @@
 				type: "item"
 				item: "creativewirelesstransmitter:creative_wireless_transmitter"
 			}]
+			rewards: [{
+				id: "6B3F1BDD31224BD5"
+				type: "item"
+				item: "refinedstorage:creative_controller"
+			}]
 		}
 		{
-			x: 0.0d
+			x: 1.5d
 			y: 5.0d
 			description: [
 				"If facing air it will craft stuff like in crafting table"
@@ -316,6 +416,11 @@
 				type: "item"
 				item: "refinedstorage:crafter"
 			}]
+			rewards: [{
+				id: "757CA8FD03A52149"
+				type: "item"
+				item: "rsrequestify:requester"
+			}]
 		}
 		{
 			x: -3.0d
@@ -328,10 +433,15 @@
 				type: "item"
 				item: "refinedstorage:crafting_monitor"
 			}]
+			rewards: [{
+				id: "107F7695214E8DEC"
+				type: "item"
+				item: "refinedstorage:crafting_upgrade"
+			}]
 		}
 		{
 			x: 0.0d
-			y: 3.5d
+			y: 5.0d
 			description: ["Let's you encode patterns to teach crafters how to make stuff"]
 			dependencies: ["1FA9E95EABA9EFBB"]
 			id: "6A34F3507E2BC1E7"
@@ -339,6 +449,12 @@
 				id: "3EDB8E473EBB738B"
 				type: "item"
 				item: "refinedstorage:pattern_grid"
+			}]
+			rewards: [{
+				id: "2B58C740CD9C9251"
+				type: "item"
+				item: "refinedstorage:pattern"
+				count: 64
 			}]
 		}
 		{
@@ -352,10 +468,16 @@
 				type: "item"
 				item: "refinedstorage:fluid_grid"
 			}]
+			rewards: [{
+				id: "1A0527010541F74C"
+				type: "item"
+				item: "refinedstorage:regulator_upgrade"
+			}]
 		}
 		{
 			x: 1.5d
-			y: 5.0d
+			y: 6.5d
+			description: ["More storage for patterns"]
 			dependencies: ["10018C7CB70CCD13"]
 			id: "62CA82AD6284E148"
 			tasks: [{
@@ -363,10 +485,17 @@
 				type: "item"
 				item: "extrastorage:iron_crafter"
 			}]
+			rewards: [{
+				id: "5B0EFC9DDB4C87E0"
+				type: "item"
+				item: "refinedstorage:basic_processor"
+				random_bonus: 63
+			}]
 		}
 		{
-			x: 1.5d
+			x: 0.0d
 			y: 6.5d
+			description: ["Faster and more storage"]
 			dependencies: ["62CA82AD6284E148"]
 			id: "3BBA18154F1BB078"
 			tasks: [{
@@ -374,10 +503,17 @@
 				type: "item"
 				item: "extrastorage:gold_crafter"
 			}]
+			rewards: [{
+				id: "322513AF17992EF5"
+				type: "item"
+				item: "refinedstorage:improved_processor"
+				random_bonus: 63
+			}]
 		}
 		{
 			x: 0.0d
-			y: 6.5d
+			y: 8.0d
+			description: ["Even faster and even more storage"]
 			dependencies: ["3BBA18154F1BB078"]
 			id: "6EB0C5EB1129CC72"
 			tasks: [{
@@ -385,10 +521,17 @@
 				type: "item"
 				item: "extrastorage:diamond_crafter"
 			}]
+			rewards: [{
+				id: "12C8122344CBD049"
+				type: "item"
+				item: "refinedstorage:advanced_processor"
+				random_bonus: 63
+			}]
 		}
 		{
-			x: 0.0d
+			x: 1.5d
 			y: 8.0d
+			description: ["Ultimate crafter, 81 slots and 125 faster than a regular crafter"]
 			dependencies: ["6EB0C5EB1129CC72"]
 			id: "0EEB6C622AF422F6"
 			tasks: [{
@@ -396,10 +539,35 @@
 				type: "item"
 				item: "extrastorage:netherite_crafter"
 			}]
+			rewards: [
+				{
+					id: "2993083252D711E3"
+					type: "item"
+					item: {
+						id: "bloodmagic:explosivepowder"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2140CB2B588687EC"
+					type: "item"
+					item: {
+						id: "bloodmagic:primitive_crystalline_resonator"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
 		}
 		{
 			x: -3.0d
 			y: 6.5d
+			description: ["Every part can used as a storage but if you upgrade it with 3 parts you'll get 4 times the storage space on the next tier part"]
 			dependencies: ["299918EF77320ED7"]
 			id: "42AE470668BFE67B"
 			tasks: [{
@@ -407,10 +575,17 @@
 				type: "item"
 				item: "refinedstorage:1k_storage_part"
 			}]
+			rewards: [{
+				id: "1090A3F2517304A7"
+				type: "item"
+				item: "refinedstorage:silicon"
+				random_bonus: 63
+			}]
 		}
 		{
 			x: -3.0d
 			y: 8.0d
+			description: ["It goes up to infinite storage part"]
 			dependencies: ["42AE470668BFE67B"]
 			id: "5B68E88293D36F52"
 			tasks: [{
@@ -418,10 +593,17 @@
 				type: "item"
 				item: "refinedstorage:4k_storage_part"
 			}]
+			rewards: [{
+				id: "5021ADE38E62A127"
+				type: "item"
+				item: "refinedstorage:processor_binding"
+				random_bonus: 63
+			}]
 		}
 		{
 			x: -1.5d
 			y: 8.0d
+			description: ["You can stop at any point"]
 			dependencies: ["5B68E88293D36F52"]
 			id: "002836B518E45017"
 			tasks: [{
@@ -429,10 +611,16 @@
 				type: "item"
 				item: "refinedstorage:16k_storage_part"
 			}]
+			rewards: [{
+				id: "6C6EF8962EC8682E"
+				type: "item"
+				item: "refinedstorage:silk_touch_upgrade"
+			}]
 		}
 		{
 			x: -1.5d
 			y: 9.5d
+			description: ["This one is pretty decent for beginning"]
 			dependencies: ["002836B518E45017"]
 			id: "6A829CECDA9FA74E"
 			tasks: [{
@@ -440,17 +628,77 @@
 				type: "item"
 				item: "refinedstorage:64k_storage_part"
 			}]
+			rewards: [{
+				id: "00B37EA77F4331EC"
+				type: "item"
+				item: "refinedstorage:white_detector"
+			}]
 		}
 		{
 			x: -1.5d
 			y: 6.5d
-			description: ["Combine with storage part to crate a storage disk"]
+			description: [
+				"Combine with storage part to crate a storage disk"
+				""
+				"You can also shift right click an empty disk to extract the part"
+			]
 			dependencies: ["299918EF77320ED7"]
 			id: "459077D26C8430B3"
 			tasks: [{
 				id: "45CE4222B85FF7D4"
 				type: "item"
 				item: "refinedstorage:storage_housing"
+			}]
+			rewards: [{
+				id: "2D2166DE0CE58FA9"
+				type: "item"
+				item: "refinedstorage:storage_monitor"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 9.5d
+			shape: "diamond"
+			description: [
+				"Challenge"
+				""
+				"Whenever you need to craft something - make a pattern for it. Automate every crafting recipe you need to use"
+			]
+			id: "023E7F6CE25C3A83"
+			tasks: [{
+				id: "7135EA8D9AB9F83B"
+				type: "checkmark"
+				title: "Never craft manually again"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.5d
+			description: [
+				"For large distances or across dimensions, these might be handy."
+				""
+				"Place a receiver in desired place and shift right click the card on it. Then place the transmitter connected to the network and insert a card into it. "
+				""
+				"Can be used to connect stuff in the compacting machine"
+			]
+			dependencies: ["1FA9E95EABA9EFBB"]
+			id: "243888F090D06C84"
+			tasks: [
+				{
+					id: "5BB5AC3AD65AC8E1"
+					type: "item"
+					item: "refinedstorage:network_transmitter"
+				}
+				{
+					id: "50E6920448E5BCA9"
+					type: "item"
+					item: "refinedstorage:network_receiver"
+				}
+			]
+			rewards: [{
+				id: "6A3B0566345B1B00"
+				type: "item"
+				item: "refinedstorage:network_card"
 			}]
 		}
 	]

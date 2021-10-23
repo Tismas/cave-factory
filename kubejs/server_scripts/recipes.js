@@ -7,7 +7,31 @@ onEvent("recipes", (event) => {
   event.remove({ output: "extendedcrafting:the_ultimate_catalyst" });
   event.remove({ output: "rftoolsbase:machine_frame" });
   event.remove({ id: "immersiveengineering:blastfurnace/steel" });
+  event.remove({ id: "immersiveengineering:blastfurnace/steel_block" });
   event.remove({ id: "compactmachines:wall" });
+
+  event.remove({ input: "excompressum:compressed_gravel" });
+  event.remove({ input: "excompressum:compressed_sand" });
+  event.remove({ input: "excompressum:compressed_dirt" });
+  event.remove({ input: "excompressum:compressed_cobblestone" });
+
+  event.remove({ output: "extrastorage:storagepart_1024k" });
+  event.remove({ output: "extrastorage:storagepart_4096k" });
+  event.remove({ output: "extrastorage:storagepart_16384k" });
+  event.remove({ output: "extrastorage:disk_256k" });
+  event.remove({ output: "extrastorage:disk_1024k" });
+  event.remove({ output: "extrastorage:disk_4096k" });
+  event.remove({ output: "extrastorage:disk_16384k" });
+  event.remove({ output: "extrastorage:storagepart_16384k_fluid" });
+  event.remove({ output: "extrastorage:storagepart_65536k_fluid" });
+  event.remove({ output: "extrastorage:storagepart_262144k_fluid" });
+  event.remove({ output: "extrastorage:storagepart_1048576k_fluid" });
+  event.remove({ output: "extrastorage:disk_16384k_fluid" });
+  event.remove({ output: "extrastorage:disk_65536k_fluid" });
+  event.remove({ output: "extrastorage:disk_262144k_fluid" });
+  event.remove({ output: "extrastorage:disk_1048576k_fluid" });
+
+  event.remove({ output: "miniutilities:angel_ring" });
 
   getItemsFromMod("excompressum").forEach((exCompressumItem) => {
     const itemId = exCompressumItem.getId();
@@ -68,7 +92,23 @@ onEvent("recipes", (event) => {
     }
   );
 
+  event.shaped(Item.of("apotheosis:boss_summoner"), ["ABC", "DEF", "GHJ"], {
+    A: "minecraft:rotten_flesh",
+    B: "minecraft:spider_eye",
+    C: "minecraft:bone",
+    D: "minecraft:string",
+    E: "minecraft:ender_pearl",
+    F: "minecraft:slime_ball",
+    G: "minecraft:blaze_rod",
+    H: "twilightforest:fiery_tears",
+    J: "twilightforest:raw_meef",
+  });
+
   event.shapeless("minecraft:cobblestone", new Array(4).fill("botania:pebble"));
+
+  event.shapeless("miniutilities:angel_ring", "ironjetpacks:creative_jetpack");
+  event.shapeless("ironjetpacks:creative_jetpack", "miniutilities:angel_ring");
+
   event.shapeless(
     "immersiveengineering:ore_uranium",
     "bigreactors:yellorite_ore"
@@ -140,6 +180,12 @@ onEvent("recipes", (event) => {
     { id: "refinedstorage:cable" },
     "minecraft:redstone",
     "storagenetwork:storage_kabel"
+  );
+
+  event.replaceInput(
+    { mod: "xnet" },
+    "rftoolsbase:machine_frame",
+    "fluxnetworks:flux_block"
   );
 
   event.smelting("minecraft:granite", "create:granite_cobblestone");
@@ -301,12 +347,17 @@ onEvent("recipes", (event) => {
     "3x minecraft:iron_ingot",
     "immersiveengineering:slag"
   );
+  event.recipes.immersiveengineering.blast_furnace(
+    "immersiveengineering:storage_steel",
+    "3x minecraft:iron_block",
+    "9x immersiveengineering:slag"
+  );
   event.recipes.immersiveengineering.arc_furnace(
     ["minecraft:end_stone"],
     "minecraft:sand"
   );
 
-  const { altar, soulforge } = event.recipes.bloodmagic;
+  const { altar, soulforge, alchemytable } = event.recipes.bloodmagic;
   event.shaped("4x bloodmagic:ritualstone", ["BRB", "ROR", "BRB"], {
     B: "bloodmagic:blankslate",
     R: "bloodmagic:reinforcedslate",
@@ -321,6 +372,13 @@ onEvent("recipes", (event) => {
     R: "bloodmagic:ritualstone",
     O: ["bloodmagic:magicianbloodorb", "bloodmagic:masterbloodorb"],
   });
+  alchemytable("minecraft:mycelium", [
+    "minecraft:grass_block",
+    "minecraft:brown_mushroom",
+  ])
+    .syphon(10)
+    .ticks(10)
+    .upgradeLevel(2);
   altar("minecraft:dirt", "minecraft:granite")
     .altarSyphon(10)
     .drainRate(10)

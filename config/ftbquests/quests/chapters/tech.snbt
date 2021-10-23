@@ -1,0 +1,350 @@
+{
+	id: "735DEAEFF3A146B5"
+	group: ""
+	order_index: 2
+	filename: "tech"
+	title: "Tech"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 6.5d
+			y: 0.0d
+			description: ["You can use it to automatically pull items from your inventory (for example stone and ores) and keep you supplied with usefull stuff (like food)"]
+			dependencies: ["4FBD0763DD3107D6"]
+			id: "1BA96D8CB5EFE2E2"
+			tasks: [{
+				id: "4120844D01D81AD0"
+				type: "item"
+				item: "pneumaticcraft:aerial_interface"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.0d
+			description: ["Throw some iron on the ground and blow it up with TNT. Some iron you'll lose, some will turn into compressed iron"]
+			id: "664211ADBC457F83"
+			tasks: [{
+				id: "24CDC64F116F8377"
+				type: "item"
+				item: "pneumaticcraft:ingot_iron_compressed"
+			}]
+			rewards: [{
+				id: "242FBD74698E4428"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "pneumaticcraft:book"
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.0d
+			description: [
+				"To make compressed iron more efficiently you can build pressure chamber. It will also be used in other recipes"
+				""
+				"It can be 3x3x3, 4x4x4 or 5x5x5"
+			]
+			dependencies: ["664211ADBC457F83"]
+			id: "1C06282FA1802767"
+			tasks: [
+				{
+					id: "13A5066F02B8F6FB"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_wall"
+				}
+				{
+					id: "4714C6D15B17A977"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_valve"
+				}
+				{
+					id: "7DE9F86DF5D32771"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_interface"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "7EE96ED63B362F9C"
+				type: "item"
+				item: "pneumaticcraft:pressure_chamber_glass"
+				count: 10
+				random_bonus: 22
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.0d
+			description: ["To create pressure you gonna need a compressor"]
+			dependencies: ["664211ADBC457F83"]
+			id: "67EA3E68E5BC4436"
+			tasks: [{
+				id: "41FA9960F7CE7410"
+				type: "item"
+				item: "pneumaticcraft:air_compressor"
+			}]
+			rewards: [{
+				id: "321E679885F97A85"
+				type: "item"
+				item: "pneumaticcraft:pressure_tube"
+				count: 8
+				random_bonus: 8
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.0d
+			description: ["If pressure will excede what a machine or tube can handle, it will explode. Safety tube can help with that"]
+			dependencies: ["67EA3E68E5BC4436"]
+			id: "30E2832085AADBDE"
+			tasks: [{
+				id: "45DC52B998752482"
+				type: "item"
+				item: "pneumaticcraft:safety_tube_module"
+			}]
+			rewards: [{
+				id: "5B31030A3A535B04"
+				type: "item"
+				item: "pneumaticcraft:pressure_gauge_module"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.0d
+			description: ["It will let you make stuff easier and unlocks access to new things"]
+			dependencies: ["6AB3C46AA4D9E7B5"]
+			id: "170C899DDD30BD87"
+			tasks: [
+				{
+					id: "27DDBE1723BBC78E"
+					type: "item"
+					item: "pneumaticcraft:assembly_laser"
+				}
+				{
+					id: "3D1C21F92408FFE3"
+					type: "item"
+					item: "pneumaticcraft:assembly_controller"
+				}
+				{
+					id: "1D12A00F4B934D53"
+					type: "item"
+					item: "pneumaticcraft:assembly_drill"
+				}
+				{
+					id: "56CD217A507BE5B4"
+					type: "item"
+					item: "pneumaticcraft:assembly_io_unit_export"
+				}
+				{
+					id: "7967C944CE5B4800"
+					type: "item"
+					item: "pneumaticcraft:assembly_io_unit_import"
+				}
+				{
+					id: "0B4CE056E1615471"
+					type: "item"
+					item: "pneumaticcraft:assembly_platform"
+				}
+			]
+			rewards: [
+				{
+					id: "69233791486661DE"
+					type: "item"
+					item: "pneumaticcraft:assembly_program_laser"
+				}
+				{
+					id: "3F9468DAD9B9671A"
+					type: "item"
+					item: "pneumaticcraft:assembly_program_drill"
+				}
+				{
+					id: "01E1A5AAF802E591"
+					type: "item"
+					item: "pneumaticcraft:assembly_program_drill_laser"
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			description: ["Put the empty pcb in the uv lightbox. It will increase the chance of getting unassembled pcb out of the next step. The higher the chances the longer it will take to gain additional chances of success"]
+			dependencies: [
+				"1C06282FA1802767"
+				"67EA3E68E5BC4436"
+				"4F68D87A8FD44A04"
+			]
+			id: "4F2CDB4B503F12FC"
+			tasks: [{
+				id: "004890F1FF2CFEB3"
+				type: "item"
+				item: "pneumaticcraft:empty_pcb"
+			}]
+			rewards: [{
+				id: "7F648D16CFDF3005"
+				type: "item"
+				item: "pneumaticcraft:uv_light_box"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.5d
+			description: ["You can heat it to make it faster"]
+			dependencies: ["219A7C1639AE68C7"]
+			id: "619711E6F3BD4346"
+			tasks: [{
+				id: "4C65E60BCA122916"
+				type: "item"
+				item: "pneumaticcraft:etching_tank"
+			}]
+			rewards: [{
+				id: "3BC51A08B4920476"
+				type: "item"
+				item: "pneumaticcraft:vortex_tube"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 3.0d
+			description: ["Used to make unassembled PCB in the etching tank"]
+			dependencies: ["45C503E3E886ADA1"]
+			id: "219A7C1639AE68C7"
+			tasks: [{
+				id: "59AC2B9D30506E73"
+				type: "item"
+				item: "pneumaticcraft:etching_acid_bucket"
+			}]
+			rewards: [{
+				id: "0008D1B67B106A08"
+				type: "item"
+				item: "minecraft:rotten_flesh"
+				count: 64
+			}]
+		}
+		{
+			x: -1.0d
+			y: 3.0d
+			description: ["Can be used to make acid and plastic sheets"]
+			dependencies: ["0DAC0A39DE1E34FA"]
+			id: "45C503E3E886ADA1"
+			tasks: [{
+				id: "24787E0714AE86A7"
+				type: "item"
+				item: "pneumaticcraft:plastic_bucket"
+			}]
+			rewards: [{
+				id: "2F2D848CA235839B"
+				type: "item"
+				item: "pneumaticcraft:heat_frame"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 3.0d
+			description: ["You can get plastic from biodisel or LPG. Both can be made from immersive petrolum stuff covered in \"Factory\" chapter"]
+			dependencies: ["67EA3E68E5BC4436"]
+			id: "0DAC0A39DE1E34FA"
+			tasks: [{
+				id: "7253499339828E78"
+				type: "item"
+				item: "pneumaticcraft:thermopneumatic_processing_plant"
+			}]
+			rewards: [{
+				id: "3F3CFBE29D0BBE51"
+				type: "item"
+				item: "pneumaticcraft:liquid_hopper"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.5d
+			description: ["Pour molten plastic into the world and wait a bit. It will change into plastic sheet"]
+			dependencies: ["45C503E3E886ADA1"]
+			id: "4F68D87A8FD44A04"
+			tasks: [{
+				id: "27A2FAC45B59A4EB"
+				type: "item"
+				item: "pneumaticcraft:plastic"
+			}]
+			rewards: [{
+				id: "6A74EF7D20EA34C9"
+				type: "item"
+				item: "pneumaticcraft:charging_station"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.0d
+			description: ["Failed PCBs can be recycled and unassembled ones can become printed circuit boards"]
+			dependencies: [
+				"4F2CDB4B503F12FC"
+				"619711E6F3BD4346"
+			]
+			id: "3E78F27FED8EA31C"
+			tasks: [{
+				id: "52A8E4188C5FA9E9"
+				type: "item"
+				item: "pneumaticcraft:unassembled_pcb"
+			}]
+			rewards: [{
+				id: "72FC63C49CA17DD5"
+				type: "item"
+				item: "pneumaticcraft:amadron_tablet"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			description: ["It gets much easier after getting an assembly"]
+			dependencies: ["3E78F27FED8EA31C"]
+			id: "6AB3C46AA4D9E7B5"
+			tasks: [{
+				id: "55311DA67765C432"
+				type: "item"
+				item: "pneumaticcraft:printed_circuit_board"
+			}]
+			rewards: [
+				{
+					id: "1CE3710D483D0A98"
+					type: "item"
+					item: "pneumaticcraft:transistor"
+					count: 16
+				}
+				{
+					id: "657A303978BA9E12"
+					type: "item"
+					item: "pneumaticcraft:capacitor"
+					count: 16
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			description: ["These tubes can handle more pressure"]
+			dependencies: ["170C899DDD30BD87"]
+			id: "4FBD0763DD3107D6"
+			tasks: [{
+				id: "208DA0BE89FCED1E"
+				type: "item"
+				item: "pneumaticcraft:advanced_pressure_tube"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 4.5d
+			shape: "diamond"
+			description: ["Automate production of printed circuit boards"]
+			id: "79C9A9EAC0E217E4"
+			tasks: [{
+				id: "1020BCE32F22CD86"
+				type: "checkmark"
+				title: "Auto PCBs"
+			}]
+		}
+	]
+}

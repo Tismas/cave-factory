@@ -73,7 +73,12 @@
 		{
 			x: -9.5d
 			y: 0.5d
-			description: ["Once the basin accumulates one bucket of water you can extract it with a bucket"]
+			description: [
+				"Once the basin accumulates one bucket of water you can extract it with a bucket"
+				""
+				"Take tank/null in hand and hit \"o\" to configure it"
+				"Or alt + right click to toggle between fill and empty mode"
+			]
 			dependencies: ["63441E36C7195AC1"]
 			id: "74CCA4AF36E587A6"
 			tasks: [{
@@ -550,7 +555,11 @@
 			title: "Cut seared stone into bricks"
 			x: -15.5d
 			y: 3.5d
-			description: ["Main material for creating smeltery components"]
+			description: [
+				"Main material for creating smeltery components"
+				""
+				"You cut seared stone in the bench saw"
+			]
 			dependencies: ["3A44C74978569596"]
 			id: "10629E1FB3F75B96"
 			tasks: [{
@@ -648,6 +657,8 @@
 				"Place a windmill bearing and attach sails to the sticky side. The power will be outputed on the opossite side."
 				""
 				"Mouse over a windmill bearing item and hold 'W' to see how it works!"
+				""
+				"To connect blocks other than sails you'll need to use glue"
 			]
 			dependencies: ["0C225D964C049B89"]
 			id: "151E347A13AE9885"
@@ -664,11 +675,24 @@
 					count: 8L
 				}
 			]
-			rewards: [{
-				id: "0A76709E419BBD50"
-				type: "item"
-				item: "create:wrench"
-			}]
+			rewards: [
+				{
+					id: "0A76709E419BBD50"
+					type: "item"
+					item: "create:wrench"
+				}
+				{
+					id: "3012D7301BD9C7A8"
+					type: "item"
+					item: {
+						id: "create:super_glue"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
 		}
 		{
 			title: "Crushing"
@@ -1372,7 +1396,7 @@
 			y: 5.0d
 			shape: "diamond"
 			description: [
-				"Challenge #1"
+				"Challenge"
 				""
 				"Using create make an automatic farm producing kelp, dried kelp, dried kelp blocks and belts"
 			]
@@ -1386,6 +1410,7 @@
 		{
 			x: -5.0d
 			y: 0.5d
+			description: ["An interface which can interact with all connected drawers"]
 			dependencies: ["36629C9E9B88196B"]
 			id: "1C1569085B97A270"
 			tasks: [{
@@ -1455,7 +1480,7 @@
 			y: 5.0d
 			shape: "diamond"
 			description: [
-				"Challenge #2"
+				"Challenge"
 				""
 				"Make an automatic ore processing system with crushing, washing and compacting nuggets into ingots and products sorted into correct chests/drawers"
 				""
@@ -1805,6 +1830,39 @@
 				type: "item"
 				item: "tconstruct:silky_cloth"
 				count: 5
+			}]
+		}
+		{
+			title: "Nether stars for days"
+			x: -8.5d
+			y: 5.0d
+			shape: "diamond"
+			description: [
+				"Challenge"
+				""
+				"Automate wither killing"
+			]
+			id: "4411E6AEC00BAEFB"
+			tasks: [{
+				id: "62FA0211C4178783"
+				type: "checkmark"
+				title: "Automate stars"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 5.0d
+			shape: "diamond"
+			description: [
+				"Challenge"
+				""
+				"Make a chocolate river/lake"
+			]
+			id: "1AF08D2E87CC3D4E"
+			tasks: [{
+				id: "5F77B81A673AD003"
+				type: "checkmark"
+				title: "Chocolate"
 			}]
 		}
 	]
