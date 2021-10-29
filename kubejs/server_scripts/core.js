@@ -7,11 +7,11 @@ settings.logErroringRecipes = true;
 
 const logsPool = [
   "minecraft:oak_log",
-  "minecraft:spruce_log",
-  "minecraft:acacia_log",
-  "minecraft:birch_log",
-  "minecraft:jungle_log",
-  "minecraft:dark_oak_log",
+  // "minecraft:spruce_log",
+  // "minecraft:acacia_log",
+  // "minecraft:birch_log",
+  // "minecraft:jungle_log",
+  // "minecraft:dark_oak_log",
 ];
 const seedsPool = [
   "minecraft:wheat_seeds",

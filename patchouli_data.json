@@ -59,6 +59,61 @@
         "storagenetwork:collector"
       ],
       "completedManualQuests": []
+    },
+    "botania:lexicon": {
+      "viewedEntries": [
+        "botania:functional_flowers/flower_shrinking",
+        "botania:generating_flowers/dandelifeon",
+        "botania:tools/open_bucket",
+        "botania:tools/crystal_bow",
+        "botania:tools/divining_rod",
+        "botania:tools/crafting_halo",
+        "botania:tools/slime_bottle",
+        "botania:tools/grass_horn",
+        "botania:tools/glass_pick",
+        "botania:tools/astrolabe",
+        "botania:tools/grass_seeds",
+        "botania:tools/world_seed",
+        "botania:tools/autocrafting_halo",
+        "botania:tools/laputa_shard",
+        "botania:tools/clip",
+        "botania:tools/virus",
+        "botania:tools/rainbow_rod",
+        "botania:tools/obedience_stick",
+        "botania:tools/elf_gear",
+        "botania:tools/overgrowth_seed",
+        "botania:tools/sky_dirt_rod",
+        "botania:tools/gravity_rod",
+        "botania:tools/livingwood_bow",
+        "botania:tools/mana_gear",
+        "botania:tools/sextant",
+        "botania:tools/manaweave",
+        "botania:tools/fire_chakram",
+        "botania:tools/spell_cloth",
+        "botania:tools/missile_rod",
+        "botania:basics/welcome",
+        "botania:challenges/potion_brewer",
+        "botania:devices/mana_enchanting",
+        "botania:tools/thorn_chakram",
+        "botania:functional_flowers/jiyuulia",
+        "botania:functional_flowers/fallen_kanade",
+        "botania:alfhomancy/gaia_ritual"
+      ],
+      "bookmarks": [],
+      "history": [
+        "botania:alfhomancy/gaia_ritual",
+        "botania:devices/mana_enchanting",
+        "botania:functional_flowers/fallen_kanade",
+        "botania:functional_flowers/jiyuulia",
+        "botania:tools/thorn_chakram",
+        "botania:challenges/potion_brewer",
+        "botania:basics/welcome",
+        "botania:tools/crystal_bow",
+        "botania:tools/open_bucket",
+        "botania:generating_flowers/dandelifeon",
+        "botania:functional_flowers/flower_shrinking"
+      ],
+      "completedManualQuests": []
     }
   }
 }

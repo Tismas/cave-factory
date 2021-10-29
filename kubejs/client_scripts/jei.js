@@ -34,3 +34,7 @@ onEvent("jei.hide.items", (event) => {
   event.hide(Item.of("extrastorage:disk_262144k_fluid"));
   event.hide(Item.of("extrastorage:disk_1048576k_fluid"));
 });
+
+onEvent("jei.add.items", (event) => {
+  event.add(Item.of("minecraft:dragon_egg"));
+});

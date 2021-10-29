@@ -2280,11 +2280,18 @@
 				type: "item"
 				item: "excompressum:cow_bait"
 			}]
-			rewards: [{
-				id: "50925B34DA72E30D"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "50925B34DA72E30D"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "1EC5E8DB677595EA"
+					type: "item"
+					item: "engineersdecor:small_milking_machine"
+				}
+			]
 		}
 		{
 			x: -13.5d
@@ -2500,40 +2507,21 @@
 		{
 			x: -15.0d
 			y: -4.5d
-			description: ["To get snow, place water near daisy, it will slowly turn into snow"]
-			dependencies: ["31B8F55E7591148C"]
-			id: "6A0EEFBB24526029"
-			tasks: [
-				{
-					id: "56DE22699A547D0B"
-					type: "item"
-					item: "botania:pure_daisy"
-				}
-				{
-					id: "36E32085D8C84D76"
-					type: "item"
-					item: "minecraft:snowball"
-				}
+			description: [
+				"To get snow, place water near botania pure daisy, it will slowly turn into snow"
+				""
+				"If you haven't already check the magic chapter"
 			]
+			id: "6A0EEFBB24526029"
+			tasks: [{
+				id: "36E32085D8C84D76"
+				type: "item"
+				item: "minecraft:snowball"
+			}]
 			rewards: [{
 				id: "467CD43773525A1B"
 				type: "item"
 				item: "engineersdecor:small_freezer"
-			}]
-		}
-		{
-			x: -16.5d
-			y: -4.5d
-			id: "31B8F55E7591148C"
-			tasks: [{
-				id: "4D5A8870B88E6207"
-				type: "item"
-				item: "botania:fertilizer"
-			}]
-			rewards: [{
-				id: "49D2589C27B13D85"
-				type: "item"
-				item: "botania:flower_bag"
 			}]
 		}
 		{
@@ -2570,7 +2558,7 @@
 		}
 		{
 			x: -16.5d
-			y: 1.5d
+			y: -1.5d
 			shape: "diamond"
 			description: [
 				"Challenge"
@@ -2582,23 +2570,6 @@
 				id: "1121D5755E6183BA"
 				type: "checkmark"
 				title: "Massive food production"
-			}]
-		}
-		{
-			title: "Living stuff"
-			x: -16.5d
-			y: -1.5d
-			shape: "diamond"
-			description: [
-				"Challenge"
-				""
-				"Automate living wood and living rock. Tip. contructor and destructors from refined storage might be handy"
-			]
-			id: "4DADD47603783FCF"
-			tasks: [{
-				id: "02F0C1DD971FF28C"
-				type: "checkmark"
-				title: "Automate production of living wood and living stone"
 			}]
 		}
 		{
@@ -2626,6 +2597,8 @@
 				"Challenge"
 				""
 				"Automate all the dyes"
+				""
+				"Hint: take a look at the drum of the wild and jaded amaranthus"
 			]
 			id: "15C7628C2A275837"
 			tasks: [{

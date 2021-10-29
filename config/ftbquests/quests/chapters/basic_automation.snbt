@@ -42,6 +42,9 @@
 			description: [
 				"Serenade of the nether requires 10k LP in your blood network to activate and 500 LP for each new lava source"
 				"If you won't have enough LP in your blood network for the ritual to work you'll get nausea"
+				""
+				"It will generate lava source on top of the master ritual stone"
+				"If you pick it up, it will generate another one. To disable it either power master ritual stone with redstone or put a block where the lava generates."
 			]
 			dependencies: ["4FBAB657D89F2EE2"]
 			id: "6CC0325BEFA21C3A"
@@ -1168,7 +1171,7 @@
 		}
 		{
 			x: -20.0d
-			y: 0.5d
+			y: 2.0d
 			description: [
 				"Can't get power to where you want it? Use these"
 				""
@@ -1222,6 +1225,8 @@
 				"Feel free to dig around but you'll not find any strucutres underground."
 				""
 				"Diamond shaped quests are challenges"
+				""
+				"Vein miner is in the pack but you need to finish the twilight forest to unlock it"
 			]
 			id: "061A729FEE740077"
 			tasks: [{
@@ -1429,11 +1434,16 @@
 					type: "item"
 					item: "storagedrawers:quantify_key"
 				}
+				{
+					id: "113970EEFE80F352"
+					type: "item"
+					item: "itemcollectors:advanced_collector"
+				}
 			]
 		}
 		{
 			x: -20.0d
-			y: -2.5d
+			y: 0.5d
 			description: ["Also by throwing rotten flesh on the ground you'll get random mob drops"]
 			dependencies: ["674C4BAB321F86BF"]
 			id: "1C4AB4D81A397289"
@@ -1607,6 +1617,8 @@
 				"Easier way of controlling rotation speed. "
 				""
 				"You can reuse crafters that you setup for crushing wheels in making integrated circuits - if you give them a redstone signal they will start crafting even if not all slots are filled in."
+				""
+				"When working with deployers - dont try to click on the hand, you need to click to on the bottom face of the deployer to give it an item"
 			]
 			dependencies: ["36629C9E9B88196B"]
 			id: "08FF9DB65F64C95A"
@@ -1863,6 +1875,102 @@
 				id: "5F77B81A673AD003"
 				type: "checkmark"
 				title: "Chocolate"
+			}]
+		}
+		{
+			title: "Drawers"
+			x: -20.0d
+			y: -2.5d
+			dependencies: ["674C4BAB321F86BF"]
+			id: "2C6DDF0390C62B02"
+			tasks: [{
+				id: "106D07FE2DD510B8"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "storagedrawers:oak_full_drawers_1"
+								Count: 1b
+							}
+							{
+								id: "storagedrawers:oak_full_drawers_2"
+								Count: 1b
+							}
+							{
+								id: "storagedrawers:oak_full_drawers_4"
+								Count: 1b
+							}
+							{
+								id: "storagedrawers:spruce_full_drawers_1"
+								Count: 1b
+							}
+							{
+								id: "storagedrawers:spruce_full_drawers_2"
+								Count: 1b
+							}
+							{
+								id: "storagedrawers:spruce_full_drawers_4"
+								Count: 1b
+							}
+							{
+								id: "storagedrawers:birch_full_drawers_1"
+								Count: 1b
+							}
+							{
+								id: "storagedrawers:birch_full_drawers_2"
+								Count: 1b
+							}
+							{
+								id: "storagedrawers:birch_full_drawers_4"
+								Count: 1b
+							}
+							{
+								id: "storagedrawers:jungle_full_drawers_1"
+								Count: 1b
+							}
+							{
+								id: "storagedrawers:jungle_full_drawers_2"
+								Count: 1b
+							}
+							{
+								id: "storagedrawers:jungle_full_drawers_4"
+								Count: 1b
+							}
+							{
+								id: "storagedrawers:acacia_full_drawers_1"
+								Count: 1b
+							}
+							{
+								id: "storagedrawers:acacia_full_drawers_2"
+								Count: 1b
+							}
+							{
+								id: "storagedrawers:acacia_full_drawers_4"
+								Count: 1b
+							}
+							{
+								id: "storagedrawers:dark_oak_full_drawers_1"
+								Count: 1b
+							}
+							{
+								id: "storagedrawers:dark_oak_full_drawers_2"
+								Count: 1b
+							}
+							{
+								id: "storagedrawers:dark_oak_full_drawers_4"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "5556F4CF3E66EA98"
+				type: "item"
+				item: "storagedrawers:compacting_drawers_3"
 			}]
 		}
 	]

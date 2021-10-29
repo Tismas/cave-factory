@@ -656,5 +656,657 @@
 				title: "All the slates"
 			}]
 		}
+		{
+			title: "Mana generation"
+			x: -2.5d
+			y: 2.0d
+			description: [
+				"You can start either from endoflame which will generate mana by consuming coal or thermalily which will consume lava"
+				""
+				"Be warned - it will still consume lava when on cooldown and not generate mana. So placing serenade of the nether ritual near it will INSTANTLY drain all of your life essence once the flower is on cooldown"
+				""
+			]
+			id: "252BD6BF5D2A1A8C"
+			tasks: [{
+				id: "5A0585A37DAEEE43"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "botania:endoflame"
+								Count: 1b
+							}
+							{
+								id: "botania:thermalily"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "18148219C9D8636D"
+				type: "item"
+				item: {
+					id: "botania:monocle"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.0d
+			description: ["You'll probably want to make at least 2"]
+			dependencies: ["31B8F55E7591148C"]
+			id: "020E5E31843BB4E4"
+			tasks: [
+				{
+					id: "44DCD1C9DCAF39A1"
+					type: "item"
+					item: "botania:pure_daisy"
+				}
+				{
+					id: "4B245167654E1699"
+					type: "item"
+					item: "botania:apothecary_default"
+				}
+			]
+			rewards: [
+				{
+					id: "28555AFB26DE6C47"
+					type: "item"
+					item: "minecraft:stone"
+					count: 8
+				}
+				{
+					id: "597952CACAE0AD34"
+					type: "item"
+					item: "minecraft:oak_log"
+					count: 8
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 3.0d
+			description: ["Place stone around the pure daisy and wait a bit. They will change into living rock"]
+			dependencies: ["020E5E31843BB4E4"]
+			id: "38F97771C7383C7B"
+			tasks: [{
+				id: "5EC927758D9C69DF"
+				type: "item"
+				item: "botania:livingrock"
+			}]
+			rewards: [{
+				id: "4EC9EAC03553FD91"
+				type: "item"
+				item: "botania:mana_pool"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.0d
+			description: ["Place logs around the pure daisy and wait a bit. They will change into living wood"]
+			dependencies: ["020E5E31843BB4E4"]
+			id: "74444EC16D553D05"
+			tasks: [{
+				id: "48D65AF1CB58A13D"
+				type: "item"
+				item: "botania:livingwood"
+			}]
+			rewards: [{
+				id: "084D80A358EB2E05"
+				type: "item"
+				item: "botania:mana_spreader"
+			}]
+		}
+		{
+			title: "Living stuff"
+			x: -2.5d
+			y: 4.5d
+			shape: "diamond"
+			description: [
+				"Challenge"
+				""
+				"Automate living wood and living rock. Tip. contructor and destructors from refined storage might be handy"
+			]
+			id: "4DADD47603783FCF"
+			tasks: [{
+				id: "02F0C1DD971FF28C"
+				type: "checkmark"
+				title: "Automate production of living wood and living stone"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 3.0d
+			description: ["Allows you to brew potions that have 3/6 uses but take only 1 space in your inventory"]
+			dependencies: ["5927161468EC0831"]
+			id: "090F3694DAABC658"
+			tasks: [{
+				id: "533A8FB6DC440D50"
+				type: "item"
+				item: "botania:brewery"
+			}]
+			rewards: [{
+				id: "51B6CCC2D1E58BC3"
+				type: "item"
+				item: "botania:flask"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.0d
+			description: ["Right click with required resources to make runes. It requires mana - the rune icon shows the progress. When finished right click altar with living rock and wand of the forest to finish the craft"]
+			dependencies: ["0EDBF2D54CBF4241"]
+			id: "5927161468EC0831"
+			tasks: [{
+				id: "27B5A50181DB1F70"
+				type: "item"
+				item: "botania:runic_altar"
+			}]
+			rewards: [
+				{
+					id: "03B693178B5115A9"
+					type: "choice"
+					table_id: 8441016274731883180L
+				}
+				{
+					id: "32E8FBF59ED88166"
+					type: "item"
+					item: {
+						id: "botania:exchange_rod"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 3.0d
+			description: ["Water breathing might be handy while constructing kelp farm"]
+			dependencies: ["090F3694DAABC658"]
+			id: "7CB4BCE796E62412"
+			tasks: [{
+				id: "111C0FF859942125"
+				type: "item"
+				item: {
+					id: "botania:blood_pendant"
+					Count: 1b
+					tag: {
+						brewKey: "botania:water_breathing"
+					}
+				}
+			}]
+			rewards: [{
+				id: "082A2A22BECDAC0E"
+				type: "item"
+				item: {
+					id: "botania:blood_pendant"
+					Count: 1b
+					tag: {
+						brewKey: "botania:night_vision"
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.0d
+			description: ["Throw diamond/ender pearl/iron ingot into mana pool to change it into botania version"]
+			dependencies: [
+				"38F97771C7383C7B"
+				"252BD6BF5D2A1A8C"
+				"74444EC16D553D05"
+			]
+			id: "0EDBF2D54CBF4241"
+			tasks: [{
+				id: "3A8A0ABB1C87ACD6"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "botania:manasteel_ingot"
+								Count: 1b
+							}
+							{
+								id: "botania:mana_pearl"
+								Count: 1b
+							}
+							{
+								id: "botania:mana_diamond"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "725C178FD3250008"
+				type: "item"
+				item: {
+					id: "botania:mana_ring"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.0d
+			description: ["It's like a wrench but for botania"]
+			dependencies: ["74444EC16D553D05"]
+			id: "1A875FB4C8DAB878"
+			tasks: [{
+				id: "7B859CA1D2AE888B"
+				type: "item"
+				item: {
+					id: "botania:twig_wand"
+					Count: 1b
+					tag: {
+						color1: 0
+						color2: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "180245F6C63878F3"
+				type: "item"
+				item: "botania:open_crate"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.0d
+			description: [
+				"Used to create terrasteel. Will take half of the mana pool to create 1 terrasteel. Place spark above mana pool and above the Agglomeration Plate to transfer mana fast"
+				"Preview multiblock in lexica botania"
+			]
+			dependencies: ["5927161468EC0831"]
+			id: "1062DA48281390FE"
+			tasks: [
+				{
+					id: "613DE03B01DE9A09"
+					type: "item"
+					item: "botania:terra_plate"
+				}
+				{
+					id: "60F6F2209FC7CDFB"
+					type: "item"
+					item: "minecraft:lapis_block"
+					count: 4L
+				}
+				{
+					id: "77418F37DE83E780"
+					type: "item"
+					item: "botania:livingrock"
+					count: 5L
+				}
+			]
+			rewards: [{
+				id: "4BBDE19594ACB1A4"
+				type: "item"
+				item: "botania:spark"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			description: ["If you create terrasteel tools you can put them in the mana pool to rank them up and make them better"]
+			dependencies: ["1062DA48281390FE"]
+			id: "7E06A688B347A01C"
+			tasks: [{
+				id: "30C9FB8C8F9F0177"
+				type: "item"
+				item: "botania:terrasteel_ingot"
+			}]
+			rewards: [{
+				id: "006A562BDC9292B7"
+				type: "item"
+				item: {
+					id: "botania:super_travel_belt"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Elven gateway"
+			x: 2.0d
+			y: 2.0d
+			description: [
+				"You can preview the elven gateway structure in the lexica botania"
+				"It will require about 1/8 of each pool below pylon to open the portal"
+			]
+			dependencies: ["7E06A688B347A01C"]
+			id: "18D5FE646C18FFDB"
+			tasks: [
+				{
+					id: "2E701CCF692863A4"
+					type: "item"
+					item: "botania:natura_pylon"
+					count: 2L
+				}
+				{
+					id: "675BC41407CF6F98"
+					type: "item"
+					item: "botania:glimmering_livingwood"
+					count: 3L
+				}
+				{
+					id: "3842C9C611D68558"
+					type: "item"
+					item: "botania:alfheim_portal"
+				}
+				{
+					id: "750EB9C7370BC6C7"
+					type: "item"
+					item: "botania:livingwood"
+					count: 8L
+				}
+				{
+					id: "1A1F6C54C014EBA6"
+					type: "item"
+					item: "botania:mana_pool"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "363D7BCD08380CE2"
+				type: "item"
+				item: {
+					id: "botania:mana_tablet"
+					Count: 1b
+					tag: {
+						mana: 500000
+					}
+				}
+			}]
+		}
+		{
+			title: "Next tier of mana components"
+			x: 3.5d
+			y: 2.0d
+			dependencies: ["18D5FE646C18FFDB"]
+			id: "178F0514AFA14ABE"
+			tasks: [{
+				id: "39F4032C50919CC9"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "botania:elementium_ingot"
+								Count: 1b
+							}
+							{
+								id: "botania:pixie_dust"
+								Count: 1b
+							}
+							{
+								id: "botania:dragonstone"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "2986CA4D6F4948E7"
+				type: "item"
+				item: "botania:missile_rod"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 2.0d
+			dependencies: ["77F0EB84E707EC62"]
+			id: "3E390BD033A90AFC"
+			tasks: [{
+				id: "497C3E0C0A60EFE9"
+				type: "item"
+				item: "botania:life_essence"
+			}]
+			rewards: [{
+				id: "0B9C7327C370A8D4"
+				type: "item"
+				item: {
+					id: "botania:odin_ring"
+					Count: 1b
+					tag: {
+						baubleUUIDMost: -8428294699932893062L
+						baubleUUIDLeast: -7047787545232288025L
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: 4.5d
+			shape: "diamond"
+			description: [
+				"Automate mana production so that you always have a few mana pool full of mana"
+				"Bonus points: using kekimurus."
+				"Bonus points 2: Use create to produce and place cakes"
+			]
+			id: "7A4C4564026A1FC8"
+			tasks: [{
+				id: "451468F431E5E939"
+				type: "checkmark"
+				title: "Automate mana production"
+			}]
+		}
+		{
+			icon: "botania:enchanter"
+			x: -1.0d
+			y: 3.0d
+			description: [
+				"Mana enchanter is usefull thing which will allow you to enchant stuff and keep the enchanted book. It requires quite a lot of mana."
+				"Preview the structure in lexica botania, right click the lapis block when constructed"
+				"Place spark above it and above a mana pool to supply it with mana"
+				"To enchant item, right click the enchanter with desired item, throw book or book near the enchanter and right click it with a wand of the forest"
+				"You can only enchant unenchanted items using this method"
+			]
+			dependencies: ["0EDBF2D54CBF4241"]
+			id: "4E74BB3F184CF2AA"
+			tasks: [
+				{
+					id: "72C18A2EFA55581C"
+					type: "item"
+					item: "minecraft:lapis_block"
+				}
+				{
+					id: "182CC55E2788C7B9"
+					type: "item"
+					item: "minecraft:obsidian"
+					count: 17L
+				}
+				{
+					id: "537C6C67FBAD4D7B"
+					type: "item"
+					item: "botania:mana_pylon"
+					count: 6L
+				}
+				{
+					id: "0333366404E98F58"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "botania:orange_mystical_flower"
+									Count: 1b
+								}
+								{
+									id: "botania:white_mystical_flower"
+									Count: 1b
+								}
+								{
+									id: "botania:magenta_mystical_flower"
+									Count: 1b
+								}
+								{
+									id: "botania:light_blue_mystical_flower"
+									Count: 1b
+								}
+								{
+									id: "botania:yellow_mystical_flower"
+									Count: 1b
+								}
+								{
+									id: "botania:lime_mystical_flower"
+									Count: 1b
+								}
+								{
+									id: "botania:pink_mystical_flower"
+									Count: 1b
+								}
+								{
+									id: "botania:gray_mystical_flower"
+									Count: 1b
+								}
+								{
+									id: "botania:light_gray_mystical_flower"
+									Count: 1b
+								}
+								{
+									id: "botania:cyan_mystical_flower"
+									Count: 1b
+								}
+								{
+									id: "botania:purple_mystical_flower"
+									Count: 1b
+								}
+								{
+									id: "botania:blue_mystical_flower"
+									Count: 1b
+								}
+								{
+									id: "botania:brown_mystical_flower"
+									Count: 1b
+								}
+								{
+									id: "botania:red_mystical_flower"
+									Count: 1b
+								}
+								{
+									id: "botania:black_mystical_flower"
+									Count: 1b
+								}
+								{
+									id: "botania:green_mystical_flower"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 10L
+				}
+			]
+			rewards: [{
+				id: "60B7900B636FA063"
+				type: "item"
+				item: "botania:spark"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 2.0d
+			description: ["Use it on the grass to generate botania flowers"]
+			id: "31B8F55E7591148C"
+			tasks: [{
+				id: "4D5A8870B88E6207"
+				type: "item"
+				item: "botania:fertilizer"
+			}]
+			rewards: [
+				{
+					id: "49D2589C27B13D85"
+					type: "item"
+					item: "botania:flower_bag"
+				}
+				{
+					id: "11E238108FE3081E"
+					type: "item"
+					item: {
+						id: "botania:lexicon"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			title: "Gaia fight"
+			x: 5.0d
+			y: 2.0d
+			dependencies: ["178F0514AFA14ABE"]
+			id: "77F0EB84E707EC62"
+			tasks: [
+				{
+					id: "140FD34E755090CC"
+					type: "item"
+					item: "botania:gaia_pylon"
+					count: 4L
+				}
+				{
+					id: "077B879DDEBBB8F9"
+					type: "item"
+					item: "minecraft:beacon"
+				}
+			]
+			rewards: [{
+				id: "54CE5281E2CADE12"
+				type: "item"
+				item: "botania:terrasteel_ingot"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 4.5d
+			shape: "diamond"
+			description: ["Automate rune production using corporea system"]
+			id: "6EA60AFB864C00DF"
+			tasks: [{
+				id: "1360D14FB4C57EE4"
+				type: "checkmark"
+				title: "Automate runes production"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 3.0d
+			description: ["These might be handy for gaia fight"]
+			id: "5D6B82AFD77AC6EC"
+			tasks: [
+				{
+					id: "5B3D56B97BA5AAEB"
+					type: "item"
+					item: "botania:thorn_chakram"
+				}
+				{
+					id: "2CC2012DF5EFE512"
+					type: "item"
+					item: "botania:fallen_kanade"
+				}
+				{
+					id: "151EA0C5E058603C"
+					type: "item"
+					item: "botania:jiyuulia"
+				}
+			]
+		}
 	]
 }

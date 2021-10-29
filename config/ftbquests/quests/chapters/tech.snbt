@@ -4,6 +4,7 @@
 	order_index: 2
 	filename: "tech"
 	title: "Tech"
+	icon: "pneumaticcraft:pneumatic_wrench"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -17,6 +18,11 @@
 				id: "4120844D01D81AD0"
 				type: "item"
 				item: "pneumaticcraft:aerial_interface"
+			}]
+			rewards: [{
+				id: "5730A14C73A109FC"
+				type: "item"
+				item: "pneumaticcraft:logistics_frame_requester"
 			}]
 		}
 		{
@@ -279,7 +285,11 @@
 		{
 			x: 0.5d
 			y: 0.0d
-			description: ["Failed PCBs can be recycled and unassembled ones can become printed circuit boards"]
+			description: [
+				"Failed PCBs can be recycled and unassembled ones can become printed circuit boards"
+				""
+				"After ordering stuff using amadron tablet you need to go to height around 250 to update the delivery drone to make it tp to the chest, sorry :( If you know how to fix it, let me know on discord"
+			]
 			dependencies: [
 				"4F2CDB4B503F12FC"
 				"619711E6F3BD4346"
@@ -332,6 +342,11 @@
 				id: "208DA0BE89FCED1E"
 				type: "item"
 				item: "pneumaticcraft:advanced_pressure_tube"
+			}]
+			rewards: [{
+				id: "40F59C7F2356AFA8"
+				type: "item"
+				item: "pneumaticcraft:logistics_drone"
 			}]
 		}
 		{

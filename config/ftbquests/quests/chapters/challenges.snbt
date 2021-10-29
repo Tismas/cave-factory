@@ -45,10 +45,10 @@
 				"5AC28678866E7EED"
 				"1380D74DC5EB219A"
 				"590C4D62524410B9"
-				"4D32E62007372516"
 				"5FFC98512299D923"
 				"279EE1B066A337A4"
 				"67A9DD6B4126D588"
+				"52C159C4CAD2190A"
 			]
 			id: "14CB0A11E8299ABF"
 			tasks: [{
@@ -109,13 +109,14 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 3.0d
+			x: 1.5d
+			y: 4.0d
 			shape: "diamond"
 			description: [
 				"Eat everything that is edible in the pack"
 				""
 				""
+				"When you see \"uncraftable potion\" somewhere - just use water bottle"
 			]
 			id: "4D32E62007372516"
 			tasks: [
@@ -4300,12 +4301,22 @@
 					item: "minecolonies:chorus_bread"
 				}
 			]
+			rewards: [{
+				id: "32AE7049BD9F76EC"
+				type: "command"
+				title: "Infinite saturation"
+				command: "/effect give Naszos minecraft:saturation 1000000 1 true"
+				player_command: false
+			}]
 		}
 		{
 			x: -3.0d
 			y: 3.0d
 			shape: "diamond"
-			description: ["All of the capacitors need to be fully charged!"]
+			description: [
+				"All of the capacitors need to be fully charged!"
+				"It's not annoying if you automate crafting, charging and breaking them"
+			]
 			id: "6A208F68F2F71391"
 			tasks: [{
 				id: "07133A7608FE6586"
@@ -4351,6 +4362,17 @@
 						Throttle: 1.0d
 					}
 				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			shape: "diamond"
+			id: "52C159C4CAD2190A"
+			tasks: [{
+				id: "1721014DFBCEB807"
+				type: "item"
+				item: "botania:creative_pool"
 			}]
 		}
 	]

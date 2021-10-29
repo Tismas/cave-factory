@@ -71,6 +71,18 @@ onEvent("recipes", (event) => {
     S: "bountifulbaubles:ender_dragon_scale",
     E: "minecraft:egg",
   });
+  event.shaped(
+    Item.of(
+      "xreliquary:mob_charm_fragment",
+      '{entity:"minecraft:elder_guardian"}'
+    ),
+    ["SCS", "CEC", "SCS"],
+    {
+      S: "minecraft:prismarine_shard",
+      C: "minecraft:prismarine_crystals",
+      E: "minecraft:egg",
+    }
+  );
 
   event.shaped(
     Item.of("ironjetpacks:creative_jetpack"),
@@ -108,6 +120,24 @@ onEvent("recipes", (event) => {
 
   event.shapeless("miniutilities:angel_ring", "ironjetpacks:creative_jetpack");
   event.shapeless("ironjetpacks:creative_jetpack", "miniutilities:angel_ring");
+
+  event.shapeless(
+    "botania:creative_pool",
+    Item.of("botania:mana_tablet", "{mana:500000,creative:1b}")
+  );
+  event.shapeless(
+    Item.of("botania:mana_tablet", "{mana:500000,creative:1b}"),
+    "botania:creative_pool"
+  );
+
+  event.shapeless(
+    "createaddition:creative_energy",
+    "immersiveengineering:capacitor_creative"
+  );
+  event.shapeless(
+    "immersiveengineering:capacitor_creative",
+    "createaddition:creative_energy"
+  );
 
   event.shapeless(
     "immersiveengineering:ore_uranium",
@@ -188,6 +218,12 @@ onEvent("recipes", (event) => {
     "fluxnetworks:flux_block"
   );
 
+  event.replaceInput(
+    { id: "miniutilities:mechanical_miner" },
+    "minecraft:redstone_block",
+    "minecraft:quartz_block"
+  );
+
   event.smelting("minecraft:granite", "create:granite_cobblestone");
   event.smelting("minecraft:diorite", "create:diorite_cobblestone");
   event.smelting("minecraft:andesite", "create:andesite_cobblestone");
@@ -264,6 +300,31 @@ onEvent("recipes", (event) => {
       F: Item.of("immersiveengineering:capacitor_hv", {
         ifluxEnergy: 4000000,
       }).weakNBT(),
+    }
+  );
+  event.recipes.create.mechanical_crafting(
+    "botania:creative_pool",
+    [
+      "TTTTTTTTT",
+      "LTTTTTTTL",
+      "UTTTTTTTU",
+      "RTTGGGTTR",
+      "STTGGGTTS",
+      "WTTGGGTTW",
+      "ETTTTTTTE",
+      "PTTTTTTTP",
+      "TTTTTTTTT",
+    ],
+    {
+      G: "botania:gaia_ingot",
+      T: Item.of("botania:mana_tablet", "{mana:500000}"),
+      L: "botania:rune_lust",
+      U: "botania:rune_gluttony",
+      R: "botania:rune_greed",
+      S: "botania:rune_sloth",
+      W: "botania:rune_wrath",
+      E: "botania:rune_envy",
+      P: "botania:rune_pride",
     }
   );
   event.recipes.create.crushing(
@@ -386,6 +447,11 @@ onEvent("recipes", (event) => {
   altar("create:creative_fluid_tank", "create:fluid_tank")
     .upgradeLevel(4)
     .altarSyphon(1000000)
+    .drainRate(10)
+    .consumptionRate(10);
+  altar("botania:thermalily", "minecraft:lava_bucket")
+    .upgradeLevel(2)
+    .altarSyphon(1000)
     .drainRate(10)
     .consumptionRate(10);
   altar("bloodmagic:activationcrystalweak", "tconstruct:seared_melter")

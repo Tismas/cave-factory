@@ -449,9 +449,9 @@
 				item: "twilightforest:castle_brick"
 			}]
 			rewards: [{
-				id: "00CABE8545B6C055"
-				type: "xp"
-				xp: 100
+				id: "279445832F82AF48"
+				type: "item"
+				item: "ftbultimine:ultiminer"
 			}]
 		}
 		{
