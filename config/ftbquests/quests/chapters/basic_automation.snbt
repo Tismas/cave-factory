@@ -964,7 +964,7 @@
 			title: "Iron pickaxe"
 			x: -12.5d
 			y: 5.0d
-			description: ["You cant exchange parts of your tools in the tinker station without creating whole new tools"]
+			description: ["You can exchange parts of your tools in the tinker station without creating whole new tools"]
 			dependencies: ["2C145DA20E4D08BD"]
 			id: "7D8AAF7AF795E177"
 			tasks: [{
