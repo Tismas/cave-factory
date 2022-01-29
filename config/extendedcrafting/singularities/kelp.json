@@ -1,0 +1,7 @@
+{
+  "name": "Kelp",
+  "colors": ["46a00d", "46a00d"],
+  "ingredient": {
+    "item": "minecraft:kelp"
+  }
+}

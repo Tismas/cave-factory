@@ -1,0 +1,17 @@
+{
+  "type": "interactio:item_fluid_transform",
+  "inputs": [
+    {
+      "item": "minecraft:lapis_lazuli",
+      "count": 1,
+      "return_chance": 0
+    }
+  ],
+  "fluid": {
+    "fluid": "minecraft:water"
+  },
+  "output": {
+    "item": "minecraft:prismarine_crystals",
+    "count": 1
+  }
+}

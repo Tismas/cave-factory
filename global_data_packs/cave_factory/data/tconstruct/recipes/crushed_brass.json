@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "create:crushed_brass"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_brass",
+    "amount": 144
+  },
+  "temperature": 500,
+  "time": 50
+}

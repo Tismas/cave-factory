@@ -1,0 +1,13 @@
+{
+	id: "7524839456AF5AAC"
+	order_index: 0
+	title: "botania runes"
+	loot_size: 1
+	rewards: [
+		{ item: "botania:rune_water" }
+		{ item: "botania:rune_fire" }
+		{ item: "botania:rune_earth" }
+		{ item: "botania:rune_air" }
+		{ item: "botania:rune_mana" }
+	]
+}

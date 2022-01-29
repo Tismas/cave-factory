@@ -1,0 +1,485 @@
+{
+	id: "009B29948DDFF001"
+	group: ""
+	order_index: 6
+	filename: "magic"
+	title: "Exploration"
+	icon: "twilightforest:lich_trophy"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -2.5d
+			y: 1.0d
+			description: [
+				"Create a 2x2 pool of water, surround it with flowers and throw a dragon egg into water to create a portal"
+				""
+				"The dimensions is mostly about the bosses"
+			]
+			id: "54E4F67C49D8034A"
+			tasks: [{
+				id: "1F52BAC9D4120143"
+				type: "item"
+				item: "minecraft:dragon_egg"
+			}]
+			rewards: [{
+				id: "5B46F04002C6F67B"
+				type: "item"
+				item: "minecraft:dandelion"
+				count: 8
+			}]
+		}
+		{
+			x: -2.5d
+			y: 2.5d
+			description: [
+				"In twilight forest you'll need to beat a boss of a given biome to be able to go the next one."
+				""
+				"Otherwise it will damage you or won't let you in"
+			]
+			dependencies: ["54E4F67C49D8034A"]
+			id: "50392595761FE917"
+			tasks: [{
+				id: "7DE8484BEF3C9841"
+				type: "checkmark"
+				title: "Twilight forest biomes"
+			}]
+			rewards: [{
+				id: "14305ADF32F41D7F"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.5d
+			description: [
+				"To navigate a little easier you can create a special map that will show you locations of the bosses"
+				""
+				"You'll find ravens in the forest, glowberries in the caves and you already know how to get glowstone"
+			]
+			dependencies: ["50392595761FE917"]
+			id: "18F68843612C1AB1"
+			tasks: [{
+				id: "4788179E92BFAAD8"
+				type: "item"
+				item: "twilightforest:magic_map_empty"
+			}]
+			rewards: [{
+				id: "0B0A59F6CB4728B3"
+				type: "item"
+				item: "twilightforest:cooked_venison"
+				random_bonus: 7
+			}]
+		}
+		{
+			x: -2.5d
+			y: 4.0d
+			description: ["The first boss to take care of is naga, use map to find one and kill it"]
+			dependencies: ["50392595761FE917"]
+			id: "42014FC14D75555A"
+			tasks: [{
+				id: "731A6964C215FB97"
+				type: "item"
+				item: "twilightforest:naga_trophy"
+			}]
+			rewards: [{
+				id: "5DF0B549DC30004F"
+				type: "item"
+				item: "twilightforest:naga_scale"
+				count: 12
+				random_bonus: 12
+			}]
+		}
+		{
+			x: -2.5d
+			y: 5.5d
+			description: [
+				"Next one is lich king, at the start of the fight he will have a magic shield that won't allow you to damage him. To break it you'll need to reflect ender pearl looking projectiles"
+				""
+				"His clones will attack you too and can't be killed"
+				""
+				"Zombie scepter that drops from him will allow you to summon zombies that will fight for you and scepter of life draining will let you drain life from enemies (will also replenish hunger)"
+			]
+			dependencies: ["42014FC14D75555A"]
+			id: "04AAF59C0C2657AC"
+			tasks: [{
+				id: "43B24AF109AABBD1"
+				type: "item"
+				item: "twilightforest:lich_trophy"
+			}]
+			rewards: [
+				{
+					id: "47F32248B2000F95"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:strength"
+						}
+					}
+				}
+				{
+					id: "0947E933286F5D50"
+					type: "item"
+					item: "minecraft:rotten_flesh"
+				}
+				{
+					id: "58F61B97746D72DC"
+					type: "item"
+					item: "minecraft:fermented_spider_eye"
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 7.0d
+			description: ["Alpha yeti can be found in hollow snow hill in the snow forest biome"]
+			dependencies: ["04AAF59C0C2657AC"]
+			id: "588112BD2017763A"
+			tasks: [{
+				id: "1D08C56A42303E9C"
+				type: "item"
+				item: "twilightforest:yeti_trophy"
+			}]
+			rewards: [{
+				id: "2152D8DD7B029917"
+				type: "item"
+				item: "twilightforest:alpha_fur"
+				count: 12
+				random_bonus: 12
+			}]
+		}
+		{
+			x: -2.5d
+			y: 7.0d
+			description: [
+				"Find a stronghold in the dark forest - to enter you'll need to palce any kid of boss throphy on the trophy pedestal. You can retrieve it as soon as entrance unlocks"
+				""
+				"The boss can be find on second or third layer of the maze"
+			]
+			dependencies: ["04AAF59C0C2657AC"]
+			id: "036CA7E207BCCFBE"
+			tasks: [{
+				id: "113476CBEB35C3DF"
+				type: "item"
+				item: "twilightforest:knight_phantom_trophy"
+			}]
+			rewards: [{
+				id: "27ED7DE21BE187B7"
+				type: "item"
+				item: {
+					id: "twilightforest:block_and_chain"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: 7.0d
+			description: ["There's a maze under a small hollow hill in the twilight swamp biome. Find it and after defeating minoshroom eat meef straganoff which will unlock fire swamp biome for you"]
+			dependencies: ["04AAF59C0C2657AC"]
+			id: "451A55FF0321FE90"
+			tasks: [{
+				id: "536CD3496A3FADA4"
+				type: "item"
+				item: "twilightforest:minoshroom_trophy"
+			}]
+			rewards: [{
+				id: "1D23AFA08E4B3E9E"
+				type: "item"
+				item: "twilightforest:maze_slime_spawn_egg"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 8.5d
+			description: [
+				"At the top of the tower you will find Ur-Ghast boss and 4 rooms with a ghast traps. To activate them you'll need to kill carminite ghasts near it. Upon activation it will suck entities above it so you want to wait untill Ur-Ghast is above a ghast trap and then activate it."
+				"He can also heal by eating the smaller ghasts"
+			]
+			dependencies: ["036CA7E207BCCFBE"]
+			id: "77A304FDC6534671"
+			tasks: [{
+				id: "6CE72D2005A7FB2A"
+				type: "item"
+				item: "twilightforest:ur_ghast_trophy"
+			}]
+			rewards: [{
+				id: "53C404A202D6CF80"
+				type: "item"
+				item: "twilightforest:fiery_tears"
+				random_bonus: 11
+			}]
+		}
+		{
+			x: -1.0d
+			y: 8.5d
+			description: [
+				"You can find snow queen in the highest tower of the aurora palace "
+				""
+				"It will drop either tri-bow (shoots 3 arrows at the cost of 1) or seeker bow(arrows will try to find target)"
+			]
+			dependencies: ["588112BD2017763A"]
+			id: "0A5EAB4DC1F966BE"
+			tasks: [{
+				id: "093AABB6CE37435E"
+				type: "item"
+				item: "twilightforest:snow_queen_trophy"
+			}]
+			rewards: [{
+				id: "3AB94F7A8AA53CA8"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 5s
+							id: "minecraft:power"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: 8.5d
+			description: [
+				"The best strategy to defeat hydra is to split damage between her heads so that they won't duplicate"
+				""
+				"The most amount of damage can be made by reflecting projectiles to the open mouth"
+			]
+			dependencies: ["451A55FF0321FE90"]
+			id: "038233F4CCB1B5F3"
+			tasks: [{
+				id: "5CEFD1B933D66725"
+				type: "item"
+				item: "twilightforest:hydra_trophy"
+			}]
+			rewards: [{
+				id: "4274B6C95EC67CED"
+				type: "item"
+				item: "twilightforest:fiery_blood"
+				random_bonus: 11
+			}]
+		}
+		{
+			x: -5.5d
+			y: 7.0d
+			description: ["Can be found in the chests in the minoshroom maze"]
+			id: "5ADD305DB64F6F9A"
+			tasks: [{
+				id: "69BDED1C2E890C18"
+				type: "item"
+				item: "twilightforest:maze_map_focus"
+			}]
+			rewards: [{
+				id: "2DD87A31CC6CC532"
+				type: "item"
+				item: "minecraft:paper"
+				count: 8
+			}]
+		}
+		{
+			x: -7.0d
+			y: 7.0d
+			description: ["Map of the maze, might be particurarly useful in finding maze breaker(a pickaxe capable of breaking maze blocks quickly)"]
+			dependencies: ["5ADD305DB64F6F9A"]
+			id: "254B19AAE9F5E90C"
+			tasks: [{
+				id: "1FD7D6B665E03BD2"
+				type: "item"
+				item: "twilightforest:maze_map_empty"
+			}]
+			rewards: [{
+				id: "72A3BBE95E4A1F9A"
+				type: "item"
+				item: "twilightforest:maze_map_focus"
+				count: 4
+			}]
+		}
+		{
+			x: -8.5d
+			y: 7.0d
+			shape: "diamond"
+			description: [
+				"Challenge"
+				""
+				"Can be found in the secret room which is easiest to find using the maze map"
+				""
+				"You'll need to break in but be carefull - the whole place is gonna blow up if you mess up"
+				""
+				"There are blocks of sand above the wooden pressure plates, so be carefull when breaking blocks"
+			]
+			dependencies: ["254B19AAE9F5E90C"]
+			id: "219AD17EDB6EFA68"
+			tasks: [{
+				id: "2BD0FC68D99CA884"
+				type: "item"
+				item: {
+					id: "twilightforest:mazebreaker_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Enchantments: [
+							{
+								lvl: 4s
+								id: "minecraft:efficiency"
+							}
+							{
+								lvl: 3s
+								id: "minecraft:unbreaking"
+							}
+							{
+								lvl: 2s
+								id: "minecraft:fortune"
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "647F34AF5DE10B9C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.5d
+			y: 10.0d
+			description: [
+				"In the twiligh highlands find a troll cave (somewhere around the hill)"
+				""
+				"Inside you will find a huge obsidian cube and a smaller one, break into a smaller one and get loot from it."
+				""
+				"Then use the beans and soil to grow a huge tree below a cloud structure"
+			]
+			dependencies: [
+				"0A5EAB4DC1F966BE"
+				"77A304FDC6534671"
+				"038233F4CCB1B5F3"
+			]
+			id: "54D340533342446E"
+			tasks: [
+				{
+					id: "7CAB011CE01F2A54"
+					type: "item"
+					item: "twilightforest:magic_beans"
+				}
+				{
+					id: "29D9FE9E13635666"
+					type: "item"
+					item: "twilightforest:uberous_soil"
+				}
+			]
+			rewards: [{
+				id: "77DC90BE16CE2974"
+				type: "item"
+				item: "twilightforest:unripe_trollber"
+				count: 32
+				random_bonus: 32
+			}]
+		}
+		{
+			x: -2.5d
+			y: 11.5d
+			description: ["On the cloud you'll find... you. But a giant one. Get a huge pickaxe from.... you and go back to the huge obsidian cube"]
+			dependencies: ["54D340533342446E"]
+			id: "4CBD49CB0490A292"
+			tasks: [{
+				id: "4EE955D6B25BFAE6"
+				type: "item"
+				item: {
+					id: "twilightforest:giant_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "234044675F9BA96D"
+				type: "item"
+				item: {
+					id: "twilightforest:giant_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: 13.0d
+			description: ["It will allow you to burn through the thorns below the castle"]
+			dependencies: ["4CBD49CB0490A292"]
+			id: "15A820C021C6CA06"
+			tasks: [{
+				id: "5E0B9A4B08857D2F"
+				type: "item"
+				item: {
+					id: "twilightforest:lamp_of_cinders"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "1B0CC3A3AABB1B9E"
+				type: "item"
+				item: "create:brass_casing"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 13.0d
+			description: ["The final boss is not there yet, but you can have these nice blocks now"]
+			dependencies: ["15A820C021C6CA06"]
+			id: "034E19BAD1D14C95"
+			tasks: [{
+				id: "785021D119881583"
+				type: "item"
+				item: "twilightforest:castle_brick"
+			}]
+			rewards: [{
+				id: "279445832F82AF48"
+				type: "item"
+				item: "ftbultimine:ultiminer"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 3.5d
+			description: [
+				"Good old shulker box to help you with inventory management out there"
+				"As well as a backpack"
+			]
+			dependencies: ["50392595761FE917"]
+			id: "5E4E884076BFD4F9"
+			tasks: [{
+				id: "7D0B706158CFD8FF"
+				type: "checkmark"
+				title: "Inventory management"
+			}]
+			rewards: [
+				{
+					id: "3F0A830414A00C09"
+					type: "item"
+					item: "minecraft:shulker_box"
+				}
+				{
+					id: "1DDE93BE626DE401"
+					type: "item"
+					item: "sophisticatedbackpacks:backpack"
+				}
+			]
+		}
+	]
+}

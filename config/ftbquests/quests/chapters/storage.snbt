@@ -1,0 +1,705 @@
+{
+	id: "7770694E3E85F0A3"
+	group: ""
+	order_index: 4
+	filename: "storage"
+	title: "Storage"
+	icon: "refinedstorage:controller"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.5d
+			y: 2.0d
+			description: ["Heart of the network"]
+			dependencies: ["20DC61B3ACD0513A"]
+			id: "11735E87A4616DB2"
+			tasks: [{
+				id: "330C0CA4ACBE6A66"
+				type: "item"
+				item: "storagenetwork:master"
+			}]
+			rewards: [{
+				id: "2F1A792A01AE30AA"
+				type: "item"
+				item: "storagedrawers:compacting_drawers_3"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			description: ["Integrates crafting grid into the table"]
+			dependencies: ["1559CD058FE960AB"]
+			id: "126A4470B9031275"
+			tasks: [{
+				id: "7CA9085B08AEDC10"
+				type: "item"
+				item: "storagenetwork:request"
+			}]
+			rewards: [{
+				id: "542827E7C8AEB6D6"
+				type: "item"
+				item: "storagenetwork:kabel"
+				count: 16
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			description: ["Basic cable for connecting other, more useful cables together"]
+			id: "20DC61B3ACD0513A"
+			tasks: [{
+				id: "4392990C226A6770"
+				type: "item"
+				item: "storagenetwork:kabel"
+			}]
+			rewards: [{
+				id: "2FD85588A8D85F98"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "storagenetwork:network_book"
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.0d
+			description: [
+				"Cable used to link other inventories to the network."
+				""
+				"Use it to connect storage drawer controller and a few diamond chests and you're set (at least untill you'll want autocrafting)"
+				""
+				"To set priority or filter items you need filtered link cables tho"
+			]
+			dependencies: ["20DC61B3ACD0513A"]
+			id: "2C7B833F8745ADC7"
+			tasks: [{
+				id: "1DA0BB3AD83C0D5B"
+				type: "item"
+				item: "storagenetwork:storage_kabel"
+			}]
+			rewards: [{
+				id: "175FE7BE88DCC486"
+				type: "item"
+				item: "ironchest:obsidian_chest"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.0d
+			description: ["Imports stuff from inventory to the network"]
+			dependencies: ["20DC61B3ACD0513A"]
+			id: "060226B4E6093843"
+			tasks: [{
+				id: "56623C868AE484DC"
+				type: "item"
+				item: "storagenetwork:import_kabel"
+			}]
+			rewards: [{
+				id: "0AC6FFA1629CC9FF"
+				type: "item"
+				item: "storagedrawers:emerald_storage_upgrade"
+				count: 4
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			description: ["Same as import cable but can be configured and upgraded"]
+			dependencies: [
+				"20DC61B3ACD0513A"
+				"060226B4E6093843"
+			]
+			id: "01D84452556204A8"
+			tasks: [{
+				id: "0EF6E4B33E763039"
+				type: "item"
+				item: "storagenetwork:import_filter_kabel"
+			}]
+			rewards: [{
+				id: "774E5CEB671ABBB8"
+				type: "item"
+				item: "storagedrawers:void_upgrade"
+				count: 4
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.5d
+			description: ["Like link cables but can be configured(priority and filters) and can be upgraded"]
+			dependencies: ["20DC61B3ACD0513A"]
+			id: "7162D4A1F6F0AFE1"
+			tasks: [{
+				id: "1F6E01A7CDC9258F"
+				type: "item"
+				item: "storagenetwork:filter_kabel"
+			}]
+			rewards: [{
+				id: "70B68195209B9977"
+				type: "item"
+				item: "create:adjustable_crate"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.0d
+			description: ["Exports items from network to the connected inventory"]
+			dependencies: ["20DC61B3ACD0513A"]
+			id: "6417724113F60898"
+			tasks: [{
+				id: "7F4FCDA7A7B6460A"
+				type: "item"
+				item: "storagenetwork:export_kabel"
+			}]
+			rewards: [{
+				id: "7EDC265372F4D8A9"
+				type: "item"
+				item: "ironfurnaces:diamond_furnace"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.0d
+			description: ["Allows you to see, pull and insert items from all connected inventories"]
+			dependencies: ["20DC61B3ACD0513A"]
+			id: "1559CD058FE960AB"
+			tasks: [{
+				id: "07691036FB589372"
+				type: "item"
+				item: "storagenetwork:inventory"
+			}]
+			rewards: [{
+				id: "43C635913C6F013C"
+				type: "item"
+				item: "storagenetwork:stack_upgrade"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			description: [
+				"Allows you to access the network from anywhere as long as you have it with you"
+				""
+				"Shift right click network root to link it"
+			]
+			dependencies: ["126A4470B9031275"]
+			id: "41C31AEB1B2335E9"
+			tasks: [{
+				id: "4E69B808790A4A79"
+				type: "item"
+				item: "storagenetwork:crafting_remote"
+			}]
+			rewards: [
+				{
+					id: "16B62BC79F1BB9D3"
+					type: "item"
+					item: "minecraft:lapis_lazuli"
+					count: 16
+				}
+				{
+					id: "200F7D571874E9E7"
+					type: "item"
+					item: "minecraft:quartz"
+					count: 16
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: 2.0d
+			description: ["Interface for use with other machines and mods. For example you can point a hopper into it to insert items into the network"]
+			dependencies: ["1559CD058FE960AB"]
+			id: "09828B6A756871F1"
+			tasks: [{
+				id: "57389192C561FC2F"
+				type: "item"
+				item: "storagenetwork:exchange"
+			}]
+			rewards: [{
+				id: "406EE9ABC6357D62"
+				type: "item"
+				item: "storagenetwork:speed_upgrade"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.5d
+			description: ["Heart of the refined storage network"]
+			dependencies: ["11735E87A4616DB2"]
+			id: "1FA9E95EABA9EFBB"
+			tasks: [{
+				id: "79001C35CD968D3B"
+				type: "item"
+				item: "refinedstorage:controller"
+			}]
+			rewards: [
+				{
+					id: "60BFBDDB3D4365B5"
+					type: "item"
+					item: "fluxnetworks:flux_point"
+				}
+				{
+					id: "2EE2A9085E8120CE"
+					type: "item"
+					item: "refinedstorage:wrench"
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			description: [
+				"Allows you to access refined storage network wirelessly"
+				""
+				"You need a transmitter tho and the range will be limited..."
+			]
+			dependencies: ["41C31AEB1B2335E9"]
+			id: "04DACCF7F7F4160D"
+			tasks: [{
+				id: "70F4803B82041C83"
+				type: "item"
+				item: "refinedstorageaddons:wireless_crafting_grid"
+			}]
+			rewards: [{
+				id: "150CE922F2BFFD16"
+				type: "item"
+				item: "refinedstorage:wireless_transmitter"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 2.0d
+			description: ["Exports items from storage into an inventory"]
+			dependencies: ["6417724113F60898"]
+			id: "5B46FC7180448A44"
+			tasks: [{
+				id: "43D50111505D8295"
+				type: "item"
+				item: "refinedstorage:exporter"
+			}]
+			rewards: [{
+				id: "53CD4B99D0C8981F"
+				type: "item"
+				item: "refinedstorage:speed_upgrade"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 0.0d
+			description: ["Imports items from an inventory into the network"]
+			dependencies: ["01D84452556204A8"]
+			id: "53710274B439B7BB"
+			tasks: [{
+				id: "221B511F29E882DA"
+				type: "item"
+				item: "refinedstorage:importer"
+			}]
+			rewards: [{
+				id: "03E5EB21C11B022C"
+				type: "item"
+				item: "refinedstorage:stack_upgrade"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.0d
+			description: [
+				"Makes items in an inventory available in the network. Can be connected to storage drawers controller."
+				""
+				"Priority can be set - items are inserted into higher priority storages first"
+			]
+			dependencies: ["7162D4A1F6F0AFE1"]
+			id: "738C93167379AD7F"
+			tasks: [{
+				id: "66EE2ECD5F4634B9"
+				type: "item"
+				item: "refinedstorage:external_storage"
+			}]
+			rewards: [{
+				id: "54064819DC36AD67"
+				type: "item"
+				item: "storagedrawers:controller_slave"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.0d
+			description: ["Connect stuff together with these cables"]
+			dependencies: ["2C7B833F8745ADC7"]
+			id: "529728253F4D11EE"
+			tasks: [{
+				id: "532E467562C6BBD2"
+				type: "item"
+				item: "refinedstorage:cable"
+			}]
+			rewards: [{
+				id: "53A66E63B436EF5C"
+				type: "item"
+				item: "minecraft:quartz"
+				count: 32
+				random_bonus: 32
+			}]
+		}
+		{
+			x: -1.5d
+			y: 5.0d
+			description: [
+				"Insert storage disks into it to have a digital storage"
+				""
+				"You can also set a priority for it"
+			]
+			dependencies: ["1FA9E95EABA9EFBB"]
+			id: "299918EF77320ED7"
+			tasks: [{
+				id: "5593DD31641D1C99"
+				type: "item"
+				item: "refinedstorage:disk_drive"
+			}]
+			rewards: [{
+				id: "140CEBB862B0D966"
+				type: "item"
+				item: "refinedstorage:1k_storage_disk"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			description: ["... but it's range can be expanded using these"]
+			dependencies: ["04DACCF7F7F4160D"]
+			id: "7FB4143AD7DC9661"
+			tasks: [{
+				id: "24D307B4D41CADA6"
+				type: "item"
+				item: "refinedstorage:range_upgrade"
+			}]
+			rewards: [{
+				id: "6520D3575651AF8A"
+				type: "item"
+				item: "refinedstorage:range_upgrade"
+				count: 3
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			subtitle: "Infinite range, across dimensions, doesn't require power"
+			dependencies: ["7FB4143AD7DC9661"]
+			id: "5E8CB2CDC5542FBF"
+			tasks: [{
+				id: "4AACB21A752A77B7"
+				type: "item"
+				item: "creativewirelesstransmitter:creative_wireless_transmitter"
+			}]
+			rewards: [{
+				id: "6B3F1BDD31224BD5"
+				type: "item"
+				item: "refinedstorage:creative_controller"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 5.0d
+			description: [
+				"If facing air it will craft stuff like in crafting table"
+				"If facing inventory/machine and has processing pattern - it will insert items into it."
+				""
+				"Can be upgraded to higher tiers to store more patterns and craft faster"
+			]
+			dependencies: ["6A34F3507E2BC1E7"]
+			id: "10018C7CB70CCD13"
+			tasks: [{
+				id: "67870712C0D8DBE4"
+				type: "item"
+				item: "refinedstorage:crafter"
+			}]
+			rewards: [{
+				id: "757CA8FD03A52149"
+				type: "item"
+				item: "rsrequestify:requester"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.5d
+			description: ["Let's you monitor crafting processes (things crafters are currently making)"]
+			dependencies: ["1FA9E95EABA9EFBB"]
+			id: "4A3E7285F854A1D1"
+			tasks: [{
+				id: "4C807637BA517549"
+				type: "item"
+				item: "refinedstorage:crafting_monitor"
+			}]
+			rewards: [{
+				id: "107F7695214E8DEC"
+				type: "item"
+				item: "refinedstorage:crafting_upgrade"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			description: ["Let's you encode patterns to teach crafters how to make stuff"]
+			dependencies: ["1FA9E95EABA9EFBB"]
+			id: "6A34F3507E2BC1E7"
+			tasks: [{
+				id: "3EDB8E473EBB738B"
+				type: "item"
+				item: "refinedstorage:pattern_grid"
+			}]
+			rewards: [{
+				id: "2B58C740CD9C9251"
+				type: "item"
+				item: "refinedstorage:pattern"
+				count: 64
+			}]
+		}
+		{
+			x: -3.0d
+			y: 5.0d
+			description: ["Like crafting grid but for fluids"]
+			dependencies: ["1FA9E95EABA9EFBB"]
+			id: "5DABA20E5FDC2AE1"
+			tasks: [{
+				id: "40C6F66569B6F303"
+				type: "item"
+				item: "refinedstorage:fluid_grid"
+			}]
+			rewards: [{
+				id: "1A0527010541F74C"
+				type: "item"
+				item: "refinedstorage:regulator_upgrade"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 6.5d
+			description: ["More storage for patterns"]
+			dependencies: ["10018C7CB70CCD13"]
+			id: "62CA82AD6284E148"
+			tasks: [{
+				id: "2D2F1F42F9A1DEE0"
+				type: "item"
+				item: "extrastorage:iron_crafter"
+			}]
+			rewards: [{
+				id: "5B0EFC9DDB4C87E0"
+				type: "item"
+				item: "refinedstorage:basic_processor"
+				random_bonus: 63
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.5d
+			description: ["Faster and more storage"]
+			dependencies: ["62CA82AD6284E148"]
+			id: "3BBA18154F1BB078"
+			tasks: [{
+				id: "070DA9A621E38D27"
+				type: "item"
+				item: "extrastorage:gold_crafter"
+			}]
+			rewards: [{
+				id: "322513AF17992EF5"
+				type: "item"
+				item: "refinedstorage:improved_processor"
+				random_bonus: 63
+			}]
+		}
+		{
+			x: 0.0d
+			y: 8.0d
+			description: ["Even faster and even more storage"]
+			dependencies: ["3BBA18154F1BB078"]
+			id: "6EB0C5EB1129CC72"
+			tasks: [{
+				id: "63B21D1BF61C2320"
+				type: "item"
+				item: "extrastorage:diamond_crafter"
+			}]
+			rewards: [{
+				id: "12C8122344CBD049"
+				type: "item"
+				item: "refinedstorage:advanced_processor"
+				random_bonus: 63
+			}]
+		}
+		{
+			x: 1.5d
+			y: 8.0d
+			description: ["Ultimate crafter, 81 slots and 125 faster than a regular crafter"]
+			dependencies: ["6EB0C5EB1129CC72"]
+			id: "0EEB6C622AF422F6"
+			tasks: [{
+				id: "5377B2A1F711A5E9"
+				type: "item"
+				item: "extrastorage:netherite_crafter"
+			}]
+			rewards: [
+				{
+					id: "2993083252D711E3"
+					type: "item"
+					item: {
+						id: "bloodmagic:explosivepowder"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2140CB2B588687EC"
+					type: "item"
+					item: {
+						id: "bloodmagic:primitive_crystalline_resonator"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 6.5d
+			description: ["Every part can used as a storage but if you upgrade it with 3 parts you'll get 4 times the storage space on the next tier part"]
+			dependencies: ["299918EF77320ED7"]
+			id: "42AE470668BFE67B"
+			tasks: [{
+				id: "022F6AFDA90AC998"
+				type: "item"
+				item: "refinedstorage:1k_storage_part"
+			}]
+			rewards: [{
+				id: "1090A3F2517304A7"
+				type: "item"
+				item: "refinedstorage:silicon"
+				random_bonus: 63
+			}]
+		}
+		{
+			x: -3.0d
+			y: 8.0d
+			description: ["It goes up to infinite storage part"]
+			dependencies: ["42AE470668BFE67B"]
+			id: "5B68E88293D36F52"
+			tasks: [{
+				id: "61DDC14F01CB64DA"
+				type: "item"
+				item: "refinedstorage:4k_storage_part"
+			}]
+			rewards: [{
+				id: "5021ADE38E62A127"
+				type: "item"
+				item: "refinedstorage:processor_binding"
+				random_bonus: 63
+			}]
+		}
+		{
+			x: -1.5d
+			y: 8.0d
+			description: ["You can stop at any point"]
+			dependencies: ["5B68E88293D36F52"]
+			id: "002836B518E45017"
+			tasks: [{
+				id: "787B71521619724E"
+				type: "item"
+				item: "refinedstorage:16k_storage_part"
+			}]
+			rewards: [{
+				id: "6C6EF8962EC8682E"
+				type: "item"
+				item: "refinedstorage:silk_touch_upgrade"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 9.5d
+			description: ["This one is pretty decent for beginning"]
+			dependencies: ["002836B518E45017"]
+			id: "6A829CECDA9FA74E"
+			tasks: [{
+				id: "3EEA4B4D724BADD2"
+				type: "item"
+				item: "refinedstorage:64k_storage_part"
+			}]
+			rewards: [{
+				id: "00B37EA77F4331EC"
+				type: "item"
+				item: "refinedstorage:white_detector"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 6.5d
+			description: [
+				"Combine with storage part to crate a storage disk"
+				""
+				"You can also shift right click an empty disk to extract the part"
+			]
+			dependencies: ["299918EF77320ED7"]
+			id: "459077D26C8430B3"
+			tasks: [{
+				id: "45CE4222B85FF7D4"
+				type: "item"
+				item: "refinedstorage:storage_housing"
+			}]
+			rewards: [{
+				id: "2D2166DE0CE58FA9"
+				type: "item"
+				item: "refinedstorage:storage_monitor"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 9.5d
+			shape: "diamond"
+			description: [
+				"Challenge"
+				""
+				"Whenever you need to craft something - make a pattern for it. Automate every crafting recipe you need to use"
+			]
+			id: "023E7F6CE25C3A83"
+			tasks: [{
+				id: "7135EA8D9AB9F83B"
+				type: "checkmark"
+				title: "Never craft manually again"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.5d
+			description: [
+				"For large distances or across dimensions, these might be handy."
+				""
+				"Place a receiver in desired place and shift right click the card on it. Then place the transmitter connected to the network and insert a card into it. "
+				""
+				"Can be used to connect stuff in the compacting machine"
+			]
+			dependencies: ["1FA9E95EABA9EFBB"]
+			id: "243888F090D06C84"
+			tasks: [
+				{
+					id: "5BB5AC3AD65AC8E1"
+					type: "item"
+					item: "refinedstorage:network_transmitter"
+				}
+				{
+					id: "50E6920448E5BCA9"
+					type: "item"
+					item: "refinedstorage:network_receiver"
+				}
+			]
+			rewards: [{
+				id: "6A3B0566345B1B00"
+				type: "item"
+				item: "refinedstorage:network_card"
+			}]
+		}
+	]
+}
